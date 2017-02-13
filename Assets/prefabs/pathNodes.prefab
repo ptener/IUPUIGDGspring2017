@@ -146,7 +146,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1270154865142766}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.60837483, y: 2.0549598, z: -1.2}
+  m_LocalPosition: {x: 366.46106, y: 269, z: -10.030085}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4320270329838814}
@@ -168,10 +168,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeUser: {fileID: 0}
+  player: {fileID: 0}
   nodes:
   - {fileID: 4320270329838814}
   - {fileID: 4759648151319058}
   - {fileID: 4002874677304162}
   - {fileID: 4177003502725854}
   reachDistance: 1
-  speed: 0.05
+  sightDistance: 10
+  speed: 0.5
