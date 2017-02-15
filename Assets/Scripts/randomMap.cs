@@ -8,15 +8,33 @@ public class randomMap : MonoBehaviour {
 	public int lengthofCorridors = 5;
 	// Use this for initialization
 	void Start () {
+		Transform straightHallway = transform.GetChild(0);
+		Transform leftHallway = transform.GetChild(1);
+		Transform rightHallway = transform.GetChild(2);
+		Transform[] currentHallway = {straightHallway, leftHallway, rightHallway};
+		int hallwayIndex = 0;
+
+		Transform corner = transform.GetChild(3);
 		Transform temp;
+		Transform temp2;
+
 		int randomSize = Random.Range (1, lengthofCorridors);
 		Debug.Log (randomSize);
+
+		//init transform so they are not empty, but we don't use our own transform for these vars.
+		Transform platform = transform;
+		Transform platformNode = transform;
+
 		for (int i=0; i < sizeofMap; i++){
 			for (int j=0; j < randomSize; j++) {
-				j = sizeofMap * i;
-				temp = Instantiate(transform.GetChild(0), new Vector3(transform.GetChild(transform.childCount-1).transform.GetChild(2).position.x,transform.GetChild(transform.childCount-1).transform.GetChild(2).position.y, transform.GetChild(transform.childCount-1).transform.GetChild(2).position.z), Quaternion.identity);
+				platform = transform.GetChild (transform.childCount - 1);
+				platformNode = platform.transform.GetChild (0);
+				temp = Instantiate(currentHallway[hallwayIndex], new Vector3(platformNode.position.x, platformNode.position.y, platformNode.position.z), Quaternion.identity);
 				temp.transform.SetParent (this.transform);
 			}
+			temp2 = Instantiate (corner, new Vector3 (platformNode.position.x, platformNode.position.y, platformNode.position.z), Quaternion.identity);
+			temp2.transform.SetParent (this.transform);
+			hallwayIndex = 1;
 		}
 	}
 	
