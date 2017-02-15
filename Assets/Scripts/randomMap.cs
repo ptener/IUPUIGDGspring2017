@@ -8,33 +8,66 @@ public class randomMap : MonoBehaviour {
 	public int lengthofCorridors = 5;
 	// Use this for initialization
 	void Start () {
+		
 		Transform straightHallway = transform.GetChild(0);
 		Transform leftHallway = transform.GetChild(1);
 		Transform rightHallway = transform.GetChild(2);
 		Transform[] currentHallway = {straightHallway, leftHallway, rightHallway};
+		string direction = "vert+";
 		int hallwayIndex = 0;
-
+		Vector3 sizeofCurrentPlane =  straightHallway.transform.GetChild(0).transform.GetChild(0).GetComponent<Renderer>().bounds.size;
+		Debug.Log(sizeofCurrentPlane);
 		Transform corner = transform.GetChild(3);
-		Transform temp;
-		Transform temp2;
+		Transform temp = transform;
+		//Transform temp2;
 
-		int randomSize = Random.Range (1, lengthofCorridors);
-		Debug.Log (randomSize);
+		int randomSize = Random.Range (3, lengthofCorridors);
+		int randomChoice;
 
 		//init transform so they are not empty, but we don't use our own transform for these vars.
 		Transform platform = transform;
 		Transform platformNode = transform;
 
-		for (int i=0; i < sizeofMap; i++){
+		for (int i=0; i < 100; i++){
 			for (int j=0; j < randomSize; j++) {
-				platform = transform.GetChild (transform.childCount - 1);
-				platformNode = platform.transform.GetChild (0);
-				temp = Instantiate(currentHallway[hallwayIndex], new Vector3(platformNode.position.x, platformNode.position.y, platformNode.position.z), Quaternion.identity);
+				if (j == 0 && i == 0)
+					platform = currentHallway[hallwayIndex];
+				else
+					platform = transform.GetChild(transform.childCount-1);
+				platformNode = platform.transform.GetChild (1);
+				sizeofCurrentPlane = platform.transform.GetChild(0).transform.GetChild(0).GetComponent<Renderer>().bounds.size;
+				if (direction == "vert+")
+					temp = Instantiate(currentHallway[hallwayIndex], new Vector3(platform.position.x + sizeofCurrentPlane.x, platform.position.y, platform.position.z), Quaternion.identity);
+				else if (direction == "vert-")
+					temp = Instantiate(currentHallway[hallwayIndex], new Vector3(platform.position.x - sizeofCurrentPlane.x, platform.position.y, platform.position.z), Quaternion.identity);
+				else if (direction == "hort-")
+					temp = Instantiate(currentHallway[hallwayIndex], new Vector3(platform.position.x, platform.position.y, platform.position.z + sizeofCurrentPlane.z), Quaternion.identity);
+				else if (direction == "hort+")
+					temp = Instantiate(currentHallway[hallwayIndex], new Vector3(platform.position.x, platform.position.y, platform.position.z - sizeofCurrentPlane.z), Quaternion.identity);
 				temp.transform.SetParent (this.transform);
 			}
-			temp2 = Instantiate (corner, new Vector3 (platformNode.position.x, platformNode.position.y, platformNode.position.z), Quaternion.identity);
-			temp2.transform.SetParent (this.transform);
-			hallwayIndex = 1;
+			//platform = transform.GetChild(transform.childCount-1);
+			//platformNode = platform.transform.GetChild (1);
+			//temp2 = Instantiate (corner, new Vector3 (platformNode.position.x, platformNode.position.y, platformNode.position.z), Quaternion.identity);
+			//temp2.transform.SetParent (this.transform);
+			randomChoice = Random.Range (0, 3);
+			Debug.Log(randomChoice);
+			if (direction.Contains("hort") && randomChoice == 0)
+				direction = "vert+";
+			else if (direction.Contains("hort") && randomChoice == 1)
+				direction = "vert-";
+			else if (direction.Contains("hort") && randomChoice == 2)
+			{
+				//do nothing, keep going in same direction
+			}
+			else if (direction.Contains("vert") && randomChoice == 0)
+				direction = "hort+";
+			else if (direction.Contains("vert") && randomChoice == 1)
+				direction = "hort-";
+			else if (direction.Contains("vert") && randomChoice == 2)
+			{
+				//do nothing, keep going in same direction
+			}
 		}
 	}
 	
