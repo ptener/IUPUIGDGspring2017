@@ -194,6 +194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 881626374}
   - component: {fileID: 881626373}
+  - component: {fileID: 881626375}
   m_Layer: 8
   m_Name: player1
   m_TagString: Untagged
@@ -249,6 +250,23 @@ Transform:
   m_Father: {fileID: 556141752}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &881626375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 881626372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7963dac96847f7f4e92a03d66b7c644f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health_: 0
+  level_: 0
+  xp_: 0
+  name_: 
+  attacks: []
+  enemies: []
 --- !u!1 &1079097833
 GameObject:
   m_ObjectHideFlags: 0
