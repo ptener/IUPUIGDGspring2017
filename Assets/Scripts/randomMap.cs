@@ -20,6 +20,7 @@ public class randomMap : MonoBehaviour {
 		Transform corner = transform.GetChild(3);
 		Transform temp = transform;
 		//Transform temp2;
+		Ray wallRay = new Ray(this.transform.GetChild(0).transform.position, Vector3.forward);
 
 		int randomSize = Random.Range (3, lengthofCorridors);
 		int randomChoice;
