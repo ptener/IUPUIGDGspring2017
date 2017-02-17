@@ -5,7 +5,7 @@ using UnityEngine;
 //Player object. Still basic prototype
 //you shoudl probably just convert this to a "unit" object that can create either player or bot units
 //maybe have them extend this one.
-public class Player : MonoBehaviour
+public class Unit : MonoBehaviour
 {
     //properties we almost definitely need
     //I'm making these public only for the momenet
@@ -24,20 +24,27 @@ public class Player : MonoBehaviour
     //now that I think about it, it would probably be a better idea to just have each attack be an object property of the unit
 
     public string name_;
+    public string enemy_name_; //holds name of enemy object to look for to attack
 
     public List<string> attacks; //holds name of each attack, list because they could have more or less attacks
 
-    public List<Player> enemies; //for testing
+    public List<Unit> enemies; //for testing
 
-    //default player constructor
+    public GameObject toAttack; //unit to attack
+
+    IEnumerator atkCoroutine;
+
+    Unit enemyScript;// = toAttack.GetComponent<Unit>(); //holds the script of the enemy we're attacking
+
+    //default unit constructor
     //variables to initialize: health, level, maybe class type or however else we decide to design this
-    public Player()
+    public Unit()
     {
 
     } //end constructor
 
-    //player constructor with the name
-    public Player (string name)
+    //unit constructor with the name
+    public Unit (string name)
     {
         health_ = 100;
         level_ = 1;
@@ -51,6 +58,34 @@ public class Player : MonoBehaviour
         name_ = name;
     } //end overloaded constructor
 
+    // Use this for initialization
+    void Start()
+    {
+        Unit test = new Unit();
+        test.name_ = "ya boi max b";
+        enemies.Add(test);
+        test.name_ = "SLAW";
+        enemies.Add(test);
+
+        toAttack = GameObject.Find(enemy_name_);
+        enemyScript = toAttack.GetComponent<Unit>();
+        Debug.Log("enemy name " + enemyScript.name_);
+        //enemyScript = toAttack.GetComponent<Unit>();
+        atkCoroutine = Attack(enemies);
+        StartCoroutine(atkCoroutine);
+    } //end Start
+
+    // Update is called once per frame
+    void Update()
+    {
+        /*
+        if (enemyScript.health_ <= 0)
+        {
+            StopCoroutine(atkCoroutine);
+        } //end if
+        */
+    } //end Update
+
     //making the variable into a property so I can check if health <= 0 each time health is changed
     public int Health
     {
@@ -62,7 +97,7 @@ public class Player : MonoBehaviour
         set
         {
             health_ = value;
-            if (health_ <= 0)
+            if (true)
             {
                 //TODO game over
                 System.Console.Write("big man is KILL");
@@ -99,62 +134,54 @@ public class Player : MonoBehaviour
     //select a random enemy
     //choose random attack (chances could be modified by stats) and swing
     //subtract health from enemy attacked
-    private IEnumerator Attack(List<Player> targetOptions)
+    private IEnumerator Attack(List<Unit> targetOptions)
     {
+        Debug.Log("Attacking!");
+        Debug.Log("Health of enemy: " + enemyScript.health_);
+        Debug.Log("Size of attacks " + attacks.Count);
         //Random atkGen = new UnityEngine.Random();
 
-        Player target;
+        Unit target;
 
         string attackName = "";
 
         int targetChoice, atkChoice, damage = 0;
 
-        targetChoice = RandGenerate(targetOptions.Count);
-        atkChoice = RandGenerate(attacks.Count);
-
-        //assign values depending on the name
-        if (attackName == "wompusBlast")
+        while (enemyScript.health_ > 0)
         {
-            damage = 1;
-        } //end if
+            //targetChoice = RandGenerate(targetOptions.Count);
+            atkChoice = RandGenerate(attacks.Count);
+            attackName = attacks[atkChoice];
 
-        else if (attackName == "butkusBash")
-        {
-            damage = 2;
-        } //end else if
+            //assign values depending on the name
+            if (attackName == "wompusBlast")
+            {
+                damage = 1;
+            } //end if
 
-        else if (attackName == "punch")
-        {
-            damage = 3;
-        } //end else if
+            else if (attackName == "butkusBash")
+            {
+                damage = 2;
+            } //end else if
 
-        else if (attackName == "getsTheBacon")
-        {
-            damage = 4;
-        } //end else if
+            else if (attackName == "punch")
+            {
+                damage = 3;
+            } //end else if
 
-        target = targetOptions[targetChoice];
-        target.Health = (target.Health - damage);
+            else if (attackName == "getsTheBacon")
+            {
+                damage = 4;
+            } //end else if
 
-        System.Console.Write("Name of damaged yout and health " + enemies[targetChoice].name_ + " " + targetOptions[targetChoice].health_ + "\n");
+            //target = targetOptions[targetChoice];
+            enemyScript.health_ -= damage;
 
-        yield return new WaitForSeconds(5);
+            Debug.Log("Name of damaged yout and health " + enemyScript.name_ + " " + enemyScript.health_ + "\n");
+
+            yield return new WaitForSeconds(2);
+        } //end while
+
+        Debug.Log("RIPE " + enemyScript.name_);
     } //end Attack
-
-	// Use this for initialization
-	void Start ()
-    {
-        Player test = new Player();
-        test.name_ = "ya boi max b";
-        enemies.Add(test);
-        test.name_ = "SLAW";
-        enemies.Add(test);
-
-	} //end Start
-	
-	// Update is called once per frame
-	void Update ()
-    {
-        Attack(enemies);
-	} //end Update
-} //end Player
+} //end Unit
