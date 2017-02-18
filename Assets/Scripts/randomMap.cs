@@ -37,6 +37,7 @@ public class randomMap : MonoBehaviour {
 					platform = transform.GetChild(transform.childCount-1);
 				platformNode = platform.transform.GetChild (1);
 				sizeofCurrentPlane = platform.transform.GetChild(0).transform.GetChild(0).GetComponent<Renderer>().bounds.size;
+
 				if (direction == "vert+")
 					temp = Instantiate(currentHallway[hallwayIndex], new Vector3(platform.position.x + sizeofCurrentPlane.x, platform.position.y, platform.position.z), Quaternion.identity);
 				else if (direction == "vert-")
@@ -69,6 +70,10 @@ public class randomMap : MonoBehaviour {
 			{
 				//do nothing, keep going in same direction
 			}
+
+
+			//make the corner piece here
+
 		}
 	}
 	
