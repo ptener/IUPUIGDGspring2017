@@ -26,6 +26,7 @@ public class Unit : MonoBehaviour
     public string name_;
     public string enemy_name_; //holds name of enemy object to look for to attack
 
+<<<<<<< Updated upstream
     public List<string> attacks; //holds name of each attack, list because they could have more or less attacks
 
     public List<Unit> enemies; //for testing
@@ -35,6 +36,18 @@ public class Unit : MonoBehaviour
     IEnumerator atkCoroutine;
 
     Unit enemyScript;// = toAttack.GetComponent<Unit>(); //holds the script of the enemy we're attacking
+=======
+    public int weaponChoice; //allows for choosing which weapon to use, for index of weapons. Integrate into UI later
+
+    public List<Weapon> weapons; //holds each weapon object assigned to this unit
+    public List<Unit> enemies; //fill with newly generated enemies
+    public List<string> weaponNames; //name of each weapon used for input in the inspector
+    public List<string> enemyNames;
+
+    public GameObject toAttack; //unit to attack
+    
+    public Weapon weapon; //fill weapons array
+>>>>>>> Stashed changes
 
     //default unit constructor
     //variables to initialize: health, level, maybe class type or however else we decide to design this
@@ -68,11 +81,22 @@ public class Unit : MonoBehaviour
         enemies.Add(test);
 
         toAttack = GameObject.Find(enemy_name_);
+<<<<<<< Updated upstream
         enemyScript = toAttack.GetComponent<Unit>();
         Debug.Log("enemy name " + enemyScript.name_);
         //enemyScript = toAttack.GetComponent<Unit>();
         atkCoroutine = Attack(enemies);
         StartCoroutine(atkCoroutine);
+=======
+        enemy = toAttack.GetComponent<Unit>();
+        Debug.Log("enemy name " + enemy.name_);
+        */
+        /*
+        enemyNames[0] = "1";
+        enemyNames[1] = "2";
+        enemyNames[2] = "3";
+        */
+>>>>>>> Stashed changes
     } //end Start
 
     // Update is called once per frame
@@ -100,10 +124,66 @@ public class Unit : MonoBehaviour
             if (true)
             {
                 //TODO game over
+<<<<<<< Updated upstream
                 System.Console.Write("big man is KILL");
+            } //end if
+=======
+                //create some other manager script that will be used when any units die
+                //when a player dies, call it and check if there are more than 0 players
+                //if not, launch game over screen
+                //
+                //if the enemy dies, check if there are more than 0 enemies
+                //if not, end the battle
+                //maybe these can be in your generic "battle manager" script that you'll need to build anyway
+                Debug.Log(name_ + " is KILL");
+                Destroy(gameObject);
             } //end if
         } //end set
     } //end property
+
+    //name property
+    //making this a property so that weapons and other properties of the unit can be set automatically when the name is set
+    public string Name
+    {
+        get
+        {
+            return name_;
+        } //end get
+
+        set
+        {
+            name_ = value;
+            Debug.Log("name of unit: " + name_);
+
+            //test values yet to be modified
+            //you get the idea though: change properties based on name
+            //not really using this right now, just keeping it in comments for future reference
+            /*
+            if (name_ == "1")
+            {
+                Health = 40;
+                weapon.Name = "socketWrench";
+                enemy.weapons.Add(weapon); //putting this on different lines just in case I want to give certain enemies more weapons
+            } //end if
+
+            else if (name_ == "2")
+            {
+                Health = 50;
+                weapon.Name = "steelPole";
+                enemy.weapons.Add(weapon);
+            } //end if
+
+            else if (name_ == "3")
+            {
+                Health = 60;
+                weapon.Name = "weldingTorch";
+                enemy.weapons.Add(weapon);
+            } //end if
+            */
+>>>>>>> Stashed changes
+        } //end set
+    } //end property
+<<<<<<< Updated upstream
 
     //generate random number for attack and unit selection
     //pass in size of the array for divying out divisions
@@ -184,4 +264,22 @@ public class Unit : MonoBehaviour
 
         Debug.Log("RIPE " + enemyScript.name_);
     } //end Attack
+=======
+    
+    //set the weapons in the weapons list using the "weaponNames" string list
+    private void setWeapons()
+    {
+        //if no one has set any weapons, at least give poor dude their fists to work with
+        if (weaponNames.Count == 0)
+        {
+            weaponNames.Add("fist");
+        } //end if
+
+        for (int i = 0; i < weaponNames.Count; i++)
+        {
+            weapon.Name = weaponNames[i];
+            weapons.Add(weapon);
+        } //end for
+    } //end setWeapons
+>>>>>>> Stashed changes
 } //end Unit
