@@ -1,0 +1,28 @@
+[
+{
+		"id": 0,
+		"title":"Gold Sword",
+		"stats": {
+			"attack": 10,
+			"defence": 10,
+			"cooldown": 10
+			},
+		"description":"It's a sword made from gold",
+		"stackable": true,
+		"rarity": 2,
+		"slug":"gold_sword"
+},
+{
+		"id": 1,
+		"title":"Flame Torch",
+		"stats": {
+			"attack": 10,
+			"defence": 10,
+			"cooldown": 10
+			},
+		"description":"It's a Flame Torch, duh",
+		"stackable": true,
+		"rarity": 2,
+		"slug":"flame_torch"
+}
+]
