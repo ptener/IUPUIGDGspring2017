@@ -9,26 +9,26 @@ public class randomMap : MonoBehaviour
 	public int sizeofMap = 5;
 	public int lengthofCorridors = 5;
 	public int cornerPiece = 0;
-
+	public LayerMask wall;
+	public GameObject cube;
 	// Use this for initialization
 	void Start () {
 
-
+		cube = GameObject.FindGameObjectWithTag ("test");
 		Transform straightHallway = transform.GetChild (0);
 		Transform leftHallway = transform.GetChild (1);
 		Transform Corner1 = transform.GetChild (2);
 		Transform Corner2 = transform.GetChild (3);
 		Transform Corner3 = transform.GetChild (4);
 		Transform Corner4 = transform.GetChild (5);
+		Vector3 vectordirection = transform.TransformDirection(new Vector3(1,0,0));
 		Transform[] currentHallway = { straightHallway, leftHallway, Corner1, Corner2 , Corner3, Corner4};
 		string direction = "vert+";
 		string lastdirection;
 		int hallwayIndex = 0;
 		Vector3 sizeofCurrentPlane = straightHallway.transform.GetChild (0).transform.GetChild (0).GetComponent<Renderer> ().bounds.size;
-		Debug.Log (sizeofCurrentPlane);
-		//Transform corner = transform.GetChild(3);
+	
 		Transform temp = transform;
-		//Transform temp2;
 		Ray wallRay = new Ray (this.transform.GetChild (0).transform.position, Vector3.forward);
 
 		int randomSize = Random.Range (3, lengthofCorridors);
@@ -45,7 +45,19 @@ public class randomMap : MonoBehaviour
 				else
 					platform = transform.GetChild (transform.childCount - 1);
 
-		
+
+				if (Physics.Raycast (platform.position, vectordirection, 10, wall)) 
+				{
+					if(vectordirection.x == 1){
+						Instantiate (cube, new Vector3 (platform.position.x+10, platform.position.y, platform.position.z), Quaternion.identity);
+					} else {
+						Instantiate (cube, new Vector3 (platform.position.x, platform.position.y, platform.position.z+10), 	Quaternion.identity);
+					}
+
+					Debug.Log("There is something in front of the object!");
+				}
+
+				
 				platformNode = platform.transform.GetChild (1);
 				sizeofCurrentPlane = platform.transform.GetChild (0).transform.GetChild (0).GetComponent<Renderer> ().bounds.size;
 
@@ -59,10 +71,7 @@ public class randomMap : MonoBehaviour
 					temp = Instantiate (currentHallway [hallwayIndex], new Vector3 (platform.position.x, platform.position.y, platform.position.z - sizeofCurrentPlane.z), Quaternion.identity);
 				temp.transform.SetParent (this.transform);
 			}
-			//platform = transform.GetChild(transform.childCount-1);
-			//platformNode = platform.transform.GetChild (1);
-			//temp2 = Instantiate (corner, new Vector3 (platformNode.position.x, platformNode.position.y, platformNode.position.z), Quaternion.identity);
-			//temp2.transform.SetParent (this.transform);
+
 			randomChoice = Random.Range (0, 3);
 			Debug.Log (randomChoice);
 
@@ -80,6 +89,7 @@ public class randomMap : MonoBehaviour
 				}
 
 				direction = "vert+";
+				vectordirection = new Vector3 (1, 0, 0);
 		
 			} 
 			else if (direction.Contains ("hort") && randomChoice == 1) 
@@ -94,6 +104,7 @@ public class randomMap : MonoBehaviour
 				}
 
 				direction = "vert-";
+				vectordirection = new Vector3 (1, 0, 0);
 			} 
 			else if (direction.Contains ("hort") && randomChoice == 2)
 			{
@@ -113,6 +124,7 @@ public class randomMap : MonoBehaviour
 				}
 
 				direction = "hort+";
+				vectordirection = new Vector3 (0, 0, 1);
 		
 			} else if (direction.Contains ("vert") && randomChoice == 1) {
 				
@@ -129,6 +141,7 @@ public class randomMap : MonoBehaviour
 				}
 
 				direction = "hort-";
+				vectordirection = new Vector3 (0, 0, 1);
 			} 
 			else if (direction.Contains ("vert") && randomChoice == 2)
 			{
@@ -140,6 +153,7 @@ public class randomMap : MonoBehaviour
 			//add the last piece of tile here
 			platform = transform.GetChild (transform.childCount - 1);
 
+		
 
 			platformNode = platform.transform.GetChild (1);
 			sizeofCurrentPlane = platform.transform.GetChild (0).transform.GetChild (0).GetComponent<Renderer> ().bounds.size;
@@ -158,5 +172,8 @@ public class randomMap : MonoBehaviour
 	}
 	
 	// Update is called once per frame
-	void Update (){}
+	void Update ()
+	{
+
+	}
 }
