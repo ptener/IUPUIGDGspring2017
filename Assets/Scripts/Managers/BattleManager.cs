@@ -21,32 +21,50 @@ public class BattleManager : MonoBehaviour {
 
     private IEnumerator atkCoroutine; //used by Attack()
 
-    public GameObject[] enemyArray; //array of enemy game objects, filled in setUnits based on tag
-    public GameObject[] playerArray; //array of player game objects
 
     private Unit enemy, player; //used to fill player and enemy lists. Could be one var, made it two for clarity
 
-    private List<Unit> enemies, players; //fill this with unit scripts for modification
+    private List<Unit> enemyUnits, playerUnits; //fill this with unit scripts for modification
+    public List<GameObject> enemies, players;
 
+    //copied from EnemyManager.cs
+    private int spriteSize; //used to spawn each sprite in the correct location proportional to how many there are and the size of the sprite
+
+    public string[] enemyNames;
+
+    private GameObject enemyGO;
+    public GameObject enemyPrefab;
+    public Unit enemyUnit;
+
+    public Transform[] spawnPoints; //holds locations of where to spawn the enemies
+
+    private Sprite sprite;
+    private Transform spawnLoc;
     // Use this for initialization
     void Start ()
     {
+        enemyUnits = new List<Unit>();
+        enemyPrefab = (GameObject)Resources.Load("prefabs/enemy1");
+        enemyUnit = GetComponent<Unit>();
+        sprite = (Sprite)Resources.Load("Assets/sprites/enemy1"); //load the test sprite in
+        Spawn();
+
         SetUnits();
-        Debug.Log("SIZE OF ENEMIES AND PLAYERS AFTER SETUNITS: " + enemyArray.Length + " " + playerArray.Length);
+        Debug.Log("SIZE OF ENEMIES AND PLAYERS AFTER SETUNITS: " + enemyUnits.Count + " " + playerUnits.Count);
 
         //I don't like how this is working right now.
         //essentially, start a coroutine for each unit
         //however, this means that every enemy is going to have to wait for every player to start
         //even if it's not even noticeable it feels weird.
-        for (int i = 0; i < playerArray.Length; i++)
+        for (int i = 0; i < playerUnits.Count; i++)
         {
-            atkCoroutine = Attack(players[i]);
+            atkCoroutine = Attack(playerUnits[i]);
             StartCoroutine(atkCoroutine);
         } //end for
 
-        for (int i = 0; i < enemyArray.Length; i++)
+        for (int i = 0; i < enemyUnits.Count; i++)
         {
-            atkCoroutine = Attack(enemies[i]);
+            atkCoroutine = Attack(enemyUnits[i]);
             StartCoroutine(atkCoroutine);
         } //end for
     }
@@ -77,47 +95,47 @@ public class BattleManager : MonoBehaviour {
             //change the target/some other parameters based on what kind of unit this is
             if (attacking.gameObject.tag == "Player")
             {
-                atkChoice = RandGenerate(enemies.Count); //choose a random enemy
+                atkChoice = RandGenerate(enemyUnits.Count); //choose a random enemy
 
-                enemy = enemies[atkChoice];
+                enemy = enemyUnits[atkChoice];
 
                 //TODO remove gameObject from the array if it is going to be destroyed
                 //an obvious error is raised otherwise as you will probably try to access a gameobject which has been destroyed
                 if ((enemy.Health - attacking.weapons[attacking.weaponChoice].Damage) <= 0)
                 {
                     Debug.Log("enemy will be KILL");
-                    Debug.Log("result of remove: " + enemies.Remove(enemy));
-                    Debug.Log("new size of list: " + enemies.Count);
+                    Debug.Log("result of remove: " + enemyUnits.Remove(enemy));
+                    Debug.Log("new size of list: " + enemyUnits.Count);
                     enemy.Health -= attacking.weapons[attacking.weaponChoice].Damage;
                     keepGoing = false;
                 } //end if
 
                 enemy.Health -= attacking.weapons[attacking.weaponChoice].Damage;
 
-                Debug.Log("Name of damaged yout and health " + enemy.name_ + " " + enemy.Health + "\n");
+                Debug.Log("Name of damaged yout and health " + enemy.Name + " " + enemy.Health + "\n");
 
             } //end if
 
             else if (attacking.gameObject.tag == "Enemy")
             {
-                atkChoice = RandGenerate(players.Count); //choose a random enemy
+                atkChoice = RandGenerate(playerUnits.Count); //choose a random enemy
 
-                player = players[atkChoice];
+                player = playerUnits[atkChoice];
 
                 //TODO remove gameObject from the array if it is going to be destroyed
                 //an obvious error is raised otherwise as you will probably try to access a gameobject which has been destroyed
                 if ((player.Health - attacking.weapons[attacking.weaponChoice].Damage) <= 0)
                 {
                     Debug.Log("player will be KILL");
-                    Debug.Log("result of remove: " + players.Remove(enemy));
-                    Debug.Log("new size of list: " + players.Count);
+                    Debug.Log("result of remove: " + playerUnits.Remove(enemy));
+                    Debug.Log("new size of list: " + playerUnits.Count);
                     player.Health -= attacking.weapons[attacking.weaponChoice].Damage;
                     keepGoing = false;
                 } //end if
 
                 player.Health -= attacking.weapons[attacking.weaponChoice].Damage;
 
-                Debug.Log("Name of damaged yout and health " + player.name_ + " " + player.Health + "\n");
+                Debug.Log("Name of damaged yout and health " + player.Name + " " + player.Health + "\n");
 
             } //end else if
 
@@ -166,23 +184,23 @@ public class BattleManager : MonoBehaviour {
     {
         //set the corresponding enemy given the tag of the gameObject this script is attached to
         //enemies are placed into the scene using the enemyManager script
-        enemyArray = GameObject.FindGameObjectsWithTag("Enemy");
-        playerArray = GameObject.FindGameObjectsWithTag("Player");
+        players.AddRange(GameObject.FindGameObjectsWithTag("Player"));
 
-        Debug.Log("size of enemyArray and playerArray inside setUnits: " + enemyArray.Length + " " + playerArray.Length);
+        Debug.Log("size of enemyArray and playerArray inside setUnits: " + enemyUnits.Count + " " + playerUnits.Count);
 
         //for each game object found, fill the unit script list with that object's unit script
-        for (int i = 0; i < enemyArray.Length; i++)
+        /*
+        for (int i = 0; i < enemies.Count; i++)
         {
             enemy = enemyArray[i].GetComponent<Unit>();
             Debug.Log("enemy name in loop and i " + enemy.Name + " " + i);
-            enemies.Add(enemy);
         } //end for
+        */
 
-        for (int i = 0; i < playerArray.Length; i++)
+        for (int i = 0; i < players.Count; i++)
         {
-            player = playerArray[i].GetComponent<Unit>();
-            players.Add(player);
+            player = players[i].GetComponent<Unit>();
+            playerUnits.Add(player);
         } //end for
     } //end setEnemies
 
@@ -202,4 +220,95 @@ public class BattleManager : MonoBehaviour {
     {
         Debug.Log("Battle over! Congratz");
     } //end BattleOver
+
+    public void Spawn()
+    {
+        float prevLoc = 0.0f;
+
+        //TODO
+        //I'm trying to make it so that, depending on the number of enemies spawned and their sprite size, they start spawnin
+        //on the left side of the screen. I'm trying to use ScreenToWorldPoint to achieve this, but I believe that I'm doing 
+        //something wrong because it's not giving me the left side of the screen.
+        Vector3 stageDimensions = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
+        //Vector3 stageDimensions = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, 0));
+
+        for (int i = 0; i < enemyNames.Length; i++)
+        {
+            //use gameObject.transform to get the spawn location
+            //divide the space up by the amount of enemies total
+
+            spriteSize = (int)enemyPrefab.GetComponent<Renderer>().bounds.size.x;
+
+            spawnLoc = gameObject.transform;
+            Vector3 location = spawnLoc.position;
+
+            if (i == 0) //placeholder for now: shouldn't have enemy on far left of screen if there are only two enemies.
+            {
+                location.x = stageDimensions.x;
+            } //end if
+
+            else
+            {
+                location.x = prevLoc + spriteSize;
+            } //end else
+            /*
+            //if we're less than halfway through the list, subtract the x position by index * sizeof screen/enemyNames.length
+            //this will hopefully make it so that if four enemies should spawn, they'll be placed in consistent locations
+            if (i < (enemyNames.Length / 2))
+            {
+                //location.x -= ((i + 1) * spriteSize); //i + 1 because when i == 0, two sprites spawn on top of each other
+            } //end if
+
+            else if (i > (enemyNames.Length / 2))
+            {
+                location.x += ((i + 1 - (i / 2)) * spriteSize);
+            } //end else if
+            */
+
+            prevLoc = location.x; //place the following sprite next to this one, maybe skewed a bit if you want
+
+            Debug.Log("i: "+ i);
+            enemyGO = (GameObject)Instantiate(enemyPrefab, location, transform.rotation);
+            enemyGO.gameObject.tag = "Enemy";
+            enemyUnit = enemyGO.GetComponent<Unit>();
+            enemyUnit.Name = enemyNames[i];
+            Debug.Log(enemyUnit.Name);
+            enemyUnit.weaponNames = weaponFill(enemyUnit.Name); //set the weapons of the unit based on the enemy's name
+            enemyUnits.Add(enemyUnit);
+            enemies.Add(enemyGO);
+        } //end for
+    } //end spawn
+
+    //fill the weapons for the enemy
+    //pass in name as this is what the weapons will be filled based on
+    //return a list. Fill the unit script's weapon list with the result of this method
+    private List<string> weaponFill(string name)
+    {
+        List<string> weapNames = new List<string>();
+        if (name == "famous")
+        {
+            weapNames.Add("screwDriver");
+            weapNames.Add("steelPole");
+        } //end if
+
+        else if (name == "shamus")
+        {
+            weapNames.Add("powerDrill");
+            weapNames.Add("monkeyWrench");
+        } //end else if
+
+        else if (name == "real")
+        {
+            weapNames.Add("weldingTorch");
+            weapNames.Add("socketWrench");
+        } //end else if
+
+        else
+        {
+            weapNames.Add("fist");
+            weapNames.Add("opwerDrill");
+        } //end else
+
+        return weapNames;
+    } //end weaponFill
 } //end BattleManager

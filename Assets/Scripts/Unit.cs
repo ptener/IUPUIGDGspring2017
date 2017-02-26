@@ -12,19 +12,10 @@ public class Unit : MonoBehaviour
     //public variables are easier to manipulate on the fly so I'll start them like this and edit them later on as needed
     //also I'm not sure what types these will need so I'm starting them as ints (again, for ease of use)
 
-    public int health_;
-    public int level_;
+    private int health_;
     public int weaponChoice; //used to select a weapon from the weapon list
-
-    //string variables
-    //I'm not sure how to handle attacks yet but for now I'll store them as strings
-    //"if attack == 'BUSTER_BLADE69'" - set stats equal to those of that attack
-    //so in the damage function (or whatever function it ends up being) set a damage/hit rate/whatever else variable depending on
-    //the contents of this string.
-    //now that I think about it, it would probably be a better idea to just have each attack be an object property of the unit
-
-    public string name_;
-    public string enemy_name_; //holds name of enemy object to look for to attack
+    
+    private string name_;
 
     private Weapon weapon;
 
@@ -42,8 +33,6 @@ public class Unit : MonoBehaviour
     public Unit (string name)
     {
         health_ = 100;
-        level_ = 1;
-
         name_ = name;
     } //end overloaded constructor
 
