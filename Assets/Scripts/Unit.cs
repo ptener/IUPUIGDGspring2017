@@ -14,7 +14,7 @@ public class Unit : MonoBehaviour
 
     public int health_;
     public int level_;
-    public int xp_;
+    public int weaponChoice; //used to select a weapon from the weapon list
 
     //string variables
     //I'm not sure how to handle attacks yet but for now I'll store them as strings
@@ -26,28 +26,10 @@ public class Unit : MonoBehaviour
     public string name_;
     public string enemy_name_; //holds name of enemy object to look for to attack
 
-<<<<<<< Updated upstream
-    public List<string> attacks; //holds name of each attack, list because they could have more or less attacks
+    private Weapon weapon;
 
-    public List<Unit> enemies; //for testing
-
-    public GameObject toAttack; //unit to attack
-
-    IEnumerator atkCoroutine;
-
-    Unit enemyScript;// = toAttack.GetComponent<Unit>(); //holds the script of the enemy we're attacking
-=======
-    public int weaponChoice; //allows for choosing which weapon to use, for index of weapons. Integrate into UI later
-
-    public List<Weapon> weapons; //holds each weapon object assigned to this unit
-    public List<Unit> enemies; //fill with newly generated enemies
-    public List<string> weaponNames; //name of each weapon used for input in the inspector
-    public List<string> enemyNames;
-
-    public GameObject toAttack; //unit to attack
-    
-    public Weapon weapon; //fill weapons array
->>>>>>> Stashed changes
+    public List<Weapon> weapons;
+    public List<string> weaponNames;
 
     //default unit constructor
     //variables to initialize: health, level, maybe class type or however else we decide to design this
@@ -61,12 +43,6 @@ public class Unit : MonoBehaviour
     {
         health_ = 100;
         level_ = 1;
-        xp_ = 0;
-
-        attacks.Add("wompusBlast");
-        attacks.Add("butkusBash");
-        attacks.Add("punch");
-        attacks.Add("getsTheBacon");
 
         name_ = name;
     } //end overloaded constructor
@@ -74,40 +50,13 @@ public class Unit : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        Unit test = new Unit();
-        test.name_ = "ya boi max b";
-        enemies.Add(test);
-        test.name_ = "SLAW";
-        enemies.Add(test);
 
-        toAttack = GameObject.Find(enemy_name_);
-<<<<<<< Updated upstream
-        enemyScript = toAttack.GetComponent<Unit>();
-        Debug.Log("enemy name " + enemyScript.name_);
-        //enemyScript = toAttack.GetComponent<Unit>();
-        atkCoroutine = Attack(enemies);
-        StartCoroutine(atkCoroutine);
-=======
-        enemy = toAttack.GetComponent<Unit>();
-        Debug.Log("enemy name " + enemy.name_);
-        */
-        /*
-        enemyNames[0] = "1";
-        enemyNames[1] = "2";
-        enemyNames[2] = "3";
-        */
->>>>>>> Stashed changes
     } //end Start
 
     // Update is called once per frame
     void Update()
     {
-        /*
-        if (enemyScript.health_ <= 0)
-        {
-            StopCoroutine(atkCoroutine);
-        } //end if
-        */
+
     } //end Update
 
     //making the variable into a property so I can check if health <= 0 each time health is changed
@@ -121,13 +70,6 @@ public class Unit : MonoBehaviour
         set
         {
             health_ = value;
-            if (true)
-            {
-                //TODO game over
-<<<<<<< Updated upstream
-                System.Console.Write("big man is KILL");
-            } //end if
-=======
                 //create some other manager script that will be used when any units die
                 //when a player dies, call it and check if there are more than 0 players
                 //if not, launch game over screen
@@ -137,7 +79,6 @@ public class Unit : MonoBehaviour
                 //maybe these can be in your generic "battle manager" script that you'll need to build anyway
                 Debug.Log(name_ + " is KILL");
                 Destroy(gameObject);
-            } //end if
         } //end set
     } //end property
 
@@ -153,7 +94,6 @@ public class Unit : MonoBehaviour
         set
         {
             name_ = value;
-            Debug.Log("name of unit: " + name_);
 
             //test values yet to be modified
             //you get the idea though: change properties based on name
@@ -180,91 +120,8 @@ public class Unit : MonoBehaviour
                 enemy.weapons.Add(weapon);
             } //end if
             */
->>>>>>> Stashed changes
         } //end set
     } //end property
-<<<<<<< Updated upstream
-
-    //generate random number for attack and unit selection
-    //pass in size of the array for divying out divisions
-    //choose the number which is greater than each "division", it chose that number on the list
-    private static int RandGenerate(int size)
-    {
-        int optDivision, choice = 0, randNum;
-
-        randNum = Random.Range(0, 100);
-
-        optDivision = 100 / size;
-
-        //now that 100 has been divided by the amount of targets and the "divisions" are in place
-        //find out which division the random number fell in range of, the person we're attacking
-        //break loop when they're identified
-        for (int i = 0; i < size; i++)
-        {
-            if (randNum < (optDivision * i))
-            {
-                choice = i;
-                break;
-            } //end if
-        } //end for
-
-        return choice;
-    } //end RandGenerate
-
-    //select a random enemy
-    //choose random attack (chances could be modified by stats) and swing
-    //subtract health from enemy attacked
-    private IEnumerator Attack(List<Unit> targetOptions)
-    {
-        Debug.Log("Attacking!");
-        Debug.Log("Health of enemy: " + enemyScript.health_);
-        Debug.Log("Size of attacks " + attacks.Count);
-        //Random atkGen = new UnityEngine.Random();
-
-        Unit target;
-
-        string attackName = "";
-
-        int targetChoice, atkChoice, damage = 0;
-
-        while (enemyScript.health_ > 0)
-        {
-            //targetChoice = RandGenerate(targetOptions.Count);
-            atkChoice = RandGenerate(attacks.Count);
-            attackName = attacks[atkChoice];
-
-            //assign values depending on the name
-            if (attackName == "wompusBlast")
-            {
-                damage = 1;
-            } //end if
-
-            else if (attackName == "butkusBash")
-            {
-                damage = 2;
-            } //end else if
-
-            else if (attackName == "punch")
-            {
-                damage = 3;
-            } //end else if
-
-            else if (attackName == "getsTheBacon")
-            {
-                damage = 4;
-            } //end else if
-
-            //target = targetOptions[targetChoice];
-            enemyScript.health_ -= damage;
-
-            Debug.Log("Name of damaged yout and health " + enemyScript.name_ + " " + enemyScript.health_ + "\n");
-
-            yield return new WaitForSeconds(2);
-        } //end while
-
-        Debug.Log("RIPE " + enemyScript.name_);
-    } //end Attack
-=======
     
     //set the weapons in the weapons list using the "weaponNames" string list
     private void setWeapons()
@@ -281,5 +138,4 @@ public class Unit : MonoBehaviour
             weapons.Add(weapon);
         } //end for
     } //end setWeapons
->>>>>>> Stashed changes
 } //end Unit

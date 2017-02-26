@@ -179,8 +179,6 @@ MonoBehaviour:
   - getsTheBacon
   enemies: []
   toAttack: {fileID: 0}
-<<<<<<< Updated upstream
-=======
   weapon: {fileID: 0}
 --- !u!1 &338379028
 GameObject:
@@ -312,7 +310,6 @@ MonoBehaviour:
   enemyNames: []
   toAttack: {fileID: 0}
   weapon: {fileID: 0}
->>>>>>> Stashed changes
 --- !u!1 &556141751
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,10 +338,6 @@ Transform:
   - {fileID: 881626374}
   - {fileID: 428581822}
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &700805950
@@ -503,7 +496,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyArray: []
   playerArray: []
->>>>>>> Stashed changes
 --- !u!1 &881626372
 GameObject:
   m_ObjectHideFlags: 0
@@ -592,8 +584,6 @@ MonoBehaviour:
   - getsTheBacon
   enemies: []
   toAttack: {fileID: 0}
-<<<<<<< Updated upstream
-=======
   weapon: {fileID: 0}
 --- !u!114 &881626376
 MonoBehaviour:
@@ -680,7 +670,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes
 --- !u!1 &1079097833
 GameObject:
   m_ObjectHideFlags: 0
@@ -744,8 +733,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
-<<<<<<< Updated upstream
-=======
 --- !u!1 &1166605846
 GameObject:
   m_ObjectHideFlags: 0
@@ -952,7 +939,6 @@ MonoBehaviour:
   enemyNames: []
   toAttack: {fileID: 0}
   weapon: {fileID: 0}
->>>>>>> Stashed changes
 --- !u!1 &1783645899
 GameObject:
   m_ObjectHideFlags: 0
