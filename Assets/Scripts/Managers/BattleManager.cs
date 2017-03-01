@@ -104,6 +104,18 @@ public class BattleManager : MonoBehaviour {
             //change the target/some other parameters based on what kind of unit this is
             if (attacking.gameObject.tag == "Player")
             {
+                if (playerUnits.Count <= 0)
+                {
+                    GameOver();
+                    keepGoing = false;
+                } //end if
+
+                if (enemyUnits.Count <= 0)
+                {
+                    BattleOver();
+                    keepGoing = false;
+                } //end else if
+
                 atkChoice = RandGenerate(enemyUnits.Count); //choose a random enemy
 
                 enemy = enemyUnits[atkChoice];
@@ -113,14 +125,15 @@ public class BattleManager : MonoBehaviour {
                 if ((enemy.Health - attacking.weapons[attacking.weaponChoice].Damage) <= 0)
                 {
                     Debug.Log("enemy will be KILL");
+                    Debug.Log("size of enemyUnits before remove: " + enemyUnits.Count);
                     Debug.Log("result of remove: " + enemyUnits.Remove(enemy));
-                    Debug.Log("new size of list: " + enemyUnits.Count);
+                    Debug.Log("new size of enemyUnits: " + enemyUnits.Count);
                     enemy.Health -= attacking.weapons[attacking.weaponChoice].Damage;
-                    keepGoing = false;
                 } //end if
 
                 enemy.Health -= attacking.weapons[attacking.weaponChoice].Damage;
 
+                
                 Debug.Log("Name of damaged yout and health " + enemy.Name + " " + enemy.Health + "\n");
 
             } //end if
@@ -136,31 +149,24 @@ public class BattleManager : MonoBehaviour {
                 if ((player.Health - attacking.weapons[attacking.weaponChoice].Damage) <= 0)
                 {
                     Debug.Log("player will be KILL");
-                    Debug.Log("result of remove: " + playerUnits.Remove(enemy));
-                    Debug.Log("new size of list: " + playerUnits.Count);
+                    Debug.Log("size of playerUnits before remove: " + playerUnits.Count);
+                    Debug.Log("result of remove: " + playerUnits.Remove(player));
+                    Debug.Log("new size of playerUnits: " + playerUnits.Count);
                     player.Health -= attacking.weapons[attacking.weaponChoice].Damage;
-                    keepGoing = false;
                 } //end if
 
                 player.Health -= attacking.weapons[attacking.weaponChoice].Damage;
-
+                
                 Debug.Log("Name of damaged yout and health " + player.Name + " " + player.Health + "\n");
 
             } //end else if
 
+            Debug.Log("name, speed, player, and enemy counts: " + attacking.Name + " " + attacking.weapons[attacking.weaponChoice].Speed +
+                " " + playerUnits.Count + " " + enemyUnits.Count);
+
             //attack every few seconds based on the speed of the weapon
             yield return new WaitForSeconds(attacking.weapons[attacking.weaponChoice].Speed);
         } //end while
-
-        if (players.Count <= 0)
-        {
-            GameOver();
-        } //end if
-
-        else if (enemies.Count <= 0)
-        {
-            BattleOver();
-        } //end else if
     } //end Attack
 
     //generate random number for attack and unit selection
