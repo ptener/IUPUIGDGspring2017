@@ -15,7 +15,7 @@ public class Unit : MonoBehaviour
     private int health_;
     public int weaponChoice; //used to select a weapon from the weapon list
     
-    private string name_;
+    public string name_;
 
     private Weapon weapon;
 
@@ -71,6 +71,8 @@ public class Unit : MonoBehaviour
         } //end set
     } //end property
 
+    //I realize it's weird to add a getter and setter for a variable which is public anyway
+    //but I'm just doing this so it's easy to change in the inspector, for now
     //name property
     //making this a property so that weapons and other properties of the unit can be set automatically when the name is set
     public string Name
@@ -113,16 +115,19 @@ public class Unit : MonoBehaviour
     } //end property
     
     //set the weapons in the weapons list using the "weaponNames" string list
-    private void setWeapons()
+    public void setWeapons()
     {
         //if no one has set any weapons, at least give poor dude their fists to work with
         if (weaponNames.Count == 0)
         {
-            weaponNames.Add("fist");
+            Weapon weapon = gameObject.GetComponent<Weapon>();
+            weapon.Name = "fist";
+            weapons.Add(weapon);
         } //end if
 
         for (int i = 0; i < weaponNames.Count; i++)
         {
+            Weapon weapon = gameObject.GetComponent<Weapon>();
             weapon.Name = weaponNames[i];
             weapons.Add(weapon);
         } //end for

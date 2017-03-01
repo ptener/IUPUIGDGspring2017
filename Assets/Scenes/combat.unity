@@ -211,8 +211,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponChoice: 0
+  name_: B.O.S.S. W.E.E.B.
   weapons: []
-  weaponNames: []
+  weaponNames:
+  - weldingTorch
 --- !u!1 &338379028
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,8 +332,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponChoice: 0
+  name_: OOOUUUU
   weapons: []
-  weaponNames: []
+  weaponNames:
+  - monkeyWrench
 --- !u!1 &437527793
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,8 +425,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponChoice: 0
+  name_: THA GOD
   weapons: []
-  weaponNames: []
+  weaponNames:
+  - steelPole
 --- !u!1 &446640151
 GameObject:
   m_ObjectHideFlags: 0
@@ -452,8 +458,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70bfcae85c3c0f6498b8e23b79b27c04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyArray: []
-  playerArray: []
+  enemies: []
+  players: []
   enemyNames:
   - famous
   - shamus
@@ -485,6 +491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponChoice: 0
+  name_: 
   weapons: []
   weaponNames: []
 --- !u!4 &446640156

@@ -21,7 +21,6 @@ public class BattleManager : MonoBehaviour {
 
     private IEnumerator atkCoroutine; //used by Attack()
 
-
     private Unit enemy, player; //used to fill player and enemy lists. Could be one var, made it two for clarity
 
     private List<Unit> enemyUnits, playerUnits; //fill this with unit scripts for modification
@@ -31,6 +30,7 @@ public class BattleManager : MonoBehaviour {
     private int spriteSize; //used to spawn each sprite in the correct location proportional to how many there are and the size of the sprite
 
     public string[] enemyNames;
+    private GameObject[] playerGOs;
 
     private GameObject enemyGO;
     public GameObject enemyPrefab;
@@ -44,6 +44,7 @@ public class BattleManager : MonoBehaviour {
     void Start ()
     {
         enemyUnits = new List<Unit>();
+        playerUnits = new List<Unit>();
         enemyPrefab = (GameObject)Resources.Load("prefabs/enemy1");
         enemyUnit = GetComponent<Unit>();
         sprite = (Sprite)Resources.Load("Assets/sprites/enemy1"); //load the test sprite in
@@ -86,6 +87,14 @@ public class BattleManager : MonoBehaviour {
         int atkChoice = 0;
 
         bool keepGoing = true;
+
+        //need to check that the choice of the weapon is within range
+        //if not, just set the value to zero
+        if (attacking.weaponChoice > attacking.weapons.Count)
+        {
+            Debug.Log("weaponChoice > weaponsCount: " + attacking.weaponChoice + " > " + attacking.weapons.Count);
+            attacking.weaponChoice = 0;
+        } //end if
 
         //attack till you die or they all die
         //if other states can be chosen by the player, like "defensive" stance or whatever
@@ -185,9 +194,7 @@ public class BattleManager : MonoBehaviour {
         //set the corresponding enemy given the tag of the gameObject this script is attached to
         //enemies are placed into the scene using the enemyManager script
         players.AddRange(GameObject.FindGameObjectsWithTag("Player"));
-
-        Debug.Log("size of enemyArray and playerArray inside setUnits: " + enemyUnits.Count + " " + playerUnits.Count);
-
+        
         //for each game object found, fill the unit script list with that object's unit script
         /*
         for (int i = 0; i < enemies.Count; i++)
@@ -200,6 +207,7 @@ public class BattleManager : MonoBehaviour {
         for (int i = 0; i < players.Count; i++)
         {
             player = players[i].GetComponent<Unit>();
+            player.setWeapons();
             playerUnits.Add(player);
         } //end for
     } //end setEnemies
@@ -266,14 +274,14 @@ public class BattleManager : MonoBehaviour {
             */
 
             prevLoc = location.x; //place the following sprite next to this one, maybe skewed a bit if you want
-
-            Debug.Log("i: "+ i);
+            
             enemyGO = (GameObject)Instantiate(enemyPrefab, location, transform.rotation);
-            enemyGO.gameObject.tag = "Enemy";
+            enemyGO.tag = "Enemy";
             enemyUnit = enemyGO.GetComponent<Unit>();
             enemyUnit.Name = enemyNames[i];
             Debug.Log(enemyUnit.Name);
             enemyUnit.weaponNames = weaponFill(enemyUnit.Name); //set the weapons of the unit based on the enemy's name
+            enemyUnit.setWeapons();
             enemyUnits.Add(enemyUnit);
             enemies.Add(enemyGO);
         } //end for

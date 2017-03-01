@@ -22,7 +22,12 @@ public class Weapon : MonoBehaviour
 		
 	} //end update
 
-    Weapon(string name)
+    public Weapon()
+    {
+
+    } //end constructor
+
+    public Weapon(string name)
     {
         name_ = name;
         setStats();
