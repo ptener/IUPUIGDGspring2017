@@ -101,21 +101,21 @@ public class BattleManager : MonoBehaviour {
         //just perform this while the attack state is active
         while (keepGoing)
         {
-            //change the target/some other parameters based on what kind of unit this is
-            if (attacking.gameObject.tag == "Player")
+            if (playerUnits.Count <= 0)
             {
-                if (playerUnits.Count <= 0)
-                {
-                    GameOver();
-                    keepGoing = false;
-                } //end if
+                GameOver();
+                keepGoing = false;
+            } //end if
 
-                if (enemyUnits.Count <= 0)
-                {
-                    BattleOver();
-                    keepGoing = false;
-                } //end else if
+            else if (enemyUnits.Count <= 0)
+            {
+                BattleOver();
+                keepGoing = false;
+            } //end if
 
+            //change the target/some other parameters based on what kind of unit this is
+            else if (attacking.gameObject.tag == "Player")
+            {
                 atkChoice = RandGenerate(enemyUnits.Count); //choose a random enemy
 
                 enemy = enemyUnits[atkChoice];
@@ -158,7 +158,6 @@ public class BattleManager : MonoBehaviour {
                 player.Health -= attacking.weapons[attacking.weaponChoice].Damage;
                 
                 Debug.Log("Name of damaged yout and health " + player.Name + " " + player.Health + "\n");
-
             } //end else if
 
             Debug.Log("name, speed, player, and enemy counts: " + attacking.Name + " " + attacking.weapons[attacking.weaponChoice].Speed +
