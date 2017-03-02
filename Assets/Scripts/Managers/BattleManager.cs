@@ -17,7 +17,24 @@ using UnityEngine;
  * -check for endGame first just in case the player and the enemy loses at the same time 
  */
 
-public class BattleManager : MonoBehaviour {
+public class BattleManager : MonoBehaviour
+{
+    private bool attacking = true; //possibly change to an int if more strategies than "attacking" and "defending" will be used
+
+    //copied from EnemyManager.cs
+    private int spriteSize; //used to spawn each sprite in the correct location proportional to how many there are and the size of the sprite
+
+    public string[] enemyNames;
+
+    private GameObject[] playerGOs;
+    private GameObject enemyGO;
+    public GameObject enemyPrefab;
+    public Unit enemyUnit;
+
+    private Transform spawnLoc;
+    public Transform[] spawnPoints; //holds locations of where to spawn the enemies
+
+    private Sprite sprite;
 
     private IEnumerator atkCoroutine; //used by Attack()
 
@@ -26,20 +43,6 @@ public class BattleManager : MonoBehaviour {
     private List<Unit> enemyUnits, playerUnits; //fill this with unit scripts for modification
     public List<GameObject> enemies, players;
 
-    //copied from EnemyManager.cs
-    private int spriteSize; //used to spawn each sprite in the correct location proportional to how many there are and the size of the sprite
-
-    public string[] enemyNames;
-    private GameObject[] playerGOs;
-
-    private GameObject enemyGO;
-    public GameObject enemyPrefab;
-    public Unit enemyUnit;
-
-    public Transform[] spawnPoints; //holds locations of where to spawn the enemies
-
-    private Sprite sprite;
-    private Transform spawnLoc;
     // Use this for initialization
     void Start ()
     {
@@ -68,12 +71,26 @@ public class BattleManager : MonoBehaviour {
             atkCoroutine = Attack(enemyUnits[i]);
             StartCoroutine(atkCoroutine);
         } //end for
-    }
+
+
+    } //end Start
 	
 	// Update is called once per frame
 	void Update () 
     {
-		
+        string keyPressed = Input.inputString;
+        int numChoice = 0;
+
+        //check if the user inputted a number within range this frame
+        //if so, set the unit in position choice - 1 to a different strategy
+        //if attacking, defend, and if defending, attack 
+        if (int.TryParse(keyPressed, out numChoice))
+        {
+            if (numChoice <= playerUnits.Count && numChoice > 0)
+            {
+                playerUnits[numChoice - 1].attacking_ = !playerUnits[numChoice - 1].attacking_;
+            } //end if
+        } //end if
 	} //end Update
 
     //select a random enemy
@@ -101,6 +118,8 @@ public class BattleManager : MonoBehaviour {
         //just perform this while the attack state is active
         while (keepGoing)
         {
+            Debug.Log("Speed of weapon: " + attacking.weapons[attacking.weaponChoice].Speed);
+
             if (playerUnits.Count <= 0)
             {
                 GameOver();
@@ -116,6 +135,8 @@ public class BattleManager : MonoBehaviour {
             //change the target/some other parameters based on what kind of unit this is
             else if (attacking.gameObject.tag == "Player")
             {
+
+
                 atkChoice = RandGenerate(enemyUnits.Count); //choose a random enemy
 
                 enemy = enemyUnits[atkChoice];
@@ -131,7 +152,7 @@ public class BattleManager : MonoBehaviour {
                     enemy.Health -= attacking.weapons[attacking.weaponChoice].Damage;
                 } //end if
 
-                enemy.Health -= attacking.weapons[attacking.weaponChoice].Damage;
+                enemy.Health -= (attacking.defense_ + attacking.weapons[attacking.weaponChoice].Damage);
 
                 
                 Debug.Log("Name of damaged yout and health " + enemy.Name + " " + enemy.Health + "\n");

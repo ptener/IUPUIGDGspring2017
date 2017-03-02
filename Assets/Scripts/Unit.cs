@@ -11,7 +11,9 @@ public class Unit : MonoBehaviour
     //I'm making these public only for the momenet
     //public variables are easier to manipulate on the fly so I'll start them like this and edit them later on as needed
     //also I'm not sure what types these will need so I'm starting them as ints (again, for ease of use)
+    public bool attacking_ = true; //set whether the unit is attacking or defending
 
+    public int defense_;
     private int health_;
     public int weaponChoice; //used to select a weapon from the weapon list
     
@@ -34,6 +36,7 @@ public class Unit : MonoBehaviour
     {
         health_ = 100;
         name_ = name;
+        defense_ = 0;
     } //end overloaded constructor
 
     // Use this for initialization
