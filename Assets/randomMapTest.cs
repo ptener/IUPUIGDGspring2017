@@ -10,11 +10,9 @@ public class randomMapTest : MonoBehaviour
 	public int lengthofCorridors = 5;
 	public int cornerPiece = 0;
 	public LayerMask wall;
-	public GameObject cube;
 	// Use this for initialization
 	void Start () {
 
-		cube = GameObject.FindGameObjectWithTag ("test");
 		Transform straightHallway = transform.GetChild (0);
 		Transform leftHallway = transform.GetChild (1);
 		Transform Corner1 = transform.GetChild (2);
@@ -180,7 +178,6 @@ public class randomMapTest : MonoBehaviour
 			platform = transform.GetChild (transform.childCount - 1);
 
 			sizeofCurrentPlane = room1Plane.GetComponent<Renderer> ().bounds.size;
-			temp = Instantiate (cube.transform, new Vector3 (platform.transform.position.x, platform.transform.position.y, platform.transform.position.z), Quaternion.identity);
 
 			Debug.Log(platform.position);
 			Debug.Log(platform.GetComponent<Renderer> ().bounds.size.x / 2f);

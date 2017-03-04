@@ -125,7 +125,6 @@ MonoBehaviour:
   wall:
     serializedVersion: 2
     m_Bits: 0
-  cube: {fileID: 0}
 --- !u!114 &19069301
 MonoBehaviour:
   m_ObjectHideFlags: 0
