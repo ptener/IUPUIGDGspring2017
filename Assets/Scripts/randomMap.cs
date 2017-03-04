@@ -21,6 +21,9 @@ public class randomMap : MonoBehaviour
 		Transform Corner2 = transform.GetChild (3);
 		Transform Corner3 = transform.GetChild (4);
 		Transform Corner4 = transform.GetChild (5);
+		Transform Room1 = transform.GetChild(6);
+		Transform room1Plane = transform.GetChild(6).GetChild(0).GetChild(0);
+
 		Vector3 vectordirection = transform.TransformDirection(new Vector3(1,0,0));
 		Transform[] currentHallway = { straightHallway, leftHallway, Corner1, Corner2 , Corner3, Corner4};
 		string direction = "vert+";
@@ -38,7 +41,7 @@ public class randomMap : MonoBehaviour
 		Transform platform = transform;
 		Transform platformNode = transform;
 
-		for (int i = 0; i < 100; i++) {
+		for (int i = 0; i < 1; i++) {
 			for (int j = 0; j < randomSize - 1; j++) {
 				if (j == 0 && i == 0)
 					platform = currentHallway [hallwayIndex];
@@ -56,19 +59,17 @@ public class randomMap : MonoBehaviour
 
 					Debug.Log("There is something in front of the object!");
 				}
-
-				
-				platformNode = platform.transform.GetChild (1);
-				sizeofCurrentPlane = platform.transform.GetChild (0).transform.GetChild (0).GetComponent<Renderer> ().bounds.size;
+					
+				sizeofCurrentPlane = platform.transform.GetChild (0).GetComponent<Renderer> ().bounds.size;
 
 				if (direction == "vert+")
 					temp = Instantiate (currentHallway [hallwayIndex], new Vector3 (platform.position.x + sizeofCurrentPlane.x, platform.position.y, platform.position.z), Quaternion.identity);
 				else if (direction == "vert-")
 					temp = Instantiate (currentHallway [hallwayIndex], new Vector3 (platform.position.x - sizeofCurrentPlane.x, platform.position.y, platform.position.z), Quaternion.identity);
 				else if (direction == "hort-")
-					temp = Instantiate (currentHallway [hallwayIndex], new Vector3 (platform.position.x, platform.position.y, platform.position.z + sizeofCurrentPlane.z), Quaternion.identity);
+					temp = Instantiate (currentHallway [hallwayIndex], new Vector3 (platform.position.x, platform.position.y, platform.position.z + sizeofCurrentPlane.z), new Quaternion(0,90,0,0));
 				else if (direction == "hort+")
-					temp = Instantiate (currentHallway [hallwayIndex], new Vector3 (platform.position.x, platform.position.y, platform.position.z - sizeofCurrentPlane.z), Quaternion.identity);
+					temp = Instantiate (currentHallway [hallwayIndex], new Vector3 (platform.position.x, platform.position.y, platform.position.z - sizeofCurrentPlane.z), new Quaternion(0,90,0,0));
 				temp.transform.SetParent (this.transform);
 			}
 
@@ -169,6 +170,24 @@ public class randomMap : MonoBehaviour
 
 			temp.transform.SetParent (this.transform);
 		}
+
+		platform = transform.GetChild (transform.childCount - 1);
+
+		sizeofCurrentPlane = room1Plane.GetComponent<Renderer> ().bounds.size;
+		temp = Instantiate (cube.transform, new Vector3 (platform.transform.position.x, platform.transform.position.y, platform.transform.position.z), Quaternion.identity);
+
+		Debug.Log(platform.position);
+		if (direction == "vert+")
+			temp = Instantiate (Room1, new Vector3 (platform.position.x + sizeofCurrentPlane.x, platform.position.y, platform.position.z), Quaternion.identity);
+		else if (direction == "vert-")
+			temp = Instantiate (Room1, new Vector3 (platform.position.x - sizeofCurrentPlane.x, platform.position.y, platform.position.z), Quaternion.identity);
+		else if (direction == "hort-")
+			temp = Instantiate (Room1, new Vector3 (platform.position.x, platform.position.y, platform.position.z + sizeofCurrentPlane.z), Quaternion.identity);
+		else if (direction == "hort+")
+			temp = Instantiate (Room1, new Vector3 (platform.position.x, platform.position.y, platform.position.z - sizeofCurrentPlane.z), Quaternion.identity);
+
+		//temp.transform.SetParent (this.transform);
+
 	}
 	
 	// Update is called once per frame
