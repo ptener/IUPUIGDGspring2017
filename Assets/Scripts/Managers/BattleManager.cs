@@ -86,9 +86,9 @@ public class BattleManager : MonoBehaviour
         //if attacking, defend, and if defending, attack 
         if (int.TryParse(keyPressed, out numChoice))
         {
-            if (numChoice <= playerUnits.Count && numChoice > 0)
+            if (numChoice < playerUnits.Count && numChoice > 0)
             {
-                playerUnits[numChoice - 1].attacking_ = !playerUnits[numChoice - 1].attacking_;
+                playerUnits[numChoice - 1].Defending = !playerUnits[numChoice - 1].Defending;
             } //end if
         } //end if
 	} //end Update
@@ -102,6 +102,7 @@ public class BattleManager : MonoBehaviour
         Debug.Log("Attacking!");
 
         int atkChoice = 0;
+        int damageTaken = 0; //holds the damage the attacked will take
 
         bool keepGoing = true;
 
@@ -132,54 +133,74 @@ public class BattleManager : MonoBehaviour
                 keepGoing = false;
             } //end if
 
-            //change the target/some other parameters based on what kind of unit this is
-            else if (attacking.gameObject.tag == "Player")
+            if (!attacking.Defending) //can't attack if you're defending
             {
-
-
-                atkChoice = RandGenerate(enemyUnits.Count); //choose a random enemy
-
-                enemy = enemyUnits[atkChoice];
-
-                //TODO remove gameObject from the array if it is going to be destroyed
-                //an obvious error is raised otherwise as you will probably try to access a gameobject which has been destroyed
-                if ((enemy.Health - attacking.weapons[attacking.weaponChoice].Damage) <= 0)
+                //change the target/some other parameters based on what kind of unit this is
+                if (attacking.gameObject.tag == "Player")
                 {
-                    Debug.Log("enemy will be KILL");
-                    Debug.Log("size of enemyUnits before remove: " + enemyUnits.Count);
-                    Debug.Log("result of remove: " + enemyUnits.Remove(enemy));
-                    Debug.Log("new size of enemyUnits: " + enemyUnits.Count);
-                    enemy.Health -= attacking.weapons[attacking.weaponChoice].Damage;
+                    //if the enemy is defending, divide the damage taken by two
+                    //do this for if the enemy is attacking, as well
+                    if (enemy.Defending)
+                    {
+                        damageTaken = (attacking.weapons[attacking.weaponChoice].Damage / 2);
+                    } //end if
+
+                    else
+                    {
+                        damageTaken = attacking.weapons[attacking.weaponChoice].Damage;
+                    } //end else
+
+                    atkChoice = RandGenerate(enemyUnits.Count); //choose a random enemy
+
+                    enemy = enemyUnits[atkChoice];
+
+                    //TODO remove gameObject from the array if it is going to be destroyed
+                    //an obvious error is raised otherwise as you will probably try to access a gameobject which has been destroyed
+                    if (enemy.Health - damageTaken <= 0)
+                    {
+                        Debug.Log("enemy will be KILL");
+                        Debug.Log("size of enemyUnits before remove: " + enemyUnits.Count);
+                        Debug.Log("result of remove: " + enemyUnits.Remove(enemy));
+                        Debug.Log("new size of enemyUnits: " + enemyUnits.Count);
+                        enemy.Health -= attacking.weapons[attacking.weaponChoice].Damage;
+                    } //end if
+
+                    Debug.Log("Name of damaged yout and health " + enemy.Name + " " + enemy.Health + "\n");
+
                 } //end if
 
-                enemy.Health -= (attacking.defense_ + attacking.weapons[attacking.weaponChoice].Damage);
+                else if (attacking.gameObject.tag == "Enemy")
+                {
+                    atkChoice = RandGenerate(playerUnits.Count); //choose a random enemy
 
-                
-                Debug.Log("Name of damaged yout and health " + enemy.Name + " " + enemy.Health + "\n");
+                    player = playerUnits[atkChoice];
 
+                    if (player.Defending)
+                    {
+                        damageTaken = (attacking.weapons[attacking.weaponChoice].Damage / 2);
+                    } //end if
+
+                    else
+                    {
+                        damageTaken = attacking.weapons[attacking.weaponChoice].Damage;
+                    } //end else
+
+                    //TODO remove gameObject from the array if it is going to be destroyed
+                    //an obvious error is raised otherwise as you will probably try to access a gameobject which has been destroyed
+                    if ((player.Health - damageTaken) <= 0)
+                    {
+                        Debug.Log("player will be KILL");
+                        Debug.Log("size of playerUnits before remove: " + playerUnits.Count);
+                        Debug.Log("result of remove: " + playerUnits.Remove(player));
+                        Debug.Log("new size of playerUnits: " + playerUnits.Count);
+                        player.Health -= attacking.weapons[attacking.weaponChoice].Damage;
+                    } //end if
+
+                    player.Health -= damageTaken;
+
+                    Debug.Log("Name of damaged yout and health " + player.Name + " " + player.Health + "\n");
+                } //end else if
             } //end if
-
-            else if (attacking.gameObject.tag == "Enemy")
-            {
-                atkChoice = RandGenerate(playerUnits.Count); //choose a random enemy
-
-                player = playerUnits[atkChoice];
-
-                //TODO remove gameObject from the array if it is going to be destroyed
-                //an obvious error is raised otherwise as you will probably try to access a gameobject which has been destroyed
-                if ((player.Health - attacking.weapons[attacking.weaponChoice].Damage) <= 0)
-                {
-                    Debug.Log("player will be KILL");
-                    Debug.Log("size of playerUnits before remove: " + playerUnits.Count);
-                    Debug.Log("result of remove: " + playerUnits.Remove(player));
-                    Debug.Log("new size of playerUnits: " + playerUnits.Count);
-                    player.Health -= attacking.weapons[attacking.weaponChoice].Damage;
-                } //end if
-
-                player.Health -= attacking.weapons[attacking.weaponChoice].Damage;
-                
-                Debug.Log("Name of damaged yout and health " + player.Name + " " + player.Health + "\n");
-            } //end else if
 
             Debug.Log("name, speed, player, and enemy counts: " + attacking.Name + " " + attacking.weapons[attacking.weaponChoice].Speed +
                 " " + playerUnits.Count + " " + enemyUnits.Count);
