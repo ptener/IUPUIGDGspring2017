@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class randomMap : MonoBehaviour 
 {
-
-	private GameObject[] nodes;
 	public int numberofRooms = 5;
 	public int lengthofCorridors = 5;
 	public int cornerPiece = 0;
@@ -21,6 +19,9 @@ public class randomMap : MonoBehaviour
 		Transform Corner4 = transform.GetChild (5);
 		Transform Room1 = transform.GetChild(6);
 		Transform room1Plane = transform.GetChild(6);
+
+		roomScript temp2 = new roomScript();
+		roomScript[] rooms = {temp2, temp2, temp2};
 
 		Vector3 vectordirection = transform.TransformDirection(new Vector3(1,0,0));
 		Transform[] currentHallway = { straightHallway, leftHallway, Corner1, Corner2 , Corner3, Corner4};
@@ -197,7 +198,7 @@ public class randomMap : MonoBehaviour
 			temp.transform.SetParent (this.transform);
 		}
 			
-
+		Debug.Log (rooms[0].numOfPaths);
 	}
 
 	// Update is called once per frame
