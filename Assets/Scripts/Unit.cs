@@ -12,6 +12,7 @@ public class Unit : MonoBehaviour
     //public variables are easier to manipulate on the fly so I'll start them like this and edit them later on as needed
     //also I'm not sure what types these will need so I'm starting them as ints (again, for ease of use)
     private bool defending_ = false; //if this unit is defending, halve damage but don't let it attack
+    public bool alive_ = true;
 
     private int health_;
     public int weaponChoice; //used to select a weapon from the weapon list
@@ -66,15 +67,9 @@ public class Unit : MonoBehaviour
         set
         {
             health_ = value;
-                //create some other manager script that will be used when any units die
-                //when a player dies, call it and check if there are more than 0 players
-                //if not, launch game over screen
-                //
-                //if the enemy dies, check if there are more than 0 enemies
-                //if not, end the battle
-                //maybe these can be in your generic "battle manager" script that you'll need to build anyway
-                Debug.Log(name_ + " is KILL");
-                Destroy(gameObject);
+            Debug.Log(name_ + " is KILL");
+            alive_ = false;
+            Destroy(gameObject);
         } //end set
     } //end property
 

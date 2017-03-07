@@ -54,7 +54,6 @@ public class BattleManager : MonoBehaviour
         Spawn();
 
         SetUnits();
-        Debug.Log("SIZE OF ENEMIES AND PLAYERS AFTER SETUNITS: " + enemyUnits.Count + " " + playerUnits.Count);
 
         //I don't like how this is working right now.
         //essentially, start a coroutine for each unit
@@ -101,6 +100,8 @@ public class BattleManager : MonoBehaviour
 
         Debug.Log("Attacking!");
 
+        Debug.Log("Name of unit and health: " + attacking.Name + " " + attacking.Health);
+
         int atkChoice = 0;
         int damageTaken = 0; //holds the damage the attacked will take
 
@@ -117,27 +118,30 @@ public class BattleManager : MonoBehaviour
         //attack till you die or they all die
         //if other states can be chosen by the player, like "defensive" stance or whatever
         //just perform this while the attack state is active
-        while (keepGoing)
+        while (attacking.alive_)
         {
-            Debug.Log("Speed of weapon: " + attacking.weapons[attacking.weaponChoice].Speed);
-
             if (playerUnits.Count <= 0)
             {
                 GameOver();
-                keepGoing = false;
+                attacking.alive_ = false;
             } //end if
 
             else if (enemyUnits.Count <= 0)
             {
                 BattleOver();
-                keepGoing = false;
+                attacking.alive_ = false;
             } //end if
 
-            if (!attacking.Defending) //can't attack if you're defending
+            else if (!attacking.Defending) //can't attack if you're defending
             {
                 //change the target/some other parameters based on what kind of unit this is
                 if (attacking.gameObject.tag == "Player")
                 {
+                    atkChoice = Random.Range(0, enemyUnits.Count - 1);
+                    //atkChoice = RandGenerate(enemyUnits.Count); //choose a random enemy
+                    Debug.Log("enemyUnits.Count - 1 " + (enemyUnits.Count - 1));
+                    Debug.Log("atack choice for player: " + atkChoice);
+                    enemy = enemyUnits[atkChoice];
                     //if the enemy is defending, divide the damage taken by two
                     //do this for if the enemy is attacking, as well
                     if (enemy.Defending)
@@ -150,28 +154,31 @@ public class BattleManager : MonoBehaviour
                         damageTaken = attacking.weapons[attacking.weaponChoice].Damage;
                     } //end else
 
-                    atkChoice = RandGenerate(enemyUnits.Count); //choose a random enemy
-
-                    enemy = enemyUnits[atkChoice];
-
                     //TODO remove gameObject from the array if it is going to be destroyed
                     //an obvious error is raised otherwise as you will probably try to access a gameobject which has been destroyed
                     if (enemy.Health - damageTaken <= 0)
                     {
                         Debug.Log("enemy will be KILL");
-                        Debug.Log("size of enemyUnits before remove: " + enemyUnits.Count);
-                        Debug.Log("result of remove: " + enemyUnits.Remove(enemy));
-                        Debug.Log("new size of enemyUnits: " + enemyUnits.Count);
-                        enemy.Health -= attacking.weapons[attacking.weaponChoice].Damage;
+                        //enemy.Health -= attacking.weapons[attacking.weaponChoice].Damage;
+                        enemyUnits.Remove(enemy);
                     } //end if
 
+                    if (keepGoing == false)
+                    {
+                        Debug.Log("keepGoing is false so unit is KILL\n\n\n\n\n");
+                    }
+
                     Debug.Log("Name of damaged yout and health " + enemy.Name + " " + enemy.Health + "\n");
+                    enemy.Health -= damageTaken;
 
                 } //end if
 
                 else if (attacking.gameObject.tag == "Enemy")
                 {
-                    atkChoice = RandGenerate(playerUnits.Count); //choose a random enemy
+                    atkChoice = Random.Range(0, playerUnits.Count - 1);
+                    //atkChoice = RandGenerate(playerUnits.Count); //choose a random enemy
+                    Debug.Log("Atk choice for enemy: " + atkChoice);
+                    Debug.Log("playerUnits.Count - 1 " + (playerUnits.Count - 1));
 
                     player = playerUnits[atkChoice];
 
@@ -190,15 +197,12 @@ public class BattleManager : MonoBehaviour
                     if ((player.Health - damageTaken) <= 0)
                     {
                         Debug.Log("player will be KILL");
-                        Debug.Log("size of playerUnits before remove: " + playerUnits.Count);
-                        Debug.Log("result of remove: " + playerUnits.Remove(player));
-                        Debug.Log("new size of playerUnits: " + playerUnits.Count);
-                        player.Health -= attacking.weapons[attacking.weaponChoice].Damage;
+                        //player.Health -= attacking.weapons[attacking.weaponChoice].Damage;
+                        playerUnits.Remove(player);
                     } //end if
 
-                    player.Health -= damageTaken;
-
                     Debug.Log("Name of damaged yout and health " + player.Name + " " + player.Health + "\n");
+                    player.Health -= damageTaken;
                 } //end else if
             } //end if
 
@@ -232,7 +236,7 @@ public class BattleManager : MonoBehaviour
                 break;
             } //end if
         } //end for
-
+        Debug.Log(choice);
         return choice;
     } //end RandGenerate
 
