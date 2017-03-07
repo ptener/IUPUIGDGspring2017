@@ -22,7 +22,6 @@ public class randomMap : MonoBehaviour
 	Transform platform;
 	Vector3 sizeofCurrentPlane;
 	Transform Room1;
-	Transform room1Plane;
 	Transform temp;
 
 	// Use this for initialization
@@ -35,7 +34,6 @@ public class randomMap : MonoBehaviour
 		Transform Corner3 = transform.GetChild (4);
 		Transform Corner4 = transform.GetChild (5);
 		Room1 = transform.GetChild(6);
-		room1Plane = transform.GetChild(6);
 
 
 		//init rooms
@@ -57,21 +55,24 @@ public class randomMap : MonoBehaviour
 			totalRoomNodeOffsets += roomNodeOffsets;
 			roomNodeOffsets = 0;
 			int dividedCorner = numberofCorners / rooms [i].numOfPaths;
-			//for each path get a direction that hasn't been used yet
-			while (usedRoomDirections.Contains (direction)) {
-				Debug.Log("TEST");
-				getDirection ();
-			}
+
 			for (int l = 0; l < rooms [i].numOfPaths; l++) {
-				
+				//for each path get a direction that hasn't been used yet
+				while (usedRoomDirections.Contains (direction)) {
+					getDirection ();
+					if (usedRoomDirections.Count >= 4)
+						break;
+				}
 				for (int k = 0; k < dividedCorner; k++) {
 					randomSize = Random.Range (4, lengthofCorridors);
 					for (int j = 0; j < randomSize - 1; j++) {
 						
 						if (j == 0 && i == 0)
-							platform = currentHallway [hallwayIndex];
+							platform = Room1;
+						else if (i == 0)
+							platform = transform.GetChild (transform.childCount - 1);
 						else
-							platform = transform.GetChild (transform.childCount - 1 - totalRoomNodeOffsets);
+							platform = transform.GetChild(transform.childCount - 1 - totalRoomNodeOffsets);//GetChild (transform.childCount - 1 - totalRoomNodeOffsets);
 						
 						addPanel(currentHallway);
 					}
@@ -215,7 +216,7 @@ public class randomMap : MonoBehaviour
 		roomNodeOffsets = 0;
 		platform = transform.GetChild (transform.childCount - 1);
 
-		sizeofCurrentPlane = room1Plane.GetComponent<Renderer> ().bounds.size;
+		sizeofCurrentPlane = Room1.GetComponent<Renderer> ().bounds.size;
 
 		sizeofCurrentPlane = (new Vector3 (sizeofCurrentPlane.x + platform.GetComponent<Renderer> ().bounds.size.x / 2f + 5f, sizeofCurrentPlane.y, sizeofCurrentPlane.z + platform.GetComponent<Renderer> ().bounds.size.z / 2f + 5f));
 		if (direction == "vert+")
