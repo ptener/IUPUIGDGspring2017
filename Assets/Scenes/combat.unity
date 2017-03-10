@@ -210,9 +210,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7963dac96847f7f4e92a03d66b7c644f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attacking_: 1
-  defense_: 15
+  alive_: 1
+  focusing_: 0
+  pause_: 0
   weaponChoice: 0
+  atkChoice: 0
   name_: B.O.S.S. W.E.E.B.
   weapons: []
   weaponNames:
@@ -333,9 +335,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7963dac96847f7f4e92a03d66b7c644f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attacking_: 1
-  defense_: 10
+  alive_: 1
+  focusing_: 0
+  pause_: 0
   weaponChoice: 0
+  atkChoice: 0
   name_: OOOUUUU
   weapons: []
   weaponNames:
@@ -428,9 +432,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7963dac96847f7f4e92a03d66b7c644f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attacking_: 1
-  defense_: 5
+  alive_: 1
+  focusing_: 0
+  pause_: 0
   weaponChoice: 0
+  atkChoice: 0
   name_: THA GOD
   weapons: []
   weaponNames:
@@ -469,7 +475,8 @@ MonoBehaviour:
   - shamus
   - real
   - blameless
-  enemyPrefab: {fileID: 0}
+  enemyPrefab: {fileID: 1151630181646050, guid: 6fe444886d5dee3439755ab2290cdf07,
+    type: 2}
   enemyUnit: {fileID: 0}
   spawnPoints: []
   enemies: []
@@ -496,9 +503,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7963dac96847f7f4e92a03d66b7c644f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attacking_: 1
-  defense_: 0
+  alive_: 1
+  focusing_: 0
+  pause_: 0
   weaponChoice: 0
+  atkChoice: 0
   name_: 
   weapons: []
   weaponNames: []

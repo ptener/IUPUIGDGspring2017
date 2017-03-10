@@ -86,9 +86,18 @@ public class BattleManager : MonoBehaviour
         //if attacking, defend, and if defending, attack 
         if (int.TryParse(keyPressed, out numChoice))
         {
-            if (numChoice < playerUnits.Count && numChoice > 0)
+            if ((numChoice - 1) < playerUnits.Count && numChoice > 0)
             {
                 playerUnits[numChoice - 1].Defending = !playerUnits[numChoice - 1].Defending;
+                if (playerUnits[numChoice - 1].Defending)
+                {
+                    Debug.Log(playerUnits[numChoice - 1].Name + " is now defending!");
+                } //end if
+
+                else if (!playerUnits[numChoice - 1].Defending)
+                {
+                    Debug.Log(playerUnits[numChoice - 1].Name + " is now attacking!");
+                } //end if
             } //end if
         } //end if
 	} //end Update
@@ -99,9 +108,9 @@ public class BattleManager : MonoBehaviour
     private IEnumerator Attack(Unit attacking)
     {
 
-        Debug.Log("Attacking!");
+        //Debug.Log("Attacking!");
 
-        Debug.Log("Name of unit and health: " + attacking.Name + " " + attacking.Health);
+        //Debug.Log("Name of unit and health: " + attacking.Name + " " + attacking.Health);
         
         int damageTaken = 0; //holds the damage the attacked will take
 
@@ -111,7 +120,6 @@ public class BattleManager : MonoBehaviour
         //if not, just set the value to zero
         if (attacking.weaponChoice > attacking.weapons.Count)
         {
-            Debug.Log("weaponChoice > weaponsCount: " + attacking.weaponChoice + " > " + attacking.weapons.Count);
             attacking.weaponChoice = 0;
         } //end if
 
@@ -151,8 +159,6 @@ public class BattleManager : MonoBehaviour
                         attacking.atkChoice = Random.Range(0, enemyUnits.Count - 1);
                     } //end if
                     //atkChoice = RandGenerate(enemyUnits.Count); //choose a random enemy
-                    Debug.Log("enemyUnits.Count - 1 " + (enemyUnits.Count - 1));
-                    Debug.Log("atack choice for player: " + attacking.atkChoice);
                     enemy = enemyUnits[attacking.atkChoice];
                     //if the enemy is defending, divide the damage taken by two
                     //do this for if the enemy is attacking, as well
@@ -170,7 +176,7 @@ public class BattleManager : MonoBehaviour
                     //an obvious error is raised otherwise as you will probably try to access a gameobject which has been destroyed
                     if (enemy.Health - damageTaken <= 0)
                     {
-                        Debug.Log("enemy will be KILL");
+                        //Debug.Log("enemy will be KILL");
                         //enemy.Health -= attacking.weapons[attacking.weaponChoice].Damage;
                         
                         //remove the focus if the enemy is dead, the unit will choose random enemies
@@ -195,13 +201,8 @@ public class BattleManager : MonoBehaviour
 
                         enemyUnits.Remove(enemy);
                     } //end if
-
-                    if (keepGoing == false)
-                    {
-                        Debug.Log("keepGoing is false so unit is KILL\n\n\n\n\n");
-                    }
-
-                    Debug.Log("Name of damaged yout and health " + enemy.Name + " " + enemy.Health + "\n");
+                    
+                    //Debug.Log("Name of damaged yout and health " + enemy.Name + " " + enemy.Health + "\n");
                     enemy.Health -= damageTaken;
 
                 } //end if
@@ -213,8 +214,6 @@ public class BattleManager : MonoBehaviour
                         attacking.atkChoice = Random.Range(0, playerUnits.Count - 1);
                     } //end if
                     //atkChoice = RandGenerate(playerUnits.Count); //choose a random enemy
-                    Debug.Log("Atk choice for enemy: " + attacking.atkChoice);
-                    Debug.Log("playerUnits.Count - 1 " + (playerUnits.Count - 1));
 
                     player = playerUnits[attacking.atkChoice];
 
@@ -232,18 +231,23 @@ public class BattleManager : MonoBehaviour
                     //an obvious error is raised otherwise as you will probably try to access a gameobject which has been destroyed
                     if ((player.Health - damageTaken) <= 0)
                     {
-                        Debug.Log("player will be KILL");
+                        //Debug.Log("player will be KILL");
                         //player.Health -= attacking.weapons[attacking.weaponChoice].Damage;
                         playerUnits.Remove(player);
                     } //end if
 
-                    Debug.Log("Name of damaged yout and health " + player.Name + " " + player.Health + "\n");
+                    //Debug.Log("Name of damaged yout and health " + player.Name + " " + player.Health + "\n");
                     player.Health -= damageTaken;
                 } //end else if
             } //end if
 
-            Debug.Log("name, speed, player, and enemy counts: " + attacking.Name + " " + attacking.weapons[attacking.weaponChoice].Speed +
-                " " + playerUnits.Count + " " + enemyUnits.Count);
+            else
+            {
+                Debug.Log(attacking.Name + " is defending and cannot attack!!");
+            }
+
+            //Debug.Log("name, speed, player, and enemy counts: " + attacking.Name + " " + attacking.weapons[attacking.weaponChoice].Speed +
+            //    " " + playerUnits.Count + " " + enemyUnits.Count);
 
             //attack every few seconds based on the speed of the weapon
             yield return new WaitForSeconds(attacking.weapons[attacking.weaponChoice].Speed);
@@ -272,7 +276,6 @@ public class BattleManager : MonoBehaviour
                 break;
             } //end if
         } //end for
-        Debug.Log(choice);
         return choice;
     } //end RandGenerate
 
@@ -395,7 +398,7 @@ public class BattleManager : MonoBehaviour
             enemyGO.tag = "Enemy";
             enemyUnit = enemyGO.GetComponent<Unit>();
             enemyUnit.Name = enemyNames[i];
-            Debug.Log(enemyUnit.Name);
+            Debug.Log("name of enemy unit, location, and i: " + enemyUnit.Name + " " + location + " " + i);
             enemyUnit.weaponNames = weaponFill(enemyUnit.Name); //set the weapons of the unit based on the enemy's name
             enemyUnit.setWeapons();
             enemyUnits.Add(enemyUnit);

@@ -17,6 +17,7 @@ public class Unit : MonoBehaviour
     public bool pause_ = false; //check if the unit is performing some action that will break its attack time ie switching target
 
     private int health_;
+    private int startingHealth_ = 10; //separate property to hold the health we want to start each unit at (mainly for testing)
     public int weaponChoice; //used to select a weapon from the weapon list
     public int atkChoice; 
     
@@ -31,13 +32,14 @@ public class Unit : MonoBehaviour
     //variables to initialize: health, level, maybe class type or however else we decide to design this
     public Unit()
     {
-
+        health_ = startingHealth_;
+        atkChoice = 0;
     } //end constructor
 
     //unit constructor with the name
     public Unit (string name)
     {
-        health_ = 100;
+        health_ = startingHealth_;
         name_ = name;
         atkChoice = 0;
     } //end overloaded constructor
