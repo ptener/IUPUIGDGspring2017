@@ -16,13 +16,14 @@
 		"id": 1,
 		"title":"Flame Torch",
 		"stats": {
-			"attack": 10,
-			"defence": 10,
-			"cooldown": 10
+			"attack": 25,
+			"defence": 25,
+			"cooldown": 25
 			},
 		"description":"It's a Flame Torch, duh",
-		"stackable": true,
-		"rarity": 2,
-		"slug":"flame_torch"
+		"stackable": false,
+		"rarity": 5,
+		"slug":"item_icons[6]"
+
 }
 ]

@@ -3,16 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using LitJson;
 using System.IO;
+using System.Linq;
 
 public class ItemDatabase : MonoBehaviour {
 	private List<Item> database = new List<Item>();
 	private JsonData itemData;
+
+	public Sprite[] iconArray;
 
 	void Start()
 	{
 		//Gets code from Json File
 		itemData = JsonMapper.ToObject (File.ReadAllText(Application.dataPath + "/StreamingAssets/Items.json"));
 		ConstructItemDatabase ();
+
 
 	}
 
@@ -63,7 +67,7 @@ public class Item
 		this.Stackable = stackable;
 		this.Rarity = rarity;
 		this.Slug = slug;
-		this.Sprite = Resources.Load<Sprite>("Sprites/Items/" +slug); 
+		this.Sprite = Resources.Load<Sprite>("Sprites/Items/" + slug); 
 	}
 
 	public Item()
