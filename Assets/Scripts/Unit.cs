@@ -32,7 +32,17 @@ public class Unit : MonoBehaviour
     //variables to initialize: health, level, maybe class type or however else we decide to design this
     public Unit()
     {
-        health_ = startingHealth_;
+        //players have a default health of 30
+        if (gameObject.tag == "Player")
+        {
+            health_ = 30;
+        } //end if
+
+        //enemy health should probably depend on the enemy type
+        else
+        {
+            health_ = startingHealth_;
+        } //end else
         atkChoice = 0;
     } //end constructor
 

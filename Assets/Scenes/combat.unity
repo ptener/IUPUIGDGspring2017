@@ -218,7 +218,7 @@ MonoBehaviour:
   name_: B.O.S.S. W.E.E.B.
   weapons: []
   weaponNames:
-  - weldingTorch
+  - socketWrench
 --- !u!1 &338379028
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,7 +343,7 @@ MonoBehaviour:
   name_: OOOUUUU
   weapons: []
   weaponNames:
-  - monkeyWrench
+  - socketWrench
 --- !u!1 &437527793
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,7 +440,7 @@ MonoBehaviour:
   name_: THA GOD
   weapons: []
   weaponNames:
-  - steelPole
+  - socketWrench
 --- !u!1 &446640151
 GameObject:
   m_ObjectHideFlags: 0
