@@ -99,21 +99,25 @@ public class BattleManager : MonoBehaviour
     //just a coroutine to call the attack coroutine so that the units don't just pile on each other right off the bat
     private IEnumerator AttackDelay(Unit unit)
     {
-        bool firstThrough = true, keepGoing = true;
-        while (keepGoing)
+        bool firstThrough = true;
+        while (true)
         {
             if (firstThrough)
             {
                 firstThrough = false;
             } //end if
 
+            //if we've already used the delay once, break from the coroutine now that the regular attack cycle is started
             else
             {
                 atkCoroutine = Attack(unit);
                 StartCoroutine(atkCoroutine);
-                keepGoing = false;
+                yield break;
             } //end else
-            yield return new WaitForSeconds(unit.weapons[unit.atkChoice].Speed);
+
+            Debug.Log(unit.Name + " is in attackdelay");
+
+            yield return new WaitForSeconds(unit.weapons[unit.weaponChoice].Speed);
         } //end while
     } //end AttackDelay
 
@@ -128,8 +132,7 @@ public class BattleManager : MonoBehaviour
         //Debug.Log("Name of unit and health: " + attacking.Name + " " + attacking.Health);
         
         int damageTaken = 0; //holds the damage the attacked will take
-
-        bool keepGoing = true;
+        
 
         //need to check that the choice of the weapon is within range
         //if not, just set the value to zero
@@ -173,6 +176,12 @@ public class BattleManager : MonoBehaviour
                     {
                         attacking.atkChoice = Random.Range(0, enemyUnits.Count - 1);
                     } //end if
+
+                    else if (attacking.focusing_)
+                    {
+                        Debug.Log("Unit is focusing: " + enemyUnits[attacking.atkChoice].Name);
+                    }
+
                     //atkChoice = RandGenerate(enemyUnits.Count); //choose a random enemy
                     enemy = enemyUnits[attacking.atkChoice];
                     //if the enemy is defending, divide the damage taken by two
@@ -210,7 +219,10 @@ public class BattleManager : MonoBehaviour
 
                             if (enemyCheck == attacking.atkChoice)
                             {
-                                attacking.focusing_ = false;
+                                for (int i = 0; i < playerUnits.Count; i++)
+                                {
+                                    playerUnits[i].focusing_ = false;
+                                } //end for
                             } //end if
                         } //end if
 
@@ -235,6 +247,12 @@ public class BattleManager : MonoBehaviour
                     if (player.Defending)
                     {
                         damageTaken = (attacking.weapons[attacking.weaponChoice].Damage / 2);
+
+                        //sometimes the damage taken will be zero after division, so reset it to 1
+                        if (damageTaken == 0)
+                        {
+                            damageTaken = 1;
+                        } //end if
                     } //end if
 
                     else
@@ -431,14 +449,18 @@ public class BattleManager : MonoBehaviour
         List<string> weapNames = new List<string>();
         if (name == "famous")
         {
+            /*
             weapNames.Add("screwDriver");
             weapNames.Add("steelPole");
+            */
         } //end if
 
         else if (name == "shamus")
         {
+            /*
             weapNames.Add("powerDrill");
             weapNames.Add("monkeyWrench");
+            */
         } //end else if
 
         else if (name == "real")
