@@ -13,9 +13,12 @@ public class Unit : MonoBehaviour
     //also I'm not sure what types these will need so I'm starting them as ints (again, for ease of use)
     private bool defending_ = false; //if this unit is defending, halve damage but don't let it attack
     public bool alive_ = true;
+    public bool focusing_ = false; //check if the player is trying to get this unit to focus an enemy, otherwise choose random person to attack
+    public bool pause_ = false; //check if the unit is performing some action that will break its attack time ie switching target
 
     private int health_;
     public int weaponChoice; //used to select a weapon from the weapon list
+    public int atkChoice; 
     
     public string name_;
 
@@ -36,6 +39,7 @@ public class Unit : MonoBehaviour
     {
         health_ = 100;
         name_ = name;
+        atkChoice = 0;
     } //end overloaded constructor
 
     // Use this for initialization
@@ -47,8 +51,19 @@ public class Unit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (gameObject.tag == "Player")
+        {
 
+        } //end if
     } //end Update
+
+    void OnClick()
+    {
+        if (gameObject.tag == "Enemy")
+        {
+            BattleManager.setTarget(this);
+        } //end if
+    } //end OnClick
 
     public bool Defending
     {
@@ -67,9 +82,21 @@ public class Unit : MonoBehaviour
         set
         {
             health_ = value;
-            Debug.Log(name_ + " is KILL");
-            alive_ = false;
-            Destroy(gameObject);
+
+            if (health_ <= 0)
+            {
+                Debug.Log(name_ + " is KILL");
+                alive_ = false;
+                Destroy(gameObject);
+            } //end if
+
+            //player should be stunned when they are attacked
+            //when will they not be stunned? Should I check that the time is within 2-3 seconds of the attack
+            //being executed?
+            else if (gameObject.tag == "Player")
+            {
+                pause_ = true;
+            } //end else if
         } //end set
     } //end property
 

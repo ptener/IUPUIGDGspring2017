@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212083730674822292}
   - component: {fileID: 114836854182403336}
   - component: {fileID: 114951680669490196}
+  - component: {fileID: 61270916873549100}
   m_Layer: 0
   m_Name: enemy1
   m_TagString: Untagged
@@ -42,6 +43,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &61270916873549100
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1151630181646050}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 4.5, y: 3.18}
 --- !u!114 &114836854182403336
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53,7 +68,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7963dac96847f7f4e92a03d66b7c644f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  alive_: 1
   weaponChoice: 0
+  name_: 
   weapons: []
   weaponNames: []
 --- !u!114 &114951680669490196

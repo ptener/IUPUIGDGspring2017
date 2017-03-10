@@ -40,7 +40,8 @@ public class BattleManager : MonoBehaviour
 
     private Unit enemy, player; //used to fill player and enemy lists. Could be one var, made it two for clarity
 
-    private List<Unit> enemyUnits, playerUnits; //fill this with unit scripts for modification
+    //changing the lists to static so that enemyUnits can be used within the setTarget() method
+    private static List<Unit> enemyUnits, playerUnits; //fill this with unit scripts for modification
     public List<GameObject> enemies, players;
 
     // Use this for initialization
@@ -101,8 +102,7 @@ public class BattleManager : MonoBehaviour
         Debug.Log("Attacking!");
 
         Debug.Log("Name of unit and health: " + attacking.Name + " " + attacking.Health);
-
-        int atkChoice = 0;
+        
         int damageTaken = 0; //holds the damage the attacked will take
 
         bool keepGoing = true;
@@ -132,16 +132,28 @@ public class BattleManager : MonoBehaviour
                 attacking.alive_ = false;
             } //end if
 
+            //if the unit is changing strategies, such as changing target, they break their attack cycle
+            //this should also happen when the unit is attacked
+            else if (attacking.pause_)
+            {
+                attacking.pause_ = false;
+            } //end else if
+
             else if (!attacking.Defending) //can't attack if you're defending
             {
                 //change the target/some other parameters based on what kind of unit this is
                 if (attacking.gameObject.tag == "Player")
                 {
-                    atkChoice = Random.Range(0, enemyUnits.Count - 1);
+                    //if the player is focusing the unit on a particular enemy
+                    //do not generate a random attack choice
+                    if (!attacking.focusing_) 
+                    {
+                        attacking.atkChoice = Random.Range(0, enemyUnits.Count - 1);
+                    } //end if
                     //atkChoice = RandGenerate(enemyUnits.Count); //choose a random enemy
                     Debug.Log("enemyUnits.Count - 1 " + (enemyUnits.Count - 1));
-                    Debug.Log("atack choice for player: " + atkChoice);
-                    enemy = enemyUnits[atkChoice];
+                    Debug.Log("atack choice for player: " + attacking.atkChoice);
+                    enemy = enemyUnits[attacking.atkChoice];
                     //if the enemy is defending, divide the damage taken by two
                     //do this for if the enemy is attacking, as well
                     if (enemy.Defending)
@@ -160,6 +172,27 @@ public class BattleManager : MonoBehaviour
                     {
                         Debug.Log("enemy will be KILL");
                         //enemy.Health -= attacking.weapons[attacking.weaponChoice].Damage;
+                        
+                        //remove the focus if the enemy is dead, the unit will choose random enemies
+                        //until told otherwise
+                        if (attacking.focusing_)
+                        {
+                            int enemyCheck = -1;
+                            for (int i = 0; i < enemyUnits.Count; i++)
+                            {
+                                if (enemyUnits[i] == enemy)
+                                {
+                                    enemyCheck = i;
+                                    break;
+                                } //end if
+                            } //end for
+
+                            if (enemyCheck == attacking.atkChoice)
+                            {
+                                attacking.focusing_ = false;
+                            } //end if
+                        } //end if
+
                         enemyUnits.Remove(enemy);
                     } //end if
 
@@ -175,12 +208,15 @@ public class BattleManager : MonoBehaviour
 
                 else if (attacking.gameObject.tag == "Enemy")
                 {
-                    atkChoice = Random.Range(0, playerUnits.Count - 1);
+                    if (!attacking.focusing_)
+                    {
+                        attacking.atkChoice = Random.Range(0, playerUnits.Count - 1);
+                    } //end if
                     //atkChoice = RandGenerate(playerUnits.Count); //choose a random enemy
-                    Debug.Log("Atk choice for enemy: " + atkChoice);
+                    Debug.Log("Atk choice for enemy: " + attacking.atkChoice);
                     Debug.Log("playerUnits.Count - 1 " + (playerUnits.Count - 1));
 
-                    player = playerUnits[atkChoice];
+                    player = playerUnits[attacking.atkChoice];
 
                     if (player.Defending)
                     {
@@ -239,6 +275,35 @@ public class BattleManager : MonoBehaviour
         Debug.Log(choice);
         return choice;
     } //end RandGenerate
+
+    //called by the unit class when the unit is clicked. Pass in the target for the player units to focus 
+    //find the unit in the enemy array, and set each player's target to that index
+    //
+    //this function is obviously not very efficient but the enemyUnits list should never be any larger 
+    //than maybe 4 or 5 enemies so it shouldn't really matter
+    public static void setTarget(Unit target)
+    {
+        int indexTarget = -1;
+
+        for (int i = 0; i < enemyUnits.Count; i++)
+        {
+            if (enemyUnits[i] == target)
+            {
+                indexTarget = i;
+                break;
+            } //end if
+        } //end for
+        
+        if (indexTarget != -1) //check that something was set, I guess, just in case. Shouldn't happen tho
+        {
+            for (int i = 0; i < playerUnits.Count; i++)
+            {
+                playerUnits[i].atkChoice = indexTarget;
+                playerUnits[i].pause_ = true;
+                playerUnits[i].focusing_ = true;
+            } //end for
+        } //end if
+    } //end setTarget
 
     private void SetUnits()
     {
