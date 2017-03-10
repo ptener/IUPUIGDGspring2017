@@ -473,8 +473,6 @@ MonoBehaviour:
   enemyNames:
   - famous
   - shamus
-  - real
-  - blameless
   enemyPrefab: {fileID: 1151630181646050, guid: 6fe444886d5dee3439755ab2290cdf07,
     type: 2}
   enemyUnit: {fileID: 0}

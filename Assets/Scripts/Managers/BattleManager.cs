@@ -47,6 +47,8 @@ public class BattleManager : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
+        IEnumerator atkStart;
+
         enemyUnits = new List<Unit>();
         playerUnits = new List<Unit>();
         enemyPrefab = (GameObject)Resources.Load("prefabs/enemy1");
@@ -62,14 +64,14 @@ public class BattleManager : MonoBehaviour
         //even if it's not even noticeable it feels weird.
         for (int i = 0; i < playerUnits.Count; i++)
         {
-            atkCoroutine = Attack(playerUnits[i]);
-            StartCoroutine(atkCoroutine);
+            atkStart = AttackDelay(playerUnits[i]);
+            StartCoroutine(atkStart);
         } //end for
 
         for (int i = 0; i < enemyUnits.Count; i++)
         {
-            atkCoroutine = Attack(enemyUnits[i]);
-            StartCoroutine(atkCoroutine);
+            atkStart = AttackDelay(enemyUnits[i]);
+            StartCoroutine(atkStart);
         } //end for
 
 
@@ -89,18 +91,31 @@ public class BattleManager : MonoBehaviour
             if ((numChoice - 1) < playerUnits.Count && numChoice > 0)
             {
                 playerUnits[numChoice - 1].Defending = !playerUnits[numChoice - 1].Defending;
-                if (playerUnits[numChoice - 1].Defending)
-                {
-                    Debug.Log(playerUnits[numChoice - 1].Name + " is now defending!");
-                } //end if
-
-                else if (!playerUnits[numChoice - 1].Defending)
-                {
-                    Debug.Log(playerUnits[numChoice - 1].Name + " is now attacking!");
-                } //end if
             } //end if
         } //end if
 	} //end Update
+
+    //if this method did not exist, the units would attack as soon as the battle manager starts
+    //just a coroutine to call the attack coroutine so that the units don't just pile on each other right off the bat
+    private IEnumerator AttackDelay(Unit unit)
+    {
+        bool firstThrough = true, keepGoing = true;
+        while (keepGoing)
+        {
+            if (firstThrough)
+            {
+                firstThrough = false;
+            } //end if
+
+            else
+            {
+                atkCoroutine = Attack(unit);
+                StartCoroutine(atkCoroutine);
+                keepGoing = false;
+            } //end else
+            yield return new WaitForSeconds(unit.weapons[unit.atkChoice].Speed);
+        } //end while
+    } //end AttackDelay
 
     //select a random enemy
     //choose random attack (chances could be modified by stats) and swing
@@ -108,7 +123,7 @@ public class BattleManager : MonoBehaviour
     private IEnumerator Attack(Unit attacking)
     {
 
-        //Debug.Log("Attacking!");
+        Debug.Log("Attacking!");
 
         //Debug.Log("Name of unit and health: " + attacking.Name + " " + attacking.Health);
         
@@ -306,6 +321,8 @@ public class BattleManager : MonoBehaviour
                 playerUnits[i].focusing_ = true;
             } //end for
         } //end if
+
+        Debug.Log("Focus: " + enemyUnits[playerUnits[1].atkChoice].Name);
     } //end setTarget
 
     private void SetUnits()

@@ -59,13 +59,15 @@ public class Unit : MonoBehaviour
         } //end if
     } //end Update
 
-    void OnClick()
+    //built in function utilizing the box collider on the sprite
+    //detects mouse click: at this stage, just check if its an enemy and if it is, focus them
+    void OnMouseDown()
     {
         if (gameObject.tag == "Enemy")
         {
             BattleManager.setTarget(this);
         } //end if
-    } //end OnClick
+    } //end OnMouseDown
 
     public bool Defending
     {
