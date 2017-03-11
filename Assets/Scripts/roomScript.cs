@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class roomScript : MonoBehaviour {
-	public int numOfPaths = Random.Range (1, 4);
+	public int numOfPaths = Random.Range (1, 3);
 	// Use this for initialization
 	void Start () {
-		numOfPaths = Random.Range (1, 4);
+		//numOfPaths = Random.Range (1, 3);
 	}
 	
 	// Update is called once per frame

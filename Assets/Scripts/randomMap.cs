@@ -35,11 +35,12 @@ public class randomMap : MonoBehaviour
 		Transform Corner4 = transform.GetChild (5);
 		Room1 = transform.GetChild(6);
 
+		//init inital room
+		rooms.Add(new roomScript());
 
 		//init rooms
-		for (int i=0; i < numberofRooms; i++)
+		for (int i=0; i < numberofRooms-1; i++)
 			rooms.Add (new roomScript());
-		
 		randomSize = Random.Range (10, lengthofCorridors);
 		Transform[] currentHallway = { straightHallway, leftHallway, Corner1, Corner2 , Corner3, Corner4};
 
@@ -50,18 +51,31 @@ public class randomMap : MonoBehaviour
 
 		//init transform so they are not empty, but we don't use our own transform for these vars.
 		platform = transform;
+		string lastPathDirection = "";
 
-		for (int i = 0; i < numberofRooms; i++) {
+		for (int i = 0; i < rooms.Count-1; i++) {
+			usedRoomDirections.Clear ();
+			Debug.Log("Room number: " + i);
 			totalRoomNodeOffsets += roomNodeOffsets;
 			roomNodeOffsets = 0;
+			Debug.Log("number of Paths: " + rooms[i].numOfPaths);
 			int dividedCorner = numberofCorners / rooms [i].numOfPaths;
 
 			for (int l = 0; l < rooms [i].numOfPaths; l++) {
+				//get last path Direction
+				if(direction == "hort+")
+					lastPathDirection = "hort-";
+				else if (direction == "vert+")
+					lastPathDirection = "vert-";
+				else if (direction == "vert-")
+					lastPathDirection = "vert+";
+				else if (direction == "hort-")
+					lastPathDirection = "hort+";
+			
 				//for each path get a direction that hasn't been used yet
-				while (usedRoomDirections.Contains (direction)) {
+				while (usedRoomDirections.Contains (direction) || direction == lastPathDirection) {
 					getDirection ();
-					if (usedRoomDirections.Count >= 4)
-						break;
+					Debug.Log("Direction it picked " + direction);
 				}
 				for (int k = 0; k < dividedCorner; k++) {
 					randomSize = Random.Range (4, lengthofCorridors);
@@ -109,6 +123,7 @@ public class randomMap : MonoBehaviour
 			else if (direction == "hort+")
 				temp = Instantiate (currentHallway [hallwayIndex], new Vector3 (platform.position.x, platform.position.y, platform.position.z - sizeofCurrentPlane.z - 5f), currentHallway [hallwayIndex].localRotation);
 			temp.transform.SetParent (this.transform);
+
 		} else {
 			if (direction == "vert+")
 				temp = Instantiate (currentHallway [hallwayIndex], new Vector3 (platform.position.x + sizeofCurrentPlane.x, platform.position.y, platform.position.z), Quaternion.identity);
@@ -190,8 +205,6 @@ public class randomMap : MonoBehaviour
 		//add the last piece of tile here
 		platform = transform.GetChild (transform.childCount - 1);
 
-
-
 		sizeofCurrentPlane = platform.GetComponent<Renderer> ().bounds.size;
 
 		if (lastdirection == "vert+")
@@ -207,12 +220,14 @@ public class randomMap : MonoBehaviour
 		roomNodeOffsets++;
 		if (!usedRoomDirections.Contains(direction))
 			usedRoomDirections.Add (direction);
-		for (int m = 0; m < usedRoomDirections.Count; m++)
-			Debug.Log("used room direction: " + usedRoomDirections[m]);
+		//for (int m = 0; m < usedRoomDirections.Count; m++)
+			//Debug.Log("used room direction: " + usedRoomDirections[m]);
 	}
 
 	void addRoom(){
-		usedRoomDirections.Clear ();
+		//for (int l =0; l < usedRoomDirections.Count; l++)
+			//Debug.Log("the used room directions before being cleared " + usedRoomDirections[l]);
+		//usedRoomDirections.Clear ();
 		roomNodeOffsets = 0;
 		platform = transform.GetChild (transform.childCount - 1);
 
