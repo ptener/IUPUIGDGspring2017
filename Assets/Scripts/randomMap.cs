@@ -51,7 +51,7 @@ public class randomMap : MonoBehaviour
 		platform = transform;
 		string lastPathDirection = "";
 
-		for (int i = 0; i < rooms.Count-1; i++) {
+		for (int i = 0; i < 1; i++) {
 			usedRoomDirections.Clear ();
 			Debug.Log("Room number: " + i);
 			totalRoomNodeOffsets += roomNodeOffsets;
@@ -59,41 +59,61 @@ public class randomMap : MonoBehaviour
 			Debug.Log("number of Paths: " + rooms[i].numOfPaths);
 			int dividedCorner = numberofCorners / 1;
 
-			for (int l = 0; l < 1; l++) {
-				//get last path Direction
-				if(direction == "hort+")
-					lastPathDirection = "hort-";
-				else if (direction == "vert+")
-					lastPathDirection = "vert-";
-				else if (direction == "vert-")
-					lastPathDirection = "vert+";
-				else if (direction == "hort-")
-					lastPathDirection = "hort+";
-			
+			for (int l = 0; l < 2; l++) {
+				
+				//get last path Direction if not in first room
+				if (i > 1) {
+					if (direction == "hort+")
+						lastPathDirection = "hort-";
+					else if (direction == "vert+")
+						lastPathDirection = "vert-";
+					else if (direction == "vert-")
+						lastPathDirection = "vert+";
+					else if (direction == "hort-")
+						lastPathDirection = "hort+";
+				}
+				
 				//for each path get a direction that hasn't been used yet
-				while (usedRoomDirections.Contains (direction) || direction == lastPathDirection) {
+				while (usedRoomDirections.Contains (direction)){ //|| direction == lastPathDirection) {
+					Debug.Log(usedRoomDirections[0]);
 					getDirection ();
 					Debug.Log("Direction it picked " + direction);
-					if (usedRoomDirections.Count >= 4)
+					if (usedRoomDirections.Count >= 4) {
+						for (int d =0; d < usedRoomDirections.Count; d++){
+							Debug.Log ("inside Directions: " + usedRoomDirections [d]);
+						}
 						break;
+					}
 				}
-				for (int k = 0; k < dividedCorner; k++) {
+				for (int k = 0; k < 8; k++) {
 					randomSize = Random.Range (4, lengthofCorridors);
 					for (int j = 0; j < randomSize - 1; j++) {
 						
-						if (j == 0 && i == 0)
+						if (j == 0 && i == 0 && k == 0)
 							platform = Room1;
-						else if (i == 0)
+						else if (i == 0) {
 							platform = transform.GetChild (transform.childCount - 1);
-						else
+							Debug.Log ("test");
+						}
+						else{
 							platform = transform.GetChild(transform.childCount - 1 - totalRoomNodeOffsets);//GetChild (transform.childCount - 1 - totalRoomNodeOffsets);
-						
+							Debug.Log("how");
+						}
 						addPanel(currentHallway);
 					}
 					getDirection();
 
 					addCorner(currentHallway);
 				}
+
+				//add case for first room
+				if (i < 1)
+					usedRoomDirections.Add ("vert+");
+				else if (!usedRoomDirections.Contains (direction)) {
+					Debug.Log ("item added: " + direction);
+					usedRoomDirections.Add (direction);
+				}
+
 			}
 			addRoom();
 
@@ -218,8 +238,7 @@ public class randomMap : MonoBehaviour
 
 		temp.transform.SetParent (this.transform);
 		roomNodeOffsets++;
-		if (!usedRoomDirections.Contains(direction))
-			usedRoomDirections.Add (direction);
+
 		//for (int m = 0; m < usedRoomDirections.Count; m++)
 			//Debug.Log("used room direction: " + usedRoomDirections[m]);
 	}
