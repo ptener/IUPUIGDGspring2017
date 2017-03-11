@@ -8,7 +8,6 @@ public class randomMap : MonoBehaviour
 	public int lengthofCorridors = 5;
 	public int numberofCorners = 5;
 	public int cornerPiece = 0;
-	public LayerMask wall;
 
 	string direction = "vert+";
 	string lastdirection;
@@ -47,7 +46,6 @@ public class randomMap : MonoBehaviour
 		sizeofCurrentPlane = straightHallway.GetComponent<Renderer> ().bounds.size;
 
 		temp = transform;
-		Ray wallRay = new Ray (this.transform.GetChild (0).transform.position, Vector3.forward);
 
 		//init transform so they are not empty, but we don't use our own transform for these vars.
 		platform = transform;
@@ -59,9 +57,9 @@ public class randomMap : MonoBehaviour
 			totalRoomNodeOffsets += roomNodeOffsets;
 			roomNodeOffsets = 0;
 			Debug.Log("number of Paths: " + rooms[i].numOfPaths);
-			int dividedCorner = numberofCorners / rooms [i].numOfPaths;
+			int dividedCorner = numberofCorners / 1;
 
-			for (int l = 0; l < rooms [i].numOfPaths; l++) {
+			for (int l = 0; l < 1; l++) {
 				//get last path Direction
 				if(direction == "hort+")
 					lastPathDirection = "hort-";
@@ -76,6 +74,8 @@ public class randomMap : MonoBehaviour
 				while (usedRoomDirections.Contains (direction) || direction == lastPathDirection) {
 					getDirection ();
 					Debug.Log("Direction it picked " + direction);
+					if (usedRoomDirections.Count >= 4)
+						break;
 				}
 				for (int k = 0; k < dividedCorner; k++) {
 					randomSize = Random.Range (4, lengthofCorridors);
