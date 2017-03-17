@@ -51,13 +51,13 @@ public class randomMap : MonoBehaviour
 		platform = transform;
 		string lastPathDirection = "";
 
-		for (int i = 0; i < 1; i++) {
+		for (int i = 0; i < 2; i++) {
 			usedRoomDirections.Clear ();
-			Debug.Log("Room number: " + i);
+			Debug.Log("Room number: " + i + " " + roomNodeOffsets);
 			totalRoomNodeOffsets += roomNodeOffsets;
 			roomNodeOffsets = 0;
 			Debug.Log("number of Paths: " + rooms[i].numOfPaths);
-			int dividedCorner = numberofCorners / 1;
+			int dividedCorner = numberofCorners / 2;
 
 			for (int l = 0; l < 2; l++) {
 				
@@ -85,7 +85,7 @@ public class randomMap : MonoBehaviour
 						break;
 					}
 				}
-				for (int k = 0; k < 8; k++) {
+				for (int k = 0; k < 2; k++) {
 					randomSize = Random.Range (4, lengthofCorridors);
 					for (int j = 0; j < randomSize - 1; j++) {
 						
@@ -97,7 +97,7 @@ public class randomMap : MonoBehaviour
 						}
 						else{
 							platform = transform.GetChild(transform.childCount - 1 - totalRoomNodeOffsets);//GetChild (transform.childCount - 1 - totalRoomNodeOffsets);
-							Debug.Log("how");
+							Debug.Log("how: " + totalRoomNodeOffsets);
 						}
 						addPanel(currentHallway);
 					}
@@ -155,6 +155,7 @@ public class randomMap : MonoBehaviour
 				temp = Instantiate (currentHallway [hallwayIndex], new Vector3 (platform.position.x, platform.position.y, platform.position.z - sizeofCurrentPlane.z), currentHallway [hallwayIndex].localRotation);
 			temp.transform.SetParent (this.transform);
 		}
+		roomNodeOffsets++;
 	}
 
 	void getDirection(){
@@ -237,7 +238,6 @@ public class randomMap : MonoBehaviour
 			temp = Instantiate (currentHallway [cornerPiece], new Vector3 (platform.position.x, platform.position.y, platform.position.z - sizeofCurrentPlane.z), currentHallway [cornerPiece].localRotation);
 
 		temp.transform.SetParent (this.transform);
-		roomNodeOffsets++;
 
 		//for (int m = 0; m < usedRoomDirections.Count; m++)
 			//Debug.Log("used room direction: " + usedRoomDirections[m]);
@@ -247,7 +247,6 @@ public class randomMap : MonoBehaviour
 		//for (int l =0; l < usedRoomDirections.Count; l++)
 			//Debug.Log("the used room directions before being cleared " + usedRoomDirections[l]);
 		//usedRoomDirections.Clear ();
-		roomNodeOffsets = 0;
 		platform = transform.GetChild (transform.childCount - 1);
 
 		sizeofCurrentPlane = Room1.GetComponent<Renderer> ().bounds.size;
