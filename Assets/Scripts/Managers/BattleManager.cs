@@ -128,11 +128,8 @@ public class BattleManager : MonoBehaviour
     {
 
         Debug.Log("Attacking!");
-
-        //Debug.Log("Name of unit and health: " + attacking.Name + " " + attacking.Health);
         
         int damageTaken = 0; //holds the damage the attacked will take
-        
 
         //need to check that the choice of the weapon is within range
         //if not, just set the value to zero
@@ -176,13 +173,7 @@ public class BattleManager : MonoBehaviour
                     {
                         attacking.atkChoice = Random.Range(0, enemyUnits.Count - 1);
                     } //end if
-
-                    else if (attacking.focusing_)
-                    {
-                        Debug.Log("Unit is focusing: " + enemyUnits[attacking.atkChoice].Name);
-                    }
-
-                    //atkChoice = RandGenerate(enemyUnits.Count); //choose a random enemy
+                    
                     enemy = enemyUnits[attacking.atkChoice];
                     //if the enemy is defending, divide the damage taken by two
                     //do this for if the enemy is attacking, as well
@@ -196,11 +187,8 @@ public class BattleManager : MonoBehaviour
                         damageTaken = attacking.weapons[attacking.weaponChoice].Damage;
                     } //end else
 
-                    //TODO remove gameObject from the array if it is going to be destroyed
-                    //an obvious error is raised otherwise as you will probably try to access a gameobject which has been destroyed
                     if (enemy.Health - damageTaken <= 0)
                     {
-                        //Debug.Log("enemy will be KILL");
                         //enemy.Health -= attacking.weapons[attacking.weaponChoice].Damage;
                         
                         //remove the focus if the enemy is dead, the unit will choose random enemies
@@ -229,9 +217,7 @@ public class BattleManager : MonoBehaviour
                         enemyUnits.Remove(enemy);
                     } //end if
                     
-                    //Debug.Log("Name of damaged yout and health " + enemy.Name + " " + enemy.Health + "\n");
                     enemy.Health -= damageTaken;
-
                 } //end if
 
                 else if (attacking.gameObject.tag == "Enemy")
@@ -240,7 +226,11 @@ public class BattleManager : MonoBehaviour
                     {
                         attacking.atkChoice = Random.Range(0, playerUnits.Count - 1);
                     } //end if
-                    //atkChoice = RandGenerate(playerUnits.Count); //choose a random enemy
+
+                    else if (attacking.focusing_)
+                    {
+                        Debug.Log("enemy unit is focusing: " + enemyUnits[attacking.atkChoice].Name);
+                    }
 
                     player = playerUnits[attacking.atkChoice];
 
@@ -260,16 +250,11 @@ public class BattleManager : MonoBehaviour
                         damageTaken = attacking.weapons[attacking.weaponChoice].Damage;
                     } //end else
 
-                    //TODO remove gameObject from the array if it is going to be destroyed
-                    //an obvious error is raised otherwise as you will probably try to access a gameobject which has been destroyed
                     if ((player.Health - damageTaken) <= 0)
                     {
-                        //Debug.Log("player will be KILL");
-                        //player.Health -= attacking.weapons[attacking.weaponChoice].Damage;
                         playerUnits.Remove(player);
                     } //end if
-
-                    //Debug.Log("Name of damaged yout and health " + player.Name + " " + player.Health + "\n");
+                    
                     player.Health -= damageTaken;
                 } //end else if
             } //end if
@@ -290,6 +275,7 @@ public class BattleManager : MonoBehaviour
     //generate random number for attack and unit selection
     //pass in size of the array for divying out divisions
     //choose the number which is greater than each "division", it chose that number on the list
+    //realized that this is pretty useless, just using existing random functions now. Really overthought this one
     private int RandGenerate(int size)
     {
         int optDivision, choice = 0, randNum;

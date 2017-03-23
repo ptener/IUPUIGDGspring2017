@@ -21,7 +21,7 @@ public class Unit : MonoBehaviour
     public int weaponChoice; //used to select a weapon from the weapon list
     public int atkChoice; 
     
-    public string name_;
+    public string name_ = "";
 
     private Weapon weapon;
 
@@ -32,18 +32,7 @@ public class Unit : MonoBehaviour
     //variables to initialize: health, level, maybe class type or however else we decide to design this
     public Unit()
     {
-        //players have a default health of 30
-        if (gameObject.tag == "Player")
-        {
-            health_ = 30;
-        } //end if
-
-        //enemy health should probably depend on the enemy type
-        else
-        {
-            health_ = startingHealth_;
-        } //end else
-        atkChoice = 0;
+        
     } //end constructor
 
     //unit constructor with the name
@@ -57,7 +46,24 @@ public class Unit : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        //only do this if the default constructor was called
+        if (name_ == "")
+        {
+            //originally in the constructor but apparently you shouldn't use the unity API in constructor so here
+            //players have a default health of 30
+            if (gameObject.tag == "Player")
+            {
+                health_ = 30;
+            } //end if
 
+            //enemy health should probably depend on the enemy type
+            else
+            {
+                health_ = startingHealth_;
+                setEnemy();
+            } //end else
+            atkChoice = 0;
+        } //end if
     } //end Start
 
     // Update is called once per frame
@@ -121,42 +127,44 @@ public class Unit : MonoBehaviour
     public string Name
     {
         get
-        {
-            return name_;
-        } //end get
+        { return name_; } //end get
 
         set
-        {
-            name_ = value;
-
-            //test values yet to be modified
-            //you get the idea though: change properties based on name
-            //not really using this right now, just keeping it in comments for future reference
-            /*
-            if (name_ == "1")
-            {
-                Health = 40;
-                weapon.Name = "socketWrench";
-                enemy.weapons.Add(weapon); //putting this on different lines just in case I want to give certain enemies more weapons
-            } //end if
-
-            else if (name_ == "2")
-            {
-                Health = 50;
-                weapon.Name = "steelPole";
-                enemy.weapons.Add(weapon);
-            } //end if
-
-            else if (name_ == "3")
-            {
-                Health = 60;
-                weapon.Name = "weldingTorch";
-                enemy.weapons.Add(weapon);
-            } //end if
-            */
-        } //end set
+        { name_ = value; } //end set
     } //end property
-    
+
+    //method to be called by the name constructor
+    //sets stats for the unit based on name
+    private void setEnemy()
+    {
+        if (name_ == "Sentry")
+        {
+            Health = 40;
+            weapon.Name = "sentryQuick";
+            weapons.Add(weapon);
+            weapon.Name = "sentryHeavy";
+            weapons.Add(weapon);
+        } //end if
+
+        else if (name_ == "Pede")
+        {
+            Health = 30;
+            weapon.Name = "pedeQuick";
+            weapons.Add(weapon);
+            weapon.Name = "pedeHeavy";
+            weapons.Add(weapon);
+        } //end if
+
+        else if (name_ == "Shadow")
+        {
+            Health = 20;
+            weapon.Name = "shadowQuick";
+            weapons.Add(weapon);
+            weapon.Name = "shadowHeavy";
+            weapons.Add(weapon);
+        } //end if
+    } //end setEnemy
+
     //set the weapons in the weapons list using the "weaponNames" string list
     public void setWeapons()
     {

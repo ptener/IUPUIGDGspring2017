@@ -61,6 +61,9 @@ public class Weapon : MonoBehaviour
 
     //set the properties of the weapon based on the name
     //could do this in the constructor but I'll make it its own method just in case I can reuse it later
+    //
+    //that's a lot of conditionals
+    //can I achieve this through polymorphism?
     void setStats()
     {
         if (name_ == "screwDriver")
@@ -102,6 +105,42 @@ public class Weapon : MonoBehaviour
         else if (name_ == "fist")
         {
             damage_ = 1;
+            speed_ = 6.0f;
+        } //end else if
+
+        else if (name_ == "sentryQuick")
+        {
+            damage_ = 3;
+            speed_ = 3.0f;
+        } //end else if
+
+        else if (name_ == "sentryHeavy")
+        {
+            damage_ = 7;
+            speed_ = 5.0f;
+        } //end else if
+
+        else if (name_ == "pedeQuick")
+        {
+            damage_ = 1;
+            speed_ = 1.0f;
+        } //end else if
+
+        else if (name_ == "pedeHeavy")
+        {
+            damage_ = 3;
+            speed_ = 2.0f;
+        } //end else if
+
+        else if (name_ == "shadowQuick")
+        {
+            damage_ = 1;
+            speed_ = 3.0f;
+        } //end else if
+
+        else if (name_ == "shadowHeavy")
+        {
+            damage_ = 7;
             speed_ = 6.0f;
         } //end else if
     } //end setStats

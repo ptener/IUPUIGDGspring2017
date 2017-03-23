@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114836854182403336}
   - component: {fileID: 114951680669490196}
   - component: {fileID: 61270916873549100}
+  - component: {fileID: 114420846772578402}
   m_Layer: 0
   m_Name: enemy1
   m_TagString: Untagged
@@ -57,6 +58,17 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 4.5, y: 3.18}
+--- !u!114 &114420846772578402
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1151630181646050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffc75067ca01fa6459f1cd94cefa2c12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114836854182403336
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -69,7 +81,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alive_: 1
+  focusing_: 0
+  pause_: 0
   weaponChoice: 0
+  atkChoice: 0
   name_: 
   weapons: []
   weaponNames: []
