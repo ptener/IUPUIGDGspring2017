@@ -111,19 +111,19 @@ public class enemyBattleAI : MonoBehaviour
                 {
                     Dictionary<int, int> options = new Dictionary<int, int>();
 
-                    for (int i = 0; i < atkChoices.Count; i++)
+                    for (int j = 0; j < atkChoices.Count; j++)
                     {
                         //try to insert the value straight: if it works, great
                         //if not just increment the value because that value has already been inserted
                         try
                         {
-                            options.Add(atkChoices[i], 1);
+                            options.Add(atkChoices[j], 1);
                         } //end try
 
                         //TODO make sure this exception is being caught correctly, I'm a bit wary about it
                         catch (System.ArgumentException)
                         {
-                            options[atkChoices[i]] += 1; //increment the amount
+                            options[atkChoices[j]] += 1; //increment the amount
                         } //end catch
                     } //end for
 
@@ -143,11 +143,31 @@ public class enemyBattleAI : MonoBehaviour
                 } //end if
 
                 //otherwise, nobody is being focused (eg this formation is entirely pedes) so pick purely randomly
+                //this should only happen once as the random choice will be added to the attack choice list
                 else
                 {
-
+                    int choice = Random.Range(0, playerUnits.Count - 1);
+                    enemyUnits[i].atkChoice = choice;
+                    atkChoices.Add(choice);
                 } //end else
             } //end if
         } //end for
     } //end setTarget
+
+    //TODO
+    //create a function that will make a semirandom choice given the "choice" found in setTarget
+    //this function will be called within setTarget
+    //
+    //enemy should randomly pick a player unit to target, with a bias towards the one they're "inclined" to pick eg
+    //the choice variable in setTarget
+    //however, this means I need to decide when "focusing" will be set to true on the enemy
+    //when the enemy chooses the "ideal" target, the one given in choice, and not when they otherwise choose a random player?
+    //or any time that this function is called?
+
+
+
+
+
+
+
 } //end enemyBattleAI
