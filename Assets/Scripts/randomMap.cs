@@ -64,7 +64,7 @@ public class randomMap : MonoBehaviour
 			//Debug.Log("number of Paths: " + rooms[i].numOfPaths);
 			int dividedCorner = numberofCorners / 2;
 
-			for (int l = 0; l < 2; l++) {
+			for (int l = 0; l < 3; l++) {
 				
 				//get last path Direction if not in first room
 				if (i > 1) {
@@ -101,8 +101,8 @@ public class randomMap : MonoBehaviour
 							Debug.Log ("test");
 						}
 						else{
-							platform = transform.GetChild(transform.childCount - 1 - totalRoomNodeOffsets);//GetChild (transform.childCount - 1 - totalRoomNodeOffsets);
-							Debug.Log("how: " + totalRoomNodeOffsets);
+							platform = transform.GetChild(mapIndex.LastIndexOf("Plane(Clone) (UnityEngine.Transform)") + roomNodeOffsets);//GetChild (transform.childCount - 1 - totalRoomNodeOffsets);
+							Debug.Log(mapIndex.LastIndexOf("Plane(Clone) (UnityEngine.Transform)") + roomNodeOffsets);
 						}
 						addPanel(currentHallway);
 					}
@@ -124,7 +124,7 @@ public class randomMap : MonoBehaviour
 
 		}
 		Debug.Log(mapIndex.Count);
-		Debug.Log(mapIndex[mapIndex.Count -1]);
+		Debug.Log(mapIndex.LastIndexOf("Plane(Clone) (UnityEngine.Transform)"));
 	}
 
 	// Update is called once per frame
