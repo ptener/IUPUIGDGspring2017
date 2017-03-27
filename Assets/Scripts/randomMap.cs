@@ -96,13 +96,16 @@ public class randomMap : MonoBehaviour
 						
 						if (j == 0 && i == 0 && k == 0)
 							platform = Room1;
-						else if (i == 0) {
-							platform = transform.GetChild (transform.childCount - 1);
-							Debug.Log ("test");
+						else if (j == 0) {
+							if (mapIndex.LastIndexOf("Plane(Clone) (UnityEngine.Transform)") == -1)
+								platform = transform.GetChild(mapIndex.LastIndexOf("Plane (UnityEngine.Transform)") );//GetChild (transform.childCount - 1 - totalRoomNodeOffsets);
+							else
+								platform = transform.GetChild(mapIndex.LastIndexOf("Plane(Clone) (UnityEngine.Transform)") );//GetChild (transform.childCount - 1 - totalRoomNodeOffsets);
+
+							Debug.Log("how: " + roomNodeOffsets);
 						}
 						else{
-							platform = transform.GetChild(transform.childCount - 1 - totalRoomNodeOffsets);//GetChild (transform.childCount - 1 - totalRoomNodeOffsets);
-							Debug.Log("how: " + totalRoomNodeOffsets);
+							platform = transform.GetChild (transform.childCount - 1);
 						}
 						addPanel(currentHallway);
 					}

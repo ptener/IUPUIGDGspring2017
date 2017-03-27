@@ -118,8 +118,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04c295c4c049dfa418214ec60dae4558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberofRooms: 2
-  lengthofCorridors: 2
+  numberofRooms: 3
+  lengthofCorridors: 20
   numberofCorners: 2
   cornerPiece: 0
 --- !u!4 &19069302
