@@ -16,6 +16,7 @@ public class randomMap : MonoBehaviour
 	int randomChoice;
 	List<string> usedRoomDirections = new List<string> ();
 	List<roomScript> rooms = new List<roomScript>();
+	List<string> mapIndex = new List<string>();
 	int roomNodeOffsets = 0;
 	int totalRoomNodeOffsets = 0;
 	Transform platform;
@@ -51,12 +52,16 @@ public class randomMap : MonoBehaviour
 		platform = transform;
 		string lastPathDirection = "";
 
-		for (int i = 0; i < 2; i++) {
+		//fill out mapIndex
+		for (int i = 0; i < transform.childCount; i++)
+			mapIndex.Add(transform.GetChild(i).ToString());
+
+		for (int i = 0; i < numberofRooms; i++) {
 			usedRoomDirections.Clear ();
 			Debug.Log("Room number: " + i + " " + roomNodeOffsets);
 			totalRoomNodeOffsets += roomNodeOffsets;
 			roomNodeOffsets = 0;
-			Debug.Log("number of Paths: " + rooms[i].numOfPaths);
+			//Debug.Log("number of Paths: " + rooms[i].numOfPaths);
 			int dividedCorner = numberofCorners / 2;
 
 			for (int l = 0; l < 2; l++) {
@@ -118,6 +123,8 @@ public class randomMap : MonoBehaviour
 			addRoom();
 
 		}
+		Debug.Log(mapIndex.Count);
+		Debug.Log(mapIndex[mapIndex.Count -1]);
 	}
 
 	// Update is called once per frame
@@ -143,6 +150,7 @@ public class randomMap : MonoBehaviour
 			else if (direction == "hort+")
 				temp = Instantiate (currentHallway [hallwayIndex], new Vector3 (platform.position.x, platform.position.y, platform.position.z - sizeofCurrentPlane.z - 5f), currentHallway [hallwayIndex].localRotation);
 			temp.transform.SetParent (this.transform);
+			mapIndex.Add(temp.ToString());
 
 		} else {
 			if (direction == "vert+")
@@ -154,6 +162,7 @@ public class randomMap : MonoBehaviour
 			else if (direction == "hort+")
 				temp = Instantiate (currentHallway [hallwayIndex], new Vector3 (platform.position.x, platform.position.y, platform.position.z - sizeofCurrentPlane.z), currentHallway [hallwayIndex].localRotation);
 			temp.transform.SetParent (this.transform);
+			mapIndex.Add(temp.ToString());
 		}
 		roomNodeOffsets++;
 	}
@@ -238,6 +247,7 @@ public class randomMap : MonoBehaviour
 			temp = Instantiate (currentHallway [cornerPiece], new Vector3 (platform.position.x, platform.position.y, platform.position.z - sizeofCurrentPlane.z), currentHallway [cornerPiece].localRotation);
 
 		temp.transform.SetParent (this.transform);
+		mapIndex.Add(temp.ToString());
 
 		//for (int m = 0; m < usedRoomDirections.Count; m++)
 			//Debug.Log("used room direction: " + usedRoomDirections[m]);
@@ -262,6 +272,7 @@ public class randomMap : MonoBehaviour
 			temp = Instantiate (Room1, new Vector3 (platform.position.x, platform.position.y, platform.position.z - sizeofCurrentPlane.z / 2f), Quaternion.identity);
 
 		temp.transform.SetParent (this.transform);
+		mapIndex.Add(temp.ToString());
 
 		getDirection();
 	}
