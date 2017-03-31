@@ -6,7 +6,7 @@ using UnityEngine;
 public class enemyBattleAI : MonoBehaviour
 {
     //we don't want the enemy to choose the same enemy each time, just be more likely to choose them. Use this in addition to the Random.Range method
-    float pickChance = 6.5f; 
+    float pickChance = 6.0f; 
 
 	// Use this for initialization
 	void Start ()
@@ -44,14 +44,14 @@ public class enemyBattleAI : MonoBehaviour
                     if (playerUnits[j].Health > topHealth)
                     {
                         topHealth = playerUnits[j].Health;
-                        atkOfChoice = playerUnits[j].weapons[playerUnits[j].weaponChoice].Damage;
+                        atkOfChoice = playerUnits[j].weapons_[playerUnits[j].weaponChoice_].Damage;
                         choice = j;
                     } //end if
 
-                    else if (playerUnits[j].Health == topHealth && playerUnits[j].weapons[playerUnits[j].weaponChoice].Damage > atkOfChoice)
+                    else if (playerUnits[j].Health == topHealth && playerUnits[j].weapons_[playerUnits[j].weaponChoice_].Damage > atkOfChoice)
                     {
                         topHealth = playerUnits[j].Health;
-                        atkOfChoice = playerUnits[j].weapons[playerUnits[j].weaponChoice].Damage;
+                        atkOfChoice = playerUnits[j].weapons_[playerUnits[j].weaponChoice_].Damage;
                         choice = j;
                     } //end else if
                 } //end if
@@ -87,18 +87,8 @@ public class enemyBattleAI : MonoBehaviour
                 } //end if
             } //end if
 
-            //the unit is only focusing if they did not choose a random target
-            if (choice != -1)
-            {
-                enemyUnits[i].atkChoice = choice;
-                enemyUnits[i].focusing_ = true;
-                atkChoices.Add(choice);
-            } //end if
-
-            else
-            {
-
-            } //end else
+            semiRandomChoice(enemyUnits[i], choice, playerUnits.Count);
+            atkChoices.Add(enemyUnits[i].atkChoice_);
         } //end for
 
         //this next section is exclusively for pedes, as they're to want to attack the players that are currently being attacked the most
@@ -109,7 +99,7 @@ public class enemyBattleAI : MonoBehaviour
             {
                 if (atkChoices.Count > 0)
                 {
-                    Dictionary<int, int> options = new Dictionary<int, int>();
+                    Dictionary<int, int> options = new Dictionary<int, int>(); //holds each attack choice and how much each choice was made
 
                     for (int j = 0; j < atkChoices.Count; j++)
                     {
@@ -138,36 +128,53 @@ public class enemyBattleAI : MonoBehaviour
                             bestChoice = entry.Key;
                         } //end if
                     } //end foreach
-
-                    atkChoices.Add(bestChoice);
+                    
+                    semiRandomChoice(enemyUnits[i], bestChoice, playerUnits.Count);
                 } //end if
 
                 //otherwise, nobody is being focused (eg this formation is entirely pedes) so pick purely randomly
                 //this should only happen once as the random choice will be added to the attack choice list
                 else
                 {
-                    int choice = Random.Range(0, playerUnits.Count - 1);
-                    enemyUnits[i].atkChoice = choice;
-                    atkChoices.Add(choice);
+                    enemyUnits[i].atkChoice_ = Random.Range(0, playerUnits.Count - 1);
                 } //end else
+
+                atkChoices.Add(enemyUnits[i].atkChoice_);
             } //end if
         } //end for
     } //end setTarget
 
-    //TODO
-    //create a function that will make a semirandom choice given the "choice" found in setTarget
-    //this function will be called within setTarget
-    //
     //enemy should randomly pick a player unit to target, with a bias towards the one they're "inclined" to pick eg
     //the choice variable in setTarget
+    //for now, if they do not choose the "ideal" target, they should choose randomly among the other units
+    //
     //however, this means I need to decide when "focusing" will be set to true on the enemy
     //when the enemy chooses the "ideal" target, the one given in choice, and not when they otherwise choose a random player?
     //or any time that this function is called?
+    void semiRandomChoice (Unit enemy, int choice, int playerCount)
+    {
+        int rand = Random.Range(0, 10);
+        int finalChoice = choice;
 
+        //setting the likeliness to attack the "ideal" target to 60%
+        //TODO considering making this a property of each enemy
+        //may increase depending on how the battle is going? Like if they're doing badly, maybe be more likely to attack the player
+        if (rand > pickChance) //pickChance = .6
+        {
+            while (true)
+            {
+                finalChoice = Random.Range(0, playerCount);
+                if (finalChoice != choice)
+                {
+                    break;
+                } //end if
+            } //end while
+        } //end if
 
-
-
-
-
-
+        if (finalChoice == choice) //if the enemy chose the "ideal" target, they are focusing
+        {
+            enemy.focusing_ = true;
+        } //end if
+        enemy.atkChoice_ = finalChoice;
+    } //end semiRandomChoice
 } //end enemyBattleAI

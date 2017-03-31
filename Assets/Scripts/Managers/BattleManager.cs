@@ -117,7 +117,7 @@ public class BattleManager : MonoBehaviour
 
             Debug.Log(unit.Name + " is in attackdelay");
 
-            yield return new WaitForSeconds(unit.weapons[unit.weaponChoice].Speed);
+            yield return new WaitForSeconds(unit.weapons_[unit.weaponChoice_].Speed);
         } //end while
     } //end AttackDelay
 
@@ -133,9 +133,9 @@ public class BattleManager : MonoBehaviour
 
         //need to check that the choice of the weapon is within range
         //if not, just set the value to zero
-        if (attacking.weaponChoice > attacking.weapons.Count)
+        if (attacking.weaponChoice_ > attacking.weapons_.Count)
         {
-            attacking.weaponChoice = 0;
+            attacking.weaponChoice_ = 0;
         } //end if
 
         //attack till you die or they all die
@@ -171,20 +171,20 @@ public class BattleManager : MonoBehaviour
                     //do not generate a random attack choice
                     if (!attacking.focusing_) 
                     {
-                        attacking.atkChoice = Random.Range(0, enemyUnits.Count - 1);
+                        attacking.atkChoice_ = Random.Range(0, enemyUnits.Count - 1);
                     } //end if
                     
-                    enemy = enemyUnits[attacking.atkChoice];
+                    enemy = enemyUnits[attacking.atkChoice_];
                     //if the enemy is defending, divide the damage taken by two
                     //do this for if the enemy is attacking, as well
                     if (enemy.Defending)
                     {
-                        damageTaken = (attacking.weapons[attacking.weaponChoice].Damage / 2);
+                        damageTaken = (attacking.weapons_[attacking.weaponChoice_].Damage / 2);
                     } //end if
 
                     else
                     {
-                        damageTaken = attacking.weapons[attacking.weaponChoice].Damage;
+                        damageTaken = attacking.weapons_[attacking.weaponChoice_].Damage;
                     } //end else
 
                     if (enemy.Health - damageTaken <= 0)
@@ -205,7 +205,7 @@ public class BattleManager : MonoBehaviour
                                 } //end if
                             } //end for
 
-                            if (enemyCheck == attacking.atkChoice)
+                            if (enemyCheck == attacking.atkChoice_)
                             {
                                 for (int i = 0; i < playerUnits.Count; i++)
                                 {
@@ -222,21 +222,26 @@ public class BattleManager : MonoBehaviour
 
                 else if (attacking.gameObject.tag == "Enemy")
                 {
+                    //not doing anything with focusing at the moment for the enemy 
+                    //due to what happens in semiRandomChoice in the enemyBattleAI script
+                    //just leaving this in as a reminder that you're not doing anything with it
+                    //but can probably come up with something for this in the future
+                    /*
                     if (!attacking.focusing_)
                     {
-                        attacking.atkChoice = Random.Range(0, playerUnits.Count - 1);
+                        attacking.atkChoice_ = Random.Range(0, playerUnits.Count - 1);
                     } //end if
 
                     else if (attacking.focusing_)
                     {
-                        Debug.Log("enemy unit is focusing: " + enemyUnits[attacking.atkChoice].Name);
+                        Debug.Log("enemy unit is focusing: " + enemyUnits[attacking.atkChoice_].Name);
                     }
-
-                    player = playerUnits[attacking.atkChoice];
+                    */
+                    player = playerUnits[attacking.atkChoice_];
 
                     if (player.Defending)
                     {
-                        damageTaken = (attacking.weapons[attacking.weaponChoice].Damage / 2);
+                        damageTaken = (attacking.weapons_[attacking.weaponChoice_].Damage / 2);
 
                         //sometimes the damage taken will be zero after division, so reset it to 1
                         if (damageTaken == 0)
@@ -247,7 +252,7 @@ public class BattleManager : MonoBehaviour
 
                     else
                     {
-                        damageTaken = attacking.weapons[attacking.weaponChoice].Damage;
+                        damageTaken = attacking.weapons_[attacking.weaponChoice_].Damage;
                     } //end else
 
                     if ((player.Health - damageTaken) <= 0)
@@ -268,7 +273,7 @@ public class BattleManager : MonoBehaviour
             //    " " + playerUnits.Count + " " + enemyUnits.Count);
 
             //attack every few seconds based on the speed of the weapon
-            yield return new WaitForSeconds(attacking.weapons[attacking.weaponChoice].Speed);
+            yield return new WaitForSeconds(attacking.weapons_[attacking.weaponChoice_].Speed);
         } //end while
     } //end Attack
 
@@ -320,13 +325,13 @@ public class BattleManager : MonoBehaviour
         {
             for (int i = 0; i < playerUnits.Count; i++)
             {
-                playerUnits[i].atkChoice = indexTarget;
+                playerUnits[i].atkChoice_ = indexTarget;
                 playerUnits[i].pause_ = true;
                 playerUnits[i].focusing_ = true;
             } //end for
         } //end if
 
-        Debug.Log("Focus: " + enemyUnits[playerUnits[1].atkChoice].Name);
+        Debug.Log("Focus: " + enemyUnits[playerUnits[1].atkChoice_].Name);
     } //end setTarget
 
     private void SetUnits()
@@ -420,7 +425,7 @@ public class BattleManager : MonoBehaviour
             enemyUnit = enemyGO.GetComponent<Unit>();
             enemyUnit.Name = enemyNames[i];
             Debug.Log("name of enemy unit, location, and i: " + enemyUnit.Name + " " + location + " " + i);
-            enemyUnit.weaponNames = weaponFill(enemyUnit.Name); //set the weapons of the unit based on the enemy's name
+            enemyUnit.weaponNames_ = weaponFill(enemyUnit.Name); //set the weapons of the unit based on the enemy's name
             enemyUnit.setWeapons();
             enemyUnits.Add(enemyUnit);
             enemies.Add(enemyGO);

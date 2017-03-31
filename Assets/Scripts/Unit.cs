@@ -18,15 +18,15 @@ public class Unit : MonoBehaviour
 
     private int health_;
     private int startingHealth_ = 10; //separate property to hold the health we want to start each unit at (mainly for testing)
-    public int weaponChoice; //used to select a weapon from the weapon list
-    public int atkChoice; 
+    public int weaponChoice_; //used to select a weapon from the weapon list
+    public int atkChoice_; 
     
     public string name_ = "";
 
-    private Weapon weapon;
+    private Weapon weapon_;
 
-    public List<Weapon> weapons;
-    public List<string> weaponNames;
+    public List<Weapon> weapons_;
+    public List<string> weaponNames_;
 
     //default unit constructor
     //variables to initialize: health, level, maybe class type or however else we decide to design this
@@ -40,7 +40,7 @@ public class Unit : MonoBehaviour
     {
         health_ = startingHealth_;
         name_ = name;
-        atkChoice = 0;
+        atkChoice_ = 0;
     } //end overloaded constructor
 
     // Use this for initialization
@@ -62,7 +62,7 @@ public class Unit : MonoBehaviour
                 health_ = startingHealth_;
                 setEnemy();
             } //end else
-            atkChoice = 0;
+            atkChoice_ = 0;
         } //end if
     } //end Start
 
@@ -140,28 +140,28 @@ public class Unit : MonoBehaviour
         if (name_ == "Sentry")
         {
             Health = 40;
-            weapon.Name = "sentryQuick";
-            weapons.Add(weapon);
-            weapon.Name = "sentryHeavy";
-            weapons.Add(weapon);
+            weapon_.Name = "sentryQuick";
+            weapons_.Add(weapon_);
+            weapon_.Name = "sentryHeavy";
+            weapons_.Add(weapon_);
         } //end if
 
         else if (name_ == "Pede")
         {
             Health = 30;
-            weapon.Name = "pedeQuick";
-            weapons.Add(weapon);
-            weapon.Name = "pedeHeavy";
-            weapons.Add(weapon);
+            weapon_.Name = "pedeQuick";
+            weapons_.Add(weapon_);
+            weapon_.Name = "pedeHeavy";
+            weapons_.Add(weapon_);
         } //end if
 
         else if (name_ == "Shadow")
         {
             Health = 20;
-            weapon.Name = "shadowQuick";
-            weapons.Add(weapon);
-            weapon.Name = "shadowHeavy";
-            weapons.Add(weapon);
+            weapon_.Name = "shadowQuick";
+            weapons_.Add(weapon_);
+            weapon_.Name = "shadowHeavy";
+            weapons_.Add(weapon_);
         } //end if
     } //end setEnemy
 
@@ -169,18 +169,18 @@ public class Unit : MonoBehaviour
     public void setWeapons()
     {
         //if no one has set any weapons, at least give poor dude their fists to work with
-        if (weaponNames.Count == 0)
+        if (weaponNames_.Count == 0)
         {
             Weapon weapon = gameObject.GetComponent<Weapon>();
             weapon.Name = "fist";
-            weapons.Add(weapon);
+            weapons_.Add(weapon);
         } //end if
 
-        for (int i = 0; i < weaponNames.Count; i++)
+        for (int i = 0; i < weaponNames_.Count; i++)
         {
             Weapon weapon = gameObject.GetComponent<Weapon>();
-            weapon.Name = weaponNames[i];
-            weapons.Add(weapon);
+            weapon.Name = weaponNames_[i];
+            weapons_.Add(weapon);
         } //end for
     } //end setWeapons
 } //end Unit
