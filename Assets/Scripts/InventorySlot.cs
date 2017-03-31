@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class InventorySlot : MonoBehaviour, IDropHandler {
-	public int id;
+	//slotId is the number that each slot is identified as
+	public int slotId;
 	private Inventory inv;
 
 
@@ -16,25 +17,55 @@ public class InventorySlot : MonoBehaviour, IDropHandler {
 
 	public void OnDrop(PointerEventData eventData)
 	{
-		ItemData droppedItem = eventData.pointerDrag.GetComponent<ItemData> ();
-		if (inv.items [id].ID == -1) {
-			inv.items [droppedItem.slotNumber] = new Item ();
-			inv.items [id] = droppedItem.item;
-			droppedItem.slotNumber = id;
+		//ItemData of held Item
+		ItemData heldItem = eventData.pointerDrag.GetComponent<ItemData> ();
+
+
+		if (inv.items [slotId].ID <= 9) {
+			//If the item is dropped in an empty slot, then:
+			if (inv.items [slotId].ID == -1) {
+				inv.items [heldItem.slotNumber] = new Item ();
+				inv.items [slotId] = heldItem.item;
+				heldItem.slotNumber = slotId;
+			}
+			//If the item is dropped in a slot that is not its own, then:
+			else if (heldItem.slotNumber != slotId) {
+				//        slotItem is the item occupying the slot that you tried to drop your item in
+				Transform slotItem = this.transform.GetChild (0);
+				slotItem.GetComponent<ItemData> ().slotNumber = heldItem.slotNumber;
+				slotItem.transform.SetParent (inv.invSlots [heldItem.slotNumber].transform);
+				slotItem.transform.position = inv.invSlots [heldItem.slotNumber].transform.position;
+
+				heldItem.slotNumber = slotId;
+				heldItem.transform.SetParent (this.transform);
+				heldItem.transform.position = this.transform.position;
+
+				inv.items [heldItem.slotNumber] = slotItem.GetComponent<ItemData> ().item;
+				inv.items [slotId] = heldItem.item;
+			}
 		}
-		else if (droppedItem.slotNumber !=id) {
-			Transform item = this.transform.GetChild (0);
-			item.GetComponent<ItemData> ().slotNumber = droppedItem.slotNumber;
-			item.transform.SetParent (inv.slots[droppedItem.slotNumber].transform);
-			item.transform.position = inv.slots [droppedItem.slotNumber].transform.position;
+		else if (inv.items [slotId].ID >= 10) {
+			//If the item is dropped in an empty slot, then:
+			if (inv.items [slotId].ID == -1) {
+				inv.items [heldItem.slotNumber] = new Item ();
+				inv.items [slotId] = heldItem.item;
+				heldItem.slotNumber = slotId;
+			}
+			//If the item is dropped in a slot that is not its own, then:
+			else if (heldItem.slotNumber != slotId) {
+				//        slotItem is the item occupying the slot that you tried to drop your item in
+				Transform slotItem = this.transform.GetChild (0);
+				slotItem.GetComponent<ItemData> ().slotNumber = heldItem.slotNumber;
+				slotItem.transform.SetParent (inv.itemSlots [heldItem.slotNumber].transform);
+				slotItem.transform.position = inv.itemSlots [heldItem.slotNumber].transform.position;
 
-			droppedItem.slotNumber = id;
-			droppedItem.transform.SetParent (this.transform);
-			droppedItem.transform.position = this.transform.position;
+				heldItem.slotNumber = slotId;
+				heldItem.transform.SetParent (this.transform);
+				heldItem.transform.position = this.transform.position;
 
-			inv.items [droppedItem.slotNumber] = item.GetComponent<ItemData> ().item;
-			inv.items [id] = droppedItem.item;
+				inv.items [heldItem.slotNumber] = slotItem.GetComponent<ItemData> ().item;
+				inv.items [slotId] = heldItem.item;
+			}
 		}
-
 	}
 }

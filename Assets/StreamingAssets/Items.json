@@ -1,29 +1,85 @@
 [
 {
 		"id": 0,
-		"title":"Gold Sword",
+		"title":"Screwdriver",
 		"stats": {
-			"attack": 10,
-			"defence": 10,
-			"cooldown": 10
+			"damage": 1,
+			"delay": 1,
+			"cooldown": 25
 			},
-		"description":"It's a sword made from gold",
-		"stackable": true,
+		"description":"It's a basic screwdriver",
+		"stackable": false,
 		"rarity": 2,
-		"slug":"gold_sword"
+		"slug":"screwdriver_icon"
 },
 {
 		"id": 1,
-		"title":"Flame Torch",
+		"title":"Power Drill",
 		"stats": {
-			"attack": 25,
-			"defence": 25,
+			"damage": 3,
+			"delay": 2,
 			"cooldown": 25
 			},
-		"description":"It's a Flame Torch, duh",
+		"description":"It's a drill that uses electricity",
 		"stackable": false,
 		"rarity": 5,
-		"slug":"item_icons[6]"
+		"slug":"power_drill_icon"
+
+},
+{
+		"id": 2,
+		"title":"Socket Wrench",
+		"stats": {
+			"damage": 2,
+			"delay": 1,
+			"cooldown": 25
+			},
+		"description":"Your run of the mill wrench",
+		"stackable": false,
+		"rarity": 5,
+		"slug":"socket_wrench_icon"
+
+},
+{
+		"id": 3,
+		"title":"Steel Pipe",
+		"stats": {
+			"damage": 5,
+			"delay": 3,
+			"cooldown": 25
+			},
+		"description":"Not as useful as a crowbar, but still packs a punch",
+		"stackable": false,
+		"rarity": 5,
+		"slug":"steel_pipe_icon"
+
+},
+{
+		"id": 4,
+		"title":"Pipe Wrench",
+		"stats": {
+			"damage": 4,
+			"delay": 2,
+			"cooldown": 25
+			},
+		"description":"A wrench that is used on pipes",
+		"stackable": false,
+		"rarity": 5,
+		"slug":"pipe_wrench_icon"
+
+},
+{
+		"id": 5,
+		"title":"Welding Torch",
+		"stats": {
+			"damage": 6,
+			"delay": 4,
+			"cooldown": 25
+			},
+		"description":"It's a Welding Torch, duh",
+		"stackable": false,
+		"rarity": 5,
+		"slug":"welding_torch_icon"
 
 }
 ]

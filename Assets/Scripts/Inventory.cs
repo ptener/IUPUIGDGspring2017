@@ -7,35 +7,50 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour {
 
 	GameObject inventoryPanel;
+	GameObject itemPanel;
 	GameObject slotPanel;
+	GameObject itemSlotPanel;
 	ItemDatabase database;
 	public GameObject inventorySlot;
 	public GameObject inventoryItem;
 
-	int slotAmount;
+	public int invSlotAmount;
+	public int itemSlotAmount;
 	public List<Item> items = new List<Item>();
-	public List<GameObject> slots = new List<GameObject>();
+	public List<GameObject> invSlots = new List<GameObject>();
+	public List<GameObject> itemSlots = new List<GameObject>();
 
 
 
 	void Start()
 	{
 		database = GetComponent<ItemDatabase>();
-		slotAmount = 15;
+
 		inventoryPanel = GameObject.Find("Inventory Panel");
 		slotPanel = inventoryPanel.transform.FindChild ("Slot Panel").gameObject;
-		for (int i = 0; i < slotAmount; i++) {
+		for (int i = 0; i < invSlotAmount; i++) {
 			items.Add (new Item ());
-			slots.Add (Instantiate (inventorySlot));
-			slots [i].GetComponent<InventorySlot> ().id = i;
-			slots [i].transform.SetParent (slotPanel.transform);
+			invSlots.Add (Instantiate (inventorySlot));
+			invSlots [i].GetComponent<InventorySlot> ().slotId = i;
+			invSlots [i].transform.SetParent (slotPanel.transform);
 		}
 
-		AddItem (0);
-		AddItem (0);
+		itemPanel = GameObject.Find("Item Panel");
+		itemSlotPanel = itemPanel.transform.FindChild ("Item Slot Panel").gameObject;
+		for (int i = 0; i < itemSlotAmount; i++) {
+			items.Add (new Item ());
+			invSlots.Add (Instantiate (inventorySlot));
+			invSlots [i + invSlotAmount].GetComponent<InventorySlot> ().slotId = i+invSlotAmount;
+			invSlots [i + invSlotAmount].transform.SetParent (itemSlotPanel.transform);
+		}
+
+
 		AddItem (0);
 		AddItem (1);
-
+		AddItem (2);
+		AddItem (3);
+		AddItem (4);
+		AddItem (5);
 	}
 
 	public void AddItem(int id)
@@ -45,7 +60,7 @@ public class Inventory : MonoBehaviour {
 		if (itemToAdd.Stackable && CheckIfItemIsInInventory(itemToAdd)) {
 			for (int i = 0; i < items.Count; i++) {
 				if (items [i].ID == id) {
-					ItemData data = slots [i].transform.GetChild (0).GetComponent<ItemData> ();
+					ItemData data = invSlots [i].transform.GetChild (0).GetComponent<ItemData> ();
 					data.amount++;
 					data.transform.GetChild (0).GetComponent<Text> ().text = data.amount.ToString();
 					break;
@@ -60,7 +75,7 @@ public class Inventory : MonoBehaviour {
 					itemObj.GetComponent<ItemData>().item = itemToAdd;
 					itemObj.GetComponent<ItemData> ().amount = 1;
 					itemObj.GetComponent<ItemData> ().slotNumber = i;
-					itemObj.transform.SetParent (slots [i].transform);
+					itemObj.transform.SetParent (invSlots [i].transform);
 					itemObj.transform.position = Vector2.zero;
 					itemObj.GetComponent<Image> ().sprite = itemToAdd.Sprite;
 					itemObj.name = itemToAdd.Title;

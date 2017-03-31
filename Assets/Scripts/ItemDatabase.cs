@@ -33,8 +33,8 @@ public class ItemDatabase : MonoBehaviour {
 	void ConstructItemDatabase()
 	{
 		for (int i = 0; i < itemData.Count; i++) {
-			database.Add (new Item((int)itemData[i]["id"], itemData[i]["title"].ToString(), (int)itemData[i]["stats"]["attack"],
-				(int)itemData[i]["stats"]["defence"], (int)itemData[i]["stats"]["cooldown"], itemData[i]["description"].ToString(),
+			database.Add (new Item((int)itemData[i]["id"], itemData[i]["title"].ToString(), (int)itemData[i]["stats"]["damage"],
+				(int)itemData[i]["stats"]["delay"], (int)itemData[i]["stats"]["cooldown"], itemData[i]["description"].ToString(),
 				(bool)itemData[i]["stackable"], (int)itemData[i]["rarity"], itemData[i]["slug"].ToString()));
 		}
 	}
@@ -46,8 +46,8 @@ public class Item
 {
 	public int ID { get; set;}
 	public string Title { get; set;}
-	public int Attack { get; set; }
-	public int Defence { get; set; }
+	public int Damage { get; set; }
+	public int Delay { get; set; }
 	public int Cooldown { get; set; }
 	public string Description { get; set;}
 	public bool Stackable { get; set; }
@@ -56,12 +56,12 @@ public class Item
 	public Sprite Sprite { get; set;}
 
 
-	public Item(int id, string title, int attack, int defence, int cooldown, string description, bool stackable, int rarity, string slug)
+	public Item(int id, string title, int damage, int delay, int cooldown, string description, bool stackable, int rarity, string slug)
 	{
 		this.ID = id;
 		this.Title = title;
-		this.Attack = attack;
-		this.Defence = defence;
+		this.Damage = damage;
+		this.Delay = delay;
 		this.Cooldown = cooldown;
 		this.Description = description;
 		this.Stackable = stackable;
