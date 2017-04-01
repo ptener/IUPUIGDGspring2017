@@ -64,7 +64,8 @@ public class randomMap : MonoBehaviour
 			//Debug.Log("number of Paths: " + rooms[i].numOfPaths);
 			int dividedCorner = numberofCorners / 2;
 
-			for (int l = 0; l < 3; l++) {
+			//number of paths
+			for (int l = 0; l < 4; l++) {
 				
 				//get last path Direction if not in first room
 				if (i > 1) {
@@ -90,13 +91,14 @@ public class randomMap : MonoBehaviour
 						break;
 					}
 				}
-				for (int k = 0; k < 2; k++) {
+				//number of corners
+				for (int k = 0; k < 4; k++) {
 					randomSize = Random.Range (4, lengthofCorridors);
 					for (int j = 0; j < randomSize - 1; j++) {
 						
 						if (j == 0 && i == 0 && k == 0)
 							platform = Room1;
-						else if (j == 0) {
+						else if (j == 0 && k == 0) {
 							if (mapIndex.LastIndexOf("Plane(Clone) (UnityEngine.Transform)") == -1)
 								platform = transform.GetChild(mapIndex.LastIndexOf("Plane (UnityEngine.Transform)") );//GetChild (transform.childCount - 1 - totalRoomNodeOffsets);
 							else
