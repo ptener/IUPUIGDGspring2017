@@ -21,7 +21,7 @@ public class enemyBattleAI : MonoBehaviour
 	} //end Update
 
     //take in the enemy unit to determine strategy/set atkChoice and the playerUnits collection to choose based on stats
-    private void setTarget (List<Unit> enemyUnits, List<Unit> playerUnits)
+    public void setTarget (List<Unit> enemyUnits, List<Unit> playerUnits)
     {
         List<int> atkChoices = new List<int>(); //used by the pede to determine who to attack: they should 
         for (int i = 0; i < enemyUnits.Count; i++)
@@ -41,6 +41,7 @@ public class enemyBattleAI : MonoBehaviour
             {
                 if (name == "Sentry")
                 {
+                    Debug.Log("sentry in battle ai");
                     if (playerUnits[j].Health > topHealth)
                     {
                         topHealth = playerUnits[j].Health;
@@ -60,6 +61,7 @@ public class enemyBattleAI : MonoBehaviour
                 //otherwise they should want to attack the unit with the least amount of health
                 else if (name == "Shadow")
                 {
+                    Debug.Log("shadow in enemy ai");
                     if (playerUnits[j].Defending)
                     {
                         //if this unit is blocking and has the lowest health among all blockers, it is the definite choice

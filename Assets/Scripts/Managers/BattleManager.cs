@@ -22,13 +22,14 @@ public class BattleManager : MonoBehaviour
     private bool attacking = true; //possibly change to an int if more strategies than "attacking" and "defending" will be used
 
     //copied from EnemyManager.cs
-    private int spriteSize; //used to spawn each sprite in the correct location proportional to how many there are and the size of the sprite
 
     public string[] enemyNames;
 
     private GameObject[] playerGOs;
     private GameObject enemyGO;
-    public GameObject enemyPrefab;
+    public GameObject shadowPrefab;
+    public GameObject pedePrefab;
+    public GameObject sentryPrefab;
     public Unit enemyUnit;
 
     private Transform spawnLoc;
@@ -44,14 +45,18 @@ public class BattleManager : MonoBehaviour
     private static List<Unit> enemyUnits, playerUnits; //fill this with unit scripts for modification
     public List<GameObject> enemies, players;
 
+    enemyBattleAI enemyAI;
+
     // Use this for initialization
     void Start ()
     {
         IEnumerator atkStart;
 
+        enemyAI = new enemyBattleAI();
         enemyUnits = new List<Unit>();
         playerUnits = new List<Unit>();
-        enemyPrefab = (GameObject)Resources.Load("prefabs/enemy1");
+        shadowPrefab = (GameObject)Resources.Load("prefabs/shadow");
+        pedePrefab = (GameObject)Resources.Load("prefabs/pede");
         enemyUnit = GetComponent<Unit>();
         sprite = (Sprite)Resources.Load("Assets/sprites/enemy1"); //load the test sprite in
         Spawn();
@@ -237,6 +242,7 @@ public class BattleManager : MonoBehaviour
                         Debug.Log("enemy unit is focusing: " + enemyUnits[attacking.atkChoice_].Name);
                     }
                     */
+                    enemyAI.setTarget(enemyUnits, playerUnits);
                     player = playerUnits[attacking.atkChoice_];
 
                     if (player.Defending)
@@ -384,13 +390,44 @@ public class BattleManager : MonoBehaviour
         //something wrong because it's not giving me the left side of the screen.
         Vector3 stageDimensions = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
         //Vector3 stageDimensions = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, 0));
+        List<int> spriteSizes = new List<int>(); //hold the sprite size of each sprite we're using
 
-        for (int i = 0; i < enemyNames.Length; i++)
+        //TODO
+        //this is a very temporary solution
+        //right now I'm going to determine enemy party types just by feeding in a list of strings
+        //with the names of each enemy we want to instantiate
+        List<string> toSpawn = new List<string>();
+        int spriteSize = 0;
+
+        toSpawn.Add("pede");
+        toSpawn.Add("shadow");
+
+        for (int i = 0; i < toSpawn.Count; i++) //used to be i < enemyNames.Length
         {
             //use gameObject.transform to get the spawn location
             //divide the space up by the amount of enemies total
+            if (toSpawn[i] == "shadow")
+            {
+                spriteSize = (int)shadowPrefab.GetComponent<Renderer>().bounds.size.x;
+            } //end if
 
-            spriteSize = (int)enemyPrefab.GetComponent<Renderer>().bounds.size.x;
+            else if (toSpawn[i] == "pede")
+            {
+                spriteSize = (int)shadowPrefab.GetComponent<Renderer>().bounds.size.x;
+            } //end else if
+
+            /*
+            //check if we've already marked the size of the sprite
+            if (spriteSizes.Contains(spriteSize))
+            {
+
+            } //end if
+
+            else
+            {
+                spriteSizes.Add(spriteSize);
+            } //end else
+            */
 
             spawnLoc = gameObject.transform;
             Vector3 location = spawnLoc.position;
@@ -419,9 +456,17 @@ public class BattleManager : MonoBehaviour
             */
 
             prevLoc = location.x; //place the following sprite next to this one, maybe skewed a bit if you want
-            
-            enemyGO = (GameObject)Instantiate(enemyPrefab, location, transform.rotation);
-            enemyGO.tag = "Enemy";
+
+            if (toSpawn[i] == "shadow")
+            {
+                enemyGO = (GameObject)Instantiate(shadowPrefab, location, transform.rotation);
+            } //end if
+
+            else if (toSpawn[i] == "pede")
+            {
+                enemyGO = (GameObject)Instantiate(pedePrefab, location, transform.rotation);
+            } //end else if
+
             enemyUnit = enemyGO.GetComponent<Unit>();
             enemyUnit.Name = enemyNames[i];
             Debug.Log("name of enemy unit, location, and i: " + enemyUnit.Name + " " + location + " " + i);

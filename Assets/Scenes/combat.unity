@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -213,12 +213,11 @@ MonoBehaviour:
   alive_: 1
   focusing_: 0
   pause_: 0
-  weaponChoice: 0
-  atkChoice: 0
-  name_: B.O.S.S. W.E.E.B.
-  weapons: []
-  weaponNames:
-  - socketWrench
+  weaponChoice_: 0
+  atkChoice_: 0
+  name_: Player 1
+  weapons_: []
+  weaponNames_: []
 --- !u!1 &338379028
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,12 +337,11 @@ MonoBehaviour:
   alive_: 1
   focusing_: 0
   pause_: 0
-  weaponChoice: 0
-  atkChoice: 0
-  name_: OOOUUUU
-  weapons: []
-  weaponNames:
-  - socketWrench
+  weaponChoice_: 0
+  atkChoice_: 0
+  name_: Player 3
+  weapons_: []
+  weaponNames_: []
 --- !u!1 &437527793
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,12 +433,11 @@ MonoBehaviour:
   alive_: 1
   focusing_: 0
   pause_: 0
-  weaponChoice: 0
-  atkChoice: 0
-  name_: THA GOD
-  weapons: []
-  weaponNames:
-  - socketWrench
+  weaponChoice_: 0
+  atkChoice_: 0
+  name_: Player 2
+  weapons_: []
+  weaponNames_: []
 --- !u!1 &446640151
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,8 +468,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyNames:
-  - famous
-  - shamus
+  - Enemy 1
+  - Enemy 2
   enemyPrefab: {fileID: 1151630181646050, guid: 6fe444886d5dee3439755ab2290cdf07,
     type: 2}
   enemyUnit: {fileID: 0}
@@ -504,11 +501,11 @@ MonoBehaviour:
   alive_: 1
   focusing_: 0
   pause_: 0
-  weaponChoice: 0
-  atkChoice: 0
+  weaponChoice_: 0
+  atkChoice_: 0
   name_: 
-  weapons: []
-  weaponNames: []
+  weapons_: []
+  weaponNames_: []
 --- !u!4 &446640156
 Transform:
   m_ObjectHideFlags: 0

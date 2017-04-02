@@ -25,8 +25,8 @@ GameObject:
   - component: {fileID: 61270916873549100}
   - component: {fileID: 114420846772578402}
   m_Layer: 0
-  m_Name: enemy1
-  m_TagString: Untagged
+  m_Name: pede
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,11 +83,11 @@ MonoBehaviour:
   alive_: 1
   focusing_: 0
   pause_: 0
-  weaponChoice: 0
-  atkChoice: 0
-  name_: 
-  weapons: []
-  weaponNames: []
+  weaponChoice_: 0
+  atkChoice_: 0
+  name_: pede
+  weapons_: []
+  weaponNames_: []
 --- !u!114 &114951680669490196
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -130,7 +130,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d29b4b6a9d1e6cd4db6e9f88521bbe1d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5f0c59abe9913614488ec2c0222e7a85, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
