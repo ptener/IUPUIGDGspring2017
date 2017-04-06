@@ -12,6 +12,7 @@ public class randomMap : MonoBehaviour
 	string direction = "vert+";
 	string lastdirection;
 	int hallwayIndex = 0;
+	int tempHallwayIndex = 0;
 	int randomSize;
 	int randomChoice;
 	List<string> usedRoomDirections = new List<string> ();
@@ -33,7 +34,8 @@ public class randomMap : MonoBehaviour
 		Transform Corner2 = transform.GetChild (3);
 		Transform Corner3 = transform.GetChild (4);
 		Transform Corner4 = transform.GetChild (5);
-		Room1 = transform.GetChild(6);
+		Transform end = transform.GetChild (6);
+		Room1 = transform.GetChild(7);
 
 		//init inital room
 		rooms.Add(new roomScript());
@@ -42,7 +44,7 @@ public class randomMap : MonoBehaviour
 		for (int i=0; i < numberofRooms-1; i++)
 			rooms.Add (new roomScript());
 		randomSize = Random.Range (10, lengthofCorridors);
-		Transform[] currentHallway = { straightHallway, leftHallway, Corner1, Corner2 , Corner3, Corner4};
+		Transform[] currentHallway = { straightHallway, leftHallway, Corner1, Corner2 , Corner3, Corner4, end};
 
 		sizeofCurrentPlane = straightHallway.GetComponent<Renderer> ().bounds.size;
 
@@ -92,7 +94,7 @@ public class randomMap : MonoBehaviour
 					}
 				}
 				//number of corners
-				for (int k = 0; k < 4; k++) {
+				for (int k = 0; k < 2; k++) {
 					randomSize = Random.Range (4, lengthofCorridors);
 					for (int j = 0; j < randomSize - 1; j++) {
 						
@@ -110,11 +112,16 @@ public class randomMap : MonoBehaviour
 							platform = transform.GetChild (transform.childCount - 1);
 
 						}
-						addPanel(currentHallway);
+						addPanel (currentHallway);
 					}
 					getDirection();
 
-					addCorner(currentHallway);
+					if (k != 1) {
+						addEnd (currentHallway);
+						Debug.Log ("Tell me where they are!!!!");
+					}
+					else
+						addCorner(currentHallway);
 				}
 
 				//add case for first room
@@ -137,6 +144,30 @@ public class randomMap : MonoBehaviour
 	void Update ()
 	{
 
+	}
+
+	void addEnd(Transform[] currentHallway)
+	{
+		tempHallwayIndex = cornerPiece;
+		cornerPiece = 6;
+		//add the last piece of tile here
+		platform = transform.GetChild (transform.childCount - 1);
+		sizeofCurrentPlane = platform.GetComponent<Renderer> ().bounds.size;
+
+		if (lastdirection == "vert+")
+			temp = Instantiate (currentHallway [cornerPiece], new Vector3 (platform.position.x + sizeofCurrentPlane.x, platform.position.y, platform.position.z), Quaternion.identity);
+		else if (lastdirection == "vert-")
+			temp = Instantiate (currentHallway [cornerPiece], new Vector3 (platform.position.x - sizeofCurrentPlane.x, platform.position.y, platform.position.z), Quaternion.identity);
+		else if (lastdirection == "hort-")
+			temp = Instantiate (currentHallway [cornerPiece], new Vector3 (platform.position.x, platform.position.y, platform.position.z + sizeofCurrentPlane.z), currentHallway [cornerPiece].localRotation);
+		else if (lastdirection == "hort+")
+			temp = Instantiate (currentHallway [cornerPiece], new Vector3 (platform.position.x, platform.position.y, platform.position.z - sizeofCurrentPlane.z), currentHallway [cornerPiece].localRotation);
+
+		temp.transform.SetParent (this.transform);
+		mapIndex.Add(temp.ToString());
+		roomNodeOffsets++;
+
+		cornerPiece = tempHallwayIndex;
 	}
 
 	void addPanel(Transform[] currentHallway){
