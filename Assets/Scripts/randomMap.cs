@@ -9,6 +9,7 @@ public class randomMap : MonoBehaviour
 	public int numberofCorners = 5;
 	public int cornerPiece = 0;
 
+	public Transform[] Rooms;
 	string direction = "vert+";
 	string lastdirection;
 	int hallwayIndex = 0;
@@ -101,10 +102,10 @@ public class randomMap : MonoBehaviour
 						if (j == 0 && i == 0 && k == 0)
 							platform = Room1;
 						else if (j == 0 && k == 0) {
-							if (mapIndex.LastIndexOf("Plane(Clone) (UnityEngine.Transform)") == -1)
+							if (mapIndex.LastIndexOf("Room") == -1)
 								platform = transform.GetChild(mapIndex.LastIndexOf("Plane (UnityEngine.Transform)") );//GetChild (transform.childCount - 1 - totalRoomNodeOffsets);
 							else
-								platform = transform.GetChild(mapIndex.LastIndexOf("Plane(Clone) (UnityEngine.Transform)") );//GetChild (transform.childCount - 1 - totalRoomNodeOffsets);
+								platform = transform.GetChild(mapIndex.LastIndexOf("Room") );//GetChild (transform.childCount - 1 - totalRoomNodeOffsets);
 
 							Debug.Log("how: " + roomNodeOffsets);
 						}
@@ -136,8 +137,6 @@ public class randomMap : MonoBehaviour
 			addRoom();
 
 		}
-		Debug.Log(mapIndex.Count);
-		Debug.Log(mapIndex.LastIndexOf("Plane(Clone) (UnityEngine.Transform)"));
 	}
 
 	// Update is called once per frame
@@ -299,17 +298,21 @@ public class randomMap : MonoBehaviour
 		sizeofCurrentPlane = Room1.GetComponent<Renderer> ().bounds.size;
 
 		sizeofCurrentPlane = (new Vector3 (sizeofCurrentPlane.x + platform.GetComponent<Renderer> ().bounds.size.x / 2f + 5f, sizeofCurrentPlane.y, sizeofCurrentPlane.z + platform.GetComponent<Renderer> ().bounds.size.z / 2f + 5f));
+
+		//pick a random room from Rooms[]
+		int randomRoomIndex = Random.Range (1, Rooms.Length);
+		Debug.Log(randomRoomIndex);
 		if (direction == "vert+")
-			temp = Instantiate (Room1, new Vector3 (platform.position.x + sizeofCurrentPlane.x / 2f, platform.position.y, platform.position.z), Quaternion.identity);
+			temp = Instantiate (Rooms[randomRoomIndex], new Vector3 (platform.position.x + sizeofCurrentPlane.x / 2f, platform.position.y, platform.position.z), Quaternion.identity);
 		else if (direction == "vert-")
-			temp = Instantiate (Room1, new Vector3 (platform.position.x - sizeofCurrentPlane.x / 2f, platform.position.y, platform.position.z), Quaternion.identity);
+			temp = Instantiate (Rooms[randomRoomIndex], new Vector3 (platform.position.x - sizeofCurrentPlane.x / 2f, platform.position.y, platform.position.z), Quaternion.identity);
 		else if (direction == "hort-")
-			temp = Instantiate (Room1, new Vector3 (platform.position.x, platform.position.y, platform.position.z + sizeofCurrentPlane.z / 2f), Quaternion.identity);
+			temp = Instantiate (Rooms[randomRoomIndex], new Vector3 (platform.position.x, platform.position.y, platform.position.z + sizeofCurrentPlane.z / 2f), Quaternion.identity);
 		else if (direction == "hort+")
-			temp = Instantiate (Room1, new Vector3 (platform.position.x, platform.position.y, platform.position.z - sizeofCurrentPlane.z / 2f), Quaternion.identity);
+			temp = Instantiate (Rooms[randomRoomIndex], new Vector3 (platform.position.x, platform.position.y, platform.position.z - sizeofCurrentPlane.z / 2f), Quaternion.identity);
 
 		temp.transform.SetParent (this.transform);
-		mapIndex.Add(temp.ToString());
+		mapIndex.Add("Room");
 
 		getDirection();
 	}

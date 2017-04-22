@@ -55,7 +55,7 @@ public class Path : MonoBehaviour {
 		}
 		//if pathNode user is in reach of player do something
 		if (playerDir.magnitude <= reachToPlayer) {
-			Debug.Log("test");
+			//do the thing
 		}
 
 
