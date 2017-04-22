@@ -9,6 +9,8 @@ public class randomMap : MonoBehaviour
 	public int numberofCorners = 5;
 	public int cornerPiece = 0;
 
+	public Transform player;
+	public Transform ladder;
 	public Transform[] Rooms;
 	string direction = "vert+";
 	string lastdirection;
@@ -26,6 +28,7 @@ public class randomMap : MonoBehaviour
 	Transform Room1;
 	Transform temp;
 
+
 	// Use this for initialization
 	void Start () {
 
@@ -36,8 +39,9 @@ public class randomMap : MonoBehaviour
 		Transform Corner3 = transform.GetChild (4);
 		Transform Corner4 = transform.GetChild (5);
 		Transform end = transform.GetChild (6);
+		List<Transform> roomsDone = new List<Transform>();
 		Room1 = transform.GetChild(7);
-
+	
 		//init inital room
 		rooms.Add(new roomScript());
 
@@ -50,6 +54,9 @@ public class randomMap : MonoBehaviour
 		sizeofCurrentPlane = straightHallway.GetComponent<Renderer> ().bounds.size;
 
 		temp = transform;
+
+		//init empty roomsDone
+		//roomsDone.Add(temp);
 
 		//init transform so they are not empty, but we don't use our own transform for these vars.
 		platform = transform;
@@ -134,9 +141,22 @@ public class randomMap : MonoBehaviour
 				}
 
 			}
-			addRoom();
+			addRoom(roomsDone);
 
 		}
+
+		//go through and pick a start room and a final room
+
+			int randomStart = Random.Range (1, roomsDone.Count);
+			int randomGoal = Random.Range(1, roomsDone.Count);
+
+			//if they are equal reset
+			//while (randomStart == randomGoal)
+			//	randomStart = Random.Range (1, roomsDone.Count);
+
+			player.position = roomsDone[randomStart].transform.position;
+			Instantiate (ladder, new Vector3 (roomsDone[randomGoal].position.x, roomsDone[randomGoal].position.y, roomsDone[randomGoal].position.z), Quaternion.identity);
+
 	}
 
 	// Update is called once per frame
@@ -289,7 +309,7 @@ public class randomMap : MonoBehaviour
 			//Debug.Log("used room direction: " + usedRoomDirections[m]);
 	}
 
-	void addRoom(){
+	void addRoom(List<Transform> roomsDone){
 		//for (int l =0; l < usedRoomDirections.Count; l++)
 			//Debug.Log("the used room directions before being cleared " + usedRoomDirections[l]);
 		//usedRoomDirections.Clear ();
@@ -300,8 +320,9 @@ public class randomMap : MonoBehaviour
 		sizeofCurrentPlane = (new Vector3 (sizeofCurrentPlane.x + platform.GetComponent<Renderer> ().bounds.size.x / 2f + 5f, sizeofCurrentPlane.y, sizeofCurrentPlane.z + platform.GetComponent<Renderer> ().bounds.size.z / 2f + 5f));
 
 		//pick a random room from Rooms[]
-		int randomRoomIndex = Random.Range (1, Rooms.Length);
+		int randomRoomIndex = Random.Range (0, Rooms.Length);
 		Debug.Log(randomRoomIndex);
+		Debug.Log(Rooms[randomRoomIndex]);
 		if (direction == "vert+")
 			temp = Instantiate (Rooms[randomRoomIndex], new Vector3 (platform.position.x + sizeofCurrentPlane.x / 2f, platform.position.y, platform.position.z), Quaternion.identity);
 		else if (direction == "vert-")
@@ -311,6 +332,7 @@ public class randomMap : MonoBehaviour
 		else if (direction == "hort+")
 			temp = Instantiate (Rooms[randomRoomIndex], new Vector3 (platform.position.x, platform.position.y, platform.position.z - sizeofCurrentPlane.z / 2f), Quaternion.identity);
 
+		roomsDone.Add(temp);
 		temp.transform.SetParent (this.transform);
 		mapIndex.Add("Room");
 
