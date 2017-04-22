@@ -2142,6 +2142,35 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &686826709
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 686826710}
+  m_Layer: 0
+  m_Name: enemyNode
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &686826710
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 686826709}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.121, z: 0}
+  m_LocalScale: {x: 0.16485904, y: 0.35230088, z: 0.23919609}
+  m_Children:
+  - {fileID: 1568273215}
+  m_Father: {fileID: 1989470100}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &696535255
 GameObject:
   m_ObjectHideFlags: 0
@@ -4340,8 +4369,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1568273215}
   - component: {fileID: 1568273216}
+  - component: {fileID: 1568273217}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4353,13 +4383,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1568273214}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.35889593, y: 0.6204239, z: -0.25429183}
-  m_LocalScale: {x: 0.16485904, y: 0.35230088, z: 0.23919609}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 0, y: 1.38, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1989470100}
+  m_Father: {fileID: 686826710}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!212 &1568273216
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4391,10 +4421,22 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 06a07297ed5dc5145ac4d8251c5e5f93, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
+  m_FlipX: 1
+  m_FlipY: 1
+--- !u!114 &1568273217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1568273214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1d8d061d69360f4eb75260854e781f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 2074725568}
 --- !u!1 &1591298792
 GameObject:
   m_ObjectHideFlags: 0
@@ -5028,18 +5070,18 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4943718568867554, guid: f4325a6d0158c3649b92966dd74f6416, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114615497465666022, guid: f4325a6d0158c3649b92966dd74f6416,
         type: 2}
       propertyPath: nodeUser
       value: 
-      objectReference: {fileID: 1954435531}
+      objectReference: {fileID: 686826709}
     - target: {fileID: 114615497465666022, guid: f4325a6d0158c3649b92966dd74f6416,
         type: 2}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1068663624}
+      objectReference: {fileID: 2074725561}
     - target: {fileID: 114615497465666022, guid: f4325a6d0158c3649b92966dd74f6416,
         type: 2}
       propertyPath: speed
@@ -5620,7 +5662,7 @@ Transform:
   m_LocalPosition: {x: -246.9, y: -110.8, z: 141.5}
   m_LocalScale: {x: 6.0657883, y: 2.8384829, z: 4.1806703}
   m_Children:
-  - {fileID: 1568273215}
+  - {fileID: 686826710}
   - {fileID: 1387691005}
   m_Father: {fileID: 19069302}
   m_RootOrder: 7
@@ -6394,7 +6436,7 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2074725561}
-  m_LocalRotation: {x: -0, y: 0.8099285, z: -0, w: 0.5865286}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -145.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

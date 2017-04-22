@@ -9,6 +9,7 @@ public class Path : MonoBehaviour {
 	public Transform[] nodes;
 	private int currentNode;
 	public float reachDistance = 1.0f;
+	public float reachToPlayer = 2.0f;
 	public float sightDistance = 10;
 	public float speed;
 	private bool chasing = false;
@@ -30,7 +31,7 @@ public class Path : MonoBehaviour {
 			currentNode++;
 		}
 
-		if (currentNode == 4) {
+		if (currentNode == nodes.Length) {
 			currentNode = 0;
 		}
 		//check for user being in sight
@@ -52,6 +53,11 @@ public class Path : MonoBehaviour {
 		{
 			chasing = false;
 		}
+		//if pathNode user is in reach of player do something
+		if (playerDir.magnitude <= reachToPlayer) {
+			Debug.Log("test");
+		}
+
 
 	}
 		
