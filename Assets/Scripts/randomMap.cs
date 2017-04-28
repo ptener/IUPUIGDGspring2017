@@ -6,7 +6,7 @@ public class randomMap : MonoBehaviour
 {
 	public int numberofRooms = 5;
 	public int lengthofCorridors = 5;
-	public int numberofCorners = 5;
+	public int numberofCorners = 2;
 	public int cornerPiece = 0;
 
 	public Transform player;
@@ -94,13 +94,13 @@ public class randomMap : MonoBehaviour
 					Debug.Log("Direction it picked " + direction);
 					if (usedRoomDirections.Count >= 4) {
 						for (int d =0; d < usedRoomDirections.Count; d++){
-							Debug.Log ("inside Directions: " + usedRoomDirections[d]);
+							Debug.Log("inside Directions: " + usedRoomDirections[d]);
 						}
 						break;
 					}
 				}
 				//number of corners
-				for (int k = 0; k < 2; k++) {
+				for (int k = 0; k < numberofCorners; k++) {
 					randomSize = Random.Range (4, lengthofCorridors);
 					for (int j = 0; j < randomSize - 1; j++) {
 						
@@ -122,11 +122,12 @@ public class randomMap : MonoBehaviour
 					}
 					getDirection();
 
-					if (k != 1) {
-						addEnd (currentHallway);
-						Debug.Log ("Tell me where they are!!!!");
-					}
-					else
+
+					//if (k != 1) {
+					//	addEnd (currentHallway);
+					//	Debug.Log ("Tell me where they are!!!!");
+					//}
+					//else
 						addCorner(currentHallway);
 				}
 
