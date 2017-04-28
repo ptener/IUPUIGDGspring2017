@@ -55,9 +55,6 @@ public class randomMap : MonoBehaviour
 
 		temp = transform;
 
-		//init empty roomsDone
-		//roomsDone.Add(temp);
-
 		//init transform so they are not empty, but we don't use our own transform for these vars.
 		platform = transform;
 		string lastPathDirection = "";
@@ -71,6 +68,7 @@ public class randomMap : MonoBehaviour
 			Debug.Log("Room number: " + i + " " + roomNodeOffsets);
 			totalRoomNodeOffsets += roomNodeOffsets;
 			roomNodeOffsets = 0;
+
 			//Debug.Log("number of Paths: " + rooms[i].numOfPaths);
 			int dividedCorner = numberofCorners / 2;
 
@@ -96,7 +94,7 @@ public class randomMap : MonoBehaviour
 					Debug.Log("Direction it picked " + direction);
 					if (usedRoomDirections.Count >= 4) {
 						for (int d =0; d < usedRoomDirections.Count; d++){
-							Debug.Log ("inside Directions: " + usedRoomDirections [d]);
+							Debug.Log ("inside Directions: " + usedRoomDirections[d]);
 						}
 						break;
 					}
