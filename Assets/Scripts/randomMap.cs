@@ -123,11 +123,11 @@ public class randomMap : MonoBehaviour
 					getDirection();
 
 
-					//if (k != 1) {
-					//	addEnd (currentHallway);
-					//	Debug.Log ("Tell me where they are!!!!");
-					//}
-					//else
+					if (l != 3) {
+						addEnd (currentHallway);
+						Debug.Log ("Tell me where they are!!!!");
+					}
+					else
 						addCorner(currentHallway);
 				}
 
