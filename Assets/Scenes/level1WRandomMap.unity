@@ -130,6 +130,7 @@ MonoBehaviour:
   - {fileID: 526261496}
   - {fileID: 1539974335}
   - {fileID: 1519929559}
+  map2dOutput: 
 --- !u!4 &19069302
 Transform:
   m_ObjectHideFlags: 0

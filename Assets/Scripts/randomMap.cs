@@ -376,42 +376,40 @@ public class randomMap : MonoBehaviour
 		//usedRoomDirections.Clear ();
 		platform = transform.GetChild (transform.childCount - 1);
 
-		sizeofCurrentPlane = Room1.GetComponent<Renderer> ().bounds.size;
-
-		//get 2d map size of room
-		int mapSizeX =(int) sizeofCurrentPlane.x;
-		int mapSizeY = (int) sizeofCurrentPlane.y;
-
-		Debug.Log ("TTTTTTTTTTTTTTTTTTTTTTT " + sizeofCurrentPlane);
-
 		sizeofCurrentPlane = (new Vector3 (sizeofCurrentPlane.x + platform.GetComponent<Renderer> ().bounds.size.x / 2f + 5f, sizeofCurrentPlane.y, sizeofCurrentPlane.z + platform.GetComponent<Renderer> ().bounds.size.z / 2f + 5f));
 
 		//pick a random room from Rooms[]
 		int randomRoomIndex = Random.Range (0, Rooms.Length);
 		Debug.Log(randomRoomIndex);
 		Debug.Log(Rooms[randomRoomIndex]);
+
+		sizeofCurrentPlane = Rooms[randomRoomIndex].GetComponent<Renderer> ().bounds.size;
+		//get 2d map size of room
+		int mapSizeX =(int) sizeofCurrentPlane.x/10;
+		int mapSizeY = (int) sizeofCurrentPlane.z/10;
+
+		Debug.Log ("TTTTTTTTTTTTTTTTTTTTTTTTTTTTT" + mapSizeY);
+		Debug.Log ("TTTTTTTTTTTTTTTTTTTTTTTTTTTTT" + mapSizeX);
+
 		if (direction == "vert+") {
 			temp = Instantiate (Rooms [randomRoomIndex], new Vector3 (platform.position.x + sizeofCurrentPlane.x / 2f, platform.position.y, platform.position.z), Quaternion.identity);
-
-			for (int i = 0; i < mapSizeY; i++) {
-				map2drow += 1;
-				map2d [map2dcol, map2drow] = 1;
-			}
+			map2drow += mapSizeY;
+			set2dRectangle (map2dcol, map2drow, mapSizeX, mapSizeY);
 		} 
 		else if (direction == "vert-") {
 			temp = Instantiate (Rooms [randomRoomIndex], new Vector3 (platform.position.x - sizeofCurrentPlane.x / 2f, platform.position.y, platform.position.z), Quaternion.identity);
-			map2drow -= 1;
-			map2d [map2dcol, map2drow] = 1;
+			map2drow -= mapSizeY;
+			set2dRectangle (map2dcol, map2drow, mapSizeX, mapSizeY);
 		} 
 		else if (direction == "hort-") {
 			temp = Instantiate (Rooms [randomRoomIndex], new Vector3 (platform.position.x, platform.position.y, platform.position.z + sizeofCurrentPlane.z / 2f), Quaternion.identity);
-			map2dcol -= 1;
-			map2d [map2dcol, map2drow] = 1;
+			map2dcol -= mapSizeX;
+			set2dRectangle (map2dcol, map2drow, mapSizeX, mapSizeY);
 		} 
 		else if (direction == "hort+") {
 			temp = Instantiate (Rooms [randomRoomIndex], new Vector3 (platform.position.x, platform.position.y, platform.position.z - sizeofCurrentPlane.z / 2f), Quaternion.identity);
-			map2dcol += 1;
-			map2d [map2dcol, map2drow] = 1;
+			map2dcol += mapSizeX;
+			set2dRectangle (map2dcol, map2drow, mapSizeX, mapSizeY);
 		}
 		roomsDone.Add(temp);
 		temp.transform.SetParent (this.transform);
@@ -423,5 +421,17 @@ public class randomMap : MonoBehaviour
 	string getMapOutput()
 	{
 		return map2dOutput;
+	}
+
+	void set2dRectangle(int curX, int curY, int xFromCenter, int yFromCenter)
+	{
+		Debug.Log ("TTTTTTTTTTTTTTT" + curX);
+		for (int i = 0; i < xFromCenter; i++) 
+		{
+			for (int j = 0; j < yFromCenter; j++) 
+			{
+				map2d[curX + i, curY + j] = 1;
+			}
+		}
 	}
 }
