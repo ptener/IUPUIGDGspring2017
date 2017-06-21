@@ -31,9 +31,9 @@ public class randomMap : MonoBehaviour
 	Transform Room4;
 	Transform Room5;
 	Transform temp;
-	int[,] map2d = new int[100, 100];
-	int map2dcol = 50;
-	int map2drow = 50;
+	int[,] map2d = new int[200, 200];
+	int map2dcol = 100;
+	int map2drow = 100;
 	public string map2dOutput;
 
 
@@ -120,7 +120,6 @@ public class randomMap : MonoBehaviour
 							else
 								platform = transform.GetChild(mapIndex.LastIndexOf("Room") );//GetChild (transform.childCount - 1 - totalRoomNodeOffsets);
 
-							Debug.Log("how: " + roomNodeOffsets);
 						}
 						else{
 							platform = transform.GetChild (transform.childCount - 1);
@@ -154,8 +153,8 @@ public class randomMap : MonoBehaviour
 
 		//go through and pick a start room and a final room
 
-			int randomStart = Random.Range (1, roomsDone.Count);
-			int randomGoal = Random.Range(1, roomsDone.Count);
+			int randomStart = Random.Range (1, roomsDone.Count-1);
+			int randomGoal = Random.Range(1, roomsDone.Count-1);
 
 			//if they are equal reset
 			//while (randomStart == randomGoal)
@@ -165,11 +164,11 @@ public class randomMap : MonoBehaviour
 			Instantiate (ladder, new Vector3 (roomsDone[randomGoal].position.x, roomsDone[randomGoal].position.y, roomsDone[randomGoal].position.z), Quaternion.identity);
 
 		map2dOutput = "";
-		for (int i = 0; i < 100; i++) {
-			for (int j = 0; j < 100; j++) {
-				map2dOutput += map2d [i, j];
+		for (int i = 0; i < 200; i++) {
+			for (int j = 0; j < 200; j++) {
+				//map2dOutput += map2d [i, j];
 			}
-			map2dOutput += "\n";
+			//map2dOutput += "\n";
 		}
 		Debug.Log (map2dOutput);
 	}
@@ -223,46 +222,55 @@ public class randomMap : MonoBehaviour
 		if (sizeofCurrentPlane.x > 10) {
 
 			sizeofCurrentPlane = sizeofCurrentPlane / 2f;
-			if (direction == "vert+") {
+			if (direction == "vert+" && map2d[map2drow+1, map2dcol] == 0) {
 				temp = Instantiate (currentHallway [hallwayIndex], new Vector3 (platform.position.x + sizeofCurrentPlane.x + 5f, platform.position.y, platform.position.z), Quaternion.identity);
 				map2drow += 1;
 				map2d [map2dcol, map2drow] = 1;
 			}
-			else if (direction == "vert-") {
-				temp = Instantiate (currentHallway [hallwayIndex], new Vector3 (platform.position.x - sizeofCurrentPlane.x - 5f, platform.position.y, platform.position.z), Quaternion.identity);
-				map2drow -= 1;
-				map2d [map2dcol, map2drow] = 1;
+			else if (direction == "vert-"&& map2d[map2drow-1, map2dcol] == 0) {
+				if (map2d [map2dcol, map2drow - 1] == 0) 
+				{
+					temp = Instantiate (currentHallway [hallwayIndex], new Vector3 (platform.position.x - sizeofCurrentPlane.x - 5f, platform.position.y, platform.position.z), Quaternion.identity);
+					map2drow -= 1;
+					map2d [map2dcol, map2drow] = 1;
+				}
 			}
 			else if (direction == "hort-") {
-				temp = Instantiate (currentHallway [hallwayIndex], new Vector3 (platform.position.x, platform.position.y, platform.position.z + sizeofCurrentPlane.z + 5f), currentHallway [hallwayIndex].localRotation);
-				map2dcol -= 1;
-				map2d [map2dcol, map2drow] = 1;
+				if (map2d [map2dcol - 1, map2drow] == 0)
+				{
+					temp = Instantiate (currentHallway [hallwayIndex], new Vector3 (platform.position.x, platform.position.y, platform.position.z + sizeofCurrentPlane.z + 5f), currentHallway [hallwayIndex].localRotation);
+					map2dcol -= 1;
+					map2d [map2dcol, map2drow] = 1;
+				}
 			}
 			else if (direction == "hort+") {
-				temp = Instantiate (currentHallway [hallwayIndex], new Vector3 (platform.position.x, platform.position.y, platform.position.z - sizeofCurrentPlane.z - 5f), currentHallway [hallwayIndex].localRotation);
-				map2dcol += 1;
-				map2d [map2dcol, map2drow] = 1;
+				if (map2d [map2dcol + 1, map2drow] == 0) 
+				{
+					temp = Instantiate (currentHallway [hallwayIndex], new Vector3 (platform.position.x, platform.position.y, platform.position.z - sizeofCurrentPlane.z - 5f), currentHallway [hallwayIndex].localRotation);
+					map2dcol += 1;
+					map2d [map2dcol, map2drow] = 1;
+				}
 			}
 			temp.transform.SetParent (this.transform);
 			mapIndex.Add(temp.ToString());
 
 		} else {
-			if (direction == "vert+") {
+			if (direction == "vert+"&& map2d[map2drow+1, map2dcol] == 0) {
 				temp = Instantiate (currentHallway [hallwayIndex], new Vector3 (platform.position.x + sizeofCurrentPlane.x, platform.position.y, platform.position.z), Quaternion.identity);
 				map2drow += 1;
 				map2d [map2dcol, map2drow] = 1;
 			} 
-			else if (direction == "vert-") {
+			else if (direction == "vert-"&& map2d[map2drow-1, map2dcol] == 0) {
 				temp = Instantiate (currentHallway [hallwayIndex], new Vector3 (platform.position.x - sizeofCurrentPlane.x, platform.position.y, platform.position.z), Quaternion.identity);
 				map2drow -= 1;
 				map2d [map2dcol, map2drow] = 1;
 			} 
-			else if (direction == "hort-") {
+			else if (direction == "hort-"&& map2d[map2drow, map2dcol-1] == 0) {
 				temp = Instantiate (currentHallway [hallwayIndex], new Vector3 (platform.position.x, platform.position.y, platform.position.z + sizeofCurrentPlane.z), currentHallway [hallwayIndex].localRotation);
 				map2dcol -= 1;
 				map2d [map2dcol, map2drow] = 1;
 			} 
-			else if (direction == "hort+") {
+			else if (direction == "hort+"&& map2d[map2drow, map2dcol+1] == 0) {
 				temp = Instantiate (currentHallway [hallwayIndex], new Vector3 (platform.position.x, platform.position.y, platform.position.z - sizeofCurrentPlane.z), currentHallway [hallwayIndex].localRotation);
 				map2dcol += 1;
 				map2d [map2dcol, map2drow] = 1;
@@ -371,6 +379,8 @@ public class randomMap : MonoBehaviour
 	}
 
 	void addRoom(List<Transform> roomsDone){
+
+		bool collides = false;
 		//for (int l =0; l < usedRoomDirections.Count; l++)
 			//Debug.Log("the used room directions before being cleared " + usedRoomDirections[l]);
 		//usedRoomDirections.Clear ();
@@ -394,28 +404,36 @@ public class randomMap : MonoBehaviour
 		if (direction == "vert+") {
 			temp = Instantiate (Rooms [randomRoomIndex], new Vector3 (platform.position.x + sizeofCurrentPlane.x / 2f, platform.position.y, platform.position.z), Quaternion.identity);
 			map2drow += mapSizeY;
-			set2dRectangle (map2dcol, map2drow, mapSizeX, mapSizeY);
+			collides = set2dRectangle (map2dcol, map2drow, mapSizeX, mapSizeY);
 		} 
 		else if (direction == "vert-") {
 			temp = Instantiate (Rooms [randomRoomIndex], new Vector3 (platform.position.x - sizeofCurrentPlane.x / 2f, platform.position.y, platform.position.z), Quaternion.identity);
 			map2drow -= mapSizeY;
-			set2dRectangle (map2dcol, map2drow, mapSizeX, mapSizeY);
+			collides = set2dRectangle (map2dcol, map2drow, mapSizeX, mapSizeY);
 		} 
 		else if (direction == "hort-") {
 			temp = Instantiate (Rooms [randomRoomIndex], new Vector3 (platform.position.x, platform.position.y, platform.position.z + sizeofCurrentPlane.z / 2f), Quaternion.identity);
 			map2dcol -= mapSizeX;
-			set2dRectangle (map2dcol, map2drow, mapSizeX, mapSizeY);
+			collides = set2dRectangle (map2dcol, map2drow, mapSizeX, mapSizeY);
 		} 
 		else if (direction == "hort+") {
 			temp = Instantiate (Rooms [randomRoomIndex], new Vector3 (platform.position.x, platform.position.y, platform.position.z - sizeofCurrentPlane.z / 2f), Quaternion.identity);
 			map2dcol += mapSizeX;
-			set2dRectangle (map2dcol, map2drow, mapSizeX, mapSizeY);
+			collides = set2dRectangle (map2dcol, map2drow, mapSizeX, mapSizeY);
 		}
-		roomsDone.Add(temp);
-		temp.transform.SetParent (this.transform);
-		mapIndex.Add("Room");
+		if (collides == true) 
+		{
+			temp.transform.position = new Vector3 (5000,5000,5000);
+			Debug.Log ("CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC");
+		}
+		else
+		{
+			roomsDone.Add(temp);
+			temp.transform.SetParent (this.transform);
+			mapIndex.Add("Room");
 
-		getDirection();
+			getDirection();
+		}
 	}
 
 	string getMapOutput()
@@ -423,15 +441,23 @@ public class randomMap : MonoBehaviour
 		return map2dOutput;
 	}
 
-	void set2dRectangle(int curX, int curY, int xFromCenter, int yFromCenter)
+	bool set2dRectangle(int curX, int curY, int xFromCenter, int yFromCenter)
 	{
 		Debug.Log ("TTTTTTTTTTTTTTT" + curX);
 		for (int i = 0; i < xFromCenter; i++) 
 		{
 			for (int j = 0; j < yFromCenter; j++) 
 			{
-				map2d[curX + i, curY + j] = 1;
+				if (map2d [curX + i, curY + j] == 1)
+				{
+					return true;
+				}
+				else 
+				{
+					map2d [curX + i, curY + j] = 1;
+				}
 			}
 		}
+		return false;
 	}
 }
