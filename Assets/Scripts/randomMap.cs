@@ -117,9 +117,12 @@ public class randomMap : MonoBehaviour
 						else if (j == 0 && k == 0) {
 							if (mapIndex.LastIndexOf("Room") == -1)
 								platform = transform.GetChild(mapIndex.LastIndexOf("Plane (UnityEngine.Transform)") );//GetChild (transform.childCount - 1 - totalRoomNodeOffsets);
-							else
-								platform = transform.GetChild(mapIndex.LastIndexOf("Room") );//GetChild (transform.childCount - 1 - totalRoomNodeOffsets);
-
+							else{
+								if (mapIndex.LastIndexOf("Room") == -1)
+									platform = transform.GetChild(mapIndex.LastIndexOf("Plane (UnityEngine.Transform)") );//GetChild (transform.childCount - 1 - totalRoomNodeOffsets);
+								else
+									platform = transform.GetChild(mapIndex.LastIndexOf("Room") );//GetChild (transform.childCount - 1 - totalRoomNodeOffsets);
+							}
 						}
 						else{
 							platform = transform.GetChild (transform.childCount - 1);
