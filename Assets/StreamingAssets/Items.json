@@ -1,0 +1,79 @@
+[
+{
+		"id": 0,
+		"title":"Screwdriver",
+		"stats": {
+			"damage": 1,
+			"delay": 1
+			},
+		"description":"It's a basic screwdriver",
+		"stackable": false,
+		"rarity": 2,
+		"slug":"screwdriver_icon"
+},
+{
+		"id": 1,
+		"title":"Power Drill",
+		"stats": {
+			"damage": 5,
+			"delay": 2
+			},
+		"description":"It's a drill that uses electricity",
+		"stackable": false,
+		"rarity": 5,
+		"slug":"power_drill_icon"
+
+},
+{
+		"id": 2,
+		"title":"Socket Wrench",
+		"stats": {
+			"damage": 2,
+			"delay": 1
+			},
+		"description":"Your run of the mill wrench",
+		"stackable": false,
+		"rarity": 5,
+		"slug":"socket_wrench_icon"
+
+},
+{
+		"id": 3,
+		"title":"Steel Pipe",
+		"stats": {
+			"damage": 12,
+			"delay": 3
+			},
+		"description":"Not as useful as a crowbar, but still packs a punch",
+		"stackable": false,
+		"rarity": 5,
+		"slug":"steel_pipe_icon"
+
+},
+{
+		"id": 4,
+		"title":"Pipe Wrench",
+		"stats": {
+			"damage": 6,
+			"delay": 2
+			},
+		"description":"A wrench that is used on pipes",
+		"stackable": false,
+		"rarity": 5,
+		"slug":"pipe_wrench_icon"
+
+},
+{
+		"id": 5,
+		"title":"Welding Torch",
+		"stats": {
+			"damage": 6,
+			"delay": 1
+			},
+		"description":"It's a Welding Torch, duh",
+		"stackable": false,
+		"rarity": 5,
+		"slug":"welding_torch_icon"
+
+}
+]
