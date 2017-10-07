@@ -37,7 +37,7 @@ public class Inventory : MonoBehaviour {
 			items.Add (new Item ());
 			invSlots.Add (Instantiate (inventorySlot));
 			invSlots [i].GetComponent<InventorySlot> ().slotId = i;
-			invSlots [i].transform.SetParent (slotPanel.transform);
+			invSlots [i].transform.SetParent (slotPanel.transform, false);
 		}
 
 		itemPanel = GameObject.Find("Item Panel");
@@ -46,7 +46,7 @@ public class Inventory : MonoBehaviour {
 			items.Add (new Item ());
 			invSlots.Add (Instantiate (inventorySlot));
 			invSlots [i + invSlotAmount].GetComponent<InventorySlot> ().slotId = i+invSlotAmount;
-			invSlots [i + invSlotAmount].transform.SetParent (itemSlotPanel.transform);
+			invSlots [i + invSlotAmount].transform.SetParent (itemSlotPanel.transform, false);
 		}
 
 
@@ -78,8 +78,8 @@ public class Inventory : MonoBehaviour {
 					itemObj.GetComponent<ItemData>().item = itemToAdd;
 					itemObj.GetComponent<ItemData> ().amount = 1;
 					itemObj.GetComponent<ItemData> ().slotNumber = i;
-					itemObj.transform.SetParent (invSlots [i].transform);
-					itemObj.transform.position = Vector2.zero;
+					itemObj.transform.SetParent (invSlots [i].transform, false);
+					itemObj.transform.position = invSlots [i].transform.position;
 					itemObj.GetComponent<Image> ().sprite = itemToAdd.Sprite;
 					itemObj.name = itemToAdd.Title;
 					break;
