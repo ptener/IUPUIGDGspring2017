@@ -47,7 +47,6 @@ public class Inventory : MonoBehaviour {
 			invSlots.Add (Instantiate (inventorySlot));
 			invSlots [i + invSlotAmount].GetComponent<InventorySlot> ().slotId = i+invSlotAmount;
 			invSlots [i + invSlotAmount].transform.SetParent (itemSlotPanel.transform, false);
-
 		}
 
 
@@ -59,13 +58,11 @@ public class Inventory : MonoBehaviour {
 		AddItem (5);
 
 		inventoryPanel.SetActive (false);
-		itemPanel.SetActive (false);
 	}
 
 	void Update(){
 		if (Input.GetKeyDown (KeyCode.I)) {
 			inventoryPanel.SetActive (!inventoryPanel.activeInHierarchy);
-			itemPanel.SetActive (!itemPanel.activeInHierarchy);
 			tooltip.Deactivate();
 		}
 	}
