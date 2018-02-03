@@ -32,7 +32,7 @@ public class Inventory : MonoBehaviour {
 		database = GetComponent<ItemDatabase>();
 
 		inventoryPanel = GameObject.Find("Inventory Panel");
-		slotPanel = inventoryPanel.transform.FindChild ("Slot Panel").gameObject;
+		slotPanel = inventoryPanel.transform.Find ("Slot Panel").gameObject;
 		for (int i = 0; i < invSlotAmount; i++) {
 			items.Add (new Item ());
 			invSlots.Add (Instantiate (inventorySlot));
@@ -41,7 +41,7 @@ public class Inventory : MonoBehaviour {
 		}
 
 		itemPanel = GameObject.Find("Item Panel");
-		itemSlotPanel = itemPanel.transform.FindChild ("Item Slot Panel").gameObject;
+		itemSlotPanel = itemPanel.transform.Find ("Item Slot Panel").gameObject;
 		for (int i = 0; i < itemSlotAmount; i++) {
 			items.Add (new Item ());
 			invSlots.Add (Instantiate (inventorySlot));
