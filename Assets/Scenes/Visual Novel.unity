@@ -19472,7 +19472,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 31b75cfc12d8be94a89a113f34baf09d, type: 3}
   - {fileID: 21300000, guid: 451108086a4a17b418fc04634b760261, type: 3}
   - {fileID: 21300000, guid: 6b4bdd18364f19641bfdda09cc0cb86a, type: 3}
-  - {fileID: 21300000, guid: 2886b1dbee02ba44e94a51f8a79e9b06, type: 3}
+  - {fileID: 21300000, guid: a19a743778e10584f81d8dfa735ab26d, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
