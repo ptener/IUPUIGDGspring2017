@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/VisualNovelBrian.unity
+    guid: 3717219dd485fd143abf36411503030c
+  - enabled: 1
+    path: Assets/Scenes/VisualNovelPatrick.unity
+    guid: 4a0ff252af00ddb46ab5b5a6c50f5ce8
