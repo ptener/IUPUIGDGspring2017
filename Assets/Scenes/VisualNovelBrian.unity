@@ -213,7 +213,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &52479283
 GameObject:
@@ -545,7 +545,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &207736170
 GameObject:
@@ -8488,7 +8488,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &482776276
 GameObject:
@@ -8630,59 +8630,43 @@ GameObject:
   - component: {fileID: 489532327}
   - component: {fileID: 489532326}
   - component: {fileID: 489532379}
-  - component: {fileID: 489532280}
-  - component: {fileID: 489532281}
-  - component: {fileID: 489532282}
-  - component: {fileID: 489532283}
-  - component: {fileID: 489532285}
-  - component: {fileID: 489532286}
-  - component: {fileID: 489532287}
-  - component: {fileID: 489532288}
-  - component: {fileID: 489532289}
-  - component: {fileID: 489532290}
-  - component: {fileID: 489532292}
-  - component: {fileID: 489532293}
-  - component: {fileID: 489532294}
   - component: {fileID: 489532295}
-  - component: {fileID: 489532296}
-  - component: {fileID: 489532297}
-  - component: {fileID: 489532298}
-  - component: {fileID: 489532299}
-  - component: {fileID: 489532300}
-  - component: {fileID: 489532301}
-  - component: {fileID: 489532302}
-  - component: {fileID: 489532303}
-  - component: {fileID: 489532304}
-  - component: {fileID: 489532305}
-  - component: {fileID: 489532306}
-  - component: {fileID: 489532307}
-  - component: {fileID: 489532308}
   - component: {fileID: 489532309}
   - component: {fileID: 489532310}
-  - component: {fileID: 489532311}
-  - component: {fileID: 489532312}
-  - component: {fileID: 489532313}
-  - component: {fileID: 489532314}
-  - component: {fileID: 489532316}
-  - component: {fileID: 489532317}
-  - component: {fileID: 489532318}
-  - component: {fileID: 489532319}
-  - component: {fileID: 489532320}
-  - component: {fileID: 489532321}
-  - component: {fileID: 489532322}
-  - component: {fileID: 489532323}
-  - component: {fileID: 489532324}
   - component: {fileID: 489532325}
   - component: {fileID: 489532388}
   - component: {fileID: 489532387}
   - component: {fileID: 489532386}
-  - component: {fileID: 489532385}
   - component: {fileID: 489532384}
   - component: {fileID: 489532383}
   - component: {fileID: 489532382}
   - component: {fileID: 489532381}
   - component: {fileID: 489532380}
   - component: {fileID: 489532334}
+  - component: {fileID: 489532302}
+  - component: {fileID: 489532301}
+  - component: {fileID: 489532300}
+  - component: {fileID: 489532299}
+  - component: {fileID: 489532298}
+  - component: {fileID: 489532297}
+  - component: {fileID: 489532296}
+  - component: {fileID: 489532294}
+  - component: {fileID: 489532293}
+  - component: {fileID: 489532292}
+  - component: {fileID: 489532290}
+  - component: {fileID: 489532289}
+  - component: {fileID: 489532281}
+  - component: {fileID: 489532288}
+  - component: {fileID: 489532280}
+  - component: {fileID: 489532287}
+  - component: {fileID: 489532286}
+  - component: {fileID: 489532285}
+  - component: {fileID: 489532283}
+  - component: {fileID: 489532282}
+  - component: {fileID: 489532304}
+  - component: {fileID: 489532305}
+  - component: {fileID: 489532306}
+  - component: {fileID: 489532303}
   m_Layer: 0
   m_Name: Act3BB_Flowchart
   m_TagString: Untagged
@@ -8698,32 +8682,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 489532279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 703
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 489532291}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
---- !u!114 &489532281
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 702
+  itemId: 729
   indentLevel: 0
-  storyText: It convulses and goes down shaking.
+  storyText: A test of strength, Haru and his pipe vs the sentry's mechanical arm,
+    is in full swing.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8736,6 +8701,26 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &489532281
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 727
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 489532310}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!114 &489532282
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -8747,9 +8732,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 701
+  itemId: 734
   indentLevel: 0
-  storyText: They drive the bits into the senty's chest.
+  storyText: Amelia goes in for what she thinks is an opening only to get nailed in
+    the chest by the sentry pivoting to the side and kneeing her.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8773,10 +8759,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 700
+  itemId: 733
   indentLevel: 0
-  storyText: Elvira recovers just in time to catch one of the drills as Jaxon tosses
-    one to her.
+  storyText: Niklas tries to pick him up only to get smashed against the ground.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8802,18 +8787,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 909.3489, y: 222.97159}
+  scrollPos: {x: 801.34607, y: 153.09998}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.76000017
+  zoom: 0.91
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 489532376}
   selectedCommands: []
   variables: []
   description: A short act which shows the scared running through hallways of the
@@ -8838,10 +8824,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 699
+  itemId: 732
   indentLevel: 0
-  storyText: With a final yank, Jaxon twists open the tumblers on the lock and pulls
-    out two fully charged power drills.
+  storyText: Haru collapses under the contest of strength.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8862,89 +8847,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 489532279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 698
-  indentLevel: 0
-  text: Give the toolbox another try.
-  description: 
-  targetBlock: {fileID: 489532302}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
---- !u!114 &489532287
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: -334.4828
-    y: 121.566414
-    width: 120
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 696
-  blockName: Final_Tools
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 489532285}
-  - {fileID: 489532283}
-  - {fileID: 489532282}
-  - {fileID: 489532281}
-  - {fileID: 489532280}
---- !u!114 &489532288
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 695
-  indentLevel: 0
-  text: Give the toolbox another try.
-  description: 
-  targetBlock: {fileID: 489532287}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
---- !u!114 &489532289
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 694
+  itemId: 731
   indentLevel: 0
-  storyText: Elvira takes a wicked backhand from the sentry and goes down dazed.
+  storyText: Amelia is looking for an opening on her opponent.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8957,6 +8865,79 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &489532287
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 730
+  indentLevel: 0
+  storyText: ' Jaxon fights the second sentry, going for a couple quick jabs before
+    backing off.'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &489532288
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 728
+  indentLevel: 0
+  storyText: Haru goes head on with the sentry.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &489532289
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 726
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 489532310}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!114 &489532290
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -8968,9 +8949,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 693
+  itemId: 725
   indentLevel: 0
-  storyText: The lock remains strong.
+  storyText: '... SPLAT ...'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8999,7 +8980,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -95.750244
     y: 209.19304
-    width: 130.26314
+    width: 137.91208
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9033,22 +9014,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 489532279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 692
+  itemId: 724
   indentLevel: 0
-  text: Try opening the locked tool box.
+  storyText: They both go down. The sentry jumps and lands on them.
   description: 
-  targetBlock: {fileID: 489532301}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &489532293
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -9057,22 +9040,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 489532279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 691
+  itemId: 723
   indentLevel: 0
-  text: Target a monster.
+  storyText: Elvira's opponent grabs Elvira behind itself and throws her into Jaxon.
   description: 
-  targetBlock: {fileID: 489532302}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &489532294
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -9081,24 +9066,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 489532279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: -209.48267
-    y: -6.43314
-    width: 136.84209
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 697
-  blockName: Second_ChoiceB
+  itemId: 722
+  indentLevel: 0
+  storyText: Niklas and Haru can't hold off the final sentry with only a screw driver
+    between them.
   description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 489532293}
-  - {fileID: 489532292}
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &489532295
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -9133,18 +9119,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 489532279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 688
+  itemId: 721
   indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 489532310}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
+  storyText: only for it to be deflected by her sentry standing in her blind spot.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &489532297
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -9156,9 +9148,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 687
+  itemId: 720
   indentLevel: 0
-  storyText: The nauts suffocate.
+  storyText: Amelia tries to help with an impressive swing of the thick pipe, -
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9182,9 +9174,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 686
+  itemId: 719
   indentLevel: 0
-  storyText: "The sentry volleys \rRecordo against the wall destroying him."
+  storyText: Its not very effective.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9208,10 +9200,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 685
+  itemId: 718
   indentLevel: 0
-  storyText: 'The Sentry''s unpredictable movements put it in between all the nauts
-    and their robot. '
+  storyText: She dives inbetween its legs and gets up to stab it in its back.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9232,22 +9223,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 489532279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 684
+  itemId: 717
   indentLevel: 0
-  text: Keep working on opening the locked tool box.
+  storyText: Elvira and a sentry charge each other.
   description: 
-  targetBlock: {fileID: 489532301}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &489532301
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -9256,26 +9249,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 489532279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: -335.05286
-    y: 38.526684
-    width: 120
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 683
-  blockName: Tools_Again
+  itemId: 716
+  indentLevel: 0
+  storyText: 'Jaxon sweeps the feet of the second with the pipe and the others use
+    their remaining weapons to bash the final sentry. '
   description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 489532290}
-  - {fileID: 489532289}
-  - {fileID: 489532288}
-  - {fileID: 489532286}
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &489532302
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -9284,26 +9276,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 489532279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: -639.0519
-    y: 45.526653
-    width: 132.89471
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 682
-  blockName: Target_Monster
+  itemId: 715
+  indentLevel: 0
+  storyText: Three sentries jump down from a stack of crates against the far wall.Haru
+    jumps on the back of one sentry and takes it out with both screw drivers.
   description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 489532299}
-  - {fileID: 489532298}
-  - {fileID: 489532297}
-  - {fileID: 489532296}
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &489532303
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -9315,11 +9306,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 681
+  itemId: 738
   indentLevel: 0
-  text: Target a monster.
+  text: Haru gets the steel pipe. Amelia and Jaxon get a screw driver.
   description: 
-  targetBlock: {fileID: 489532302}
+  targetBlock: {fileID: 489532382}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -9336,78 +9327,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 489532279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 680
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 489532294}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
---- !u!114 &489532305
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 679
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 489532306}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
---- !u!114 &489532306
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: -484.05176
-    y: -4.4733047
-    width: 136.84209
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 678
-  blockName: Second_ChoiceA
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 489532303}
-  - {fileID: 489532300}
---- !u!114 &489532307
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 677
+  itemId: 735
   indentLevel: 0
-  storyText: 'Despite his best efforts, Jaxon can''t get the tool box to open. '
+  storyText: ' Its hand closes down on him. '
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9420,7 +9345,33 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &489532308
+--- !u!114 &489532305
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 736
+  indentLevel: 0
+  storyText: Jaxon's screwdriver gets caught in the hand of his sentry opponent.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &489532306
 MonoBehaviour:
   m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
@@ -9431,10 +9382,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 676
+  itemId: 737
   indentLevel: 0
   targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 489532310}
+  targetBlock: {fileID: 489532328}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -9481,9 +9432,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -813.053
-    y: 9.526707
-    width: 120
+    x: -602.14667
+    y: 273.94345
+    width: 121.428566
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9493,113 +9444,6 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 489532309}
---- !u!114 &489532311
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 673
-  indentLevel: 0
-  storyText: "Tired fr\r\nom their length battles with their ally sentry, the nauts
-    collapse under the damage."
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &489532312
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 672
-  indentLevel: 0
-  storyText: Faster than the eye can see, the monsters pincer the nauts and stab them
-    to death.
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &489532313
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 670
-  indentLevel: 0
-  storyText: "T\rhe sentry, seeing its buddy destroyed, goes completely berserk."
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &489532314
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 669
-  indentLevel: 0
-  storyText: 'The stalker dies in a blaze of glory as the nauts complexly demolish
-    it. '
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &489532315
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -9616,7 +9460,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 178.24976
     y: 240.19298
-    width: 139.47366
+    width: 150
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9626,233 +9470,6 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 489532325}
---- !u!114 &489532316
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 668
-  indentLevel: 0
-  text: Try opening the locked tool box.
-  description: 
-  targetBlock: {fileID: 489532320}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
---- !u!114 &489532317
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 667
-  indentLevel: 0
-  text: Split the monsters up to fight them separately.
-  description: 
-  targetBlock: {fileID: 489532319}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
---- !u!114 &489532318
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: -196.05243
-    y: -63.473267
-    width: 120
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 666
-  blockName: Attack
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 489532314}
-  - {fileID: 489532313}
-  - {fileID: 489532304}
---- !u!114 &489532319
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: -630.05176
-    y: -94.473145
-    width: 120
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 665
-  blockName: Split
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 489532312}
-  - {fileID: 489532311}
-  - {fileID: 489532308}
---- !u!114 &489532320
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: -471.05194
-    y: -59.47328
-    width: 120
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 664
-  blockName: Tools
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 489532307}
-  - {fileID: 489532305}
---- !u!114 &489532321
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 663
-  indentLevel: 0
-  text: Attack them with weapons in a straight on charge.
-  description: 
-  targetBlock: {fileID: 489532318}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
---- !u!114 &489532322
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 662
-  indentLevel: 0
-  storyText: A wild Sentry & stalker appear.
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &489532323
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 660
-  indentLevel: 0
-  duration: 1
-  fadeOut: 0
-  targetView: {fileID: 996932058}
-  waitUntilFinished: 1
-  fadeColor: {r: 0, g: 0, b: 0, a: 1}
-  fadeTexture: {fileID: 0}
-  targetCamera: {fileID: 0}
---- !u!114 &489532324
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: -335.05286
-    y: -95.473145
-    width: 120
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 55
-  blockName: Eplore1
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 489532323}
-  - {fileID: 489532322}
-  - {fileID: 489532321}
-  - {fileID: 489532317}
-  - {fileID: 489532316}
 --- !u!114 &489532325
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -9925,9 +9542,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -109.750244
-    y: 506.19342
-    width: 144.73682
+    x: -89.50931
+    y: 357.64774
+    width: 155.4945
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10061,9 +9678,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 714
   indentLevel: 0
-  text: Give 1 screw driver to Niklas, 1 to Elvira and the pipe to Amelia.
+  text: Give a screwdriver to Niklas and Elvira. Amelia gets the pipe.
   description: 
-  targetBlock: {fileID: 489532387}
+  targetBlock: {fileID: 489532386}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -10379,7 +9996,7 @@ MonoBehaviour:
   itemId: 33
   indentLevel: 0
   targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 489532328}
+  targetBlock: {fileID: 489532388}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -10998,9 +10615,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -109.750244
-    y: 143.04045
-    width: 149.99997
+    x: -108.53075
+    y: 147.91853
+    width: 164.2857
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11151,9 +10768,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -92.75714
-    y: 84.40097
-    width: 120
+    x: -91.53764
+    y: 89.27901
+    width: 125.82417
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11185,7 +10802,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 170
     y: 18
-    width: 126.31577
+    width: 136.81319
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11295,8 +10912,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -276.60864
-    y: 324.30353
+    x: -361.58438
+    y: 297.1345
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -11305,7 +10922,17 @@ MonoBehaviour:
   blockName: C1
   description: 
   eventHandler: {fileID: 0}
-  commandList: []
+  commandList:
+  - {fileID: 489532288}
+  - {fileID: 489532280}
+  - {fileID: 489532287}
+  - {fileID: 489532286}
+  - {fileID: 489532285}
+  - {fileID: 489532283}
+  - {fileID: 489532282}
+  - {fileID: 489532305}
+  - {fileID: 489532304}
+  - {fileID: 489532281}
 --- !u!114 &489532383
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -11319,7 +10946,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 710
   indentLevel: 0
-  text: Give the screwdrivers to haru
+  text: Give both screw drivers to Haru. Jaxon gets the pipe.
   description: 
   targetBlock: {fileID: 489532387}
   hideIfVisited: 0
@@ -11356,30 +10983,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &489532385
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: -448.60864
-    y: 461.30353
-    width: 120
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 708
-  blockName: New Block3
-  description: 
-  eventHandler: {fileID: 0}
-  commandList: []
 --- !u!114 &489532386
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -11393,8 +10996,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -408.60864
-    y: 332.30353
+    x: -364.6946
+    y: 237.35379
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -11403,7 +11006,17 @@ MonoBehaviour:
   blockName: B1
   description: 
   eventHandler: {fileID: 0}
-  commandList: []
+  commandList:
+  - {fileID: 489532300}
+  - {fileID: 489532299}
+  - {fileID: 489532298}
+  - {fileID: 489532297}
+  - {fileID: 489532296}
+  - {fileID: 489532294}
+  - {fileID: 489532293}
+  - {fileID: 489532292}
+  - {fileID: 489532290}
+  - {fileID: 489532289}
 --- !u!114 &489532387
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -11417,8 +11030,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -519.60864
-    y: 278.30353
+    x: -216.37547
+    y: 306.47455
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -11427,7 +11040,10 @@ MonoBehaviour:
   blockName: A1
   description: 
   eventHandler: {fileID: 0}
-  commandList: []
+  commandList:
+  - {fileID: 489532302}
+  - {fileID: 489532301}
+  - {fileID: 489532306}
 --- !u!114 &489532388
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -11441,8 +11057,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -309.60864
-    y: 257.30353
+    x: -217.28746
+    y: 251.11227
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -11457,6 +11073,7 @@ MonoBehaviour:
   - {fileID: 489532380}
   - {fileID: 489532383}
   - {fileID: 489532334}
+  - {fileID: 489532303}
 --- !u!1 &489540148
 GameObject:
   m_ObjectHideFlags: 0
@@ -11510,7 +11127,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &493019295
 GameObject:
@@ -22729,7 +22346,7 @@ Transform:
   - {fileID: 1102952981}
   - {fileID: 773595075}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &568186429
 GameObject:
@@ -23190,7 +22807,7 @@ RectTransform:
   - {fileID: 52479284}
   - {fileID: 1371322858}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -24411,7 +24028,7 @@ RectTransform:
   m_Children:
   - {fileID: 1907218306}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -25263,7 +24880,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1031999017
 GameObject:
@@ -25511,6 +25128,9 @@ GameObject:
   - component: {fileID: 1031999019}
   - component: {fileID: 1031999020}
   - component: {fileID: 1031999018}
+  - component: {fileID: 1031999257}
+  - component: {fileID: 1031999256}
+  - component: {fileID: 1031999255}
   m_Layer: 0
   m_Name: Act3BA_Flowchart
   m_TagString: Untagged
@@ -28632,6 +28252,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 1031999255}
   - {fileID: 1031999061}
   - {fileID: 1031999060}
   - {fileID: 1031999133}
@@ -29117,6 +28738,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 1031999256}
   - {fileID: 1031999148}
   - {fileID: 1031999147}
   - {fileID: 1031999146}
@@ -29601,7 +29223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -258.5567
+    x: -259.5567
     y: 483.90424
     width: 120
     height: 40
@@ -31866,7 +31488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 725.7595, y: 129.22014}
+  scrollPos: {x: 845.36237, y: -161.2477}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -31878,9 +31500,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1031999250}
-  selectedCommands:
-  - {fileID: 1031999248}
+  - {fileID: 1031999151}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -31946,6 +31567,69 @@ MonoBehaviour:
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTexture: {fileID: 0}
   targetCamera: {fileID: 0}
+--- !u!114 &1031999255
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1031999017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b115619cb83b4d6ab8047d0e9407403, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 669
+  indentLevel: 0
+  isStartPoint: 0
+  keyMode: 0
+  customKey: 
+  keySeparator: _
+  descriptionMode: 0
+  customDescription: 
+  fireEvent: 1
+  resumeOnLoad: 1
+--- !u!114 &1031999256
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1031999017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b115619cb83b4d6ab8047d0e9407403, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 668
+  indentLevel: 0
+  isStartPoint: 0
+  keyMode: 0
+  customKey: 
+  keySeparator: _
+  descriptionMode: 0
+  customDescription: 
+  fireEvent: 1
+  resumeOnLoad: 1
+--- !u!114 &1031999257
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1031999017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b115619cb83b4d6ab8047d0e9407403, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 667
+  indentLevel: 0
+  isStartPoint: 0
+  keyMode: 0
+  customKey: 
+  keySeparator: _
+  descriptionMode: 0
+  customDescription: 
+  fireEvent: 1
+  resumeOnLoad: 1
 --- !u!1 &1044191468
 GameObject:
   m_ObjectHideFlags: 0
@@ -31979,7 +31663,7 @@ Transform:
   - {fileID: 1031999252}
   - {fileID: 489532378}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1052799693
 RectTransform:
@@ -33014,7 +32698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 2055160629}
+  selectedFlowchart: {fileID: 489532284}
 --- !u!4 &1203961737
 Transform:
   m_ObjectHideFlags: 1
@@ -33026,7 +32710,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1215450613
 MonoBehaviour:
@@ -33446,7 +33130,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1293529163
 GameObject:
@@ -33962,6 +33646,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 1031999257}
   - {fileID: 1031999023}
   - {fileID: 1031999167}
   - {fileID: 1031999166}
@@ -34070,6 +33755,55 @@ Transform:
   - {fileID: 748611403}
   m_Father: {fileID: 523507399}
   m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1425652688
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1310974650352510, guid: eae76c041b933476bbe9bdd4c3d80793,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1425652690}
+  - component: {fileID: 1425652689}
+  m_Layer: 0
+  m_Name: SaveData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1425652689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114272980009688704, guid: eae76c041b933476bbe9bdd4c3d80793,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1425652688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d92858185944732937980806717234, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flowcharts:
+  - {fileID: 213445718}
+  - {fileID: 516423532}
+  - {fileID: 2055160629}
+  - {fileID: 1031999251}
+  - {fileID: 489532284}
+--- !u!4 &1425652690
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4704521519618994, guid: eae76c041b933476bbe9bdd4c3d80793,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1425652688}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1079.5829, y: 593.8655, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1440816673
 GameObject:
@@ -34626,7 +34360,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1514247093
 GameObject:
@@ -43509,7 +43243,7 @@ MonoBehaviour:
   commandList: []
 --- !u!114 &1554631096
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1554630790}
@@ -43530,7 +43264,7 @@ MonoBehaviour:
   resumeOnLoad: 1
 --- !u!114 &1554631097
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1554630790}
@@ -43551,7 +43285,7 @@ MonoBehaviour:
   resumeOnLoad: 1
 --- !u!114 &1554631098
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1554630790}
@@ -45193,7 +44927,7 @@ Transform:
   - {fileID: 2104969270}
   - {fileID: 2082269398}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2013492036
 MonoBehaviour:
@@ -45247,7 +44981,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4285412697691224, guid: 4a1576d8c25a2b841a019de10e8c4ca9, type: 2}
       propertyPath: m_RootOrder
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4a1576d8c25a2b841a019de10e8c4ca9, type: 2}
@@ -45392,7 +45126,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1554631005}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1554631098}
   variables: []
   description: This act explores Niklas' backstory along with a battle
   stepPause: 0
@@ -45951,7 +45686,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2123200891
 SpriteRenderer:
