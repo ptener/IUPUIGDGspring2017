@@ -1569,6 +1569,7 @@ GameObject:
   - component: {fileID: 489532463}
   - component: {fileID: 489532461}
   - component: {fileID: 489532464}
+  - component: {fileID: 489532470}
   m_Layer: 0
   m_Name: ActFinal
   m_TagString: Untagged
@@ -1617,7 +1618,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 21.511414
     y: 107.54555
-    width: 163.793
+    width: 168
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1737,11 +1738,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 1042.1025, y: 185.1414}
+  scrollPos: {x: 456.12045, y: 108.90283}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.5800005
+  zoom: 1
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -2792,7 +2793,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 38.746643
     y: 334.41525
-    width: 131.03441
+    width: 132
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3751,7 +3752,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -46.40596
     y: 251.1827
-    width: 291.3791
+    width: 299
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4171,7 +4172,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 361.7808
     y: 87.86298
-    width: 131.03441
+    width: 135
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5117,7 +5118,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 37.74646
     y: 179.41531
-    width: 132.75854
+    width: 136
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5580,7 +5581,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 268.78455
     y: 621.90393
-    width: 120
+    width: 122
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5632,7 +5633,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 153.78455
     y: 653.90393
-    width: 120
+    width: 121
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5789,7 +5790,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -187.21545
     y: 619.7676
-    width: 124.13786
+    width: 127
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5850,7 +5851,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 32.011322
     y: 527.268
-    width: 141.37923
+    width: 144
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6350,7 +6351,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 31.592304
     y: 760.7562
-    width: 131.03441
+    width: 132
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6528,6 +6529,32 @@ MonoBehaviour:
   stringData:
     stringRef: {fileID: 0}
     stringVal: AMELIA
+--- !u!114 &489532470
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: -331.51166
+    y: 209.03036
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 194
+  blockName: New Block
+  description: For the final few scenes of the story, I am going to need some ideas
+    of how to pull this off. There is no battle sequence written out in the NarrativeBlocks
+    document and I'm not certain of how to implement the final dialog of Marla.
+  eventHandler: {fileID: 0}
+  commandList: []
 --- !u!1 &489540148
 GameObject:
   m_ObjectHideFlags: 0
