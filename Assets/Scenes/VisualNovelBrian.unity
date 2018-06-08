@@ -7695,7 +7695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 324.95978, y: -403.00723}
+  scrollPos: {x: 381.8649, y: -383.39777}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 431
@@ -7706,8 +7706,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 213445636}
+  selectedCommands:
+  - {fileID: 213445561}
   variables: []
   description: This act introduces the characters.
   stepPause: 0
@@ -36360,7 +36362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 2055160629}
+  selectedFlowchart: {fileID: 213445718}
 --- !u!4 &1203961737
 Transform:
   m_ObjectHideFlags: 1
