@@ -768,7 +768,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -1282,7 +1282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -1716,7 +1716,6 @@ GameObject:
   - component: {fileID: 489532613}
   - component: {fileID: 489532618}
   - component: {fileID: 489532644}
-  - component: {fileID: 489532643}
   - component: {fileID: 489532642}
   - component: {fileID: 489532641}
   - component: {fileID: 489532640}
@@ -1743,7 +1742,6 @@ GameObject:
   - component: {fileID: 489532645}
   - component: {fileID: 489532646}
   - component: {fileID: 489532647}
-  - component: {fileID: 489532648}
   - component: {fileID: 489532656}
   - component: {fileID: 489532655}
   - component: {fileID: 489532654}
@@ -1793,6 +1791,17 @@ GameObject:
   - component: {fileID: 489532691}
   - component: {fileID: 489532690}
   - component: {fileID: 489532689}
+  - component: {fileID: 489532317}
+  - component: {fileID: 489532695}
+  - component: {fileID: 489532696}
+  - component: {fileID: 489532697}
+  - component: {fileID: 489532698}
+  - component: {fileID: 489532699}
+  - component: {fileID: 489532700}
+  - component: {fileID: 489532701}
+  - component: {fileID: 489532702}
+  - component: {fileID: 489532703}
+  - component: {fileID: 489532706}
   m_Layer: 0
   m_Name: ActFinal
   m_TagString: Untagged
@@ -1813,7 +1822,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 37
   indentLevel: 0
-  storyText: This is standard procedure.
+  storyText: so this procedure keep's everyone safe.
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -1841,7 +1850,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 21.511414
     y: 107.54555
-    width: 169.78023
+    width: 168
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1911,6 +1920,7 @@ MonoBehaviour:
   - {fileID: 489532424}
   - {fileID: 489532423}
   - {fileID: 489532422}
+  - {fileID: 489532706}
   - {fileID: 489532421}
   - {fileID: 489532420}
   - {fileID: 489532419}
@@ -1918,6 +1928,16 @@ MonoBehaviour:
   - {fileID: 489532417}
   - {fileID: 489532416}
   - {fileID: 489532415}
+  - {fileID: 489532317}
+  - {fileID: 489532695}
+  - {fileID: 489532696}
+  - {fileID: 489532697}
+  - {fileID: 489532698}
+  - {fileID: 489532699}
+  - {fileID: 489532700}
+  - {fileID: 489532701}
+  - {fileID: 489532702}
+  - {fileID: 489532703}
   - {fileID: 489532413}
 --- !u!114 &489532282
 MonoBehaviour:
@@ -1932,7 +1952,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 39
   indentLevel: 0
-  storyText: I'm only chief because I've been on the moon base.
+  storyText: Also, because the silo leads outside, the door can't be opened from the
+    silo itself.
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -1958,7 +1979,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 38
   indentLevel: 0
-  storyText: I only know because I'm Chief.
+  storyText: Even with no air now, the door isn't changed.
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -1984,11 +2005,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 282.70404, y: -13.972153}
+  scrollPos: {x: 411.4193, y: 120.88034}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.90999997
+  zoom: 1
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -1996,9 +2017,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 489532281}
+  - {fileID: 489532362}
   selectedCommands:
-  - {fileID: 489532644}
+  - {fileID: 489532656}
   variables:
   - {fileID: 489532318}
   description: A short act which shows the scared running through hallways of the
@@ -2025,8 +2046,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 36
   indentLevel: 0
-  storyText: Normally the station's pressurized with air so this procedure keep's
-    everyone safe.
+  storyText: Normally the station's pressurized with air,
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -2052,7 +2072,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 35
   indentLevel: 0
-  storyText: It can only be done simultaneously.
+  storyText: not without someone in the hall.
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -2078,7 +2098,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 34
   indentLevel: 0
-  storyText: It needs to be unlocked from outside the silo, and inside the silo.
+  storyText: Four of us can go in the airlock, but we couldn't open the door to the
+    silo itself,
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -2104,8 +2125,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 33
   indentLevel: 0
-  storyText: "In order for the silo airlock to open, someone needs to be in on the
-    inside to unlock the seal. \r\n"
+  storyText: In order for the silo airlock to open, someone needs to be in the hall
+    to unlock it.
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -2469,7 +2490,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 19
   indentLevel: 0
-  storyText: Jaxon? You're looking through the window {b}rather{/b} intently.
+  storyText: Jaxon? Why do you appear to be avoiding the window?
   description: 
   character: {fileID: 489540149}
   portrait: {fileID: 0}
@@ -2841,6 +2862,32 @@ MonoBehaviour:
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTexture: {fileID: 0}
   targetCamera: {fileID: 0}
+--- !u!114 &489532317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 422
+  indentLevel: 0
+  storyText: She opens the door, so long as we follow procedure.
+  description: 
+  character: {fileID: 202946817}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &489532318
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2974,7 +3021,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -182.90042
     y: 349.47375
-    width: 122.52747
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3020,7 +3067,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 41.099586
     y: 301.47375
-    width: 137.9121
+    width: 132
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3981,7 +4028,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -43.40596
     y: 236.1827
-    width: 312.63736
+    width: 299
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3990,7 +4037,6 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 489532648}
   - {fileID: 489532656}
   - {fileID: 489532360}
   - {fileID: 489532359}
@@ -4426,7 +4472,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 361.7808
     y: 87.86298
-    width: 136.81319
+    width: 135
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5323,7 +5369,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 52
   indentLevel: 0
-  storyText: Someone needs to stay behind.
+  storyText: So... someone needs to stay behind.
   description: 
   character: {fileID: 2111803760}
   portrait: {fileID: 0}
@@ -5371,7 +5417,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 37.74646
     y: 166.41531
-    width: 141.2088
+    width: 136
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5380,7 +5426,6 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 489532643}
   - {fileID: 489532642}
   - {fileID: 489532412}
   - {fileID: 489532641}
@@ -5467,8 +5512,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 49
   indentLevel: 0
-  storyText: 'Plus, if one of them breaks the door down, they could easily damage
-    the equipment we need to get home. '
+  storyText: Even if she has gone off the deep end; she has all final say with procedures.
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -5494,8 +5538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 48
   indentLevel: 0
-  storyText: "If we did give her the slip, she'd probably know where we were and send
-    more creatures after us. \r\n"
+  storyText: '{b}Marla''s{/b} built for these kinds of operations.'
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -5521,7 +5564,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 47
   indentLevel: 0
-  storyText: We can't break through it, we can't hack through it.
+  storyText: More importantly,
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -5547,7 +5590,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 46
   indentLevel: 0
-  storyText: If we don't open it the right way, Marla won't open it at all.
+  storyText: Probably why even the creatures haven't gotten through yet.
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -5573,7 +5616,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 45
   indentLevel: 0
-  storyText: "Probably why even the creatures haven't gotten through yet. \r\n"
+  storyText: These locks are built to withstand anything that could let oxygen slip
+    through.
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -5599,8 +5643,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 44
   indentLevel: 0
-  storyText: "These locks are built to withstand anything that could let oxygen slip
-    through.  \r\n"
+  storyText: Not gonna happen.
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -5626,10 +5669,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 43
   indentLevel: 0
-  storyText: "Even if she has gone off the deep end; she has all final say with procedures.
-    \r\n"
+  storyText: B-but surely it doesn't apply here! We can just break the lock and-
   description: 
-  character: {fileID: 202946817}
+  character: {fileID: 1018104132}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -5653,7 +5695,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 42
   indentLevel: 0
-  storyText: 'Not gonna happen. Marla''s built for this. '
+  storyText: I'm only chief because I've been stationed on the moon base before.
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -5679,9 +5721,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 41
   indentLevel: 0
-  storyText: We can just break the lock and...
+  storyText: I only know because I'm Chief.
   description: 
-  character: {fileID: 1018104132}
+  character: {fileID: 202946817}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -5705,9 +5747,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 40
   indentLevel: 0
-  storyText: "B-but surely it doesn\u2019t apply here!"
+  storyText: This whole this is standard procedure.
   description: 
-  character: {fileID: 1018104132}
+  character: {fileID: 202946817}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -5860,7 +5902,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 272.72714
     y: 681.3966
-    width: 123.62637
+    width: 122
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5913,7 +5955,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 157.72728
     y: 713.3966
-    width: 123.62637
+    width: 121
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6072,7 +6114,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -183.27272
     y: 679.26025
-    width: 129.12088
+    width: 127
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6133,7 +6175,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 43.364265
     y: 470.3265
-    width: 132.41759
+    width: 128
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6670,7 +6712,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 38.53504
     y: 815.2489
-    width: 136.81319
+    width: 132
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8014,7 +8056,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 46.79075
     y: 590.6387
-    width: 120.32967
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10265,7 +10307,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 32.529877
     y: 530.9504
-    width: 156.59341
+    width: 149
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11586,27 +11628,6 @@ MonoBehaviour:
   move: 0
   shiftIntoPlace: 0
   waitUntilFinished: 0
---- !u!114 &489532643
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b115619cb83b4d6ab8047d0e9407403, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 346
-  indentLevel: 0
-  isStartPoint: 0
-  keyMode: 0
-  customKey: 
-  keySeparator: _
-  descriptionMode: 0
-  customDescription: 
-  fireEvent: 1
-  resumeOnLoad: 1
 --- !u!114 &489532644
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -11709,27 +11730,6 @@ MonoBehaviour:
   move: 0
   shiftIntoPlace: 0
   waitUntilFinished: 0
---- !u!114 &489532648
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b115619cb83b4d6ab8047d0e9407403, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 373
-  indentLevel: 0
-  isStartPoint: 0
-  keyMode: 0
-  customKey: 
-  keySeparator: _
-  descriptionMode: 0
-  customDescription: 
-  fireEvent: 1
-  resumeOnLoad: 1
 --- !u!114 &489532649
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -12900,7 +12900,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 308.76266
     y: 504.59607
-    width: 171.97803
+    width: 168
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12925,7 +12925,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 313.73828
     y: 441.79077
-    width: 166.48352
+    width: 163
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12935,6 +12935,269 @@ MonoBehaviour:
   eventHandler: {fileID: 489532692}
   commandList:
   - {fileID: 489532691}
+--- !u!114 &489532695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 423
+  indentLevel: 0
+  storyText: If we don't open it the right way, Marla won't open it at all.
+  description: 
+  character: {fileID: 202946817}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &489532696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 424
+  indentLevel: 0
+  storyText: We can't break through it, we can't hack through it.
+  description: 
+  character: {fileID: 202946817}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &489532697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 425
+  indentLevel: 0
+  storyText: If we did give her the slip until now,
+  description: 
+  character: {fileID: 202946817}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &489532698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 426
+  indentLevel: 0
+  storyText: then damage or hack the door,
+  description: 
+  character: {fileID: 202946817}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &489532699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 427
+  indentLevel: 0
+  storyText: she'd probably know where we were and send more creatures after us.
+  description: 
+  character: {fileID: 202946817}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &489532700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 428
+  indentLevel: 0
+  storyText: Plus, if one of the creatures breaks down the door,
+  description: 
+  character: {fileID: 202946817}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &489532701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 429
+  indentLevel: 0
+  storyText: they could easily damage the equipment we need to get home.
+  description: 
+  character: {fileID: 202946817}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &489532702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 430
+  indentLevel: 0
+  storyText: Opening it properly won't register with her in any negative way.
+  description: 
+  character: {fileID: 202946817}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &489532703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 431
+  indentLevel: 0
+  storyText: She'll simply open it like it was nothing.
+  description: 
+  character: {fileID: 202946817}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &489532706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 434
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 1018104132}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 95988f24cb5c40e4f8d1fa959c8b556d, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
 --- !u!1 &489540148
 GameObject:
   m_ObjectHideFlags: 0
@@ -14598,7 +14861,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -15627,7 +15890,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -16016,7 +16279,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1215450613
 MonoBehaviour:
@@ -16686,7 +16949,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -17388,7 +17651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
