@@ -9,17 +9,35 @@ EditorBuildSettings:
     path: Assets/Scenes/Title.unity
     guid: 82af4b9f50217e2428fea1ccaae4fbc7
   - enabled: 1
-    path: Assets/Scenes/VisualNovelBrian.unity
-    guid: 1de22becac0b2d14595cabe2b7f5eb5e
-  - enabled: 1
-    path: Assets/Scenes/VisualNovelPatrick.unity
-    guid: 4a0ff252af00ddb46ab5b5a6c50f5ce8
-  - enabled: 1
-    path: Assets/Scenes/VisualNovelFinalAct.unity
-    guid: 4ca61b14a68f1c9479671625ad5dcee4
-  - enabled: 1
-    path: Assets/Scenes/VisualNovelAct3AB.unity
-    guid: dfb5831cd30e7db4489dc11896e7a447
-  - enabled: 1
     path: Assets/Scenes/3DModels.unity
     guid: 932d91355c00a36419919e1b3b983ceb
+  - enabled: 1
+    path: Assets/Scenes/NewGame.unity
+    guid: c4bf85ffe7f357947b36b2c24b09855d
+  - enabled: 1
+    path: Assets/Scenes/Act0.unity
+    guid: 26aa942318aa76343949213a34b86081
+  - enabled: 1
+    path: Assets/Scenes/Act1.unity
+    guid: dea7bb94ed796a74aaf26ec275e0d3b2
+  - enabled: 1
+    path: Assets/Scenes/Act2A.unity
+    guid: 7447cef5b9aef6e47b57097070912484
+  - enabled: 1
+    path: Assets/Scenes/Act2B.unity
+    guid: 8eb6e40442677d2438fc8ef3681936e2
+  - enabled: 1
+    path: Assets/Scenes/Act3AA.unity
+    guid: 3aef76cdb854a7843addb39e3ca4299a
+  - enabled: 1
+    path: Assets/Scenes/Act3AB.unity
+    guid: dfb5831cd30e7db4489dc11896e7a447
+  - enabled: 1
+    path: Assets/Scenes/Act3BA.unity
+    guid: 236773e650d8a99418fe99deecd2e958
+  - enabled: 1
+    path: Assets/Scenes/Act3BB.unity
+    guid: 78758cdeac8500149b90e3137e7a15ac
+  - enabled: 1
+    path: Assets/Scenes/ActFinal.unity
+    guid: 4ca61b14a68f1c9479671625ad5dcee4

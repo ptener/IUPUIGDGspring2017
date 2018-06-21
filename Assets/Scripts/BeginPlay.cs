@@ -5,8 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class BeginPlay : MonoBehaviour {
 
+    public GameObject[] toggleableButtons;
+
     public void StartGame() {
-        SceneManager.LoadScene("VisualNovelBrian");
+        SceneManager.LoadScene("Act0");
+    }
+
+    public void NewGame() {
+        SceneManager.LoadScene("NewGame");
     }
 
     public void ViewGalery()
@@ -17,5 +23,11 @@ public class BeginPlay : MonoBehaviour {
     public void MainMenu()
     {
         SceneManager.LoadScene("Title");
+    }
+
+    public void ToggleButtons() {
+        foreach (GameObject b in toggleableButtons) {
+            b.SetActive(!b.activeSelf);
+        }
     }
 }
