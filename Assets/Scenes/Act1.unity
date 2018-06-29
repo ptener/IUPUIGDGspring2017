@@ -10126,7 +10126,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &516423454
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 516423161}
@@ -12268,7 +12268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -29.285366
+    x: -28.285366
     y: 350.87344
     width: 170
     height: 40
@@ -12457,7 +12457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 626.5236, y: -335.23892}
+  scrollPos: {x: 535.5236, y: 253.76108}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 431
@@ -12468,10 +12468,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 516423524}
-  selectedCommands:
-  - {fileID: 516423401}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 516423377}
   description: This act establishes a moon base where something has clearly gone awry.
@@ -14474,7 +14472,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &516423611
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 516423161}
@@ -14627,7 +14625,7 @@ MonoBehaviour:
     booleanVal: 0
 --- !u!114 &516423617
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 516423161}
@@ -14678,7 +14676,7 @@ MonoBehaviour:
     booleanVal: 0
 --- !u!114 &516423619
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 516423161}
@@ -14704,7 +14702,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &516423620
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 516423161}
@@ -14727,7 +14725,7 @@ MonoBehaviour:
   targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &516423621
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 516423161}
@@ -14750,7 +14748,7 @@ MonoBehaviour:
   targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &516423622
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 516423161}
@@ -14776,7 +14774,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &516423623
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 516423161}
@@ -14802,7 +14800,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &516423624
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 516423161}
@@ -14822,7 +14820,7 @@ MonoBehaviour:
   targetCamera: {fileID: 0}
 --- !u!114 &516423625
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 516423161}
@@ -14840,7 +14838,7 @@ MonoBehaviour:
   fadeTexture: {fileID: 0}
 --- !u!114 &516423626
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 516423161}
@@ -14866,7 +14864,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &516423627
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 516423161}
@@ -14892,7 +14890,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &516423628
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 516423161}
