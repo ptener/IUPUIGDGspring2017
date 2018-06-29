@@ -1884,7 +1884,6 @@ GameObject:
   - component: {fileID: 489532294}
   - component: {fileID: 489532293}
   - component: {fileID: 489532292}
-  - component: {fileID: 489532290}
   - component: {fileID: 489532289}
   - component: {fileID: 489532281}
   - component: {fileID: 489532288}
@@ -1975,6 +1974,22 @@ GameObject:
   - component: {fileID: 489532448}
   - component: {fileID: 489532439}
   - component: {fileID: 489532438}
+  - component: {fileID: 489532452}
+  - component: {fileID: 489532451}
+  - component: {fileID: 489532450}
+  - component: {fileID: 489532449}
+  - component: {fileID: 489532453}
+  - component: {fileID: 489532454}
+  - component: {fileID: 489532290}
+  - component: {fileID: 489532455}
+  - component: {fileID: 489532457}
+  - component: {fileID: 489532456}
+  - component: {fileID: 489532462}
+  - component: {fileID: 489532461}
+  - component: {fileID: 489532460}
+  - component: {fileID: 489532459}
+  - component: {fileID: 489532458}
+  - component: {fileID: 489532463}
   m_Layer: 0
   m_Name: Act3BB_Flowchart
   m_TagString: Untagged
@@ -2042,8 +2057,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 734
   indentLevel: 0
-  storyText: Amelia goes in for what she thinks is an opening only to get nailed in
-    the chest by the sentry pivoting to the side and kneeing her.
+  storyText: Amelia goes in for what looks like an opening,
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2069,7 +2083,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 733
   indentLevel: 0
-  storyText: Niklas tries to pick him up only to get smashed against the ground.
+  storyText: Niklas tries to pick him up, only to get smashed against the ground.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2095,11 +2109,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 497.46652, y: 278.05673}
+  scrollPos: {x: 582.9452, y: 87.0305}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.9100001
+  zoom: 1
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -2107,7 +2121,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 489532377}
+  - {fileID: 489532328}
   selectedCommands: []
   variables: []
   description: A short act which shows the scared running through hallways of the
@@ -2186,8 +2200,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 730
   indentLevel: 0
-  storyText: ' Jaxon fights the second sentry, going for a couple quick jabs before
-    backing off.'
+  storyText: Jaxon fights the second sentry, going for a couple quick jabs before
+    backing off.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2213,7 +2227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 728
   indentLevel: 0
-  storyText: Haru goes head on with the sentry.
+  storyText: Haru goes head on with the closest sentry.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2257,9 +2271,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 725
+  itemId: 825
   indentLevel: 0
-  storyText: '... SPLAT ...'
+  storyText: only to get kneed in the chest by the sentry pivoting to the side.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2286,9 +2300,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -95.750244
-    y: 209.19304
-    width: 137.91208
+    x: -89.750244
+    y: 210.19304
+    width: 135
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2304,6 +2318,8 @@ MonoBehaviour:
   - {fileID: 489532403}
   - {fileID: 489532402}
   - {fileID: 489532326}
+  - {fileID: 489532450}
+  - {fileID: 489532449}
   - {fileID: 489532418}
   - {fileID: 489532361}
   - {fileID: 489532417}
@@ -2350,7 +2366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 724
   indentLevel: 0
-  storyText: They both go down. The sentry jumps and lands on them.
+  storyText: They both go down. The sentry stomps on and crushes them.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2450,7 +2466,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 721
   indentLevel: 0
-  storyText: only for it to be deflected by her sentry standing in her blind spot.
+  storyText: Only for it to be deflected by another sentry standing in her blind spot.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2580,8 +2596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 716
   indentLevel: 0
-  storyText: 'Jaxon sweeps the feet of the second with the pipe and the others use
-    their remaining weapons to bash the final sentry. '
+  storyText: Jaxon impales and cripples the spine of the second with the pipe
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2607,8 +2622,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 715
   indentLevel: 0
-  storyText: Three sentries jump down from a stack of crates against the far wall.Haru
-    jumps on the back of one sentry and takes it out with both screw drivers.
+  storyText: Haru jumps on the back of one sentry,
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2658,7 +2672,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 735
   indentLevel: 0
-  storyText: ' Its hand closes down on him. '
+  storyText: Its claw closes down on him.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2800,9 +2814,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -602.14667
-    y: 273.94345
-    width: 121.428566
+    x: -569.14667
+    y: 256.94345
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2868,7 +2882,7 @@ MonoBehaviour:
   itemId: 744
   indentLevel: 0
   duration: 1
-  fadeOut: 1
+  fadeOut: 0
   targetView: {fileID: 996932058}
   waitUntilFinished: 1
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
@@ -2916,7 +2930,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 166.16193
     y: 440.1931
-    width: 150
+    width: 145
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3256,9 +3270,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -89.50931
-    y: 357.64774
-    width: 155.4945
+    x: -81.50931
+    y: 355.64774
+    width: 151
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3274,6 +3288,7 @@ MonoBehaviour:
   - {fileID: 489532431}
   - {fileID: 489532430}
   - {fileID: 489532379}
+  - {fileID: 489532455}
   - {fileID: 489532429}
   - {fileID: 489532447}
   - {fileID: 489532345}
@@ -3284,6 +3299,8 @@ MonoBehaviour:
   - {fileID: 489532444}
   - {fileID: 489532342}
   - {fileID: 489532443}
+  - {fileID: 489532457}
+  - {fileID: 489532456}
   - {fileID: 489532341}
   - {fileID: 489532442}
   - {fileID: 489532340}
@@ -3567,7 +3584,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 39
   indentLevel: 0
-  storyText: TOO MUCH ECHO. JUST MOVE!
+  storyText: '{punch=10, 0.5}TOO MUCH ECHO. JUST MOVE!'
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -3594,7 +3611,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 38
   indentLevel: 0
-  storyText: WHERE IS IT?
+  storyText: '{punch=10, 0.5}WHERE IS IT?'
   description: 
   character: {fileID: 489540149}
   portrait: {fileID: 0}
@@ -3621,7 +3638,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 37
   indentLevel: 0
-  storyText: 'DAMN IT I DON''T WANT TO DIE! '
+  storyText: '{punch=10, 0.5}DAMN IT I DON''T WANT TO DIE! '
   description: 
   character: {fileID: 1493972296}
   portrait: {fileID: 0}
@@ -3648,7 +3665,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 36
   indentLevel: 0
-  storyText: 'JUST KEEP MOVING! '
+  storyText: '{punch=10, 0.5}JUST KEEP MOVING! '
   description: 
   character: {fileID: 1018104132}
   portrait: {fileID: 0}
@@ -3675,7 +3692,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 35
   indentLevel: 0
-  storyText: WHICH IS IT ALREADY?! THAT DAMN THING KEEPS FOLLOWING US!
+  storyText: '{punch=10, 0.5}WHICH IS IT ALREADY?! THAT DAMN THING KEEPS FOLLOWING
+    US!'
   description: 
   character: {fileID: 489540149}
   portrait: {fileID: 0}
@@ -3702,7 +3720,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 34
   indentLevel: 0
-  storyText: GAAAAAH!!!!
+  storyText: '{punch=10, 0.5}GAAAAAH!!!!'
   description: 
   character: {fileID: 2111803760}
   portrait: {fileID: 0}
@@ -3852,7 +3870,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 27
   indentLevel: 0
-  storyText: 'IF that thing wants us it better be prepared to loose the hunt! '
+  storyText: '{b}{i}If{/i}{/b} that thing wants us it better be prepared to loose
+    the hunt! '
   description: 
   character: {fileID: 489540149}
   portrait: {fileID: 0}
@@ -4015,7 +4034,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 21
   indentLevel: 0
-  storyText: Is it the one we left behind?
+  storyText: '{b}{i}Is{/i}{/b} it the one we left behind?'
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -4301,7 +4320,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 9
   indentLevel: 0
-  storyText: Whew... that... that probably WAS the smartest choice huh?
+  storyText: Whew... that... that probably WAS the smartest choice, huh?
   description: 
   character: {fileID: 2111803760}
   portrait: {fileID: 0}
@@ -4349,9 +4368,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -108.53075
+    x: -101.53075
     y: 147.91853
-    width: 164.2857
+    width: 159
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4372,6 +4391,7 @@ MonoBehaviour:
   - {fileID: 489532395}
   - {fileID: 489532367}
   - {fileID: 489532366}
+  - {fileID: 489532451}
   - {fileID: 489532322}
   - {fileID: 489532394}
   - {fileID: 489532365}
@@ -4520,9 +4540,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -92.53764
-    y: 89.27901
-    width: 125.824165
+    x: -86.53764
+    y: 90.27901
+    width: 126
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4543,6 +4563,7 @@ MonoBehaviour:
   - {fileID: 489532372}
   - {fileID: 489532316}
   - {fileID: 489532371}
+  - {fileID: 489532452}
   - {fileID: 489532314}
   - {fileID: 489532332}
   - {fileID: 489532369}
@@ -4562,7 +4583,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 170
     y: 18
-    width: 136.81317
+    width: 135
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4628,7 +4649,7 @@ MonoBehaviour:
   showAlways: 1
   showCount: 1
   extendPrevious: 0
-  fadeWhenDone: 0
+  fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
@@ -4646,7 +4667,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 712
   indentLevel: 0
-  storyText: Three sentries jump down from a stack of crates against the far wall.
+  storyText: Three sentries burst through a stack of crates blocking a nearby hall.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -4672,8 +4693,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -361.58438
-    y: 297.1345
+    x: -359.58438
+    y: 281.1345
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -4690,6 +4711,7 @@ MonoBehaviour:
   - {fileID: 489532285}
   - {fileID: 489532283}
   - {fileID: 489532282}
+  - {fileID: 489532290}
   - {fileID: 489532305}
   - {fileID: 489532304}
   - {fileID: 489532281}
@@ -4785,8 +4807,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -364.6946
-    y: 237.35379
+    x: -362.6946
+    y: 221.35379
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -4804,7 +4826,6 @@ MonoBehaviour:
   - {fileID: 489532294}
   - {fileID: 489532293}
   - {fileID: 489532292}
-  - {fileID: 489532290}
   - {fileID: 489532289}
 --- !u!114 &489532387
 MonoBehaviour:
@@ -4831,7 +4852,10 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 489532302}
+  - {fileID: 489532453}
   - {fileID: 489532301}
+  - {fileID: 489532454}
+  - {fileID: 489532463}
   - {fileID: 489532306}
 --- !u!114 &489532388
 MonoBehaviour:
@@ -4862,6 +4886,8 @@ MonoBehaviour:
   - {fileID: 489532381}
   - {fileID: 489532384}
   - {fileID: 489532380}
+  - {fileID: 489532459}
+  - {fileID: 489532458}
   - {fileID: 489532383}
   - {fileID: 489532334}
   - {fileID: 489532303}
@@ -5404,7 +5430,7 @@ MonoBehaviour:
   stage: {fileID: 1000099364}
   character: {fileID: 489540149}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 035c32e543fe9ae4faf257c78ffe72a7, type: 3}
+  portrait: {fileID: 21300000, guid: f266407871f37ca418028dd147e78a04, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 0}
@@ -6211,7 +6237,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -202.34161
     y: -23.673645
-    width: 169.78021
+    width: 166
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6533,7 +6559,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -231.2547
     y: 34.830925
-    width: 218.13185
+    width: 213
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6543,6 +6569,329 @@ MonoBehaviour:
   eventHandler: {fileID: 489532438}
   commandList:
   - {fileID: 489532439}
+--- !u!114 &489532449
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 822
+  indentLevel: 0
+  storyText: '{punch=10, 0.5} Howl!'
+  description: 
+  character: {fileID: 2034030345}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &489532450
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 821
+  indentLevel: 0
+  soundClip: {fileID: 8300000, guid: bd824a27cdf5aaa47ad61c2507415491, type: 3}
+  volume: 0.627
+  waitUntilFinished: 0
+--- !u!114 &489532451
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 820
+  indentLevel: 0
+  soundClip: {fileID: 8300000, guid: bd824a27cdf5aaa47ad61c2507415491, type: 3}
+  volume: 0.739
+  waitUntilFinished: 0
+--- !u!114 &489532452
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 819
+  indentLevel: 0
+  soundClip: {fileID: 8300000, guid: bd824a27cdf5aaa47ad61c2507415491, type: 3}
+  volume: 1
+  waitUntilFinished: 0
+--- !u!114 &489532453
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 823
+  indentLevel: 0
+  storyText: and takes it out with both screw drivers driven into its brain.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &489532454
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 824
+  indentLevel: 0
+  storyText: and the others use their remaining weapons to bash the final sentry.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &489532455
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 826
+  indentLevel: 0
+  soundClip: {fileID: 8300000, guid: bd824a27cdf5aaa47ad61c2507415491, type: 3}
+  volume: 0.727
+  waitUntilFinished: 0
+--- !u!114 &489532456
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 828
+  indentLevel: 0
+  storyText: '{punch=10, 0.5}{size=45}Howl!'
+  description: 
+  character: {fileID: 2034030345}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &489532457
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 827
+  indentLevel: 0
+  soundClip: {fileID: 8300000, guid: bd824a27cdf5aaa47ad61c2507415491, type: 3}
+  volume: 0.727
+  waitUntilFinished: 0
+--- !u!114 &489532458
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 832
+  indentLevel: 0
+  storyText: What should they do?
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 0
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &489532459
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 831
+  indentLevel: 0
+  duration: 1
+  fadeOut: 1
+  targetView: {fileID: 1997236567}
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+  targetCamera: {fileID: 0}
+--- !u!114 &489532460
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ca33a026786245d4b10323b87e84d5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 489532462}
+  savePointKeys:
+  - Closed_Doors
+  - DoorE7
+  - DoorE4
+--- !u!114 &489532461
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 598f181ee459641a9b0a5849fbc3240c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 830
+  indentLevel: 0
+  _targetObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 1826385924}
+  _tweenName:
+    stringRef: {fileID: 0}
+    stringVal: 
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 4
+  easeType: 28
+  loopType: 2
+  stopPreviousTweens: 0
+  waitUntilFinished: 1
+  targetObjectOLD: {fileID: 0}
+  tweenNameOLD: 
+  durationOLD: 0
+  _offset:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0.5, z: 0}
+  space: 1
+  offsetOLD: {x: 0, y: 0, z: 0}
+--- !u!114 &489532462
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 193.05481
+    y: 149.96948
+    width: 122
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 689
+  blockName: recordo_bob
+  description: 
+  eventHandler: {fileID: 489532460}
+  commandList:
+  - {fileID: 489532461}
+--- !u!114 &489532463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 833
+  indentLevel: 0
+  duration: 1
+  targetAlpha: 1
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
 --- !u!1 &489540148
 GameObject:
   m_ObjectHideFlags: 0
