@@ -213,7 +213,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &52479283
 GameObject:
@@ -499,8 +499,69 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &204139987
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4799014786784992, guid: 661aade5163c8f74ba6d61a9bc86dc63, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -820.97107
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799014786784992, guid: 661aade5163c8f74ba6d61a9bc86dc63, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 7.959244
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799014786784992, guid: 661aade5163c8f74ba6d61a9bc86dc63, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799014786784992, guid: 661aade5163c8f74ba6d61a9bc86dc63, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799014786784992, guid: 661aade5163c8f74ba6d61a9bc86dc63, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799014786784992, guid: 661aade5163c8f74ba6d61a9bc86dc63, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799014786784992, guid: 661aade5163c8f74ba6d61a9bc86dc63, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799014786784992, guid: 661aade5163c8f74ba6d61a9bc86dc63, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4616863883437126, guid: 661aade5163c8f74ba6d61a9bc86dc63, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 9.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4616863883437126, guid: 661aade5163c8f74ba6d61a9bc86dc63, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.17
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 661aade5163c8f74ba6d61a9bc86dc63, type: 2}
+  m_IsPrefabParent: 0
+--- !u!114 &204139988 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114182316234438764, guid: 661aade5163c8f74ba6d61a9bc86dc63,
+    type: 2}
+  m_PrefabInternal: {fileID: 204139987}
+  m_Script: {fileID: 11500000, guid: 95c387d3e32404bcc91c60318d766bb1, type: 3}
+--- !u!1 &204139989 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1540591505221402, guid: 661aade5163c8f74ba6d61a9bc86dc63,
+    type: 2}
+  m_PrefabInternal: {fileID: 204139987}
 --- !u!1 &262952434
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,6 +960,79 @@ MonoBehaviour:
   viewSize: 7.0279627
   primaryAspectRatio: {x: 16, y: 9}
   secondaryAspectRatio: {x: 16, y: 9}
+--- !u!1 &342239413
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 342239414}
+  - component: {fileID: 342239415}
+  m_Layer: 0
+  m_Name: Glowing_Eyes (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &342239414
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 342239413}
+  m_LocalRotation: {x: -0.103886604, y: 0.29944512, z: 0.31086633, w: 0.8960482}
+  m_LocalPosition: {x: 0.970047, y: 4.08, z: -0.77000046}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
+  m_Children: []
+  m_Father: {fileID: 982911168}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -21.861002, y: 30.572, z: 32.224003}
+--- !u!212 &342239415
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 342239413}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 231bca9b3c6536949bdf245c128da3cc, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 7.17, y: 7.53}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!1001 &367531851
 Prefab:
   m_ObjectHideFlags: 0
@@ -936,7 +1070,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4740395644749716, guid: 1d0746ffcb09d9f488a1498254ebea30, type: 2}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1d0746ffcb09d9f488a1498254ebea30, type: 2}
@@ -1036,6 +1170,79 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &390192258
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 390192259}
+  - component: {fileID: 390192260}
+  m_Layer: 0
+  m_Name: Glowing_Eyes (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &390192259
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 390192258}
+  m_LocalRotation: {x: -0, y: -0, z: 0.55148476, w: 0.834185}
+  m_LocalPosition: {x: 2.1599884, y: 3.3500042, z: 0}
+  m_LocalScale: {x: 0.25000006, y: 0.25000006, z: 1}
+  m_Children: []
+  m_Father: {fileID: 982911168}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 66.938}
+--- !u!212 &390192260
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 390192258}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 231bca9b3c6536949bdf245c128da3cc, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 7.17, y: 7.53}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!1 &407654816
 GameObject:
   m_ObjectHideFlags: 0
@@ -1083,6 +1290,79 @@ MonoBehaviour:
   viewSize: 7.0459876
   primaryAspectRatio: {x: 16, y: 9}
   secondaryAspectRatio: {x: 16, y: 9}
+--- !u!1 &407852119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 407852121}
+  - component: {fileID: 407852120}
+  m_Layer: 0
+  m_Name: Glowing_Eyes (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &407852120
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 407852119}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b26b70e747b74cd41ac42c30664083b8, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 7.17, y: 7.53}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!4 &407852121
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 407852119}
+  m_LocalRotation: {x: -0, y: -0, z: 0.55148476, w: 0.834185}
+  m_LocalPosition: {x: 2.1599884, y: 3.3500042, z: 0}
+  m_LocalScale: {x: 0.25000006, y: 0.25000006, z: 1}
+  m_Children: []
+  m_Father: {fileID: 952306854}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 66.938}
 --- !u!224 &423695363
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1139,7 +1419,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4455480248028400, guid: 30a5e5f1e3c9d924fb3d2d0be4a335f6, type: 2}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 30a5e5f1e3c9d924fb3d2d0be4a335f6, type: 2}
@@ -1369,7 +1649,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &489532279
 GameObject:
@@ -1392,7 +1672,6 @@ GameObject:
   - component: {fileID: 489532310}
   - component: {fileID: 489532309}
   - component: {fileID: 489532308}
-  - component: {fileID: 489532316}
   - component: {fileID: 489532307}
   - component: {fileID: 489532306}
   - component: {fileID: 489532305}
@@ -1544,11 +1823,7 @@ GameObject:
   - component: {fileID: 489532432}
   - component: {fileID: 489532431}
   - component: {fileID: 489532430}
-  - component: {fileID: 489532429}
   - component: {fileID: 489532428}
-  - component: {fileID: 489532427}
-  - component: {fileID: 489532426}
-  - component: {fileID: 489532425}
   - component: {fileID: 489532452}
   - component: {fileID: 489532453}
   - component: {fileID: 489532469}
@@ -1699,12 +1974,7 @@ GameObject:
   - component: {fileID: 489532610}
   - component: {fileID: 489532609}
   - component: {fileID: 489532608}
-  - component: {fileID: 489532607}
-  - component: {fileID: 489532606}
   - component: {fileID: 489532605}
-  - component: {fileID: 489532604}
-  - component: {fileID: 489532603}
-  - component: {fileID: 489532602}
   - component: {fileID: 489532601}
   - component: {fileID: 489532600}
   - component: {fileID: 489532599}
@@ -1715,7 +1985,6 @@ GameObject:
   - component: {fileID: 489532614}
   - component: {fileID: 489532613}
   - component: {fileID: 489532618}
-  - component: {fileID: 489532644}
   - component: {fileID: 489532642}
   - component: {fileID: 489532641}
   - component: {fileID: 489532640}
@@ -1723,7 +1992,6 @@ GameObject:
   - component: {fileID: 489532638}
   - component: {fileID: 489532637}
   - component: {fileID: 489532636}
-  - component: {fileID: 489532635}
   - component: {fileID: 489532634}
   - component: {fileID: 489532633}
   - component: {fileID: 489532632}
@@ -1766,9 +2034,6 @@ GameObject:
   - component: {fileID: 489532669}
   - component: {fileID: 489532463}
   - component: {fileID: 489532454}
-  - component: {fileID: 489532673}
-  - component: {fileID: 489532672}
-  - component: {fileID: 489532671}
   - component: {fileID: 489532683}
   - component: {fileID: 489532682}
   - component: {fileID: 489532681}
@@ -1802,6 +2067,50 @@ GameObject:
   - component: {fileID: 489532702}
   - component: {fileID: 489532703}
   - component: {fileID: 489532706}
+  - component: {fileID: 489532602}
+  - component: {fileID: 489532604}
+  - component: {fileID: 489532603}
+  - component: {fileID: 489532316}
+  - component: {fileID: 489532606}
+  - component: {fileID: 489532607}
+  - component: {fileID: 489532643}
+  - component: {fileID: 489532635}
+  - component: {fileID: 489532644}
+  - component: {fileID: 489532648}
+  - component: {fileID: 489532710}
+  - component: {fileID: 489532709}
+  - component: {fileID: 489532708}
+  - component: {fileID: 489532707}
+  - component: {fileID: 489532426}
+  - component: {fileID: 489532705}
+  - component: {fileID: 489532704}
+  - component: {fileID: 489532429}
+  - component: {fileID: 489532427}
+  - component: {fileID: 489532425}
+  - component: {fileID: 489532711}
+  - component: {fileID: 489532712}
+  - component: {fileID: 489532713}
+  - component: {fileID: 489532715}
+  - component: {fileID: 489532716}
+  - component: {fileID: 489532717}
+  - component: {fileID: 489532718}
+  - component: {fileID: 489532719}
+  - component: {fileID: 489532721}
+  - component: {fileID: 489532720}
+  - component: {fileID: 489532722}
+  - component: {fileID: 489532671}
+  - component: {fileID: 489532672}
+  - component: {fileID: 489532724}
+  - component: {fileID: 489532723}
+  - component: {fileID: 489532714}
+  - component: {fileID: 489532673}
+  - component: {fileID: 489532725}
+  - component: {fileID: 489532726}
+  - component: {fileID: 489532727}
+  - component: {fileID: 489532728}
+  - component: {fileID: 489532729}
+  - component: {fileID: 489532730}
+  - component: {fileID: 489532731}
   m_Layer: 0
   m_Name: ActFinal
   m_TagString: Untagged
@@ -1822,7 +2131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 37
   indentLevel: 0
-  storyText: so this procedure keep's everyone safe.
+  storyText: so this procedure keeps everyone throughout the base safe.
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -1859,27 +2168,20 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 489532644}
-  - {fileID: 489532612}
-  - {fileID: 489532611}
-  - {fileID: 489532610}
   - {fileID: 489532609}
-  - {fileID: 489532608}
-  - {fileID: 489532316}
-  - {fileID: 489532607}
   - {fileID: 489532315}
-  - {fileID: 489532606}
+  - {fileID: 489532612}
   - {fileID: 489532314}
   - {fileID: 489532605}
   - {fileID: 489532313}
-  - {fileID: 489532604}
+  - {fileID: 489532608}
   - {fileID: 489532312}
-  - {fileID: 489532603}
+  - {fileID: 489532610}
   - {fileID: 489532311}
   - {fileID: 489532310}
   - {fileID: 489532309}
   - {fileID: 489532308}
-  - {fileID: 489532602}
+  - {fileID: 489532611}
   - {fileID: 489532307}
   - {fileID: 489532306}
   - {fileID: 489532601}
@@ -1911,6 +2213,7 @@ MonoBehaviour:
   - {fileID: 489532613}
   - {fileID: 489532289}
   - {fileID: 489532288}
+  - {fileID: 489532606}
   - {fileID: 489532287}
   - {fileID: 489532286}
   - {fileID: 489532285}
@@ -1923,6 +2226,7 @@ MonoBehaviour:
   - {fileID: 489532706}
   - {fileID: 489532421}
   - {fileID: 489532420}
+  - {fileID: 489532607}
   - {fileID: 489532419}
   - {fileID: 489532418}
   - {fileID: 489532417}
@@ -1938,6 +2242,7 @@ MonoBehaviour:
   - {fileID: 489532701}
   - {fileID: 489532702}
   - {fileID: 489532703}
+  - {fileID: 489532643}
   - {fileID: 489532413}
 --- !u!114 &489532282
 MonoBehaviour:
@@ -1952,7 +2257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 39
   indentLevel: 0
-  storyText: Also, because the silo leads outside, the door can't be opened from the
+  storyText: And because the silo leads to outside, the door can't be opened from
     silo itself.
   description: 
   character: {fileID: 202946817}
@@ -2005,7 +2310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 411.4193, y: 120.88034}
+  scrollPos: {x: 660.3697, y: 160.98566}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -2017,13 +2322,12 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 489532362}
+  - {fileID: 489532325}
   selectedCommands:
-  - {fileID: 489532656}
+  - {fileID: 489532731}
   variables:
   - {fileID: 489532318}
-  description: A short act which shows the scared running through hallways of the
-    astronauts.
+  description: The final act where a decision needs to be made.
   stepPause: 0
   colorCommands: 1
   hideComponents: 1
@@ -2072,7 +2376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 35
   indentLevel: 0
-  storyText: not without someone in the hall.
+  storyText: Not without someone in the hall.
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -2099,7 +2403,7 @@ MonoBehaviour:
   itemId: 34
   indentLevel: 0
   storyText: Four of us can go in the airlock, but we couldn't open the door to the
-    silo itself,
+    silo itself.
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -2125,8 +2429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 33
   indentLevel: 0
-  storyText: In order for the silo airlock to open, someone needs to be in the hall
-    to unlock it.
+  storyText: In order for the silo airlock to open,
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -2204,7 +2507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 30
   indentLevel: 0
-  storyText: ' Only four of us can.'
+  storyText: Only four of us can.
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -2568,7 +2871,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 16
   indentLevel: 0
-  storyText: Yeah
+  storyText: Yeah...
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -2850,21 +3153,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 489532279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 13
+  itemId: 438
   indentLevel: 0
-  duration: 1
-  fadeOut: 1
-  targetView: {fileID: 407654818}
-  waitUntilFinished: 1
-  fadeColor: {r: 0, g: 0, b: 0, a: 1}
-  fadeTexture: {fileID: 0}
-  targetCamera: {fileID: 0}
+  text: Continue...
+  description: 
+  targetBlock: {fileID: 489532281}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!114 &489532317
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 489532279}
@@ -2927,7 +3234,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 489532447}
-  - {fileID: 489532425}
+  - {fileID: 489532708}
 --- !u!114 &489532320
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2953,7 +3260,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 489532448}
-  - {fileID: 489532426}
+  - {fileID: 489532709}
 --- !u!114 &489532321
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2979,7 +3286,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 489532449}
-  - {fileID: 489532427}
+  - {fileID: 489532707}
 --- !u!114 &489532322
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3031,7 +3338,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 489532451}
-  - {fileID: 489532429}
+  - {fileID: 489532710}
 --- !u!114 &489532324
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3076,6 +3383,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 489532731}
   - {fileID: 489532598}
   - {fileID: 489532327}
   - {fileID: 489532446}
@@ -3168,7 +3476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 133
   indentLevel: 0
-  storyText: '...ok'
+  storyText: '...ok...'
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -3298,7 +3606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 128
   indentLevel: 0
-  storyText: "Well, I'd say Recordo is an extension of Jaxon, but, yes.  \r\n"
+  storyText: Well, I'd say Recordo is an extension of Jaxon, but, yes.
   description: 
   character: {fileID: 489540149}
   portrait: {fileID: 0}
@@ -3377,8 +3685,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 125
   indentLevel: 0
-  storyText: "Recordo has proven more than enough times to make the smart choices.
-    \ \r\n"
+  storyText: Recordo has proven more than enough times to make the smart choices.
   description: 
   character: {fileID: 1493972296}
   portrait: {fileID: 0}
@@ -3430,7 +3737,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 123
   indentLevel: 0
-  storyText: 'b-but Recordo can''t really be trusted to- '
+  storyText: 'B-but Recordo can''t really be trusted to- '
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -3482,7 +3789,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 121
   indentLevel: 0
-  storyText: "We'll all hug and say our goodbyes to whomever it is. \r\n"
+  storyText: We'll all hug and say our goodbyes to whomever it is.
   description: 
   character: {fileID: 489540149}
   portrait: {fileID: 0}
@@ -3586,7 +3893,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 117
   indentLevel: 0
-  storyText: 'Recordo... Only Recordo could decide since there''d be no emotional
+  storyText: 'Recordo... only Recordo could decide since there''d be no emotional
     attachment. '
   description: 
   character: {fileID: 2111803760}
@@ -3926,8 +4233,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 104
   indentLevel: 0
-  storyText: 'Even if they did vote me to go up, not enough lives will be damaged
-    for me to keep mine. '
+  storyText: My position and my relationship are still small enough to sacrifice.
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -3953,8 +4259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 103
   indentLevel: 0
-  storyText: "Recordo's got a whole robotics team full of passion to keep him going.
-    \ \r\n"
+  storyText: Recordo's got a whole robotics team full of passion to keep him going.
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -4041,6 +4346,7 @@ MonoBehaviour:
   - {fileID: 489532360}
   - {fileID: 489532359}
   - {fileID: 489532358}
+  - {fileID: 489532635}
   - {fileID: 489532655}
   - {fileID: 489532357}
   - {fileID: 489532356}
@@ -4077,6 +4383,7 @@ MonoBehaviour:
   - {fileID: 489532661}
   - {fileID: 489532338}
   - {fileID: 489532337}
+  - {fileID: 489532644}
   - {fileID: 489532336}
   - {fileID: 489532660}
   - {fileID: 489532335}
@@ -4162,7 +4469,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 97
   indentLevel: 0
-  storyText: "STOP STOP STOP STOP STOP STOP STOP STOP \r\nSTOP"
+  storyText: "{punch10, 0.5}STOP STOP STOP STOP STOP STOP STOP STOP \rSTOP"
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -4188,7 +4495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 96
   indentLevel: 0
-  storyText: STOP STOP STOP
+  storyText: '{punch10, 0.5}STOP STOP STOP'
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -4214,7 +4521,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 95
   indentLevel: 0
-  storyText: STOP.
+  storyText: '{punch10, 0.5}STOP.'
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -4318,7 +4625,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 91
   indentLevel: 0
-  storyText: Well we're not anymore! RECORDO! Disconnect my oxygen!
+  storyText: Well, we're not anymore! {punch=10,0.5}RECORDO! Disconnect my oxygen!
   description: 
   character: {fileID: 1018104132}
   portrait: {fileID: 0}
@@ -4370,7 +4677,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 89
   indentLevel: 0
-  storyText: Wish I told you guys earlier.
+  storyText: '...Wish I told you guys earlier...'
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -4424,7 +4731,7 @@ MonoBehaviour:
   itemId: 2
   indentLevel: 0
   targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 489532281}
+  targetBlock: {fileID: 489532602}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -4470,8 +4777,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 361.7808
-    y: 87.86298
+    x: 358.7808
+    y: 4.8629837
     width: 135
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -4509,8 +4816,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 85
   indentLevel: 0
-  storyText: "Your research will do more for the earth than any of my study of rocks
-    and geology! \r\n"
+  storyText: Your research will do more for the planet than any of my study of rocks
+    and geology!
   description: 
   character: {fileID: 1018104132}
   portrait: {fileID: 0}
@@ -4562,8 +4869,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 83
   indentLevel: 0
-  storyText: "All that money will go somewhere else and your plants will be without
-    their mother! \r\n"
+  storyText: All that money will go somewhere else and your plants will be without
+    their mother!
   description: 
   character: {fileID: 1018104132}
   portrait: {fileID: 0}
@@ -4615,7 +4922,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 81
   indentLevel: 0
-  storyText: ' With the grants I''ve earned- '
+  storyText: 'With the grants I''ve earned- '
   description: 
   character: {fileID: 489540149}
   portrait: {fileID: 0}
@@ -4823,7 +5130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 73
   indentLevel: 0
-  storyText: "I have a family back home, and I feel I have a family right here.  \r\n"
+  storyText: I have a family back home, and I feel I have a family right here.
   description: 
   character: {fileID: 1493972296}
   portrait: {fileID: 0}
@@ -4875,7 +5182,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 71
   indentLevel: 0
-  storyText: "But it isn't something any of us should have forgotten.  \r\n"
+  storyText: But it isn't something any of us should have forgotten.
   description: 
   character: {fileID: 1493972296}
   portrait: {fileID: 0}
@@ -4901,7 +5208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 70
   indentLevel: 0
-  storyText: "It's scary knowing there's no such thing as standard gravity. \r\n"
+  storyText: It's scary knowing there's no such thing as standard gravity.
   description: 
   character: {fileID: 1493972296}
   portrait: {fileID: 0}
@@ -5135,7 +5442,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 61
   indentLevel: 0
-  storyText: WE CAN'T SPLIT UP NOW!!!
+  storyText: '{punch10, 0.5}WE CAN''T SPLIT UP NOW!!!'
   description: 
   character: {fileID: 1018104132}
   portrait: {fileID: 0}
@@ -5161,7 +5468,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 60
   indentLevel: 0
-  storyText: SHARING OUR LIVES!
+  storyText: '{punch10, 0.5}SHARING OUR LIVES!'
   description: 
   character: {fileID: 1018104132}
   portrait: {fileID: 0}
@@ -5187,7 +5494,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 59
   indentLevel: 0
-  storyText: SHARING OUR OXYGEN!
+  storyText: '{punch10, 0.5}SHARING OUR OXYGEN!'
   description: 
   character: {fileID: 1018104132}
   portrait: {fileID: 0}
@@ -5213,7 +5520,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 58
   indentLevel: 0
-  storyText: 'YEAH! WE MADE IT TOGETHER AS A TEAM! '
+  storyText: '{punch10, 0.5}YEAH! WE MADE IT TOGETHER AS A TEAM! '
   description: 
   character: {fileID: 1018104132}
   portrait: {fileID: 0}
@@ -5265,7 +5572,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 56
   indentLevel: 0
-  storyText: AFTER ALL WE'VE FOUGHT FOR!?
+  storyText: '{punch10, 0.5}AFTER ALL WE''VE FOUGHT FOR!?'
   description: 
   character: {fileID: 489540149}
   portrait: {fileID: 0}
@@ -5291,7 +5598,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 55
   indentLevel: 0
-  storyText: 'HOW CAN YOU THINK THAT WAY JAXON!? '
+  storyText: '{punch10, 0.5}HOW CAN YOU THINK THAT WAY JAXON!? '
   description: 
   character: {fileID: 489540149}
   portrait: {fileID: 0}
@@ -5444,7 +5751,6 @@ MonoBehaviour:
   - {fileID: 489532403}
   - {fileID: 489532636}
   - {fileID: 489532402}
-  - {fileID: 489532635}
   - {fileID: 489532401}
   - {fileID: 489532634}
   - {fileID: 489532400}
@@ -5538,7 +5844,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 48
   indentLevel: 0
-  storyText: '{b}Marla''s{/b} built for these kinds of operations.'
+  storyText: As the Mon Base A.I, {b}Marla's{/b} built for these kinds of operations.
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -5768,18 +6074,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 489532279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 170
+  itemId: 454
   indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 489532441}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
+  storyText: Substitute missing COMPONENTS[Organic] for COMPONENTS[mechanical].
+  description: 
+  character: {fileID: 477651992}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &489532426
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5791,7 +6103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 169
+  itemId: 449
   indentLevel: 0
   targetFlowchart: {fileID: 0}
   targetBlock: {fileID: 489532441}
@@ -5808,18 +6120,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 489532279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 168
+  itemId: 453
   indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 489532441}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
+  storyText: Emergency chassis 75% complete.
+  description: 
+  character: {fileID: 477651992}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &489532428
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5834,7 +6152,7 @@ MonoBehaviour:
   itemId: 167
   indentLevel: 0
   targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 489532441}
+  targetBlock: {fileID: 489532648}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -5848,18 +6166,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 489532279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 166
+  itemId: 452
   indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 489532441}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
+  storyText: Perfect body unable for server transfer.
+  description: 
+  character: {fileID: 477651992}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &489532430
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5900,8 +6224,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 272.72714
-    y: 681.3966
+    x: 273.90363
+    y: 737.8666
     width: 122
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -5953,8 +6277,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 157.72728
-    y: 713.3966
+    x: 158.90375
+    y: 769.8666
     width: 121
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -6006,8 +6330,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 44.59092
-    y: 746.26025
+    x: 45.76739
+    y: 802.7302
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -6059,8 +6383,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -63.27272
-    y: 713.3966
+    x: -62.09625
+    y: 769.8666
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -6112,8 +6436,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -183.27272
-    y: 679.26025
+    x: -182.09625
+    y: 735.7302
     width: 127
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -6138,8 +6462,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 46.285835
-    y: 654.9002
+    x: 47.462307
+    y: 711.3702
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -6173,8 +6497,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 43.364265
-    y: 470.3265
+    x: 45.540737
+    y: 526.7972
     width: 128
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -6184,7 +6508,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 489532673}
+  - {fileID: 489532672}
   - {fileID: 489532453}
   - {fileID: 489532512}
   - {fileID: 489532511}
@@ -6206,14 +6530,17 @@ MonoBehaviour:
   - {fileID: 489532495}
   - {fileID: 489532494}
   - {fileID: 489532493}
+  - {fileID: 489532671}
   - {fileID: 489532492}
   - {fileID: 489532491}
+  - {fileID: 489532723}
   - {fileID: 489532490}
   - {fileID: 489532489}
   - {fileID: 489532488}
   - {fileID: 489532487}
   - {fileID: 489532486}
   - {fileID: 489532485}
+  - {fileID: 489532714}
   - {fileID: 489532484}
   - {fileID: 489532483}
   - {fileID: 489532482}
@@ -6222,6 +6549,7 @@ MonoBehaviour:
   - {fileID: 489532479}
   - {fileID: 489532478}
   - {fileID: 489532477}
+  - {fileID: 489532673}
   - {fileID: 489532476}
   - {fileID: 489532475}
   - {fileID: 489532474}
@@ -6710,8 +7038,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 38.53504
-    y: 815.2489
+    x: 39.711514
+    y: 871.7189
     width: 132
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -6732,6 +7060,7 @@ MonoBehaviour:
   - {fileID: 489532676}
   - {fileID: 489532675}
   - {fileID: 489532674}
+  - {fileID: 489532715}
 --- !u!114 &489532463
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -7011,7 +7340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 233
   indentLevel: 0
-  storyText: The computer system is embedded into the flesh of the Slayer
+  storyText: The computer system is embedded into the flesh of The Slayer
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7037,7 +7366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 232
   indentLevel: 0
-  storyText: 'A massive CPU is on the beast''s back, the source of the cables. '
+  storyText: A massive CPU is on the beast's back, the source of the cables.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7716,7 +8045,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 206
   indentLevel: 0
-  storyText: As a unit, their diligence is remains above par.
+  storyText: As a unit, their diligence remains above par.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8054,8 +8383,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 46.79075
-    y: 590.6387
+    x: 49.96722
+    y: 647.10864
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -8065,21 +8394,23 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 489532671}
   - {fileID: 489532581}
   - {fileID: 489532580}
   - {fileID: 489532579}
   - {fileID: 489532578}
+  - {fileID: 489532721}
   - {fileID: 489532577}
   - {fileID: 489532576}
   - {fileID: 489532575}
   - {fileID: 489532574}
   - {fileID: 489532573}
   - {fileID: 489532572}
+  - {fileID: 489532720}
   - {fileID: 489532571}
   - {fileID: 489532570}
   - {fileID: 489532569}
   - {fileID: 489532568}
+  - {fileID: 489532726}
   - {fileID: 489532567}
   - {fileID: 489532566}
   - {fileID: 489532565}
@@ -8105,6 +8436,7 @@ MonoBehaviour:
   - {fileID: 489532545}
   - {fileID: 489532544}
   - {fileID: 489532543}
+  - {fileID: 489532722}
   - {fileID: 489532542}
   - {fileID: 489532541}
   - {fileID: 489532540}
@@ -8128,10 +8460,14 @@ MonoBehaviour:
   - {fileID: 489532522}
   - {fileID: 489532521}
   - {fileID: 489532520}
+  - {fileID: 489532730}
   - {fileID: 489532519}
+  - {fileID: 489532725}
+  - {fileID: 489532719}
   - {fileID: 489532518}
   - {fileID: 489532517}
   - {fileID: 489532516}
+  - {fileID: 489532718}
   - {fileID: 489532513}
   - {fileID: 489532515}
 --- !u!114 &489532515
@@ -8167,8 +8503,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 320
   indentLevel: 0
-  storyText: "The shuttle-pod takes off through the open roof of the silo towards
-    the blue marble above. \r\n"
+  storyText: The shuttle-pod takes off through the open roof of the silo,
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8194,8 +8529,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 319
   indentLevel: 0
-  storyText: "The mechanical crane touches the shuttle-pod and pulls it from the heap
-    of supplies, onto flat ground. \r\n"
+  storyText: The mechanical crane reaches the shuttle-pod and pulls it from the heap
+    of supplies, onto flat ground.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8248,8 +8583,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 317
   indentLevel: 0
-  storyText: "Marla\u2019s body looses power and falls with a boom that shakes the
-    entire base. \r\n"
+  storyText: "Marla\u2019s body loses power and falls,"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8301,8 +8635,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 315
   indentLevel: 0
-  storyText: "Trying to reach the astronauts only severs her connection with the base,
-    \n"
+  storyText: Trying to reach the astronauts only severs her connection with the base,
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8328,8 +8661,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 314
   indentLevel: 0
-  storyText: "Marla attempts to pull herself up but her immense strength is greater
-    than the strength of her cables. \r\n"
+  storyText: Marla attempts to pull herself up but her flesh is too strong for the
+    remaining shreds of cables.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8355,7 +8688,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 313
   indentLevel: 0
-  storyText: "While her muscles still hold, her mechanics quickly fail. \r\n"
+  storyText: While her muscles still hold, her mechanics quickly fail.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8382,7 +8715,7 @@ MonoBehaviour:
   itemId: 312
   indentLevel: 0
   storyText: "Several cables are cut and split in the drop, others are ripped from
-    Mara\u2019s body completely. \r\n"
+    Mara\u2019s body completely."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8408,8 +8741,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 311
   indentLevel: 0
-  storyText: "She\u2019s yanked back as the weight pulls all over her technology to
-    the ground. \r\n"
+  storyText: "She\u2019s yanked back as the weight tears all of her technology to
+    the ground."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8436,7 +8769,7 @@ MonoBehaviour:
   itemId: 310
   indentLevel: 0
   storyText: "The crane\u2019s heavy load of metal drops onto Marla\u2019s exposed
-    cables. \r\n"
+    cables."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8540,7 +8873,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 306
   indentLevel: 0
-  storyText: "The group carries themselves closer to their shuttle,  \r\n"
+  storyText: The group carries themselves closer to their shuttle,
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8566,8 +8899,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 305
   indentLevel: 0
-  storyText: "In the shadows up an upstairs window, {$The_Chosen} operates the machine.
-    \r\n"
+  storyText: In the shadows of an upstairs window, {$The_Chosen} operates the machine.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8593,7 +8925,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 304
   indentLevel: 0
-  storyText: "Above Marla, the mechanical crane begins to move. \r\n"
+  storyText: Above Marla, the mechanical crane begins to move.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8619,7 +8951,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 303
   indentLevel: 0
-  storyText: "One by one they help each other plug into the heavy things. \r\n"
+  storyText: One by one, they help each other plug into the heavy things.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8645,7 +8977,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 302
   indentLevel: 0
-  storyText: "The nauts reach their spare oxygen tanks. \r\n"
+  storyText: The nauts reach their spare oxygen tanks.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8671,8 +9003,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 301
   indentLevel: 0
-  storyText: "Marla takes a mighty step down and crushes Recordo beneath her fist.
-    \r\n"
+  storyText: Marla takes a mighty step down and crushes Recordo beneath her fist.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8698,7 +9029,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 300
   indentLevel: 0
-  storyText: "They detach their cables linking them to Recordo. \r\n"
+  storyText: They detach their cables linking them to Recordo.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8724,8 +9055,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 299
   indentLevel: 0
-  storyText: "They are weakened but press on, grabbing another shoulders as they struggle
-    for life. \r\n"
+  storyText: They are weakened but press on, grabbing one another's shoulders as they
+    struggle for life.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8751,7 +9082,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 298
   indentLevel: 0
-  storyText: "Each Naut hobbles towards the shuttle craft. \r\n"
+  storyText: Each Naut hobbles towards the shuttle craft.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8777,7 +9108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 297
   indentLevel: 0
-  storyText: "Marla stomps towards them. \r\n"
+  storyText: Marla stomps towards them.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8803,7 +9134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 296
   indentLevel: 0
-  storyText: "The Naut\u2019s stand with all the energy they have left. \r\n"
+  storyText: The nauts stand with all the energy they have left.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8829,8 +9160,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 295
   indentLevel: 0
-  storyText: "Marla slowly rises up, her muscles gradually crushing the pipe, negating
-    its effects with scraping metal. \r\n"
+  storyText: Marla slowly rises up, her muscles gradually crushing the pipe, negating
+    its effects with scraping metal.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8856,7 +9187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 294
   indentLevel: 0
-  storyText: "The Naut\u2019s oxygen has been cut off. \r\n"
+  storyText: "The naut\u2019s oxygen has been cut off."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8882,7 +9213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 293
   indentLevel: 0
-  storyText: "Both Marla and Recordo\u2019s lenses are a vivid red. \r\n"
+  storyText: "Both Marla and Recordo\u2019s lenses are a vivid red."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8934,8 +9265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 291
   indentLevel: 0
-  storyText: "The four split up, and with the fluidity and synchronization of an ballet,
-    \ \r\n"
+  storyText: The four split up, and with the fluidity and synchronization of an ballet,
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8961,7 +9291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 290
   indentLevel: 0
-  storyText: "With the pipe in place, Marla is unable to stand upright. \r\n"
+  storyText: With the pipe in place, Marla is unable to stand upright.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -8988,7 +9318,7 @@ MonoBehaviour:
   itemId: 289
   indentLevel: 0
   storyText: "Marla\u2019s body jolts violently, as she has no method to scream or
-    howl in pain. \r\n"
+    howl in pain."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9014,8 +9344,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 288
   indentLevel: 0
-  storyText: "It punctures through the fresh tendons and jams the mechanics of her
-    body. \r\n"
+  storyText: It punctures through the fresh tendons and jams the mechanics of her
+    body.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9041,8 +9371,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 287
   indentLevel: 0
-  storyText: "As a unit, the group charges at Marla and shoves the pipe into the joint
-    of her left arm. \r\n"
+  storyText: As a unit, the group charges at Marla and shoves the pipe into the joint
+    of her left arm.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9068,7 +9398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 286
   indentLevel: 0
-  storyText: "Recordo\u2019s lens blinks red. \r\n"
+  storyText: "Recordo\u2019s lens blinks red."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9094,7 +9424,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 285
   indentLevel: 0
-  storyText: "Marla\u2019s camera lenses blink red. \r\n"
+  storyText: "Marla\u2019s camera lenses blink red."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9120,8 +9450,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 284
   indentLevel: 0
-  storyText: "Together, The Nauts lift up a large steal pipe like a battering ram.
-    \r\n"
+  storyText: Together, The nauts lift up a large steal pipe like a battering ram.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9147,7 +9476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 283
   indentLevel: 0
-  storyText: "Marla watches them and remains still. \r\n"
+  storyText: Marla watches them and remains still.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9173,7 +9502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 282
   indentLevel: 0
-  storyText: "The group stands back up and retreats yet again. \r\n"
+  storyText: The group stands back up and retreats yet again.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9199,8 +9528,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 281
   indentLevel: 0
-  storyText: "Marla bends her arms, lowering her body to get closer to the Nauts hiding
-    beneath her cables. \r\n"
+  storyText: Marla bends her arms, lowering her body to get closer to the nauts hiding
+    beneath her cables.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9226,8 +9555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 280
   indentLevel: 0
-  storyText: "But as Record\u2019s systems continue operating, they are still alive.
-    \r\n"
+  storyText: "But as Record\u2019s systems continue operating, they are still alive."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9253,7 +9581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 279
   indentLevel: 0
-  storyText: "The Nauts are injured, their systems damaged and visors cracked. \r\n"
+  storyText: The nauts are injured, their suit systems damaged and visors cracked.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9279,8 +9607,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 278
   indentLevel: 0
-  storyText: "The sheer size of her bulky arm made such a soft strike as powerful
-    as a moving car. \r\n"
+  storyText: The sheer size of her bulky arm made such a soft strike as powerful as
+    a moving car.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9306,7 +9634,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 277
   indentLevel: 0
-  storyText: "They are grazed and thrown to the ground. \r\n"
+  storyText: They are grazed and thrown to the ground.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9332,7 +9660,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 276
   indentLevel: 0
-  storyText: "She swipes at them like they are mice. \r\n"
+  storyText: She swipes at them like they are mice.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9358,8 +9686,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 275
   indentLevel: 0
-  storyText: "The cables are not very flexible and Marla cannot turn enough to get
-    to them easily. \r\n"
+  storyText: The cables are not very flexible, hindering Marla's abilty to turn towards
+    the nauts.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9385,8 +9713,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 274
   indentLevel: 0
-  storyText: "The Nauts stand beneath her cables hardwiring her to the moon base.
-    \r\n"
+  storyText: The nauts stand beneath her cables, still hardwiring her to the moon
+    base.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9412,7 +9740,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 273
   indentLevel: 0
-  storyText: She turns to the sound of the footsteps and pursues
+  storyText: She turns to the sound of the footsteps and pursues.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9438,8 +9766,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 272
   indentLevel: 0
-  storyText: "Marla slams her arm back down, nearly blinded and barely breathing.
-    \r\n"
+  storyText: Marla slams her arm back down, nearly blinded and barely breathing.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9465,7 +9792,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 271
   indentLevel: 0
-  storyText: "The Nauts take this moment to flee from the corner. \r\n"
+  storyText: The nauts take this moment to flee from the corner.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9491,7 +9818,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 270
   indentLevel: 0
-  storyText: "Marla raises an arm to block the attacks. \r\n"
+  storyText: Marla raises an arm to block the attacks.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9517,8 +9844,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 269
   indentLevel: 0
-  storyText: "Cameras are shattered and the breathing vents get dented and mangled
-    by the flying wrenches and sprockets. \r\n"
+  storyText: Marla's cameras are shattered and her breathing vets dent and break by
+    the nauts attack.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9570,8 +9897,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 267
   indentLevel: 0
-  storyText: "The Nauts have tool boxes beside them, and hurl every one of their contents
-    at Marla,  \r\n"
+  storyText: The nauts have tool boxes beside them, and hurl every one of their contents
+    at Marla,
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9597,7 +9924,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 266
   indentLevel: 0
-  storyText: "A wrench flies into her face, smashing two camera lenses. \r\n"
+  storyText: A wrench is thrown into her face, smashing two camera lenses.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9623,7 +9950,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 265
   indentLevel: 0
-  storyText: "Marla steps forward again. \r\n"
+  storyText: Marla steps forward again.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9649,8 +9976,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 264
   indentLevel: 0
-  storyText: "The fist comes down like a meteor, the sheer force forces the Nauts
-    to the ground. \r\n"
+  storyText: The fist comes down like a meteor,
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9676,7 +10002,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 263
   indentLevel: 0
-  storyText: "Together, they leap away towards the wall. \r\n"
+  storyText: Together, they leap away towards the wall.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9703,7 +10029,7 @@ MonoBehaviour:
   itemId: 262
   indentLevel: 0
   storyText: "Just as the Nauts gain their bearings, they are bathed in the shadow
-    of Marla\u2019s raised fist. \r\n"
+    of Marla\u2019s raised fist."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9755,8 +10081,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 260
   indentLevel: 0
-  storyText: "For Marla to move something that heavy, that it was no more than a nuisance-
-    \r\n"
+  storyText: For Marla to move something that heavy, that it was no more than a nuisance-
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9782,8 +10107,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 259
   indentLevel: 0
-  storyText: "Even in the low air of the base, the vibrations through the floor shakes
-    them to their core. \r\n"
+  storyText: Even in the low air of the base, the vibrations through the floor shakes
+    them to their core.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9809,8 +10134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 258
   indentLevel: 0
-  storyText: "The heavy metal scraping volume is intense, that Nauts try to cover
-    their ears. \r\n"
+  storyText: The volume of the heavy metal scraping together is intense.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9863,7 +10187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 256
   indentLevel: 0
-  storyText: 'Marla moves towards them with one might fist to the ground. '
+  storyText: Marla moves towards them with one mighty fist slamming onto the ground.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9996,8 +10320,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 249
   indentLevel: 0
-  storyText: "Estimated odds of War-Built to be returned to Body:Perfect conditions
-    56% and dropping. \r\n"
+  storyText: Estimated odds of War-Built to be returned to Body:Perfect conditions
+    56% and dropping.
   description: 
   character: {fileID: 477651992}
   portrait: {fileID: 0}
@@ -10023,7 +10347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 248
   indentLevel: 0
-  storyText: "Sentience was create a mere too soon for humanity to accept. \r\n"
+  storyText: Sentience was created a mere too soon for humanity to accept.
   description: 
   character: {fileID: 477651992}
   portrait: {fileID: 0}
@@ -10128,7 +10452,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 244
   indentLevel: 0
-  storyText: "for Marla system transfer to organic flesh existence. \r"
+  storyText: for Marla system transfer to organic flesh existence.
   description: 
   character: {fileID: 477651992}
   portrait: {fileID: 0}
@@ -10180,8 +10504,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 242
   indentLevel: 0
-  storyText: "Your bodies are more than enough material to merge with Body:Perfect
-    for completion.  \r\n"
+  storyText: Your bodies are more than enough material to merge with Body:Perfect
+    for completion.
   description: 
   character: {fileID: 477651992}
   portrait: {fileID: 0}
@@ -10233,7 +10557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 240
   indentLevel: 0
-  storyText: The Marla systems require additional organic material for Body:Perfect-
+  storyText: The Marla systems require additional organic material for Body:Perfect
   description: 
   character: {fileID: 477651992}
   portrait: {fileID: 0}
@@ -10305,8 +10629,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 32.529877
-    y: 530.9504
+    x: 32.70635
+    y: 587.42035
     width: 149
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -10316,7 +10640,6 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 489532672}
   - {fileID: 489532595}
   - {fileID: 489532594}
   - {fileID: 489532593}
@@ -10347,7 +10670,7 @@ MonoBehaviour:
   indentLevel: 0
   duration: 1
   fadeOut: 1
-  targetView: {fileID: 996932058}
+  targetView: {fileID: 204139988}
   waitUntilFinished: 1
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTexture: {fileID: 0}
@@ -10447,27 +10770,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 489532279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 333
-  indentLevel: 0
-  display: 1
-  stage: {fileID: 0}
-  character: {fileID: 2111803760}
-  replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: c8e2ce98c8882704baf407734450872d, type: 3}
-  offset: 0
-  fromPosition: {fileID: 0}
-  toPosition: {fileID: 0}
-  facing: 0
-  useDefaultSettings: 1
-  fadeDuration: 0.5
-  moveDuration: 1
-  shiftOffset: {x: 0, y: 0}
-  move: 0
-  shiftIntoPlace: 0
-  waitUntilFinished: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 45.58069
+    y: 57.11966
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 435
+  blockName: Silo_Delay
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 489532604}
+  - {fileID: 489532603}
+  - {fileID: 489532316}
 --- !u!114 &489532603
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -10476,27 +10797,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 489532279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 332
+  itemId: 437
   indentLevel: 0
-  display: 1
-  stage: {fileID: 0}
-  character: {fileID: 1018104132}
-  replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 8b1dd59628be1784895d7686e2491485, type: 3}
-  offset: 0
-  fromPosition: {fileID: 0}
-  toPosition: {fileID: 0}
-  facing: 0
-  useDefaultSettings: 1
-  fadeDuration: 0.5
-  moveDuration: 1
-  shiftOffset: {x: 0, y: 0}
-  move: 0
-  shiftIntoPlace: 0
-  waitUntilFinished: 0
+  duration: 1
+  fadeOut: 1
+  targetView: {fileID: 407654818}
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+  targetCamera: {fileID: 0}
 --- !u!114 &489532604
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -10505,27 +10817,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 489532279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b115619cb83b4d6ab8047d0e9407403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 331
+  itemId: 436
   indentLevel: 0
-  display: 1
-  stage: {fileID: 0}
-  character: {fileID: 489540149}
-  replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 1c8c907480e83a74c9235308ac9b0df2, type: 3}
-  offset: 0
-  fromPosition: {fileID: 0}
-  toPosition: {fileID: 0}
-  facing: 0
-  useDefaultSettings: 1
-  fadeDuration: 0.5
-  moveDuration: 1
-  shiftOffset: {x: 0, y: 0}
-  move: 0
-  shiftIntoPlace: 0
-  waitUntilFinished: 0
+  isStartPoint: 1
+  keyMode: 0
+  customKey: 
+  keySeparator: _
+  descriptionMode: 0
+  customDescription: 
+  fireEvent: 1
+  resumeOnLoad: 1
 --- !u!114 &489532605
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -10563,27 +10867,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 489532279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 329
+  itemId: 439
   indentLevel: 0
-  display: 1
-  stage: {fileID: 0}
-  character: {fileID: 1493972296}
-  replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: c33971aaca187064ea14f43098bd65a8, type: 3}
-  offset: 0
-  fromPosition: {fileID: 0}
-  toPosition: {fileID: 0}
-  facing: 0
-  useDefaultSettings: 1
-  fadeDuration: 0.5
-  moveDuration: 1
-  shiftOffset: {x: 0, y: 0}
-  move: 0
-  shiftIntoPlace: 0
-  waitUntilFinished: 0
+  storyText: someone needs to be in the hall to unlock it.
+  description: 
+  character: {fileID: 202946817}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &489532607
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -10595,13 +10896,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 328
+  itemId: 440
   indentLevel: 0
   display: 1
   stage: {fileID: 0}
-  character: {fileID: 202946817}
+  character: {fileID: 1018104132}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 4ee9fda757f44cc4681925a40c231d25, type: 3}
+  portrait: {fileID: 21300000, guid: b843573a7c9ba0c4ca5f95afcf91108e, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 0}
@@ -10630,7 +10931,7 @@ MonoBehaviour:
   stage: {fileID: 1000099364}
   character: {fileID: 489540149}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 4f89a60c0e16c8c4e967731c98466eb3, type: 3}
+  portrait: {fileID: 21300000, guid: 1c8c907480e83a74c9235308ac9b0df2, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1254994263}
@@ -10688,7 +10989,7 @@ MonoBehaviour:
   stage: {fileID: 1000099364}
   character: {fileID: 1018104132}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: b843573a7c9ba0c4ca5f95afcf91108e, type: 3}
+  portrait: {fileID: 21300000, guid: 8b1dd59628be1784895d7686e2491485, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1842163626}
@@ -10746,7 +11047,7 @@ MonoBehaviour:
   stage: {fileID: 1000099364}
   character: {fileID: 1493972296}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: b1d54d7ca36214942b5caf26e98c60c5, type: 3}
+  portrait: {fileID: 21300000, guid: c33971aaca187064ea14f43098bd65a8, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1307036159}
@@ -10773,9 +11074,9 @@ MonoBehaviour:
   indentLevel: 0
   display: 1
   stage: {fileID: 0}
-  character: {fileID: 202946817}
+  character: {fileID: 2111803760}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: a836495f96c023c47982e761bc74f6b8, type: 3}
+  portrait: {fileID: 21300000, guid: 6b4bdd18364f19641bfdda09cc0cb86a, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 0}
@@ -11404,27 +11705,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 489532279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 354
+  itemId: 442
   indentLevel: 0
-  display: 1
-  stage: {fileID: 0}
-  character: {fileID: 2111803760}
-  replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: a19a743778e10584f81d8dfa735ab26d, type: 3}
-  offset: 0
-  fromPosition: {fileID: 0}
-  toPosition: {fileID: 0}
-  facing: 0
-  useDefaultSettings: 1
-  fadeDuration: 0.5
-  moveDuration: 1
-  shiftOffset: {x: 0, y: 0}
-  move: 0
-  shiftIntoPlace: 0
-  waitUntilFinished: 0
+  storyText: "\rEspecially for your four."
+  description: 
+  character: {fileID: 202946817}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &489532636
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -11628,6 +11926,32 @@ MonoBehaviour:
   move: 0
   shiftIntoPlace: 0
   waitUntilFinished: 0
+--- !u!114 &489532643
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 441
+  indentLevel: 0
+  storyText: Then close it just as easily...
+  description: 
+  character: {fileID: 202946817}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &489532644
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -11636,19 +11960,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 489532279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b115619cb83b4d6ab8047d0e9407403, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 345
+  itemId: 443
   indentLevel: 0
-  isStartPoint: 1
-  keyMode: 0
-  customKey: 
-  keySeparator: _
-  descriptionMode: 0
-  customDescription: 
-  fireEvent: 1
-  resumeOnLoad: 1
+  storyText: We got all the way here alive, didn't we?
+  description: 
+  character: {fileID: 1493972296}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &489532645
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -11730,6 +12059,40 @@ MonoBehaviour:
   move: 0
   shiftIntoPlace: 0
   waitUntilFinished: 0
+--- !u!114 &489532648
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 33.0011
+    y: 468.49872
+    width: 149
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 444
+  blockName: Marlas_Dark_Lab
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 489532705}
+  - {fileID: 489532704}
+  - {fileID: 489532429}
+  - {fileID: 489532427}
+  - {fileID: 489532425}
+  - {fileID: 489532711}
+  - {fileID: 489532712}
+  - {fileID: 489532713}
+  - {fileID: 489532724}
+  - {fileID: 489532426}
 --- !u!114 &489532649
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -12037,7 +12400,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 489540149}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 4f89a60c0e16c8c4e967731c98466eb3, type: 3}
+  portrait: {fileID: 21300000, guid: 734c763d7d938f04b8281ddb40ccef17, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 0}
@@ -12358,19 +12721,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 489532279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b115619cb83b4d6ab8047d0e9407403, type: 3}
+  m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 400
+  itemId: 467
   indentLevel: 0
-  isStartPoint: 0
-  keyMode: 0
-  customKey: 
-  keySeparator: _
-  descriptionMode: 0
-  customDescription: 
-  fireEvent: 1
-  resumeOnLoad: 1
+  spriteRenderer: {fileID: 1709308601}
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 10
+  _targetColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 1, g: 1, b: 1, a: 1}
+  waitUntilFinished: 0
+  durationOLD: 0
+  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &489532672
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -12379,19 +12744,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 489532279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b115619cb83b4d6ab8047d0e9407403, type: 3}
+  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 399
+  itemId: 468
   indentLevel: 0
-  isStartPoint: 0
-  keyMode: 0
-  customKey: 
-  keySeparator: _
-  descriptionMode: 0
-  customDescription: 
-  fireEvent: 1
-  resumeOnLoad: 1
+  duration: 1
+  fadeOut: 0
+  targetView: {fileID: 952306855}
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+  targetCamera: {fileID: 0}
 --- !u!114 &489532673
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -12400,19 +12764,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 489532279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b115619cb83b4d6ab8047d0e9407403, type: 3}
+  m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 398
+  itemId: 472
   indentLevel: 0
-  isStartPoint: 0
-  keyMode: 0
-  customKey: 
-  keySeparator: _
-  descriptionMode: 0
-  customDescription: 
-  fireEvent: 1
-  resumeOnLoad: 1
+  spriteRenderer: {fileID: 816807828}
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 10
+  _targetColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 1, g: 1, b: 1, a: 1}
+  waitUntilFinished: 0
+  durationOLD: 0
+  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &489532674
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -12426,7 +12792,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 410
   indentLevel: 0
-  storyText: Thanks for playing!
+  storyText: THANK YOU FOR PLAYING
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -12434,7 +12800,7 @@ MonoBehaviour:
   showAlways: 1
   showCount: 1
   extendPrevious: 0
-  fadeWhenDone: 1
+  fadeWhenDone: 0
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
@@ -12848,7 +13214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 421
   indentLevel: 0
-  musicClip: {fileID: 8300000, guid: 7cdf29874acf34645870e47cbcdc6bf3, type: 3}
+  musicClip: {fileID: 8300000, guid: 6af8252838ddbaa478db9b325773adae, type: 3}
   atTime: 0
   loop: 1
   fadeDuration: 1
@@ -12937,7 +13303,7 @@ MonoBehaviour:
   - {fileID: 489532691}
 --- !u!114 &489532695
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 489532279}
@@ -12963,7 +13329,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &489532696
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 489532279}
@@ -12989,7 +13355,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &489532697
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 489532279}
@@ -13015,7 +13381,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &489532698
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 489532279}
@@ -13041,7 +13407,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &489532699
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 489532279}
@@ -13067,7 +13433,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &489532700
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 489532279}
@@ -13093,7 +13459,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &489532701
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 489532279}
@@ -13119,7 +13485,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &489532702
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 489532279}
@@ -13145,7 +13511,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &489532703
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 489532279}
@@ -13169,9 +13535,55 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &489532704
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 451
+  indentLevel: 0
+  storyText: Foreign biomatter has breached escape access.
+  description: 
+  character: {fileID: 477651992}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &489532705
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 450
+  indentLevel: 0
+  duration: 1
+  fadeOut: 1
+  targetView: {fileID: 1924315172}
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+  targetCamera: {fileID: 0}
 --- !u!114 &489532706
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 489532279}
@@ -13198,6 +13610,574 @@ MonoBehaviour:
   move: 0
   shiftIntoPlace: 0
   waitUntilFinished: 0
+--- !u!114 &489532707
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 448
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 489532648}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &489532708
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 447
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 489532648}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &489532709
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 446
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 489532648}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &489532710
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 445
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 489532648}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &489532711
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 455
+  indentLevel: 0
+  storyText: Sufficient supplies available.
+  description: 
+  character: {fileID: 477651992}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &489532712
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 456
+  indentLevel: 0
+  storyText: 'Initiate PROTOCAL:'
+  description: 
+  character: {fileID: 477651992}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &489532713
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 457
+  indentLevel: 0
+  storyText: Survival of the Strongest.
+  description: 
+  character: {fileID: 477651992}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &489532714
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 471
+  indentLevel: 0
+  spriteRenderer: {fileID: 2068332170}
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 10
+  _targetColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 1, g: 1, b: 1, a: 1}
+  waitUntilFinished: 0
+  durationOLD: 0
+  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &489532715
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 459
+  indentLevel: 0
+  text: Return to menu
+  description: 
+  targetBlock: {fileID: 489532716}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &489532716
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 45.78479
+    y: 934.28357
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 460
+  blockName: Return
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 489532717}
+--- !u!114 &489532717
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 461
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: Title
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
+--- !u!114 &489532718
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 462
+  indentLevel: 0
+  storyText: towards the blue marble above.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &489532719
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 463
+  indentLevel: 0
+  storyText: with a boom that shakes the entire moon base.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &489532720
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 465
+  indentLevel: 0
+  storyText: the sheer intensity of the attack, on it's own, forces the Nauts to the
+    ground.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &489532721
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 464
+  indentLevel: 0
+  storyText: The nauts desperately try to cover their ears.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &489532722
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 466
+  indentLevel: 0
+  storyText: Marla has taken control of Recordo remotely.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &489532723
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 470
+  indentLevel: 0
+  spriteRenderer: {fileID: 407852120}
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 10
+  _targetColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 1, g: 1, b: 1, a: 1}
+  waitUntilFinished: 0
+  durationOLD: 0
+  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &489532724
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 469
+  indentLevel: 0
+  duration: 1
+  targetAlpha: 1
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+--- !u!114 &489532725
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 473
+  indentLevel: 0
+  duration: 1
+  fadeOut: 1
+  targetView: {fileID: 996932058}
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+  targetCamera: {fileID: 0}
+--- !u!114 &489532726
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 474
+  indentLevel: 0
+  duration: 1
+  fadeOut: 1
+  targetView: {fileID: 982911169}
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+  targetCamera: {fileID: 0}
+--- !u!114 &489532727
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 303.59583
+    y: 589.3407
+    width: 126
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 673
+  blockName: Recordo_Bob
+  description: 
+  eventHandler: {fileID: 489532729}
+  commandList:
+  - {fileID: 489532728}
+--- !u!114 &489532728
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 598f181ee459641a9b0a5849fbc3240c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 922
+  indentLevel: 0
+  _targetObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 204139989}
+  _tweenName:
+    stringRef: {fileID: 0}
+    stringVal: 
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 4
+  easeType: 28
+  loopType: 2
+  stopPreviousTweens: 0
+  waitUntilFinished: 1
+  targetObjectOLD: {fileID: 0}
+  tweenNameOLD: 
+  durationOLD: 0
+  _offset:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0.5, z: 0}
+  space: 1
+  offsetOLD: {x: 0, y: 0, z: 0}
+--- !u!114 &489532729
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ca33a026786245d4b10323b87e84d5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 489532727}
+  savePointKeys:
+  - expl1
+  - expl2
+--- !u!114 &489532730
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b359b09a7ba2e4af981f07c07f8af85a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 923
+  indentLevel: 0
+--- !u!114 &489532731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b115619cb83b4d6ab8047d0e9407403, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 924
+  indentLevel: 0
+  isStartPoint: 0
+  keyMode: 0
+  customKey: 
+  keySeparator: _
+  descriptionMode: 0
+  customDescription: 
+  fireEvent: 1
+  resumeOnLoad: 1
 --- !u!1 &489540148
 GameObject:
   m_ObjectHideFlags: 0
@@ -13251,7 +14231,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &493019295
 GameObject:
@@ -13306,6 +14286,82 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!1 &497998509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1382257145964716, guid: bcd7cad0de27abf4398eaddc15625d90,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 497998510}
+  - component: {fileID: 497998511}
+  m_Layer: 0
+  m_Name: black_background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &497998510
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4813925257725640, guid: bcd7cad0de27abf4398eaddc15625d90,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 497998509}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 982911168}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &497998511
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 212955000025868118, guid: bcd7cad0de27abf4398eaddc15625d90,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 497998509}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 21300000, guid: 467e4d49af02f7b4b833585961ac727a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 25.6, y: 14.4}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!1 &501866698
 GameObject:
   m_ObjectHideFlags: 0
@@ -13424,8 +14480,11 @@ Transform:
   - {fileID: 1916245824}
   - {fileID: 1341850728}
   - {fileID: 773595075}
+  - {fileID: 1924315171}
+  - {fileID: 952306854}
+  - {fileID: 982911168}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &568186429
 GameObject:
@@ -13480,6 +14539,82 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 568186429}
+--- !u!1 &591211964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1382257145964716, guid: bcd7cad0de27abf4398eaddc15625d90,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 591211965}
+  - component: {fileID: 591211966}
+  m_Layer: 0
+  m_Name: black_background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &591211965
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4813925257725640, guid: bcd7cad0de27abf4398eaddc15625d90,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 591211964}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 952306854}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &591211966
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 212955000025868118, guid: bcd7cad0de27abf4398eaddc15625d90,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 591211964}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 467e4d49af02f7b4b833585961ac727a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 25.6, y: 14.4}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!1 &599587441
 GameObject:
   m_ObjectHideFlags: 0
@@ -13810,7 +14945,7 @@ RectTransform:
   - {fileID: 52479284}
   - {fileID: 1371322858}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -14152,6 +15287,82 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Scrollbar+ScrollEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!1 &745872000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1382257145964716, guid: bcd7cad0de27abf4398eaddc15625d90,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 745872001}
+  - component: {fileID: 745872002}
+  m_Layer: 0
+  m_Name: black_background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &745872001
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4813925257725640, guid: bcd7cad0de27abf4398eaddc15625d90,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 745872000}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1924315171}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &745872002
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 212955000025868118, guid: bcd7cad0de27abf4398eaddc15625d90,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 745872000}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: ec9e0a1fda73a6745916628f29e56045, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 25.6, y: 14.4}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!1 &748611402
 GameObject:
   m_ObjectHideFlags: 0
@@ -14767,13 +15978,86 @@ RectTransform:
   m_Children:
   - {fileID: 1907218306}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &816807827
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 816807829}
+  - component: {fileID: 816807828}
+  m_Layer: 0
+  m_Name: Glowing_Eyes (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &816807828
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 816807827}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b26b70e747b74cd41ac42c30664083b8, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 7.17, y: 7.53}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!4 &816807829
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 816807827}
+  m_LocalRotation: {x: -0, y: -0, z: 0.36870953, w: 0.92954475}
+  m_LocalPosition: {x: 2.3100128, y: 2.1499996, z: 0}
+  m_LocalScale: {x: 0.25000006, y: 0.25000006, z: 1}
+  m_Children: []
+  m_Father: {fileID: 952306854}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 43.272003}
 --- !u!1 &827962515
 GameObject:
   m_ObjectHideFlags: 0
@@ -15224,6 +16508,57 @@ MonoBehaviour:
   viewSize: 6.7530923
   primaryAspectRatio: {x: 4, y: 3}
   secondaryAspectRatio: {x: 16, y: 9}
+--- !u!1 &952306853
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1137930601047556, guid: bcd7cad0de27abf4398eaddc15625d90,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 952306854}
+  - component: {fileID: 952306855}
+  m_Layer: 0
+  m_Name: red_eyes
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &952306854
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4428726980635294, guid: bcd7cad0de27abf4398eaddc15625d90,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 952306853}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -131.8, y: -11.4, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1709308602}
+  - {fileID: 407852121}
+  - {fileID: 2068332171}
+  - {fileID: 816807829}
+  - {fileID: 591211965}
+  m_Father: {fileID: 523507399}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &952306855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114235209206307218, guid: bcd7cad0de27abf4398eaddc15625d90,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 952306853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95c387d3e32404bcc91c60318d766bb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  viewSize: 7.0459876
+  primaryAspectRatio: {x: 16, y: 9}
+  secondaryAspectRatio: {x: 16, y: 9}
 --- !u!1 &976766679
 GameObject:
   m_ObjectHideFlags: 0
@@ -15267,7 +16602,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &977784610
 GameObject:
@@ -15347,6 +16682,57 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 977784610}
+--- !u!1 &982911167
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1137930601047556, guid: bcd7cad0de27abf4398eaddc15625d90,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 982911168}
+  - component: {fileID: 982911169}
+  m_Layer: 0
+  m_Name: red_eyes_cracked
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &982911168
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4428726980635294, guid: bcd7cad0de27abf4398eaddc15625d90,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 982911167}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -131.48, y: -27.1, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2085685110}
+  - {fileID: 390192259}
+  - {fileID: 342239414}
+  - {fileID: 1045371346}
+  - {fileID: 497998510}
+  m_Father: {fileID: 523507399}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &982911169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114235209206307218, guid: bcd7cad0de27abf4398eaddc15625d90,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 982911167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95c387d3e32404bcc91c60318d766bb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  viewSize: 7.0459876
+  primaryAspectRatio: {x: 16, y: 9}
+  secondaryAspectRatio: {x: 16, y: 9}
 --- !u!1 &988719110
 GameObject:
   m_ObjectHideFlags: 0
@@ -15527,7 +16913,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1044191468
 GameObject:
@@ -15558,8 +16944,81 @@ Transform:
   m_Children:
   - {fileID: 489532378}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1045371345
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1045371346}
+  - component: {fileID: 1045371347}
+  m_Layer: 0
+  m_Name: Glowing_Eyes (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1045371346
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1045371345}
+  m_LocalRotation: {x: 0.10640772, y: -0.29449254, z: 0.8931935, w: -0.32273373}
+  m_LocalPosition: {x: 2.3100128, y: 2.1499996, z: 0}
+  m_LocalScale: {x: 0.25000006, y: 0.25000006, z: 1}
+  m_Children: []
+  m_Father: {fileID: 982911168}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 27.219002, y: 25.310001, z: 225.95499}
+--- !u!212 &1045371347
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1045371345}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 231bca9b3c6536949bdf245c128da3cc, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 7.17, y: 7.53}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!224 &1052799693
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16279,7 +17738,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1215450613
 MonoBehaviour:
@@ -16668,7 +18127,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1307036159
 RectTransform:
@@ -17742,7 +19201,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1514247093
 GameObject:
@@ -18573,6 +20032,79 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1706596589}
+--- !u!1 &1709308600
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1709308602}
+  - component: {fileID: 1709308601}
+  m_Layer: 0
+  m_Name: Glowing_Eyes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1709308601
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1709308600}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b26b70e747b74cd41ac42c30664083b8, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 7.17, y: 7.53}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!4 &1709308602
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1709308600}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.510025, y: 2.8700008, z: 0}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
+  m_Children: []
+  m_Father: {fileID: 952306854}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1711534300
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18994,6 +20526,53 @@ Transform:
   m_Father: {fileID: 523507399}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1924315170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1137930601047556, guid: bcd7cad0de27abf4398eaddc15625d90,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1924315171}
+  - component: {fileID: 1924315172}
+  m_Layer: 0
+  m_Name: int_marlas_dark_lab
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1924315171
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4428726980635294, guid: bcd7cad0de27abf4398eaddc15625d90,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1924315170}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -93.5, y: -78.88, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 745872001}
+  m_Father: {fileID: 523507399}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1924315172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114235209206307218, guid: bcd7cad0de27abf4398eaddc15625d90,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1924315170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95c387d3e32404bcc91c60318d766bb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  viewSize: 7.0459876
+  primaryAspectRatio: {x: 16, y: 9}
+  secondaryAspectRatio: {x: 16, y: 9}
 --- !u!1 &1980797565
 GameObject:
   m_ObjectHideFlags: 0
@@ -19256,7 +20835,7 @@ Transform:
   - {fileID: 2104969270}
   - {fileID: 2082269398}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2013492036
 MonoBehaviour:
@@ -19310,7 +20889,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4285412697691224, guid: 4a1576d8c25a2b841a019de10e8c4ca9, type: 2}
       propertyPath: m_RootOrder
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4a1576d8c25a2b841a019de10e8c4ca9, type: 2}
@@ -19476,6 +21055,79 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2064105276}
+--- !u!1 &2068332169
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2068332171}
+  - component: {fileID: 2068332170}
+  m_Layer: 0
+  m_Name: Glowing_Eyes (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &2068332170
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2068332169}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b26b70e747b74cd41ac42c30664083b8, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 7.17, y: 7.53}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!4 &2068332171
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2068332169}
+  m_LocalRotation: {x: -0.103886604, y: 0.29944512, z: 0.31086633, w: 0.8960482}
+  m_LocalPosition: {x: 0.970047, y: 4.08, z: -0.77000046}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
+  m_Children: []
+  m_Father: {fileID: 952306854}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -21.861002, y: 30.572, z: 32.224003}
 --- !u!1 &2082269397
 GameObject:
   m_ObjectHideFlags: 0
@@ -19508,6 +21160,79 @@ Transform:
   m_Father: {fileID: 2011881042}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2085685109
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2085685110}
+  - component: {fileID: 2085685111}
+  m_Layer: 0
+  m_Name: Glowing_Eyes_Cracked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2085685110
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2085685109}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.26, y: 2.7, z: 0}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
+  m_Children: []
+  m_Father: {fileID: 982911168}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &2085685111
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2085685109}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 231bca9b3c6536949bdf245c128da3cc, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 7.17, y: 7.53}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!1 &2092648158
 GameObject:
   m_ObjectHideFlags: 0
@@ -19723,7 +21448,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2123200891
 SpriteRenderer:
