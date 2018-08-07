@@ -831,7 +831,6 @@ GameObject:
   - component: {fileID: 213445515}
   - component: {fileID: 213445508}
   - component: {fileID: 213445507}
-  - component: {fileID: 213445503}
   - component: {fileID: 213445500}
   - component: {fileID: 213445499}
   - component: {fileID: 213445498}
@@ -948,6 +947,7 @@ GameObject:
   - component: {fileID: 213445786}
   - component: {fileID: 213445785}
   - component: {fileID: 213445784}
+  - component: {fileID: 213445503}
   m_Layer: 0
   m_Name: Act0_Flowchart
   m_TagString: Untagged
@@ -1148,7 +1148,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -103.71238
     y: 666.9972
-    width: 120
+    width: 124
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1757,9 +1757,8 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &213445503
 MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 114181441935184072, guid: bd27a66ac2c203942b9a454adb803cae,
-    type: 2}
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 213445471}
   m_Enabled: 1
@@ -1767,19 +1766,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 366
+  itemId: 756
   indentLevel: 0
   display: 1
-  stage: {fileID: 1000099364}
+  stage: {fileID: 0}
   character: {fileID: 202946817}
   replacedCharacter: {fileID: 0}
   portrait: {fileID: 21300000, guid: 4ee9fda757f44cc4681925a40c231d25, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 888772966}
-  facing: 1
+  facing: 0
   useDefaultSettings: 1
-  fadeDuration: 1
+  fadeDuration: 0.5
   moveDuration: 1
   shiftOffset: {x: 0, y: 0}
   move: 0
@@ -5334,7 +5333,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -105.37675
     y: 743.9242
-    width: 120
+    width: 131
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5602,7 +5601,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -100.55245
     y: 538.90015
-    width: 120
+    width: 124
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6077,7 +6076,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 203.36761
     y: -168.98036
-    width: 120
+    width: 128
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6878,7 +6877,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -120.68326
     y: 281.34802
-    width: 143.8775
+    width: 158
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7697,7 +7696,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -104.69058
     y: 48.641396
-    width: 120
+    width: 124
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7736,19 +7735,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 1248.5228, y: 224.04756}
+  scrollPos: {x: 601.2783, y: -286.5513}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 416
-  zoom: 0.49000022
+  zoom: 1
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 213445636}
+  selectedCommands:
+  - {fileID: 213445503}
   variables: []
   description: This act introduces the characters.
   stepPause: 0
@@ -8116,7 +8117,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 180.72594
     y: 222.93367
-    width: 120
+    width: 128
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8427,7 +8428,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -377.1037
     y: 72.97032
-    width: 121.42854
+    width: 133
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8452,7 +8453,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -365.81644
     y: 3.93964
-    width: 120
+    width: 126
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9413,11 +9414,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: -97.37886
     y: 469.7122
-    width: 120
+    width: 124
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
-  itemId: 533
+  itemId: 755
   blockName: After_Amelia
   description: 
   eventHandler: {fileID: 0}
@@ -19376,7 +19377,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -111.428116
     y: -67.16843
-    width: 127.55099
+    width: 138
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0

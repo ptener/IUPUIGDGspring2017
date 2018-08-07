@@ -1887,8 +1887,6 @@ GameObject:
   - component: {fileID: 516423615}
   - component: {fileID: 516423618}
   - component: {fileID: 516423613}
-  - component: {fileID: 516423617}
-  - component: {fileID: 516423611}
   - component: {fileID: 516423619}
   - component: {fileID: 516423620}
   - component: {fileID: 516423621}
@@ -1900,6 +1898,16 @@ GameObject:
   - component: {fileID: 516423626}
   - component: {fileID: 516423627}
   - component: {fileID: 516423628}
+  - component: {fileID: 516423629}
+  - component: {fileID: 516423630}
+  - component: {fileID: 516423631}
+  - component: {fileID: 516423632}
+  - component: {fileID: 516423611}
+  - component: {fileID: 516423617}
+  - component: {fileID: 516423633}
+  - component: {fileID: 516423634}
+  - component: {fileID: 516423635}
+  - component: {fileID: 516423636}
   m_Layer: 0
   m_Name: Act1_Flowchart
   m_TagString: Untagged
@@ -1995,7 +2003,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 548
   indentLevel: 0
-  storyText: You can hear rapid metallic clanging and raspy hyperventilating.
+  storyText: You can hear rapid metallic clanging and raspy hissing.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2365,7 +2373,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -9.19165
     y: 241.7184
-    width: 129.45203
+    width: 134
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3958,7 +3966,7 @@ MonoBehaviour:
   display: 3
   stage: {fileID: 1988795807}
   character: {fileID: 489540149}
-  replacedCharacter: {fileID: 1493972296}
+  replacedCharacter: {fileID: 2111803760}
   portrait: {fileID: 21300000, guid: 39e4d6443d03bbf4aaef1519fdede884, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
@@ -4469,7 +4477,7 @@ MonoBehaviour:
   stage: {fileID: 1000099364}
   character: {fileID: 2111803760}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: a19a743778e10584f81d8dfa735ab26d, type: 3}
+  portrait: {fileID: 21300000, guid: 451108086a4a17b418fc04634b760261, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 0}
@@ -5389,7 +5397,7 @@ MonoBehaviour:
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1307036159}
   facing: 2
-  useDefaultSettings: 0
+  useDefaultSettings: 1
   fadeDuration: 0.3
   moveDuration: 1
   shiftOffset: {x: 0, y: 0}
@@ -5418,7 +5426,7 @@ MonoBehaviour:
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1254994263}
   facing: 0
-  useDefaultSettings: 0
+  useDefaultSettings: 1
   fadeDuration: 0
   moveDuration: 1
   shiftOffset: {x: 0, y: 0}
@@ -5447,7 +5455,7 @@ MonoBehaviour:
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1787265786}
   facing: 2
-  useDefaultSettings: 0
+  useDefaultSettings: 1
   fadeDuration: 0.3
   moveDuration: 1
   shiftOffset: {x: 0, y: 0}
@@ -5476,7 +5484,7 @@ MonoBehaviour:
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1842163626}
   facing: 1
-  useDefaultSettings: 0
+  useDefaultSettings: 1
   fadeDuration: 0.3
   moveDuration: 1
   shiftOffset: {x: 0, y: 0}
@@ -5506,7 +5514,7 @@ MonoBehaviour:
   fromPosition: {fileID: 0}
   toPosition: {fileID: 888772966}
   facing: 1
-  useDefaultSettings: 0
+  useDefaultSettings: 1
   fadeDuration: 0.3
   moveDuration: 1
   shiftOffset: {x: 0, y: 0}
@@ -5591,7 +5599,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 489540149}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 39e4d6443d03bbf4aaef1519fdede884, type: 3}
+  portrait: {fileID: 21300000, guid: 734c763d7d938f04b8281ddb40ccef17, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 0}
@@ -5948,7 +5956,7 @@ MonoBehaviour:
   stage: {fileID: 1360908744}
   character: {fileID: 2111803760}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: a19a743778e10584f81d8dfa735ab26d, type: 3}
+  portrait: {fileID: 21300000, guid: 451108086a4a17b418fc04634b760261, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1052799693}
@@ -7439,7 +7447,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 317
   indentLevel: 0
-  storyText: "...is our guardian angel now.\r\n"
+  storyText: "\u2026 our guardian angel."
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -7721,7 +7729,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 381
   indentLevel: 0
-  storyText: Look, the interior nametag!
+  storyText: Look... the name tag inside the suit...
   description: 
   character: {fileID: 2111803760}
   portrait: {fileID: 0}
@@ -7829,8 +7837,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 385
   indentLevel: 0
-  storyText: "She's right, we haven't gotten contact from the base for the last few
-    weeks. \r\n"
+  storyText: She's right, we haven't gotten contact from the base for the last few
+    weeks.
   description: 
   character: {fileID: 1018104132}
   portrait: {fileID: 0}
@@ -8244,7 +8252,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -26.802042
     y: 138.81479
-    width: 167.80817
+    width: 171
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8270,6 +8278,7 @@ MonoBehaviour:
   - {fileID: 516423301}
   - {fileID: 516423302}
   - {fileID: 516423363}
+  - {fileID: 516423630}
   - {fileID: 516423566}
   - {fileID: 516423565}
   - {fileID: 516423564}
@@ -8411,8 +8420,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -285.83484
-    y: 775.1724
+    x: 246.16516
+    y: 796.1724
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -8626,7 +8635,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 172
   indentLevel: 0
-  storyText: Almost like Recordo's becoming human.
+  storyText: Almost like Recordo's becoming human...
   description: 
   character: {fileID: 1493972296}
   portrait: {fileID: 0}
@@ -8654,7 +8663,6 @@ MonoBehaviour:
   itemId: 171
   indentLevel: 0
   storyText: I like it! A robotic familiar already makes a great life support system,
-    push its limits to be part of the team!
   description: 
   character: {fileID: 1018104132}
   portrait: {fileID: 0}
@@ -8681,8 +8689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 170
   indentLevel: 0
-  storyText: Even if the difference is tiny, Recordo could potentially pick the best
-    course of action for us.
+  storyText: Even if the difference is tiny,
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -8736,8 +8743,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 168
   indentLevel: 0
-  storyText: Why not? That little AI has been doing phenomenal these days predicting
-    Amelia's star charts.
+  storyText: Why not?
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -9178,7 +9184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 150
   indentLevel: 0
-  storyText: Neither is any less mangled.
+  storyText: Neither direction is any less mangled.
   description: 
   character: {fileID: 1018104132}
   portrait: {fileID: 0}
@@ -9442,7 +9448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 720
   indentLevel: 0
-  storyText: That way, everything we figure out will be know as it happens,
+  storyText: That way, everything we figure out will be known as it happens,
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -9895,7 +9901,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 115
   indentLevel: 0
-  storyText: Thanks, you guys.
+  storyText: Thanks, everyone.
   description: 
   character: {fileID: 2111803760}
   portrait: {fileID: 0}
@@ -10668,8 +10674,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 85
   indentLevel: 0
-  storyText: No security measures, no one but nauts like us are supposed to be up
-    here.
+  storyText: No need to install security measures...
   description: 
   character: {fileID: 1018104132}
   portrait: {fileID: 0}
@@ -10885,8 +10890,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 77
   indentLevel: 0
-  storyText: Our station houses so many experiments, we consider it lucky to even
-    be AWARE of all of them.
+  storyText: Our station houses so many experiments,
   description: 
   character: {fileID: 2111803760}
   portrait: {fileID: 0}
@@ -11620,7 +11624,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 24
   indentLevel: 0
-  storyText: "But keep commands simple, since now Recordo...\r\n"
+  storyText: But keep commands simple, since Recordo is now...
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -11729,8 +11733,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 20
   indentLevel: 0
-  storyText: Alright Recordo, I've had to modify you quite a bit, but you should be
-    a viable A.I. Life-Support system now.
+  storyText: Alright Recordo, I've had to modify you quite a bit,
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -11775,8 +11778,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 247.03001
-    y: 788.9028
+    x: -270.38165
+    y: 799.4323
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -11954,9 +11957,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -8.37845
+    x: -8.3784485
     y: 608.79266
-    width: 125.34244
+    width: 130
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12013,6 +12016,7 @@ MonoBehaviour:
   - {fileID: 516423167}
   - {fileID: 516423227}
   - {fileID: 516423405}
+  - {fileID: 516423633}
   - {fileID: 516423628}
   - {fileID: 516423221}
   - {fileID: 516423404}
@@ -12026,12 +12030,15 @@ MonoBehaviour:
   - {fileID: 516423400}
   - {fileID: 516423202}
   - {fileID: 516423399}
+  - {fileID: 516423634}
   - {fileID: 516423203}
   - {fileID: 516423398}
   - {fileID: 516423204}
   - {fileID: 516423397}
+  - {fileID: 516423636}
   - {fileID: 516423205}
   - {fileID: 516423396}
+  - {fileID: 516423635}
   - {fileID: 516423206}
   - {fileID: 516423395}
   - {fileID: 516423207}
@@ -12053,8 +12060,8 @@ MonoBehaviour:
   - {fileID: 516423606}
   - {fileID: 516423191}
   - {fileID: 516423610}
-  - {fileID: 516423389}
   - {fileID: 516423388}
+  - {fileID: 516423389}
 --- !u!114 &516423525
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -12071,7 +12078,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -18.820864
     y: 531.54865
-    width: 147.26024
+    width: 151
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12117,7 +12124,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -17.641338
     y: 475.4996
-    width: 147.26024
+    width: 151
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12225,7 +12232,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -17.652637
     y: 416.97455
-    width: 145.89038
+    width: 149
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12270,7 +12277,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -28.285366
     y: 350.87344
-    width: 165.06845
+    width: 170
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12288,6 +12295,7 @@ MonoBehaviour:
   - {fileID: 516423280}
   - {fileID: 516423481}
   - {fileID: 516423482}
+  - {fileID: 516423631}
   - {fileID: 516423480}
   - {fileID: 516423282}
   - {fileID: 516423479}
@@ -12299,6 +12307,7 @@ MonoBehaviour:
   - {fileID: 516423576}
   - {fileID: 516423273}
   - {fileID: 516423474}
+  - {fileID: 516423632}
   - {fileID: 516423574}
   - {fileID: 516423575}
   - {fileID: 516423475}
@@ -12339,7 +12348,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -14.228275
     y: 297.2086
-    width: 140.41092
+    width: 144
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12400,7 +12409,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -21.761196
     y: 32.781395
-    width: 160.95886
+    width: 164
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12434,7 +12443,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 320.20963
     y: -112.82088
-    width: 129.45203
+    width: 135
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12457,11 +12466,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 783.9751, y: -5.138623}
+  scrollPos: {x: 587.33, y: -318.90424}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 431
-  zoom: 0.73000026
+  zoom: 1
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -12469,8 +12478,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 516423560}
-  selectedCommands: []
+  - {fileID: 516423524}
+  selectedCommands:
+  - {fileID: 516423610}
   variables:
   - {fileID: 516423377}
   description: This act establishes a moon base where something has clearly gone awry.
@@ -13002,7 +13012,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -318.36142
     y: -36.461594
-    width: 208.90405
+    width: 216
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13043,7 +13053,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -314.8957
     y: 31.487385
-    width: 203.4246
+    width: 213
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13185,7 +13195,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 168.17639
     y: 671.4244
-    width: 120
+    width: 122
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13454,7 +13464,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 734
   indentLevel: 0
-  storyText: There's... too much carnage for an accident...
+  storyText: There's... too MUCH carnage for an accident...
   description: 
   character: {fileID: 1493972296}
   portrait: {fileID: 0}
@@ -13532,7 +13542,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 737
   indentLevel: 0
-  storyText: Any thieves or rogues would have to already be up here.
+  storyText: There's no way anyone untrustworthy would be on the moon...
   description: 
   character: {fileID: 1018104132}
   portrait: {fileID: 0}
@@ -13717,7 +13727,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 179.85275
     y: 26.15741
-    width: 156.84927
+    width: 161
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -14460,7 +14470,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Which door should we choose?
   description: 
-  character: {fileID: 1493972296}
+  character: {fileID: 202946817}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -14482,9 +14492,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 791
+  itemId: 807
   indentLevel: 0
-  storyText: The sound of arrhythmic metal pounding and deep groaning can be heard
+  storyText: The sound of rapid metallic clanging & raspy hissing can be heard from
     behind this door.
   description: 
   character: {fileID: 0}
@@ -14511,8 +14521,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -83.09845
-    y: 748.86676
+    x: 95.90155
+    y: 754.86676
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -14562,8 +14572,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 70.90155
-    y: 746.86676
+    x: -96.09845
+    y: 754.86676
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -14635,10 +14645,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 789
+  itemId: 808
   indentLevel: 0
-  storyText: The sound of rapid metallic clanging & raspy hyperventilating can be
-    heard from behind this door.
+  storyText: The sound of arrhythmic metal pounding and deep groaning can be heard
+    behind this door.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -14850,7 +14860,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 800
   indentLevel: 0
-  storyText: No survivor would sound THAT aggressive!
+  storyText: That might just be the THING we want to avoid!
   description: 
   character: {fileID: 1493972296}
   portrait: {fileID: 0}
@@ -14905,6 +14915,218 @@ MonoBehaviour:
   storyText: Which door?
   description: 
   character: {fileID: 2111803760}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &516423629
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 516423161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 803
+  indentLevel: 0
+  storyText: but you should be a viable A.I. Life-Support system now.
+  description: 
+  character: {fileID: 202946817}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &516423630
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 516423161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 804
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 1360908744}
+  character: {fileID: 2111803760}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 31b75cfc12d8be94a89a113f34baf09d, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 1
+--- !u!114 &516423631
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 516423161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 805
+  indentLevel: 0
+  storyText: we consider it lucky to even be AWARE of all of them.
+  description: 
+  character: {fileID: 2111803760}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &516423632
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 516423161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 806
+  indentLevel: 0
+  storyText: Since no one, but trusted nauts like us, are supposed to be up here.
+  description: 
+  character: {fileID: 1018104132}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &516423633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 516423161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 809
+  indentLevel: 0
+  storyText: With no place left to investigate...
+  description: 
+  character: {fileID: 2111803760}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &516423634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 516423161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 810
+  indentLevel: 0
+  storyText: That little A.I. has been doing phenomenal these days predicting Amelia's
+    star charts.
+  description: 
+  character: {fileID: 202946817}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &516423635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 516423161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 811
+  indentLevel: 0
+  storyText: push its limits to be part of the team!
+  description: 
+  character: {fileID: 1018104132}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &516423636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 516423161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 812
+  indentLevel: 0
+  storyText: Recordo could potentially pick the best course of action for us.
+  description: 
+  character: {fileID: 202946817}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -21054,7 +21276,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -2.7107697
     y: -29.620354
-    width: 121.23285
+    width: 124
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21069,6 +21291,7 @@ MonoBehaviour:
   - {fileID: 516423540}
   - {fileID: 516423499}
   - {fileID: 516423514}
+  - {fileID: 516423629}
   - {fileID: 516423423}
   - {fileID: 516423424}
   - {fileID: 516423426}
