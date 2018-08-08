@@ -1440,7 +1440,7 @@ SpriteRenderer:
   m_SortingLayerID: 1222819241
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 762d00d4dd9daba49ae6dac040a8c3c8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dca89ec3f82d0a846a6fb17a84595efa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4124,7 +4124,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 861915762}
-  m_LocalRotation: {x: -0, y: -0, z: -0.0051746354, w: 0.9999866}
+  m_LocalRotation: {x: -0, y: -0, z: -0.005174636, w: 0.99998665}
   m_LocalPosition: {x: -1.682, y: -1.612, z: 0}
   m_LocalScale: {x: -0.2568137, y: 0.26687732, z: 0.35}
   m_Children: []
@@ -4166,7 +4166,7 @@ SpriteRenderer:
   m_SortingLayerID: -1786991223
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: dca89ec3f82d0a846a6fb17a84595efa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 762d00d4dd9daba49ae6dac040a8c3c8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.459}
   m_FlipX: 1
   m_FlipY: 0
@@ -4611,7 +4611,7 @@ SpriteRenderer:
   m_SortingLayerID: -1786991223
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: dca89ec3f82d0a846a6fb17a84595efa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 762d00d4dd9daba49ae6dac040a8c3c8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -5289,15 +5289,6 @@ GameObject:
   - component: {fileID: 1031999274}
   - component: {fileID: 1031999273}
   - component: {fileID: 1031999272}
-  - component: {fileID: 1031999313}
-  - component: {fileID: 1031999312}
-  - component: {fileID: 1031999311}
-  - component: {fileID: 1031999310}
-  - component: {fileID: 1031999309}
-  - component: {fileID: 1031999308}
-  - component: {fileID: 1031999305}
-  - component: {fileID: 1031999306}
-  - component: {fileID: 1031999307}
   - component: {fileID: 1031999150}
   - component: {fileID: 1031999314}
   - component: {fileID: 1031999320}
@@ -5355,6 +5346,25 @@ GameObject:
   - component: {fileID: 1031999360}
   - component: {fileID: 1031999362}
   - component: {fileID: 1031999361}
+  - component: {fileID: 1031999364}
+  - component: {fileID: 1031999363}
+  - component: {fileID: 1031999313}
+  - component: {fileID: 1031999312}
+  - component: {fileID: 1031999311}
+  - component: {fileID: 1031999310}
+  - component: {fileID: 1031999309}
+  - component: {fileID: 1031999308}
+  - component: {fileID: 1031999307}
+  - component: {fileID: 1031999306}
+  - component: {fileID: 1031999305}
+  - component: {fileID: 1031999365}
+  - component: {fileID: 1031999366}
+  - component: {fileID: 1031999367}
+  - component: {fileID: 1031999368}
+  - component: {fileID: 1031999369}
+  - component: {fileID: 1031999370}
+  - component: {fileID: 1031999372}
+  - component: {fileID: 1031999371}
   m_Layer: 0
   m_Name: Act3BA_Flowchart
   m_TagString: Untagged
@@ -5734,6 +5744,7 @@ MonoBehaviour:
   - {fileID: 1031999025}
   - {fileID: 1031999024}
   - {fileID: 1031999253}
+  - {fileID: 1031999305}
   - {fileID: 1031999030}
 --- !u!114 &1031999033
 MonoBehaviour:
@@ -5869,6 +5880,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1031999258}
+  - {fileID: 1031999307}
   - {fileID: 1031999336}
   - {fileID: 1031999036}
   - {fileID: 1031999362}
@@ -6375,6 +6387,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1031999259}
+  - {fileID: 1031999309}
   - {fileID: 1031999337}
   - {fileID: 1031999136}
   - {fileID: 1031999056}
@@ -8479,6 +8492,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1031999255}
+  - {fileID: 1031999308}
   - {fileID: 1031999061}
   - {fileID: 1031999060}
   - {fileID: 1031999133}
@@ -9020,6 +9034,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1031999256}
+  - {fileID: 1031999310}
   - {fileID: 1031999329}
   - {fileID: 1031999328}
   - {fileID: 1031999327}
@@ -9455,7 +9470,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 90
   indentLevel: 0
-  storyText: OH! this is going to be wonderful....
+  storyText: OH! This is going to be wonderful....
   description: 
   character: {fileID: 1493972296}
   portrait: {fileID: 0}
@@ -9515,6 +9530,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1031999260}
+  - {fileID: 1031999311}
   - {fileID: 1031999314}
   - {fileID: 1031999164}
   - {fileID: 1031999163}
@@ -9522,6 +9538,8 @@ MonoBehaviour:
   - {fileID: 1031999161}
   - {fileID: 1031999160}
   - {fileID: 1031999158}
+  - {fileID: 1031999371}
+  - {fileID: 1031999372}
   - {fileID: 1031999159}
   - {fileID: 1031999157}
   - {fileID: 1031999156}
@@ -9567,7 +9585,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 85
   indentLevel: 0
-  storyText: 'The momentary weakness is all their sentry needed to crush its head. '
+  storyText: The momentary weakness is all their sentry needed to crush its foe's
+    head.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9677,7 +9696,7 @@ MonoBehaviour:
   itemId: 81
   indentLevel: 0
   storyText: After dozens of battles, they have the reflexes to step back and immediately
-    counter attack
+    counter attack.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9837,7 +9856,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 74
   indentLevel: 0
-  storyText: 'The pair of sentries explode against the nauts. '
+  storyText: The pair of sentries explode upon the nauts.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -9864,8 +9883,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 73
   indentLevel: 0
-  storyText: 'Niklas goes flying into it as it attack, so Niklas''s suit is slashed
-    open. '
+  storyText: Niklas goes flying into it as it attacks
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -10081,8 +10099,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 65
   indentLevel: 0
-  storyText: 'The combined teamwork of Elvira, Amelia, and Jaxon with their sentry
-    seriously beats back the sentry. '
+  storyText: The combined teamwork of Elvira, Amelia and Jaxon,
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -10156,6 +10173,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1031999190}
+  - {fileID: 1031999369}
   - {fileID: 1031999189}
   - {fileID: 1031999188}
   - {fileID: 1031999187}
@@ -10164,6 +10182,7 @@ MonoBehaviour:
   - {fileID: 1031999184}
   - {fileID: 1031999183}
   - {fileID: 1031999182}
+  - {fileID: 1031999370}
   - {fileID: 1031999181}
   - {fileID: 1031999180}
   - {fileID: 1031999042}
@@ -10181,7 +10200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 62
   indentLevel: 0
-  text: Help the birthmark sentry
+  text: Help their sentry
   description: 
   targetBlock: {fileID: 1031999192}
   hideIfVisited: 0
@@ -10259,7 +10278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 58
   indentLevel: 0
-  storyText: The giant shadow of the second stalker looms over the nauts;
+  storyText: The second stalker looms over the nauts;
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -10624,7 +10643,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -462.03983
+    x: -462.0398
     y: 332.78445
     width: 192
     height: 40
@@ -10636,6 +10655,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1031999261}
+  - {fileID: 1031999312}
   - {fileID: 1031999316}
   - {fileID: 1031999195}
   - {fileID: 1031999270}
@@ -10788,7 +10808,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 37
   indentLevel: 0
-  storyText: 'It ducks so the bar hits the shadow. '
+  storyText: But it ducks and the shadow is struck instead.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -10815,7 +10835,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 36
   indentLevel: 0
-  storyText: 'Niklas whacks one of the stalkers. '
+  storyText: Niklas whacks one of the stalkers with a pipe.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -10897,7 +10917,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 32
   indentLevel: 0
-  storyText: 'The sentry''s target switches to Jaxon. '
+  storyText: The other one avoids the sentry and ambushes Jaxon.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -10994,6 +11014,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1031999262}
+  - {fileID: 1031999313}
   - {fileID: 1031999317}
   - {fileID: 1031999216}
   - {fileID: 1031999215}
@@ -11126,8 +11147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 23
   indentLevel: 0
-  storyText: 'The other stalker and shadow come at the astronauts from the other side
-    and massacre them. '
+  storyText: The other stalker and shadow come at the astronauts from the other side
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -11290,7 +11310,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 17
   indentLevel: 0
-  storyText: 'Haru jams the leg on the stalker causing it to trip and it tips forward. '
+  storyText: 'Haru jams the leg on the stalker, causing it to trip and it tips forward. '
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -11317,7 +11337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 16
   indentLevel: 0
-  storyText: 'Haru and Elvira each pick up a screwdriver '
+  storyText: Haru and Elvira each pick up a screwdriver.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -11358,6 +11378,7 @@ MonoBehaviour:
   - {fileID: 1031999229}
   - {fileID: 1031999228}
   - {fileID: 1031999227}
+  - {fileID: 1031999365}
   - {fileID: 1031999038}
 --- !u!114 &1031999236
 MonoBehaviour:
@@ -11385,6 +11406,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1031999263}
+  - {fileID: 1031999363}
   - {fileID: 1031999318}
   - {fileID: 1031999234}
   - {fileID: 1031999233}
@@ -11737,6 +11759,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1031999264}
+  - {fileID: 1031999364}
   - {fileID: 1031999319}
   - {fileID: 1031999247}
   - {fileID: 1031999246}
@@ -11789,7 +11812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 927.6594, y: -285.80142}
+  scrollPos: {x: 961.739, y: -143.57321}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -11800,10 +11823,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1031999033}
-  selectedCommands:
-  - {fileID: 1031999361}
+  selectedBlocks: []
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -12185,7 +12206,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1031999269
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1031999017}
@@ -12222,7 +12243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 679
   indentLevel: 0
-  storyText: The nauts let their sentry tattle one while they team up on the other,
+  storyText: The nauts let their sentry tackle one while they team up on the other,
     or
   description: 
   character: {fileID: 0}
@@ -13224,23 +13245,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1031999017}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: -502.00134
-    y: 47.34958
-    width: 162
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 668
-  blockName: Fight_Music_Starter
-  description: 
-  eventHandler: {fileID: 1031999307}
-  commandList:
-  - {fileID: 1031999306}
+  itemId: 807
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: a054d319c52e72d48b8effda8fa06d3b, type: 3}
+  atTime: 0
+  loop: 0
+  fadeDuration: 1
 --- !u!114 &1031999306
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -13252,7 +13265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 722
+  itemId: 806
   indentLevel: 0
   musicClip: {fileID: 8300000, guid: 246396c1363130b43bf5dad0d5fabeb4, type: 3}
   atTime: 0
@@ -13266,15 +13279,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1031999017}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ca33a026786245d4b10323b87e84d5f, type: 3}
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentBlock: {fileID: 1031999305}
-  savePointKeys:
-  - Battle_Begin
-  - A_2x_Screwdrivers
-  - A_Socket_Wrench_First
-  - A_Socket_Wrench_First2
+  itemId: 805
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: a2b98070e9ebf9d428b7841f708e15f4, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
 --- !u!114 &1031999308
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -13283,15 +13296,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1031999017}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ca33a026786245d4b10323b87e84d5f, type: 3}
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentBlock: {fileID: 1031999310}
-  savePointKeys:
-  - Act3BA_Start1
-  - Post_Battle
-  - The_Story_Continues
-  - Haru_Backstory
+  itemId: 804
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: 7cdf29874acf34645870e47cbcdc6bf3, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
 --- !u!114 &1031999309
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -13303,9 +13316,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 720
+  itemId: 803
   indentLevel: 0
-  musicClip: {fileID: 8300000, guid: 7cdf29874acf34645870e47cbcdc6bf3, type: 3}
+  musicClip: {fileID: 8300000, guid: a2b98070e9ebf9d428b7841f708e15f4, type: 3}
   atTime: 0
   loop: 1
   fadeDuration: 1
@@ -13317,23 +13330,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1031999017}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: -526.49554
-    y: -9.298088
-    width: 213
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 663
-  blockName: Base_Interior_Music_Starter
-  description: 
-  eventHandler: {fileID: 1031999308}
-  commandList:
-  - {fileID: 1031999309}
+  itemId: 802
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: 7cdf29874acf34645870e47cbcdc6bf3, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
 --- !u!114 &1031999311
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -13342,18 +13347,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1031999017}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ca33a026786245d4b10323b87e84d5f, type: 3}
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentBlock: {fileID: 1031999313}
-  savePointKeys:
-  - Explore1
-  - Explore2
-  - Act3BA_Start
-  - Battle_Begin
-  - A_2x_Screwdrivers
-  - A_Socket_Wrench_First
-  - A_Socket_Wrench_First2
+  itemId: 801
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: 246396c1363130b43bf5dad0d5fabeb4, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
 --- !u!114 &1031999312
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -13365,7 +13367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 718
+  itemId: 800
   indentLevel: 0
   musicClip: {fileID: 8300000, guid: a2b98070e9ebf9d428b7841f708e15f4, type: 3}
   atTime: 0
@@ -13379,23 +13381,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1031999017}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: -503.58246
-    y: -66.80265
-    width: 166
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 685
-  blockName: Explo_Music_Starter
-  description: 
-  eventHandler: {fileID: 1031999311}
-  commandList:
-  - {fileID: 1031999312}
+  itemId: 799
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: a2b98070e9ebf9d428b7841f708e15f4, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
 --- !u!114 &1031999314
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -13912,7 +13906,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 770
   indentLevel: 0
-  storyText: It does a full flip mid-air before it slams backdown.
+  storyText: The stalker does a full flip mid-air before it slams back down.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -13993,7 +13987,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1031999339
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1031999017}
@@ -14019,7 +14013,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1031999340
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1031999017}
@@ -14045,7 +14039,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1031999341
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1031999017}
@@ -14071,7 +14065,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1031999342
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1031999017}
@@ -14097,7 +14091,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1031999343
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1031999017}
@@ -14123,7 +14117,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1031999344
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1031999017}
@@ -14149,7 +14143,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1031999345
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1031999017}
@@ -14175,7 +14169,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1031999346
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1031999017}
@@ -14201,7 +14195,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1031999347
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1031999017}
@@ -14227,7 +14221,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1031999348
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1031999017}
@@ -14253,7 +14247,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1031999349
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1031999017}
@@ -14279,7 +14273,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1031999350
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1031999017}
@@ -14308,7 +14302,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &1031999351
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1031999017}
@@ -14337,7 +14331,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &1031999352
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1031999017}
@@ -14363,7 +14357,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1031999353
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1031999017}
@@ -14389,7 +14383,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1031999354
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1031999017}
@@ -14415,7 +14409,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1031999355
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1031999017}
@@ -14441,7 +14435,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1031999356
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1031999017}
@@ -14467,7 +14461,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1031999357
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1031999017}
@@ -14493,7 +14487,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1031999358
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1031999017}
@@ -14519,7 +14513,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1031999359
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1031999017}
@@ -14545,7 +14539,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1031999360
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1031999017}
@@ -14571,7 +14565,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1031999361
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1031999017}
@@ -14597,7 +14591,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1031999362
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1031999017}
@@ -14621,6 +14615,226 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &1031999363
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1031999017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 798
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: a2b98070e9ebf9d428b7841f708e15f4, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
+--- !u!114 &1031999364
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1031999017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 797
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: a2b98070e9ebf9d428b7841f708e15f4, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
+--- !u!114 &1031999365
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1031999017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 808
+  indentLevel: 0
+  storyText: and massacre them...
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1031999366
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1031999017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: -423.89392
+    y: 58.578476
+    width: 126
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 673
+  blockName: Recordo_Bob
+  description: 
+  eventHandler: {fileID: 1031999368}
+  commandList:
+  - {fileID: 1031999367}
+--- !u!114 &1031999367
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1031999017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 598f181ee459641a9b0a5849fbc3240c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 810
+  indentLevel: 0
+  _targetObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 1826385924}
+  _tweenName:
+    stringRef: {fileID: 0}
+    stringVal: 
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 4
+  easeType: 28
+  loopType: 2
+  stopPreviousTweens: 0
+  waitUntilFinished: 1
+  targetObjectOLD: {fileID: 0}
+  tweenNameOLD: 
+  durationOLD: 0
+  _offset:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0.5, z: 0}
+  space: 1
+  offsetOLD: {x: 0, y: 0, z: 0}
+--- !u!114 &1031999368
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1031999017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ca33a026786245d4b10323b87e84d5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 1031999366}
+  savePointKeys:
+  - Battle_Begin
+  - A_2x_Screwdrivers
+  - A_Socket_Wrench_First
+  - A_Socket_Wrench_First2
+--- !u!114 &1031999369
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1031999017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 811
+  indentLevel: 0
+  storyText: and their sentry, seriously beat back the enemy sentry.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1031999370
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1031999017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 812
+  indentLevel: 0
+  storyText: his suit is slashed open...
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1031999371
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1031999017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 814
+  indentLevel: 0
+  soundClip: {fileID: 8300000, guid: 851a26e938796f84084b636990e9346a, type: 3}
+  volume: 1
+  waitUntilFinished: 0
+--- !u!114 &1031999372
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1031999017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 813
+  indentLevel: 0
+  soundClip: {fileID: 8300000, guid: bd824a27cdf5aaa47ad61c2507415491, type: 3}
+  volume: 1
+  waitUntilFinished: 0
 --- !u!1 &1044191468
 GameObject:
   m_ObjectHideFlags: 0
@@ -16927,6 +17141,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1031999257}
+  - {fileID: 1031999306}
   - {fileID: 1031999023}
   - {fileID: 1031999167}
   - {fileID: 1031999166}
@@ -19428,7 +19643,7 @@ SpriteRenderer:
   m_SortingLayerID: 1222819241
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 762d00d4dd9daba49ae6dac040a8c3c8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dca89ec3f82d0a846a6fb17a84595efa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
