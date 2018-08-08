@@ -11726,7 +11726,6 @@ GameObject:
   - component: {fileID: 1986949878}
   - component: {fileID: 1986949621}
   - component: {fileID: 1986949620}
-  - component: {fileID: 1986949885}
   - component: {fileID: 1986949886}
   - component: {fileID: 1986949887}
   - component: {fileID: 1986949481}
@@ -11796,6 +11795,8 @@ GameObject:
   - component: {fileID: 1986949922}
   - component: {fileID: 1986949921}
   - component: {fileID: 1986949937}
+  - component: {fileID: 1986949938}
+  - component: {fileID: 1986949885}
   m_Layer: 0
   m_Name: Act3AB_Flowchart
   m_TagString: Untagged
@@ -11816,7 +11817,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 546.18933, y: -29.164116}
+  scrollPos: {x: 593.18933, y: -52.164116}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 0
   blockViewHeight: 513
@@ -11828,9 +11829,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1986949507}
-  selectedCommands:
-  - {fileID: 1986949937}
+  - {fileID: 1986949648}
+  selectedCommands: []
   variables:
   - {fileID: 1986949487}
   - {fileID: 1986949486}
@@ -13888,8 +13888,8 @@ MonoBehaviour:
   - {fileID: 1986949698}
   - {fileID: 1986949728}
   - {fileID: 1986949596}
+  - {fileID: 1986949938}
   - {fileID: 1986949597}
-  - {fileID: 1986949885}
   - {fileID: 1986949599}
   - {fileID: 1986949600}
   - {fileID: 1986949601}
@@ -17567,6 +17567,7 @@ MonoBehaviour:
   - {fileID: 1986949846}
   - {fileID: 1986949818}
   - {fileID: 1986949817}
+  - {fileID: 1986949885}
   - {fileID: 1986949816}
   - {fileID: 1986949815}
   - {fileID: 1986949814}
@@ -23749,17 +23750,21 @@ MonoBehaviour:
   - {fileID: 1986949883}
 --- !u!114 &1986949885
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1986949431}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b359b09a7ba2e4af981f07c07f8af85a, type: 3}
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 923
+  itemId: 1021
   indentLevel: 0
+  musicClip: {fileID: 8300000, guid: 6efde5b8602169b4a8d302821ae1e5b2, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
 --- !u!114 &1986949886
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -24935,6 +24940,23 @@ MonoBehaviour:
   move: 1
   shiftIntoPlace: 0
   waitUntilFinished: 0
+--- !u!114 &1986949938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1986949431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1020
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: 6efde5b8602169b4a8d302821ae1e5b2, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
 --- !u!114 &1988795807
 MonoBehaviour:
   m_ObjectHideFlags: 0
