@@ -1968,12 +1968,6 @@ GameObject:
   - component: {fileID: 489532442}
   - component: {fileID: 489532441}
   - component: {fileID: 489532440}
-  - component: {fileID: 489532435}
-  - component: {fileID: 489532436}
-  - component: {fileID: 489532437}
-  - component: {fileID: 489532448}
-  - component: {fileID: 489532439}
-  - component: {fileID: 489532438}
   - component: {fileID: 489532452}
   - component: {fileID: 489532451}
   - component: {fileID: 489532450}
@@ -1990,6 +1984,12 @@ GameObject:
   - component: {fileID: 489532459}
   - component: {fileID: 489532458}
   - component: {fileID: 489532463}
+  - component: {fileID: 489532468}
+  - component: {fileID: 489532467}
+  - component: {fileID: 489532466}
+  - component: {fileID: 489532465}
+  - component: {fileID: 489532464}
+  - component: {fileID: 489532469}
   m_Layer: 0
   m_Name: Act3BB_Flowchart
   m_TagString: Untagged
@@ -2109,7 +2109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 582.9452, y: 87.0305}
+  scrollPos: {x: 548.3196, y: 87.64573}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -2121,8 +2121,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 489532328}
-  selectedCommands: []
+  - {fileID: 489532370}
+  selectedCommands:
+  - {fileID: 489532397}
   variables: []
   description: A short act which shows the scared running through hallways of the
     astronauts.
@@ -2312,6 +2313,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 489532308}
+  - {fileID: 489532466}
   - {fileID: 489532406}
   - {fileID: 489532405}
   - {fileID: 489532404}
@@ -2392,7 +2394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 723
   indentLevel: 0
-  storyText: Elvira's opponent grabs Elvira behind itself and throws her into Jaxon.
+  storyText: Elvira's opponent grabs her behind itself and throws her into Jaxon.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2518,7 +2520,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 719
   indentLevel: 0
-  storyText: Its not very effective.
+  storyText: Its not very effective...
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2596,7 +2598,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 716
   indentLevel: 0
-  storyText: Jaxon impales and cripples the spine of the second with the pipe
+  storyText: Jaxon impales and cripples the spine of the second with the pipe,
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3282,6 +3284,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 489532295}
+  - {fileID: 489532464}
   - {fileID: 489532434}
   - {fileID: 489532433}
   - {fileID: 489532432}
@@ -3311,6 +3314,7 @@ MonoBehaviour:
   - {fileID: 489532440}
   - {fileID: 489532336}
   - {fileID: 489532327}
+  - {fileID: 489532469}
   - {fileID: 489532428}
   - {fileID: 489532427}
   - {fileID: 489532426}
@@ -3638,7 +3642,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 37
   indentLevel: 0
-  storyText: '{punch=10, 0.5}DAMN IT I DON''T WANT TO DIE! '
+  storyText: '{punch=10, 0.5}DAMN IT! I DON''T WANT TO DIE! '
   description: 
   character: {fileID: 1493972296}
   portrait: {fileID: 0}
@@ -3789,7 +3793,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 30
   indentLevel: 0
-  storyText: "\u2026 yes, thank you."
+  storyText: "\u2026 Yes, thank you."
   description: 
   character: {fileID: 489540149}
   portrait: {fileID: 0}
@@ -3870,7 +3874,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 27
   indentLevel: 0
-  storyText: '{b}{i}If{/i}{/b} that thing wants us it better be prepared to loose
+  storyText: '{b}{i}If{/i}{/b} that thing wants us, it better be prepared to loose
     the hunt! '
   description: 
   character: {fileID: 489540149}
@@ -4380,6 +4384,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 489532311}
+  - {fileID: 489532467}
   - {fileID: 489532390}
   - {fileID: 489532389}
   - {fileID: 489532385}
@@ -4552,6 +4557,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 489532312}
+  - {fileID: 489532468}
   - {fileID: 489532321}
   - {fileID: 489532320}
   - {fileID: 489532319}
@@ -4882,6 +4888,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 489532307}
+  - {fileID: 489532465}
   - {fileID: 489532313}
   - {fileID: 489532381}
   - {fileID: 489532384}
@@ -6222,96 +6229,6 @@ MonoBehaviour:
   move: 0
   shiftIntoPlace: 0
   waitUntilFinished: 0
---- !u!114 &489532435
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: -202.34161
-    y: -23.673645
-    width: 166
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 685
-  blockName: Explo_Music_Starter
-  description: 
-  eventHandler: {fileID: 489532437}
-  commandList:
-  - {fileID: 489532436}
---- !u!114 &489532436
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 816
-  indentLevel: 0
-  musicClip: {fileID: 8300000, guid: a2b98070e9ebf9d428b7841f708e15f4, type: 3}
-  atTime: 0
-  loop: 1
-  fadeDuration: 1
---- !u!114 &489532437
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ca33a026786245d4b10323b87e84d5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 489532435}
-  savePointKeys:
-  - Explore2
---- !u!114 &489532438
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ca33a026786245d4b10323b87e84d5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 489532448}
-  savePointKeys:
-  - Act3BB_Start
-  - Sentry_Abandoned
-  - More_Hallways
-  - Hallways_Again...
---- !u!114 &489532439
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 818
-  indentLevel: 0
-  musicClip: {fileID: 8300000, guid: 7cdf29874acf34645870e47cbcdc6bf3, type: 3}
-  atTime: 0
-  loop: 1
-  fadeDuration: 1
 --- !u!114 &489532440
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -6358,7 +6275,7 @@ MonoBehaviour:
   stage: {fileID: 1000099364}
   character: {fileID: 1018104132}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: b843573a7c9ba0c4ca5f95afcf91108e, type: 3}
+  portrait: {fileID: 21300000, guid: 8b1dd59628be1784895d7686e2491485, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 0}
@@ -6544,31 +6461,6 @@ MonoBehaviour:
   move: 0
   shiftIntoPlace: 0
   waitUntilFinished: 0
---- !u!114 &489532448
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: -231.2547
-    y: 34.830925
-    width: 213
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 663
-  blockName: Base_Interior_Music_Starter
-  description: 
-  eventHandler: {fileID: 489532438}
-  commandList:
-  - {fileID: 489532439}
 --- !u!114 &489532449
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -6812,9 +6704,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 489532462}
   savePointKeys:
-  - Closed_Doors
-  - DoorE7
-  - DoorE4
+  - Explore2
 --- !u!114 &489532461
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -6876,7 +6766,7 @@ MonoBehaviour:
   - {fileID: 489532461}
 --- !u!114 &489532463
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 489532279}
@@ -6892,6 +6782,108 @@ MonoBehaviour:
   waitUntilFinished: 1
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTexture: {fileID: 0}
+--- !u!114 &489532464
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 838
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: 7cdf29874acf34645870e47cbcdc6bf3, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
+--- !u!114 &489532465
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 837
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: a2b98070e9ebf9d428b7841f708e15f4, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
+--- !u!114 &489532466
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 836
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: a2b98070e9ebf9d428b7841f708e15f4, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
+--- !u!114 &489532467
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 835
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: a2b98070e9ebf9d428b7841f708e15f4, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
+--- !u!114 &489532468
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 834
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: a2b98070e9ebf9d428b7841f708e15f4, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
+--- !u!114 &489532469
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 839
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: a054d319c52e72d48b8effda8fa06d3b, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
 --- !u!1 &489540148
 GameObject:
   m_ObjectHideFlags: 0
@@ -15353,6 +15345,21 @@ Prefab:
     - target: {fileID: 4285412697691224, guid: 4a1576d8c25a2b841a019de10e8c4ca9, type: 2}
       propertyPath: m_RootOrder
       value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 114576424654316436, guid: 4a1576d8c25a2b841a019de10e8c4ca9,
+        type: 2}
+      propertyPath: nameColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114576424654316436, guid: 4a1576d8c25a2b841a019de10e8c4ca9,
+        type: 2}
+      propertyPath: nameColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114576424654316436, guid: 4a1576d8c25a2b841a019de10e8c4ca9,
+        type: 2}
+      propertyPath: nameColor.b
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4a1576d8c25a2b841a019de10e8c4ca9, type: 2}
