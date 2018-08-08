@@ -2109,7 +2109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 472.31958, y: 12.645729}
+  scrollPos: {x: 429.31958, y: 115.64573}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -2120,8 +2120,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 489532370}
+  selectedCommands:
+  - {fileID: 489532397}
   variables: []
   description: A short act which shows the scared running through hallways of the
     astronauts.
@@ -5156,7 +5158,7 @@ MonoBehaviour:
   shiftOffset: {x: 0, y: 0}
   move: 0
   shiftIntoPlace: 0
-  waitUntilFinished: 0
+  waitUntilFinished: 1
 --- !u!114 &489532398
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5185,7 +5187,7 @@ MonoBehaviour:
   shiftOffset: {x: 0, y: 0}
   move: 0
   shiftIntoPlace: 0
-  waitUntilFinished: 1
+  waitUntilFinished: 0
 --- !u!114 &489532399
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5301,7 +5303,7 @@ MonoBehaviour:
   shiftOffset: {x: 0, y: 0}
   move: 0
   shiftIntoPlace: 0
-  waitUntilFinished: 0
+  waitUntilFinished: 1
 --- !u!114 &489532403
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5330,7 +5332,7 @@ MonoBehaviour:
   shiftOffset: {x: 0, y: 0}
   move: 0
   shiftIntoPlace: 0
-  waitUntilFinished: 1
+  waitUntilFinished: 0
 --- !u!114 &489532404
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5794,7 +5796,7 @@ MonoBehaviour:
   shiftOffset: {x: 0, y: 0}
   move: 0
   shiftIntoPlace: 0
-  waitUntilFinished: 0
+  waitUntilFinished: 1
 --- !u!114 &489532420
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5823,7 +5825,7 @@ MonoBehaviour:
   shiftOffset: {x: 0, y: 0}
   move: 0
   shiftIntoPlace: 0
-  waitUntilFinished: 1
+  waitUntilFinished: 0
 --- !u!114 &489532421
 MonoBehaviour:
   m_ObjectHideFlags: 2
