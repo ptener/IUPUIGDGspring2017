@@ -2047,9 +2047,6 @@ GameObject:
   - component: {fileID: 465369355}
   - component: {fileID: 465369353}
   - component: {fileID: 465369354}
-  - component: {fileID: 465369352}
-  - component: {fileID: 465369351}
-  - component: {fileID: 465369350}
   - component: {fileID: 465369349}
   - component: {fileID: 465369348}
   - component: {fileID: 465369347}
@@ -2358,6 +2355,27 @@ GameObject:
   - component: {fileID: 465369660}
   - component: {fileID: 465369661}
   - component: {fileID: 465369662}
+  - component: {fileID: 465369350}
+  - component: {fileID: 465369351}
+  - component: {fileID: 465369664}
+  - component: {fileID: 465369663}
+  - component: {fileID: 465369352}
+  - component: {fileID: 465369665}
+  - component: {fileID: 465369666}
+  - component: {fileID: 465369668}
+  - component: {fileID: 465369667}
+  - component: {fileID: 465369669}
+  - component: {fileID: 465369670}
+  - component: {fileID: 465369671}
+  - component: {fileID: 465369672}
+  - component: {fileID: 465369673}
+  - component: {fileID: 465369675}
+  - component: {fileID: 465369674}
+  - component: {fileID: 465369676}
+  - component: {fileID: 465369677}
+  - component: {fileID: 465369678}
+  - component: {fileID: 465369679}
+  - component: {fileID: 465369680}
   m_Layer: 0
   m_Name: Act3AA_Flowchart
   m_TagString: Untagged
@@ -2378,7 +2396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 419.67456, y: 327.9538}
+  scrollPos: {x: 506.33197, y: 232.55408}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 444
@@ -2390,11 +2408,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 465369544}
-  - {fileID: 465369653}
-  - {fileID: 465369657}
-  - {fileID: 465369660}
-  selectedCommands: []
+  - {fileID: 465369397}
+  selectedCommands:
+  - {fileID: 465369676}
   variables: []
   description: This act explores Niklas' backstory along with a battle
   stepPause: 0
@@ -2470,7 +2486,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 550
   indentLevel: 0
-  storyText: THANK you Recordo!
+  storyText: THANK YOU, Recordo!
   description: 
   character: {fileID: 2111803760}
   portrait: {fileID: 0}
@@ -2518,14 +2534,12 @@ MonoBehaviour:
   - {fileID: 465369355}
   - {fileID: 465369354}
   - {fileID: 465369353}
-  - {fileID: 465369352}
-  - {fileID: 465369351}
-  - {fileID: 465369350}
   - {fileID: 465369349}
   - {fileID: 465369348}
   - {fileID: 465369347}
   - {fileID: 465369346}
   - {fileID: 465369345}
+  - {fileID: 465369350}
   - {fileID: 465369376}
   - {fileID: 465369374}
   - {fileID: 465369375}
@@ -2574,7 +2588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 577
   indentLevel: 0
-  storyText: Never unpauses it after.
+  storyText: he pauses it right before he loses,
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -2600,8 +2614,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 578
   indentLevel: 0
-  storyText: When I give Recordo games that are impossible to win, he pauses it before
-    he loses
+  storyText: 'When I give Recordo games that are impossible to win, like Tetris, '
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -2703,11 +2716,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 573
+  itemId: 923
   indentLevel: 0
-  storyText: None of us were evil for being scared earlier, Amelia.
+  storyText: never unpauses it after...
   description: 
-  character: {fileID: 1493972296}
+  character: {fileID: 202946817}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -2729,11 +2742,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 572
+  itemId: 924
   indentLevel: 0
-  storyText: "Never were! A little shock doesn\u2019t mean we haven't proven ourselves!"
+  storyText: This is disturbing.
   description: 
-  character: {fileID: 1018104132}
+  character: {fileID: 2111803760}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -2755,18 +2768,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 571
+  itemId: 927
   indentLevel: 0
-  storyText: And none of us are evil, n-not anymore!
+  storyText: 
   description: 
-  character: {fileID: 2111803760}
+  character: {fileID: 1018104132}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
   fadeWhenDone: 1
-  waitForClick: 1
+  waitForClick: 0
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
@@ -2810,7 +2823,7 @@ MonoBehaviour:
   itemId: 570
   indentLevel: 0
   soundClip: {fileID: 8300000, guid: 26cd1814f649c8a4bad9d75ef52dcd32, type: 3}
-  volume: 1
+  volume: 0.656
   waitUntilFinished: 1
 --- !u!114 &465369355
 MonoBehaviour:
@@ -2904,7 +2917,7 @@ MonoBehaviour:
   itemId: 566
   indentLevel: 0
   soundClip: {fileID: 8300000, guid: 26cd1814f649c8a4bad9d75ef52dcd32, type: 3}
-  volume: 1
+  volume: 0.656
   waitUntilFinished: 1
 --- !u!114 &465369359
 MonoBehaviour:
@@ -3110,7 +3123,7 @@ MonoBehaviour:
   itemId: 590
   indentLevel: 0
   soundClip: {fileID: 8300000, guid: 26cd1814f649c8a4bad9d75ef52dcd32, type: 3}
-  volume: 1
+  volume: 0.524
   waitUntilFinished: 1
 --- !u!114 &465369367
 MonoBehaviour:
@@ -3152,7 +3165,7 @@ MonoBehaviour:
   itemId: 588
   indentLevel: 0
   soundClip: {fileID: 8300000, guid: 26cd1814f649c8a4bad9d75ef52dcd32, type: 3}
-  volume: 1
+  volume: 0.659
   waitUntilFinished: 1
 --- !u!114 &465369369
 MonoBehaviour:
@@ -3194,7 +3207,7 @@ MonoBehaviour:
   itemId: 585
   indentLevel: 0
   soundClip: {fileID: 8300000, guid: 26cd1814f649c8a4bad9d75ef52dcd32, type: 3}
-  volume: 1
+  volume: 0.587
   waitUntilFinished: 1
 --- !u!114 &465369371
 MonoBehaviour:
@@ -3210,7 +3223,7 @@ MonoBehaviour:
   itemId: 586
   indentLevel: 0
   soundClip: {fileID: 8300000, guid: 26cd1814f649c8a4bad9d75ef52dcd32, type: 3}
-  volume: 1
+  volume: 0.498
   waitUntilFinished: 1
 --- !u!114 &465369372
 MonoBehaviour:
@@ -3252,7 +3265,7 @@ MonoBehaviour:
   itemId: 584
   indentLevel: 0
   soundClip: {fileID: 8300000, guid: 26cd1814f649c8a4bad9d75ef52dcd32, type: 3}
-  volume: 1
+  volume: 0.445
   waitUntilFinished: 1
 --- !u!114 &465369374
 MonoBehaviour:
@@ -3421,7 +3434,7 @@ MonoBehaviour:
   itemId: 598
   indentLevel: 0
   soundClip: {fileID: 8300000, guid: 26cd1814f649c8a4bad9d75ef52dcd32, type: 3}
-  volume: 1
+  volume: 0.703
   waitUntilFinished: 1
 --- !u!114 &465369380
 MonoBehaviour:
@@ -3788,7 +3801,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 625
   indentLevel: 0
-  storyText: Yes, this is disturbing...
+  storyText: '...yes...'
   description: 
   character: {fileID: 2111803760}
   portrait: {fileID: 0}
@@ -3842,12 +3855,16 @@ MonoBehaviour:
   - {fileID: 465369399}
   - {fileID: 465369398}
   - {fileID: 465369396}
+  - {fileID: 465369351}
   - {fileID: 465369603}
   - {fileID: 465369412}
   - {fileID: 465369602}
   - {fileID: 465369411}
   - {fileID: 465369410}
   - {fileID: 465369409}
+  - {fileID: 465369664}
+  - {fileID: 465369352}
+  - {fileID: 465369663}
   - {fileID: 465369607}
   - {fileID: 465369606}
   - {fileID: 465369408}
@@ -3863,7 +3880,15 @@ MonoBehaviour:
   - {fileID: 465369420}
   - {fileID: 465369419}
   - {fileID: 465369636}
+  - {fileID: 465369665}
+  - {fileID: 465369666}
+  - {fileID: 465369668}
+  - {fileID: 465369667}
   - {fileID: 465369418}
+  - {fileID: 465369670}
+  - {fileID: 465369671}
+  - {fileID: 465369678}
+  - {fileID: 465369669}
   - {fileID: 465369634}
   - {fileID: 465369417}
   - {fileID: 465369637}
@@ -3874,6 +3899,7 @@ MonoBehaviour:
   - {fileID: 465369640}
   - {fileID: 465369413}
   - {fileID: 465369414}
+  - {fileID: 465369672}
   - {fileID: 465369430}
   - {fileID: 465369429}
   - {fileID: 465369428}
@@ -3884,6 +3910,7 @@ MonoBehaviour:
   - {fileID: 465369426}
   - {fileID: 465369425}
   - {fileID: 465369424}
+  - {fileID: 465369673}
   - {fileID: 465369432}
   - {fileID: 465369431}
   - {fileID: 465369436}
@@ -3892,7 +3919,9 @@ MonoBehaviour:
   - {fileID: 465369609}
   - {fileID: 465369435}
   - {fileID: 465369434}
+  - {fileID: 465369675}
   - {fileID: 465369642}
+  - {fileID: 465369674}
   - {fileID: 465369433}
   - {fileID: 465369441}
   - {fileID: 465369440}
@@ -3906,6 +3935,7 @@ MonoBehaviour:
   - {fileID: 465369442}
   - {fileID: 465369447}
   - {fileID: 465369643}
+  - {fileID: 465369676}
   - {fileID: 465369446}
   - {fileID: 465369449}
   - {fileID: 465369448}
@@ -3913,6 +3943,7 @@ MonoBehaviour:
   - {fileID: 465369451}
   - {fileID: 465369641}
   - {fileID: 465369450}
+  - {fileID: 465369677}
   - {fileID: 465369455}
   - {fileID: 465369454}
   - {fileID: 465369646}
@@ -4326,8 +4357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 643
   indentLevel: 0
-  storyText: A collector? But as I said, safety is only on the grounds that it DIDN'T
-    kill the others.
+  storyText: A fellow collector!? But, is this rogue as innocent as we perceive?!
   description: 
   character: {fileID: 1018104132}
   portrait: {fileID: 0}
@@ -4431,7 +4461,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 639
   indentLevel: 0
-  storyText: Plus, the door's still open, it's just bouncing around.
+  storyText: With the bodies missing, this one probably just scavenging what was left
+    behind.
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -4837,8 +4868,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 656
   indentLevel: 0
-  storyText: The only files you don't put towards Recordo are of... exactly as Elvira
-    said.
+  storyText: Back on the EICB, the only files you didn't put towards Recordo,
   description: 
   character: {fileID: 1493972296}
   portrait: {fileID: 0}
@@ -5156,7 +5186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 667
   indentLevel: 0
-  storyText: Well yeah, since the Stalker just left us here.
+  storyText: Well, yeah, since the Stalker just left us here.
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -5362,7 +5392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 673
+  itemId: 922
   indentLevel: 0
   storyText: Well, we should run off ourselves!
   description: 
@@ -5443,7 +5473,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 699
   indentLevel: 0
-  storyText: The Stalker is dead.
+  storyText: The stalker is dead.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -5540,7 +5570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 701
   indentLevel: 0
-  storyText: The naut's are dead.
+  storyText: The nauts are dead.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -5566,7 +5596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 700
   indentLevel: 0
-  storyText: The Sentry is still standing.
+  storyText: The sentry is still standing.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -5618,7 +5648,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 697
   indentLevel: 0
-  storyText: The Sentry stabs it's claw into the Stalker.
+  storyText: The sentry stabs its' claw into the stalker.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -5748,7 +5778,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 692
   indentLevel: 0
-  storyText: It's shocked and dies.
+  storyText: It's electrocuted and dies.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -5977,8 +6007,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 682
   indentLevel: 0
-  storyText: Haru suggests that Jaxon hurl a monkey wrench at the stalker to knock
-    it off.
+  storyText: Haru suggests that Jaxon hurl a pipe wrench at the stalker to knock it
+    off.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -6056,8 +6086,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -8.331839
-    y: 137.35643
+    x: -9.331839
+    y: 138.35643
     width: 157
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -6541,7 +6571,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 720
   indentLevel: 0
-  storyText: But I just translate the orders.
+  storyText: But I just translate the orders from back home.
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -6671,7 +6701,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 715
   indentLevel: 0
-  storyText: Least I don't think so.
+  storyText: Least, I don't think so.
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -6775,7 +6805,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 711
   indentLevel: 0
-  storyText: I can't complain. Never been much for the leading type.
+  storyText: I can't complain, especially since I've never been the leading type.
   description: 
   character: {fileID: 202946817}
   portrait: {fileID: 0}
@@ -7446,7 +7476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 756
   indentLevel: 0
-  storyText: The nauts find a hallway with walls completely covered with Shadows.
+  storyText: The nauts find a hallway with walls completely covered with shadows.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7575,6 +7605,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 465369548}
   - {fileID: 465369547}
+  - {fileID: 465369679}
   - {fileID: 465369460}
 --- !u!114 &465369539
 MonoBehaviour:
@@ -7628,6 +7659,7 @@ MonoBehaviour:
   - {fileID: 465369542}
   - {fileID: 465369545}
   - {fileID: 465369543}
+  - {fileID: 465369680}
   - {fileID: 465369551}
 --- !u!114 &465369541
 MonoBehaviour:
@@ -7694,7 +7726,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 765
   indentLevel: 0
-  storyText: None of the nauts feel very cozy but they get through okay!
+  storyText: None of the nauts feel very cozy,
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7788,8 +7820,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 769
   indentLevel: 0
-  storyText: They eventually fall from exhaustionas the spikey clubbed tecntacles
-    of the shadows do them in.
+  storyText: They eventually fall from exhaustion,
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -7940,7 +7971,7 @@ MonoBehaviour:
   indentLevel: 0
   _sceneName:
     stringRef: {fileID: 0}
-    stringVal: VisualNovelFinalAct
+    stringVal: ActFinal
   loadingImage: {fileID: 0}
   sceneNameOLD: 
 --- !u!114 &465369554
@@ -8677,7 +8708,7 @@ MonoBehaviour:
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 0}
-  facing: 0
+  facing: 2
   useDefaultSettings: 0
   fadeDuration: 1
   moveDuration: 1
@@ -8851,7 +8882,7 @@ MonoBehaviour:
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 0}
-  facing: 2
+  facing: 0
   useDefaultSettings: 1
   fadeDuration: 0.5
   moveDuration: 1
@@ -10089,7 +10120,7 @@ MonoBehaviour:
   display: 3
   stage: {fileID: 1360908744}
   character: {fileID: 1493972296}
-  replacedCharacter: {fileID: 489540149}
+  replacedCharacter: {fileID: 1018104132}
   portrait: {fileID: 21300000, guid: b1d54d7ca36214942b5caf26e98c60c5, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
@@ -10339,7 +10370,7 @@ MonoBehaviour:
   stage: {fileID: 1360908744}
   character: {fileID: 489540149}
   replacedCharacter: {fileID: 1018104132}
-  portrait: {fileID: 21300000, guid: 4f89a60c0e16c8c4e967731c98466eb3, type: 3}
+  portrait: {fileID: 21300000, guid: 035c32e543fe9ae4faf257c78ffe72a7, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 0}
@@ -10817,6 +10848,495 @@ MonoBehaviour:
   savePointKeys:
   - expl1
   - expl2
+--- !u!114 &465369663
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 465369339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 926
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 1360908744}
+  character: {fileID: 2111803760}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 451108086a4a17b418fc04634b760261, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &465369664
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 465369339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 925
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 1360908744}
+  character: {fileID: 1018104132}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 8b1dd59628be1784895d7686e2491485, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &465369665
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 465369339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 928
+  indentLevel: 0
+  storyText: It wants us alive.
+  description: 
+  character: {fileID: 489540149}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &465369666
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 465369339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 929
+  indentLevel: 0
+  storyText: It may have only taken unused suits.
+  description: 
+  character: {fileID: 489540149}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &465369667
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 465369339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 931
+  indentLevel: 0
+  storyText: instead of killing and pillaging on its own.
+  description: 
+  character: {fileID: 1018104132}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &465369668
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 465369339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 930
+  indentLevel: 0
+  display: 3
+  stage: {fileID: 1360908744}
+  character: {fileID: 1018104132}
+  replacedCharacter: {fileID: 489540149}
+  portrait: {fileID: 21300000, guid: 4f89a60c0e16c8c4e967731c98466eb3, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 1
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &465369669
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 465369339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 932
+  indentLevel: 0
+  storyText: But the suits! This one could've trapped us! It wants OUR suits!
+  description: 
+  character: {fileID: 2111803760}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &465369670
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 465369339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 933
+  indentLevel: 0
+  storyText: SO... where are the bodies?!
+  description: 
+  character: {fileID: 2111803760}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &465369671
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 465369339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 934
+  indentLevel: 0
+  storyText: '...'
+  description: 
+  character: {fileID: 202946817}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &465369672
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 465369339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 935
+  indentLevel: 0
+  storyText: I follow Amelia's concerns!
+  description: 
+  character: {fileID: 1018104132}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &465369673
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 465369339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 936
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 1360908744}
+  character: {fileID: 489540149}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 0}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 2
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &465369674
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 465369339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 938
+  indentLevel: 0
+  storyText: BITE me, Vogel!
+  description: 
+  character: {fileID: 489540149}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &465369675
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 465369339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 937
+  indentLevel: 0
+  storyText: were exactly as Elvira said, so eloquently.
+  description: 
+  character: {fileID: 1493972296}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &465369676
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 465369339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 939
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 1360908744}
+  character: {fileID: 2111803760}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 6b4bdd18364f19641bfdda09cc0cb86a, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &465369677
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 465369339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 940
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 2111803760}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: ef4fa8b703d325c4ab4b356f518bf2f7, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &465369678
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 465369339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 941
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 1360908744}
+  character: {fileID: 2111803760}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c8e2ce98c8882704baf407734450872d, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &465369679
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 465369339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 942
+  indentLevel: 0
+  storyText: as the spikey clubbed tecntacles of the shadows do them in.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &465369680
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 465369339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 943
+  indentLevel: 0
+  storyText: but they get through okay!
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &465369682
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -10969,7 +11489,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 552
   indentLevel: 0
-  storyText: Bite me Vogel.
+  storyText: Bite me, Vogel.
   description: 
   character: {fileID: 489540149}
   portrait: {fileID: 0}
@@ -10995,7 +11515,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 559
   indentLevel: 0
-  storyText: "Well good! Let's get to battle!\r\n"
+  storyText: "Well, good! Let's get to battle!\r"
   description: 
   character: {fileID: 1018104132}
   portrait: {fileID: 0}
@@ -11151,7 +11671,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 553
   indentLevel: 0
-  storyText: Now don't attack me!
+  storyText: Now, don't attack me!
   description: 
   character: {fileID: 1493972296}
   portrait: {fileID: 0}
@@ -11420,7 +11940,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 488372924}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.26, y: 0.02, z: 0}
+  m_LocalPosition: {x: 0.37, y: 1.53, z: 0}
   m_LocalScale: {x: 0.74, y: 0.74, z: 0.74}
   m_Children: []
   m_Father: {fileID: 208886476}
