@@ -12466,7 +12466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 530.33, y: 272.09576}
+  scrollPos: {x: 493.33002, y: 275.09576}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 431
@@ -12478,9 +12478,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 516423530}
-  selectedCommands:
-  - {fileID: 516423183}
+  - {fileID: 516423581}
+  selectedCommands: []
   variables:
   - {fileID: 516423377}
   description: This act establishes a moon base where something has clearly gone awry.
@@ -13759,7 +13758,7 @@ MonoBehaviour:
   _duration:
     floatRef: {fileID: 0}
     floatVal: 4
-  easeType: 28
+  easeType: 14
   loopType: 2
   stopPreviousTweens: 0
   waitUntilFinished: 1

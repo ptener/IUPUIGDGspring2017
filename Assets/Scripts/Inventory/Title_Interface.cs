@@ -16,14 +16,15 @@ public class Title_Interface : MonoBehaviour {
 		
 	}
 
-	void Press_Play_Button()
-	{
+	void Press_Play_Button() {
 		Debug.Log ("you pressed the play button");
-
 	}
 
-	void Press_About_Button()
-	{
+	void Press_About_Button() {
 		Debug.Log ("you pressed the about button");
 	}
+
+    void Press_Exit_Button() {
+
+    }
 }

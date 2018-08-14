@@ -453,6 +453,8 @@ GameObject:
   - component: {fileID: 543228772}
   - component: {fileID: 543228773}
   - component: {fileID: 543228774}
+  - component: {fileID: 543228776}
+  - component: {fileID: 543228777}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -473,7 +475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 431, y: 129}
+  scrollPos: {x: 487.12457, y: 230.75558}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -484,8 +486,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 543228773}
+  selectedCommands:
+  - {fileID: 543228774}
   variables: []
   description: 
   stepPause: 0
@@ -513,16 +517,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67
     y: 70
-    width: 120
+    width: 129
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 0
-  blockName: New Block
+  blockName: ClearingThing
   description: 
-  eventHandler: {fileID: 0}
+  eventHandler: {fileID: 543228777}
   commandList:
   - {fileID: 543228774}
+  - {fileID: 543228776}
 --- !u!114 &543228774
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -552,6 +557,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &543228776
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 543228771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 2
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: Act0
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
+--- !u!114 &543228777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 543228771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 543228773}
+  waitForFrames: 1
 --- !u!1 &602747378
 GameObject:
   m_ObjectHideFlags: 0

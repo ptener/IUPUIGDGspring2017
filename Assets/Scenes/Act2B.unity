@@ -8266,7 +8266,6 @@ GameObject:
   - component: {fileID: 1554631073}
   - component: {fileID: 1554631072}
   - component: {fileID: 1554631071}
-  - component: {fileID: 1554631070}
   - component: {fileID: 1554631069}
   - component: {fileID: 1554631068}
   - component: {fileID: 1554631067}
@@ -8684,6 +8683,11 @@ GameObject:
   - component: {fileID: 1554631241}
   - component: {fileID: 1554631139}
   - component: {fileID: 1554631242}
+  - component: {fileID: 1554631070}
+  - component: {fileID: 1554631156}
+  - component: {fileID: 1554631158}
+  - component: {fileID: 1554631157}
+  - component: {fileID: 1554631159}
   m_Layer: 0
   m_Name: Act2B_Flowchart
   m_TagString: Untagged
@@ -9053,6 +9057,7 @@ MonoBehaviour:
   - {fileID: 1554630811}
   - {fileID: 1554630812}
   - {fileID: 1554630813}
+  - {fileID: 1554631159}
 --- !u!114 &1554630805
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -9753,6 +9758,7 @@ MonoBehaviour:
   - {fileID: 1554630833}
   - {fileID: 1554630834}
   - {fileID: 1554630835}
+  - {fileID: 1554631157}
 --- !u!114 &1554630831
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -10219,6 +10225,7 @@ MonoBehaviour:
   - {fileID: 1554630850}
   - {fileID: 1554630851}
   - {fileID: 1554630852}
+  - {fileID: 1554631158}
 --- !u!114 &1554630848
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -12505,7 +12512,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: 'Something up? We''re ready to move ahead. '
   description: 
-  character: {fileID: 1018104132}
+  character: {fileID: 202946817}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -12559,13 +12566,13 @@ MonoBehaviour:
   indentLevel: 0
   display: 1
   stage: {fileID: 1360908744}
-  character: {fileID: 1018104132}
+  character: {fileID: 202946817}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: b843573a7c9ba0c4ca5f95afcf91108e, type: 3}
+  portrait: {fileID: 21300000, guid: 4ee9fda757f44cc4681925a40c231d25, type: 3}
   offset: 0
   fromPosition: {fileID: 1885733549}
   toPosition: {fileID: 1052799693}
-  facing: 1
+  facing: 0
   useDefaultSettings: 1
   fadeDuration: 0.5
   moveDuration: 1
@@ -13203,7 +13210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 62
   indentLevel: 0
-  storyText: 'Pretending to be brave...  '
+  storyText: "Pretending to be brave... doesn\u2019t actually make you brave... "
   description: 
   character: {fileID: 1018104132}
   portrait: {fileID: 0}
@@ -13211,7 +13218,7 @@ MonoBehaviour:
   showAlways: 1
   showCount: 1
   extendPrevious: 0
-  fadeWhenDone: 1
+  fadeWhenDone: 0
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
@@ -15775,7 +15782,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -30.398502
-    y: 98.07785
+    y: 95.07785
     width: 159
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -15808,7 +15815,9 @@ MonoBehaviour:
   - {fileID: 1554631047}
   - {fileID: 1554631230}
   - {fileID: 1554631228}
+  - {fileID: 1554631070}
   - {fileID: 1554631229}
+  - {fileID: 1554631156}
   - {fileID: 1554631049}
   - {fileID: 1554631122}
   - {fileID: 1554630969}
@@ -16443,8 +16452,7 @@ MonoBehaviour:
 --- !u!114 &1554631070
 MonoBehaviour:
   m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 114084424940239570, guid: bd27a66ac2c203942b9a454adb803cae,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1554630790}
   m_Enabled: 1
@@ -16452,16 +16460,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 63
+  itemId: 760
   indentLevel: 0
-  storyText: "doesn\u2019t actually make you brave... "
+  storyText: Just trying to ignore the fear-
   description: 
-  character: {fileID: 1018104132}
+  character: {fileID: 1493972296}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
-  extendPrevious: 1
+  extendPrevious: 0
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
@@ -16679,7 +16687,6 @@ MonoBehaviour:
   - {fileID: 1554631067}
   - {fileID: 1554631068}
   - {fileID: 1554630957}
-  - {fileID: 1554631070}
   - {fileID: 1554631088}
   - {fileID: 1554631170}
   - {fileID: 1554631066}
@@ -18729,6 +18736,113 @@ MonoBehaviour:
   customDescription: 
   fireEvent: 1
   resumeOnLoad: 1
+--- !u!114 &1554631156
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1554630790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 761
+  indentLevel: 0
+  storyText: 
+  description: 
+  character: {fileID: 2111803760}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 0
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1554631157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1554630790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 763
+  indentLevel: 0
+  storyText: To return to the previous choice, click on the gear, then click the back
+    arrow.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 0
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1554631158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1554630790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 762
+  indentLevel: 0
+  storyText: To return to the previous choice, click on the gear, then click the back
+    arrow.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 0
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1554631159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1554630790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 764
+  indentLevel: 0
+  storyText: To return to the previous choice, click on the gear, then click the back
+    arrow.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 0
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &1554631161
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -19015,7 +19129,7 @@ MonoBehaviour:
   _duration:
     floatRef: {fileID: 0}
     floatVal: 4
-  easeType: 28
+  easeType: 14
   loopType: 2
   stopPreviousTweens: 0
   waitUntilFinished: 0
@@ -20145,16 +20259,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 744
   indentLevel: 0
-  storyText: Just trying to ignore the fear-
+  storyText: 
   description: 
-  character: {fileID: 1493972296}
+  character: {fileID: 2111803760}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
   fadeWhenDone: 1
-  waitForClick: 1
+  waitForClick: 0
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
@@ -22683,7 +22797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 555.9855, y: -153.56264}
+  scrollPos: {x: 287.23618, y: 298.91922}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 512
@@ -22695,8 +22809,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1554630999}
-  selectedCommands: []
+  - {fileID: 1554631179}
+  selectedCommands:
+  - {fileID: 1554631180}
   variables: []
   description: This act explores Amelia's backstory along with a battle
   stepPause: 0

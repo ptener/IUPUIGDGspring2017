@@ -1990,6 +1990,7 @@ GameObject:
   - component: {fileID: 489532465}
   - component: {fileID: 489532464}
   - component: {fileID: 489532469}
+  - component: {fileID: 489532435}
   m_Layer: 0
   m_Name: Act3BB_Flowchart
   m_TagString: Untagged
@@ -2109,11 +2110,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 429.31958, y: 115.64573}
+  scrollPos: {x: 576.696, y: 103.88539}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 1
+  zoom: 0.94000006
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -2121,9 +2122,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 489532370}
+  - {fileID: 489532462}
   selectedCommands:
-  - {fileID: 489532397}
+  - {fileID: 489532461}
   variables: []
   description: A short act which shows the scared running through hallways of the
     astronauts.
@@ -2303,7 +2304,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -89.750244
     y: 210.19304
-    width: 135
+    width: 135.10638
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2828,6 +2829,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 489532309}
+  - {fileID: 489532435}
 --- !u!114 &489532311
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2932,7 +2934,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 166.16193
     y: 440.1931
-    width: 145
+    width: 146.8085
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3274,7 +3276,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -81.50931
     y: 355.64774
-    width: 151
+    width: 152.12766
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4374,7 +4376,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -101.53075
     y: 147.91853
-    width: 159
+    width: 160.63829
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4547,7 +4549,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -86.53764
     y: 90.27901
-    width: 126
+    width: 123.40425
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4589,7 +4591,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 170
     y: 18
-    width: 135
+    width: 134.04254
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6229,6 +6231,33 @@ MonoBehaviour:
   move: 0
   shiftIntoPlace: 0
   waitUntilFinished: 0
+--- !u!114 &489532435
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 840
+  indentLevel: 0
+  storyText: To return to the previous choice, click on the gear, then click the back
+    arrow.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 0
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &489532440
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -6727,7 +6756,7 @@ MonoBehaviour:
   _duration:
     floatRef: {fileID: 0}
     floatVal: 4
-  easeType: 28
+  easeType: 14
   loopType: 2
   stopPreviousTweens: 0
   waitUntilFinished: 1
@@ -6754,7 +6783,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 193.05481
     y: 149.96948
-    width: 122
+    width: 122.34042
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6829,7 +6858,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 836
   indentLevel: 0
-  musicClip: {fileID: 8300000, guid: a2b98070e9ebf9d428b7841f708e15f4, type: 3}
+  musicClip: {fileID: 8300000, guid: 7cdf29874acf34645870e47cbcdc6bf3, type: 3}
   atTime: 0
   loop: 1
   fadeDuration: 1
@@ -6846,7 +6875,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 835
   indentLevel: 0
-  musicClip: {fileID: 8300000, guid: a2b98070e9ebf9d428b7841f708e15f4, type: 3}
+  musicClip: {fileID: 8300000, guid: 7cdf29874acf34645870e47cbcdc6bf3, type: 3}
   atTime: 0
   loop: 1
   fadeDuration: 1

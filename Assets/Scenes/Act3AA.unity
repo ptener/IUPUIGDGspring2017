@@ -2376,6 +2376,7 @@ GameObject:
   - component: {fileID: 465369678}
   - component: {fileID: 465369679}
   - component: {fileID: 465369680}
+  - component: {fileID: 465369681}
   m_Layer: 0
   m_Name: Act3AA_Flowchart
   m_TagString: Untagged
@@ -2396,7 +2397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 506.33197, y: 232.55408}
+  scrollPos: {x: 411.33197, y: 377.55408}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 444
@@ -2408,9 +2409,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 465369397}
+  - {fileID: 465369660}
   selectedCommands:
-  - {fileID: 465369676}
+  - {fileID: 465369661}
   variables: []
   description: This act explores Niklas' backstory along with a battle
   stepPause: 0
@@ -9596,6 +9597,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 465369550}
   - {fileID: 465369549}
+  - {fileID: 465369681}
 --- !u!114 &465369614
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -10821,7 +10823,7 @@ MonoBehaviour:
   _duration:
     floatRef: {fileID: 0}
     floatVal: 4
-  easeType: 28
+  easeType: 14
   loopType: 2
   stopPreviousTweens: 0
   waitUntilFinished: 1
@@ -11333,6 +11335,33 @@ MonoBehaviour:
   showCount: 1
   extendPrevious: 0
   fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &465369681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 465369339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 944
+  indentLevel: 0
+  storyText: To return to the previous choice, click on the gear, then click the back
+    arrow.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 0
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0

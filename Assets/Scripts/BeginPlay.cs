@@ -30,4 +30,8 @@ public class BeginPlay : MonoBehaviour {
             b.SetActive(!b.activeSelf);
         }
     }
+
+    public void ExitGame() {
+        Application.Quit();
+    }
 }
