@@ -1902,7 +1902,6 @@ GameObject:
   - component: {fileID: 489532308}
   - component: {fileID: 489532307}
   - component: {fileID: 489532295}
-  - component: {fileID: 489532313}
   - component: {fileID: 489532314}
   - component: {fileID: 489532321}
   - component: {fileID: 489532320}
@@ -2110,7 +2109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 576.696, y: 103.88539}
+  scrollPos: {x: 586.27057, y: 130.48111}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -2122,9 +2121,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 489532462}
+  - {fileID: 489532388}
   selectedCommands:
-  - {fileID: 489532461}
+  - {fileID: 489532381}
   variables: []
   description: A short act which shows the scared running through hallways of the
     astronauts.
@@ -2872,26 +2871,6 @@ MonoBehaviour:
   customDescription: 
   fireEvent: 1
   resumeOnLoad: 1
---- !u!114 &489532313
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 744
-  indentLevel: 0
-  duration: 1
-  fadeOut: 0
-  targetView: {fileID: 996932058}
-  waitUntilFinished: 1
-  fadeColor: {r: 0, g: 0, b: 0, a: 1}
-  fadeTexture: {fileID: 0}
-  targetCamera: {fileID: 0}
 --- !u!114 &489532314
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4891,11 +4870,10 @@ MonoBehaviour:
   commandList:
   - {fileID: 489532307}
   - {fileID: 489532465}
-  - {fileID: 489532313}
+  - {fileID: 489532459}
   - {fileID: 489532381}
   - {fileID: 489532384}
   - {fileID: 489532380}
-  - {fileID: 489532459}
   - {fileID: 489532458}
   - {fileID: 489532383}
   - {fileID: 489532334}
@@ -14492,8 +14470,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1222819241
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 70542793447aa644d84ec116584f83ed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

@@ -5313,12 +5313,6 @@ GameObject:
   - component: {fileID: 1031999315}
   - component: {fileID: 1031999254}
   - component: {fileID: 1031999022}
-  - component: {fileID: 1031999319}
-  - component: {fileID: 1031999318}
-  - component: {fileID: 1031999317}
-  - component: {fileID: 1031999316}
-  - component: {fileID: 1031999337}
-  - component: {fileID: 1031999336}
   - component: {fileID: 1031999335}
   - component: {fileID: 1031999338}
   - component: {fileID: 1031999340}
@@ -5881,11 +5875,10 @@ MonoBehaviour:
   commandList:
   - {fileID: 1031999258}
   - {fileID: 1031999307}
-  - {fileID: 1031999336}
+  - {fileID: 1031999022}
   - {fileID: 1031999036}
   - {fileID: 1031999362}
   - {fileID: 1031999271}
-  - {fileID: 1031999022}
   - {fileID: 1031999034}
   - {fileID: 1031999035}
 --- !u!114 &1031999038
@@ -6388,11 +6381,10 @@ MonoBehaviour:
   commandList:
   - {fileID: 1031999259}
   - {fileID: 1031999309}
-  - {fileID: 1031999337}
+  - {fileID: 1031999254}
   - {fileID: 1031999136}
   - {fileID: 1031999056}
   - {fileID: 1031999055}
-  - {fileID: 1031999254}
   - {fileID: 1031999054}
   - {fileID: 1031999053}
 --- !u!114 &1031999058
@@ -10656,12 +10648,11 @@ MonoBehaviour:
   commandList:
   - {fileID: 1031999261}
   - {fileID: 1031999312}
-  - {fileID: 1031999316}
+  - {fileID: 1031999315}
   - {fileID: 1031999195}
   - {fileID: 1031999270}
   - {fileID: 1031999268}
   - {fileID: 1031999267}
-  - {fileID: 1031999315}
   - {fileID: 1031999194}
   - {fileID: 1031999193}
 --- !u!114 &1031999210
@@ -11015,7 +11006,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 1031999262}
   - {fileID: 1031999313}
-  - {fileID: 1031999317}
+  - {fileID: 1031999332}
   - {fileID: 1031999216}
   - {fileID: 1031999215}
   - {fileID: 1031999214}
@@ -11023,7 +11014,6 @@ MonoBehaviour:
   - {fileID: 1031999213}
   - {fileID: 1031999338}
   - {fileID: 1031999266}
-  - {fileID: 1031999332}
   - {fileID: 1031999212}
   - {fileID: 1031999211}
   - {fileID: 1031999210}
@@ -11407,7 +11397,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 1031999263}
   - {fileID: 1031999363}
-  - {fileID: 1031999318}
+  - {fileID: 1031999333}
   - {fileID: 1031999234}
   - {fileID: 1031999233}
   - {fileID: 1031999232}
@@ -11416,7 +11406,6 @@ MonoBehaviour:
   - {fileID: 1031999226}
   - {fileID: 1031999225}
   - {fileID: 1031999265}
-  - {fileID: 1031999333}
   - {fileID: 1031999224}
   - {fileID: 1031999223}
 --- !u!114 &1031999237
@@ -11760,7 +11749,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 1031999264}
   - {fileID: 1031999364}
-  - {fileID: 1031999319}
+  - {fileID: 1031999334}
   - {fileID: 1031999247}
   - {fileID: 1031999246}
   - {fileID: 1031999245}
@@ -11770,7 +11759,6 @@ MonoBehaviour:
   - {fileID: 1031999241}
   - {fileID: 1031999240}
   - {fileID: 1031999239}
-  - {fileID: 1031999334}
   - {fileID: 1031999238}
   - {fileID: 1031999237}
 --- !u!114 &1031999250
@@ -11812,7 +11800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 973.67725, y: 155.48865}
+  scrollPos: {x: 938.40466, y: -67.420456}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -11824,9 +11812,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1031999366}
-  selectedCommands:
-  - {fileID: 1031999367}
+  - {fileID: 1031999249}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -13432,86 +13419,6 @@ MonoBehaviour:
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTexture: {fileID: 0}
   targetCamera: {fileID: 0}
---- !u!114 &1031999316
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1031999017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 767
-  indentLevel: 0
-  duration: 1
-  fadeOut: 1
-  targetView: {fileID: 996932058}
-  waitUntilFinished: 1
-  fadeColor: {r: 0, g: 0, b: 0, a: 1}
-  fadeTexture: {fileID: 0}
-  targetCamera: {fileID: 0}
---- !u!114 &1031999317
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1031999017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 766
-  indentLevel: 0
-  duration: 1
-  fadeOut: 1
-  targetView: {fileID: 996932058}
-  waitUntilFinished: 1
-  fadeColor: {r: 0, g: 0, b: 0, a: 1}
-  fadeTexture: {fileID: 0}
-  targetCamera: {fileID: 0}
---- !u!114 &1031999318
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1031999017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 765
-  indentLevel: 0
-  duration: 1
-  fadeOut: 1
-  targetView: {fileID: 996932058}
-  waitUntilFinished: 1
-  fadeColor: {r: 0, g: 0, b: 0, a: 1}
-  fadeTexture: {fileID: 0}
-  targetCamera: {fileID: 0}
---- !u!114 &1031999319
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1031999017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 764
-  indentLevel: 0
-  duration: 1
-  fadeOut: 1
-  targetView: {fileID: 996932058}
-  waitUntilFinished: 1
-  fadeColor: {r: 0, g: 0, b: 0, a: 1}
-  fadeTexture: {fileID: 0}
-  targetCamera: {fileID: 0}
 --- !u!114 &1031999320
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -13921,46 +13828,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &1031999336
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1031999017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 769
-  indentLevel: 0
-  duration: 1
-  fadeOut: 0
-  targetView: {fileID: 996932058}
-  waitUntilFinished: 1
-  fadeColor: {r: 0, g: 0, b: 0, a: 1}
-  fadeTexture: {fileID: 0}
-  targetCamera: {fileID: 0}
---- !u!114 &1031999337
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1031999017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 768
-  indentLevel: 0
-  duration: 1
-  fadeOut: 0
-  targetView: {fileID: 996932058}
-  waitUntilFinished: 1
-  fadeColor: {r: 0, g: 0, b: 0, a: 1}
-  fadeTexture: {fileID: 0}
-  targetCamera: {fileID: 0}
 --- !u!114 &1031999338
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -14753,6 +14620,8 @@ MonoBehaviour:
   - A_2x_Screwdrivers
   - A_Socket_Wrench_First
   - A_Socket_Wrench_First2
+  - Explore1
+  - Explore2
 --- !u!114 &1031999369
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -19797,8 +19666,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1222819241
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 467e4d49af02f7b4b833585961ac727a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

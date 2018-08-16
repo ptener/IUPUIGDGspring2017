@@ -18764,7 +18764,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1554631157
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1554630790}
@@ -18791,7 +18791,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1554631158
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1554630790}
@@ -18818,7 +18818,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1554631159
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1554630790}
@@ -19885,7 +19885,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 323.56024
+    x: 322.56024
     y: 19.426392
     width: 120
     height: 40
@@ -21784,8 +21784,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1222819241
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 70542793447aa644d84ec116584f83ed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -22797,7 +22797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 287.23618, y: 298.91922}
+  scrollPos: {x: 535.2362, y: 177.91922}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 512
@@ -22808,10 +22808,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1554631179}
-  selectedCommands:
-  - {fileID: 1554631180}
+  selectedBlocks: []
+  selectedCommands: []
   variables: []
   description: This act explores Amelia's backstory along with a battle
   stepPause: 0
