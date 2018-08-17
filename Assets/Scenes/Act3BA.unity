@@ -11800,7 +11800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 938.40466, y: -67.420456}
+  scrollPos: {x: 950.40466, y: 121.579544}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -19082,7 +19082,7 @@ Transform:
   m_LocalScale: {x: 0.39999998, y: 0.39999998, z: 0.39999998}
   m_Children: []
   m_Father: {fileID: 1997236566}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1826385926
 SpriteRenderer:
@@ -19115,8 +19115,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1222819241
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 70542793447aa644d84ec116584f83ed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -19632,7 +19632,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1997236566}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1979466910
 SpriteRenderer:
@@ -19666,8 +19666,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1222819241
-  m_SortingLayer: 2
+  m_SortingLayerID: -1786991223
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 467e4d49af02f7b4b833585961ac727a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -19805,8 +19805,8 @@ Transform:
   m_LocalPosition: {x: -121.2, y: -57.6, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1979466909}
   - {fileID: 1826385925}
+  - {fileID: 1979466909}
   m_Father: {fileID: 523507399}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

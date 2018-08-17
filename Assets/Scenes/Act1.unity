@@ -12466,7 +12466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 493.33002, y: 275.09576}
+  scrollPos: {x: 512.7936, y: -193.28452}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 431
@@ -12478,7 +12478,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 516423581}
+  - {fileID: 516423560}
   selectedCommands: []
   variables:
   - {fileID: 516423377}
@@ -13145,6 +13145,7 @@ MonoBehaviour:
   - Closed_Doors
   - DoorE7
   - DoorE4
+  - Interior_Hallway2
 --- !u!114 &516423559
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -14823,7 +14824,7 @@ MonoBehaviour:
   indentLevel: 0
   duration: 1
   fadeOut: 0
-  targetView: {fileID: 996932058}
+  targetView: {fileID: 1997236567}
   waitUntilFinished: 1
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTexture: {fileID: 0}
@@ -15033,7 +15034,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &516423633
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 516423161}
@@ -15059,7 +15060,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &516423634
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 516423161}
@@ -15086,7 +15087,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &516423635
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 516423161}
@@ -15112,7 +15113,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &516423636
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 516423161}

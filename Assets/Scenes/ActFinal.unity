@@ -1927,7 +1927,6 @@ GameObject:
   - component: {fileID: 489532714}
   - component: {fileID: 489532673}
   - component: {fileID: 489532725}
-  - component: {fileID: 489532730}
   - component: {fileID: 489532731}
   - component: {fileID: 489532732}
   - component: {fileID: 489532733}
@@ -1986,6 +1985,7 @@ GameObject:
   - component: {fileID: 489532459}
   - component: {fileID: 489532463}
   - component: {fileID: 489532465}
+  - component: {fileID: 489532466}
   m_Layer: 0
   m_Name: ActFinal
   m_TagString: Untagged
@@ -2194,7 +2194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 599.1302, y: -220.28856}
+  scrollPos: {x: 600.005, y: -300.66156}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 0
   blockViewHeight: 400
@@ -2208,7 +2208,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 489532514}
   selectedCommands:
-  - {fileID: 489532535}
+  - {fileID: 489532466}
   variables:
   - {fileID: 489532318}
   description: The final act where a decision needs to be made.
@@ -6963,6 +6963,23 @@ MonoBehaviour:
   waitUntilFinished: 1
   durationOLD: 0
   targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &489532466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489532279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 984
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: a054d319c52e72d48b8effda8fa06d3b, type: 3}
+  atTime: 0
+  loop: 0
+  fadeDuration: 1
 --- !u!114 &489532470
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -8215,7 +8232,7 @@ MonoBehaviour:
   - {fileID: 489532522}
   - {fileID: 489532521}
   - {fileID: 489532520}
-  - {fileID: 489532730}
+  - {fileID: 489532466}
   - {fileID: 489532519}
   - {fileID: 489532719}
   - {fileID: 489532725}
@@ -13762,19 +13779,6 @@ MonoBehaviour:
   customDescription: 
   fireEvent: 1
   resumeOnLoad: 1
---- !u!114 &489532730
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b359b09a7ba2e4af981f07c07f8af85a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 923
-  indentLevel: 0
 --- !u!114 &489532731
 MonoBehaviour:
   m_ObjectHideFlags: 2
