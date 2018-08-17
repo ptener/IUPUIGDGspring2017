@@ -1988,7 +1988,6 @@ GameObject:
   - component: {fileID: 489532466}
   - component: {fileID: 489532465}
   - component: {fileID: 489532464}
-  - component: {fileID: 489532469}
   - component: {fileID: 489532435}
   m_Layer: 0
   m_Name: Act3BB_Flowchart
@@ -2109,7 +2108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 586.27057, y: 130.48111}
+  scrollPos: {x: 746.9101, y: 135.80026}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -2121,9 +2120,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 489532388}
+  - {fileID: 489532291}
   selectedCommands:
-  - {fileID: 489532381}
+  - {fileID: 489532351}
   variables: []
   description: A short act which shows the scared running through hallways of the
     astronauts.
@@ -3295,7 +3294,6 @@ MonoBehaviour:
   - {fileID: 489532440}
   - {fileID: 489532336}
   - {fileID: 489532327}
-  - {fileID: 489532469}
   - {fileID: 489532428}
   - {fileID: 489532427}
   - {fileID: 489532426}
@@ -3855,7 +3853,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 27
   indentLevel: 0
-  storyText: '{b}{i}If{/i}{/b} that thing wants us, it better be prepared to loose
+  storyText: '{b}{i}If{/i}{/b} that thing wants us, it''d better be prepared to lose
     the hunt! '
   description: 
   character: {fileID: 489540149}
@@ -6871,23 +6869,6 @@ MonoBehaviour:
   itemId: 834
   indentLevel: 0
   musicClip: {fileID: 8300000, guid: a2b98070e9ebf9d428b7841f708e15f4, type: 3}
-  atTime: 0
-  loop: 1
-  fadeDuration: 1
---- !u!114 &489532469
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489532279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 839
-  indentLevel: 0
-  musicClip: {fileID: 8300000, guid: a054d319c52e72d48b8effda8fa06d3b, type: 3}
   atTime: 0
   loop: 1
   fadeDuration: 1

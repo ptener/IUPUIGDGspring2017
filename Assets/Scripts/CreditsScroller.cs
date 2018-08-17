@@ -10,13 +10,16 @@ public class CreditsScroller : MonoBehaviour {
     bool scrolling = true;
 
     public Transform scrollTextTransform;
+    public GameObject returntoMenuButton;
 	
 	// Update is called once per frame
 	void Update () {
 		if (scrolling) {
             if (scrollTextTransform != null) {
-                scrollTextTransform.position = new Vector3(scrollTextTransform.position.x, scrollTextTransform.position.y+scrollSpeed, scrollTextTransform.position.z);// scrollSpeed;
+                scrollTextTransform.position = new Vector3(scrollTextTransform.position.x, scrollTextTransform.position.y+scrollSpeed*Time.deltaTime, scrollTextTransform.position.z);// scrollSpeed;
                 if (scrollTextTransform.position.y >= scrollMaximumHeight) {
+                    //Finisehd scrolling
+                    returntoMenuButton.SetActive(true);
                     scrolling = false;
                 }
             } else {

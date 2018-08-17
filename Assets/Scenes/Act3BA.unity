@@ -11800,7 +11800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 950.40466, y: 121.579544}
+  scrollPos: {x: 963.40466, y: 138.57954}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -11812,7 +11812,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1031999249}
+  - {fileID: 1031999366}
   selectedCommands: []
   variables: []
   description: 
@@ -14622,6 +14622,7 @@ MonoBehaviour:
   - A_Socket_Wrench_First2
   - Explore1
   - Explore2
+  - Act3BA_Start
 --- !u!114 &1031999369
 MonoBehaviour:
   m_ObjectHideFlags: 2
