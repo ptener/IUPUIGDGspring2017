@@ -20,6 +20,7 @@ public class CreditsScroller : MonoBehaviour {
                 if (scrollTextTransform.position.y >= scrollMaximumHeight) {
                     //Finisehd scrolling
                     returntoMenuButton.SetActive(true);
+                    scrollTextTransform.gameObject.SetActive(false);
                     scrolling = false;
                 }
             } else {
@@ -30,5 +31,13 @@ public class CreditsScroller : MonoBehaviour {
 
     public void BeginScroll() {
 
+    }
+
+    public void FungusIsSlightlyBroken() {
+        //Delete any gameobject tree with the savemenu script on it in the scene (this is to prevent the restarting from act0 of the game.)
+        Fungus.SaveMenu[] objs = FindObjectsOfType<Fungus.SaveMenu>();
+        for (int i = 0; i < objs.Length; i++) {
+            Destroy(objs[i]);
+        }
     }
 }

@@ -7735,7 +7735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 859.4195, y: -86.28165}
+  scrollPos: {x: 810.63995, y: 188.10858}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 416
@@ -7746,8 +7746,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 213445479}
+  selectedBlocks: []
   selectedCommands: []
   variables: []
   description: This act introduces the characters.
@@ -8906,7 +8905,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 730
   indentLevel: 0
-  storyText: let's get started!
+  storyText: ' let''s get started!'
   description: 
   character: {fileID: 2111803760}
   portrait: {fileID: 0}

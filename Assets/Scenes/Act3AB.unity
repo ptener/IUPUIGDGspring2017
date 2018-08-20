@@ -11801,7 +11801,6 @@ GameObject:
   - component: {fileID: 1986949943}
   - component: {fileID: 1986949942}
   - component: {fileID: 1986949941}
-  - component: {fileID: 1986949940}
   - component: {fileID: 1986949944}
   m_Layer: 0
   m_Name: Act3AB_Flowchart
@@ -11823,7 +11822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 529.0208, y: 101.72499}
+  scrollPos: {x: 672.0208, y: 135.72499}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 0
   blockViewHeight: 513
@@ -11835,8 +11834,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1986949448}
-  selectedCommands: []
+  - {fileID: 1986949507}
+  selectedCommands:
+  - {fileID: 1986949914}
   variables:
   - {fileID: 1986949487}
   - {fileID: 1986949486}
@@ -13906,10 +13906,9 @@ MonoBehaviour:
   - {fileID: 1986949602}
   - {fileID: 1986949877}
   - {fileID: 1986949603}
-  - {fileID: 1986949914}
   - {fileID: 1986949784}
-  - {fileID: 1986949940}
   - {fileID: 1986949604}
+  - {fileID: 1986949914}
   - {fileID: 1986949606}
   - {fileID: 1986949783}
   - {fileID: 1986949607}
@@ -16361,7 +16360,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 440166203}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 69d8333870c32cd4aa13111bc7ab1a8f, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -24986,22 +24985,6 @@ MonoBehaviour:
   indentLevel: 0
   soundClip: {fileID: 8300000, guid: efccd4da016e5f247a02c6475c28926d, type: 3}
   volume: 0.83
-  waitUntilFinished: 0
---- !u!114 &1986949940
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1986949431}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 1026
-  indentLevel: 0
-  soundClip: {fileID: 8300000, guid: 69d8333870c32cd4aa13111bc7ab1a8f, type: 3}
-  volume: 1
   waitUntilFinished: 0
 --- !u!114 &1986949941
 MonoBehaviour:
